@@ -1,0 +1,8 @@
+{
+ "texte": "{\"statut\": \"reponse\", \"texte\": \"Dans Le Dîner de cons, c'est le footballeur Just Fontaine qui a inspiré à Francis Veber le choix du prénom pour le personnage de Juste Leblanc.\", \"sources\": [1]}",
+ "tokens_entree": 1239,
+ "tokens_sortie": 56,
+ "tokens_total": 1295,
+ "latence": 3.9082327000796795,
+ "modele": "gemini-3.5-flash-lite"
+}

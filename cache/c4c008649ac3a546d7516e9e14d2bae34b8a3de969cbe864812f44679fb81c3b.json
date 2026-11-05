@@ -1,0 +1,8 @@
+{
+ "texte": "{\"statut\": \"reponse\", \"texte\": \"La musique du film Inception a été composée par Hans Zimmer [1].\", \"sources\": [1]}",
+ "tokens_entree": 1085,
+ "tokens_sortie": 34,
+ "tokens_total": 1119,
+ "latence": 10.841169400140643,
+ "modele": "gemini-3.5-flash-lite"
+}

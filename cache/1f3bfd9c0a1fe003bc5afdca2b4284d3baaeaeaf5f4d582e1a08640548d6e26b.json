@@ -1,0 +1,8 @@
+{
+ "texte": "{\"statut\": \"reponse\", \"texte\": \"Le budget de la série Breaking Bad est de 3,2 millions de dollars américains par épisode [1].\", \"sources\": [1]}",
+ "tokens_entree": 805,
+ "tokens_sortie": 41,
+ "tokens_total": 846,
+ "latence": 0.9110477999784052,
+ "modele": "gemini-3.5-flash-lite"
+}

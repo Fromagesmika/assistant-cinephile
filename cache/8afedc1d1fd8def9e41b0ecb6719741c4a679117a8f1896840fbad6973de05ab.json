@@ -1,0 +1,8 @@
+{
+ "texte": "{\"statut\": \"reponse\", \"texte\": \"Au Festival de Cannes 2025, le film Un simple accident a remporté la Palme d'or [1] ainsi que le Prix de la Citoyenneté [4].\", \"sources\": [1, 4]}",
+ "tokens_entree": 942,
+ "tokens_sortie": 60,
+ "tokens_total": 1002,
+ "latence": 0.7692303000949323,
+ "modele": "gemini-3.5-flash-lite"
+}

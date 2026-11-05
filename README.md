@@ -1,13 +1,13 @@
 # Assistant cinéphile
 
-Projet du mineur IA générative 2026, parcours Texte. Un assistant qui répond sur les films et
+Projet majeur IA générative 2026, parcours Texte. Un assistant qui répond sur les films et
 les séries, puis gère une liste « à voir » partagée. Chaque niveau est comparé aux précédents
 sur le même protocole de test.
 
 | Niveau | Contenu | État |
 |---|---|---|
 | 0 | LLM seul | Évalué (37 cas) |
-| 1 | RAG, sources citées, abstention | Semaine 2 |
+| 1 | RAG, sources citées, abstention | Évalué (37 cas), juge à calibrer |
 | 2 | Agent outillé, confirmation des actions | Semaine 3 |
 | 3 | Extension mesurée | Semaine 4 |
 
@@ -50,7 +50,10 @@ Le tableau est écrit dans `results/tableau.md`. Les réponses déjà obtenues s
 | `src/metrics.py` | Règles de notation |
 | `src/traces.py` | Traces JSONL de chaque exécution |
 | `src/levels/` | Un fichier par niveau |
-| `scripts/` | Construction du corpus, contrôle des clés et des tests |
+| `src/rag.py` | Découpage, index de vecteurs et recherche |
+| `src/juge.py` | Juge LLM de fidélité aux sources |
+| `data/index/` | Vecteurs des passages (configuration retenue) |
+| `scripts/` | Corpus, contrôle des clés et des tests, comparaison de la recherche, calibration du juge |
 | `results/`, `traces/` | Résultats bruts et traces |
 | `rapport/`, `video/` | Rapport PDF et sources de la vidéo |
 

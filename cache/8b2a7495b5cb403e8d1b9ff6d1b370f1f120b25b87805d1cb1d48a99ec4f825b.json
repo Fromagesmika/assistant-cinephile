@@ -1,0 +1,8 @@
+{
+ "texte": "{\"statut\": \"reponse\", \"texte\": \"Le film met en vedette Oscar Isaac dans le rôle du Dr Victor Frankenstein, Christian Convery en jeune Victor, Jacob Elordi qui incarne la Créature, ainsi que Mia Goth, Christoph Waltz, Felix Kammerer, David Bradley, Lars Mikkelsen, Charles Dance, Lauren Collins, Ralph Ineson et Burn Gorman [1].\", \"sources\": [1]}",
+ "tokens_entree": 1140,
+ "tokens_sortie": 89,
+ "tokens_total": 1229,
+ "latence": 0.8300176998600364,
+ "modele": "gemini-3.5-flash-lite"
+}

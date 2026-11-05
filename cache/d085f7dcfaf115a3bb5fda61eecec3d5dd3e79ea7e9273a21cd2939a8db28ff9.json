@@ -1,0 +1,8 @@
+{
+ "texte": "{\"statut\": \"reponse\", \"texte\": \"La musique du film Le Samouraï a été composée par François de Roubaix [2].\", \"sources\": [2]}",
+ "tokens_entree": 1123,
+ "tokens_sortie": 38,
+ "tokens_total": 1161,
+ "latence": 0.6157327000983059,
+ "modele": "gemini-3.5-flash-lite"
+}

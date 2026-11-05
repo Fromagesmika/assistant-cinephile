@@ -1,0 +1,8 @@
+{
+ "texte": "{\"fidele\": true, \"detail\": \"\"}",
+ "tokens_entree": 1192,
+ "tokens_sortie": 11,
+ "tokens_total": 1203,
+ "latence": 0.6721234999131411,
+ "modele": "gemini-3.5-flash-lite"
+}

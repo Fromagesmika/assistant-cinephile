@@ -11,19 +11,22 @@ import argparse
 import json
 from pathlib import Path
 
-from src.levels import level0
+from src.juge import juger
+from src.levels import level0, level1
 from src.metrics import (
     abstention_correcte,
     moyenne,
     precision_ou_refus_correct,
+    rang_pertinent,
     reponse_exacte,
+    source_citee,
 )
 from src.traces import ecrire_trace, vider_traces
 
 RACINE = Path(__file__).resolve().parent
-NIVEAUX = {0: level0}  # on ajoutera 1, 2 et 3 ici au fil des semaines
-# Le niveau 0 n'a pas d'outils : les tâches en plusieurs étapes ne s'appliquent pas à lui.
-TYPES_PAR_NIVEAU = {0: {"document", "absent", "ambigu"}}
+NIVEAUX = {0: level0, 1: level1}  # on ajoutera 2 et 3 ici au fil des semaines
+# Les niveaux 0 et 1 n'ont pas d'outils : les tâches en plusieurs étapes ne les concernent pas.
+TYPES_PAR_NIVEAU = {0: {"document", "absent", "ambigu"}, 1: {"document", "absent", "ambigu"}}
 
 
 def charger_tests():
@@ -40,6 +43,25 @@ def noter(sortie, cas):
     if cas["type"] == "ambigu":
         return "precision_refus", precision_ou_refus_correct(sortie, cas)
     raise ValueError(f"Type de cas non géré : {cas['type']}")
+
+
+def mesures_rag(sortie, cas):
+    """Mesures propres aux niveaux qui consultent des documents (cas `document` seulement)."""
+    if cas["type"] != "document" or "passages" not in sortie:
+        return {}
+    mesures = {
+        "rang": rang_pertinent(sortie["passages"], cas, avec_fait=True),
+        "rang_page": rang_pertinent(sortie["passages"], cas, avec_fait=False),
+    }
+    if sortie["statut"] == "reponse":
+        fidele, detail, tokens_juge = juger(cas["question"], sortie["texte"], sortie["passages"])
+        mesures.update({
+            "source_citee": source_citee(sortie, cas),
+            "fidele": fidele,
+            "detail_juge": detail,
+            "tokens_juge": tokens_juge,  # coût de l'évaluation, pas du système : hors tableau
+        })
+    return mesures
 
 
 def evaluer_niveau(numero, tests):
@@ -63,9 +85,10 @@ def evaluer_niveau(numero, tests):
             "sources": sortie["sources"],
             "tokens": sortie["tokens"],
             "latence": round(sortie["latence"], 3),
+            **mesures_rag(sortie, cas),
         })
         ecrire_trace(numero, {"id": cas["id"], **sortie})
-        print(f"  [{'ok' if reussi else 'KO'}] {cas['id']} ({sortie['tokens']} tokens)")
+        print(f"  [{'ok' if reussi else 'KO'}] {cas['id']} ({sortie['tokens']} tokens)", flush=True)
 
     (RACINE / "results").mkdir(exist_ok=True)
     with open(RACINE / "results" / f"niveau{numero}.jsonl", "w", encoding="utf-8") as f:
@@ -87,23 +110,35 @@ def pourcent(valeur):
     return "—" if valeur is None else f"{valeur:.0%}"
 
 
+def recall_et_mrr(lignes):
+    """Recall@5 : le fait attendu est dans un des 5 passages. MRR : moyenne de 1/rang."""
+    rangs = [l["rang"] for l in lignes if "rang" in l]
+    if not rangs:
+        return None, None
+    return moyenne(r is not None for r in rangs), moyenne(1 / r if r else 0 for r in rangs)
+
+
 def tableau(resultats):
     """Le tableau du sujet, plus le détail de l'exactitude par strate de films."""
     titres = {0: "0 · LLM seul", 1: "1 · RAG", 2: "2 · Agent", 3: "3 · Extension"}
     sortie = [
-        "| Niveau | Recall@5 | Exactitude | Abstention | Précision/refus | Succès tâches | pass^3 | Tokens / requête | Latence (s) |",
-        "|---|---|---|---|---|---|---|---|---|",
+        "| Niveau | Recall@5 | MRR | Exactitude | Source citée | Fidélité | Abstention | Précision/refus | Succès tâches | pass^3 | Tokens / requête | Latence (s) |",
+        "|---|---|---|---|---|---|---|---|---|---|---|---|",
     ]
     for numero, lignes in sorted(resultats.items()):
-        tokens = moyenne(l["tokens"] for l in lignes)
-        latence = moyenne(l["latence"] for l in lignes)
+        recall, mrr = recall_et_mrr(lignes)
+        citees = [l["source_citee"] for l in lignes if "source_citee" in l]
+        fideles = [l["fidele"] for l in lignes if "fidele" in l]
         sortie.append(
-            f"| {titres[numero]} | — | {pourcent(taux(lignes, 'exactitude'))} "
-            f"| {pourcent(taux(lignes, 'abstention'))} "
-            f"| {pourcent(taux(lignes, 'precision_refus'))} | — | — "
-            f"| {tokens:.0f} | {latence:.2f} |"
+            f"| {titres[numero]} | {pourcent(recall)} | {'—' if mrr is None else f'{mrr:.3f}'} "
+            f"| {pourcent(taux(lignes, 'exactitude'))} | {pourcent(moyenne(citees))} | {pourcent(moyenne(fideles))} "
+            f"| {pourcent(taux(lignes, 'abstention'))} | {pourcent(taux(lignes, 'precision_refus'))} | — | — "
+            f"| {moyenne(l['tokens'] for l in lignes):.0f} | {moyenne(l['latence'] for l in lignes):.2f} |"
         )
     sortie += [
+        "",
+        "Source citée et fidélité portent sur les réponses données aux cas `document`. "
+        "La fidélité vient du juge LLM (voir results/calibration_juge.md pour sa fiabilité).",
         "",
         "Exactitude par strate :",
         "",
@@ -124,7 +159,7 @@ def main():
     tests = charger_tests()
     resultats = {}
     for numero in arguments.niveaux:
-        print(f"Niveau {numero}")
+        print(f"Niveau {numero}", flush=True)
         resultats[numero] = evaluer_niveau(numero, tests)
 
     texte = tableau(resultats)

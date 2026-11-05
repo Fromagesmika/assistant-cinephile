@@ -1,0 +1,8 @@
+{
+ "texte": "{\n  \"statut\": \"reponse\",\n  \"texte\": \"Chaque épisode de la mini-série Adolescence est tourné sous la forme d'un unique plan-séquence, sans coupe [1, 4].\",\n  \"sources\": [\n    1,\n    4\n  ]\n}",
+ "tokens_entree": 930,
+ "tokens_sortie": 71,
+ "tokens_total": 1001,
+ "latence": 1.3621147000230849,
+ "modele": "gemini-3.5-flash-lite"
+}

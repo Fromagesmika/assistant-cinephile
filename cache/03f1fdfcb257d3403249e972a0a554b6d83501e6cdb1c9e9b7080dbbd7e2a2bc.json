@@ -1,0 +1,8 @@
+{
+ "texte": "{\"statut\": \"reponse\", \"texte\": \"La musique du film Sir\\u0101t est compos\\u00e9e par Kangding Ray [2].\", \"sources\": [2]}",
+ "tokens_entree": 1201,
+ "tokens_sortie": 47,
+ "tokens_total": 1248,
+ "latence": 5.10959989996627,
+ "modele": "gemini-3.5-flash-lite"
+}

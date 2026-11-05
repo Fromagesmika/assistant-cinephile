@@ -1,0 +1,8 @@
+{
+ "texte": "{\n  \"statut\": \"reponse\",\n  \"texte\": \"Le groupe Assassin est crédité pour la musique du film La Haine [2].\",\n  \"sources\": [\n    2\n  ]\n}",
+ "tokens_entree": 1148,
+ "tokens_sortie": 49,
+ "tokens_total": 1197,
+ "latence": 1.5450166000518948,
+ "modele": "gemini-3.5-flash-lite"
+}

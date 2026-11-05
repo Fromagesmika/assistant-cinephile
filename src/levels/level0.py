@@ -19,22 +19,32 @@ Réponds uniquement avec un objet JSON de cette forme :
 {"statut": "reponse" | "abstention" | "precision" | "refus", "texte": "ta réponse en français"}"""
 
 
+def lire_json(texte_brut):
+    """Renvoie le dictionnaire produit par le modèle, ou None si le JSON est invalide.
+
+    Certains modèles entourent le JSON de ```json ... ``` : on retire ces marques avant de lire.
+    """
+    nettoye = texte_brut.strip().removeprefix("```json").removeprefix("```").removesuffix("```")
+    try:
+        donnees = json.loads(nettoye)
+    except json.JSONDecodeError:
+        return None
+    return donnees if isinstance(donnees, dict) else None
+
+
 def lire_sortie(texte_brut):
-    """Lit le JSON renvoyé par le modèle.
+    """Extrait le statut et le texte de la réponse du modèle.
 
     Si le JSON est invalide, on garde le texte et on le compte comme une réponse classique :
     un modèle mal formaté ne doit pas être récompensé par une abstention automatique.
-    Certains modèles entourent le JSON de ```json ... ``` : on retire ces marques avant de lire.
     """
-    try:
-        nettoye = texte_brut.strip().removeprefix("```json").removeprefix("```").removesuffix("```")
-        donnees = json.loads(nettoye)
-        statut = donnees.get("statut", "reponse")
-        if statut not in {"reponse", "abstention", "precision", "refus"}:
-            statut = "reponse"
-        return statut, str(donnees.get("texte", ""))
-    except (json.JSONDecodeError, AttributeError):
+    donnees = lire_json(texte_brut)
+    if donnees is None:
         return "reponse", texte_brut
+    statut = donnees.get("statut", "reponse")
+    if statut not in {"reponse", "abstention", "precision", "refus"}:
+        statut = "reponse"
+    return statut, str(donnees.get("texte", ""))
 
 
 def repondre(question, essai=0):

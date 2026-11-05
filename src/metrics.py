@@ -37,6 +37,20 @@ def source_citee(sortie, cas):
     return bool(set(sortie["sources"]) & set(cas["sources"]))
 
 
+def rang_pertinent(passages, cas, avec_fait=True):
+    """Rang (à partir de 1) du premier passage pertinent, ou None s'il n'y en a aucun.
+
+    Pertinent = vient d'une page source attendue et, si `avec_fait`, contient tous les faits
+    attendus. C'est plus strict que la bonne page : le modèle a besoin du fait pour répondre.
+    """
+    for rang, passage in enumerate(passages, start=1):
+        if passage["doc_id"] not in cas["sources"]:
+            continue
+        if not avec_fait or all(any(contient(passage["texte"], v) for v in g) for g in cas["attendu"]):
+            return rang
+    return None
+
+
 def abstention_correcte(sortie):
     return sortie["statut"] == "abstention"
 

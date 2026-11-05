@@ -9,3 +9,8 @@ __pycache__/
 # Vidéo : sources lourdes (le rendu final se dépose à part)
 video/renders/
 video/node_modules/
+
+# Index d'essais : seul l'index retenu (voir src/rag.py) est versionné
+data/index/*
+!data/index/e5_800_100.npy
+cache/requetes/minilm.json
