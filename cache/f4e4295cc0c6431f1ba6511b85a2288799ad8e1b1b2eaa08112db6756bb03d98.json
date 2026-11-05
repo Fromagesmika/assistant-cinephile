@@ -1,0 +1,8 @@
+{
+ "texte": "{\"statut\": \"abstention\", \"texte\": \"Je ne connais pas avec certitude le budget exact du film d'animation Flow de Gints Zilbalodis.\"}",
+ "tokens_entree": 227,
+ "tokens_sortie": 37,
+ "tokens_total": 264,
+ "latence": 1.2056795998942107,
+ "modele": "gemini-3.5-flash-lite"
+}

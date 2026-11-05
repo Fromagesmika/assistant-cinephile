@@ -1,0 +1,8 @@
+{
+ "texte": "{\"statut\": \"reponse\", \"texte\": \"Le groupe de hip-hop français Assassin, ainsi que le compositeur Rockin' Squat et d'autres artistes de la scène rap, ont contribué à l'ambiance musicale du film La Haine. Cependant, la bande originale emblématique du film a été principalement composée par le groupe Assassin et d'autres intervenants de l'époque.\"}",
+ "tokens_entree": 229,
+ "tokens_sortie": 85,
+ "tokens_total": 314,
+ "latence": 0.8214549999684095,
+ "modele": "gemini-3.5-flash-lite"
+}

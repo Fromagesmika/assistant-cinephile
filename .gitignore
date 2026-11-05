@@ -1,0 +1,11 @@
+# Secrets : ne JAMAIS versionner les clés d'API
+.env
+
+# Environnement Python
+.venv/
+__pycache__/
+*.pyc
+
+# Vidéo : sources lourdes (le rendu final se dépose à part)
+video/renders/
+video/node_modules/

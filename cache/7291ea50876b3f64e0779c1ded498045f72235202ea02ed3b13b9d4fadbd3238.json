@@ -1,0 +1,8 @@
+{
+ "texte": "{\"statut\": \"reponse\", \"texte\": \"Le film \\\"Le Salaire de la peur\\\" réalisé par Henri-Georges Clouzot est adapté du roman éponyme de l'écrivain français Georges Arnaud, publié en 1950.\"}",
+ "tokens_entree": 233,
+ "tokens_sortie": 56,
+ "tokens_total": 289,
+ "latence": 0.9993778001517057,
+ "modele": "gemini-3.5-flash-lite"
+}

@@ -1,0 +1,8 @@
+{
+ "texte": "{\"statut\": \"reponse\", \"texte\": \"Le film \\\"Un p'tit truc en plus\\\" réalisé par Artus a bénéficié d'un budget estimé à environ 5,5 millions d'euros. Cette comédie française a rencontré un immense succès surprise en salles lors de sa sortie en 2024.\"}",
+ "tokens_entree": 228,
+ "tokens_sortie": 72,
+ "tokens_total": 300,
+ "latence": 1.342293599853292,
+ "modele": "gemini-3.5-flash-lite"
+}

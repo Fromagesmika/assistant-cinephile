@@ -1,0 +1,8 @@
+{
+ "texte": "{\"statut\": \"reponse\", \"texte\": \"L'action du film \\\"Cléo de 5 à 7\\\" d'Agnès Varda se déroule le 21 juin 1961 à Paris. Le récit suit la chanteuse Cléo en temps réel, ou presque, entre 17h et 18h30, alors qu'elle attend les résultats d'une biopsie.\"}",
+ "tokens_entree": 236,
+ "tokens_sortie": 92,
+ "tokens_total": 328,
+ "latence": 1.1558576999232173,
+ "modele": "gemini-3.5-flash-lite"
+}

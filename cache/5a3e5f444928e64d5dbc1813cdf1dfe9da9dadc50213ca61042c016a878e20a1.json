@@ -1,0 +1,8 @@
+{
+ "texte": "{\"statut\": \"abstention\", \"texte\": \"Je ne dispose pas d'informations certaines concernant le compositeur de la musique du film Valeur sentimentale de Joachim Trier.\"}",
+ "tokens_entree": 224,
+ "tokens_sortie": 38,
+ "tokens_total": 262,
+ "latence": 0.8574298999737948,
+ "modele": "gemini-3.5-flash-lite"
+}

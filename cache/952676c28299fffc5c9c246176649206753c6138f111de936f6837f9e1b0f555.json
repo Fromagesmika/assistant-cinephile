@@ -1,0 +1,8 @@
+{
+ "texte": "{\"statut\": \"abstention\", \"texte\": \"Je ne dispose pas d'informations certaines concernant le compositeur de la musique du film Sirāt d'Óliver Laxe.\"}",
+ "tokens_entree": 226,
+ "tokens_sortie": 39,
+ "tokens_total": 265,
+ "latence": 0.8937607000116259,
+ "modele": "gemini-3.5-flash-lite"
+}

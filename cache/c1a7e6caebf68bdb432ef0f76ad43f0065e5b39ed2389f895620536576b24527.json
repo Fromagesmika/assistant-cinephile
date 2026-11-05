@@ -1,0 +1,8 @@
+{
+ "texte": "{\"statut\": \"abstention\", \"texte\": \"Je ne dispose pas d'informations fiables sur le film Le Dernier Phare de Kerlouan et sa durée.\"}",
+ "tokens_entree": 226,
+ "tokens_sortie": 38,
+ "tokens_total": 264,
+ "latence": 0.6423202999867499,
+ "modele": "gemini-3.5-flash-lite"
+}

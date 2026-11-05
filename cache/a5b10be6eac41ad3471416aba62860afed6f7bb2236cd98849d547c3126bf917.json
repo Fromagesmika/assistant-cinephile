@@ -1,0 +1,8 @@
+{
+ "texte": "{\"statut\": \"reponse\", \"texte\": \"Dans le film Mon oncle de Jacques Tati, l'usine dirigée par Monsieur Arpel fabrique des tuyaux en plastique et des produits de havage. Cette entreprise moderne symbolise l'absurdité du monde industriel et du progrès technique vu par le réalisateur.\"}",
+ "tokens_entree": 232,
+ "tokens_sortie": 70,
+ "tokens_total": 302,
+ "latence": 0.7692877999506891,
+ "modele": "gemini-3.5-flash-lite"
+}

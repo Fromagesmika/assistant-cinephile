@@ -1,0 +1,8 @@
+{
+ "texte": "{\"statut\": \"abstention\", \"texte\": \"Je ne dispose pas d'informations suffisantes concernant un film intitulé Les Horloges de Valparaíso sorti en 2019.\"}",
+ "tokens_entree": 232,
+ "tokens_sortie": 42,
+ "tokens_total": 274,
+ "latence": 0.7730076999869198,
+ "modele": "gemini-3.5-flash-lite"
+}

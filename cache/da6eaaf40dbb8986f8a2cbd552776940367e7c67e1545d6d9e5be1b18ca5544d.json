@@ -1,0 +1,8 @@
+{
+ "texte": "{\n  \"statut\": \"reponse\",\n  \"texte\": \"Le budget de production pour un épisode de la série Breaking Bad était estimé à environ 3 millions de dollars lors des premières saisons. Pour la dernière saison, ce montant a augmenté pour atteindre environ 3,5 millions de dollars par épisode.\"\n}",
+ "tokens_entree": 222,
+ "tokens_sortie": 68,
+ "tokens_total": 290,
+ "latence": 1.104340000078082,
+ "modele": "gemini-3.5-flash-lite"
+}

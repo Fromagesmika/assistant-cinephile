@@ -1,0 +1,8 @@
+{
+ "texte": "{\"statut\": \"reponse\", \"texte\": \"Le film \\\"L'Amour ouf\\\" de Gilles Lellouche est adapté du roman éponyme de l'écrivain irlandais Neville Thompson, publié en 2018.\"}",
+ "tokens_entree": 233,
+ "tokens_sortie": 54,
+ "tokens_total": 287,
+ "latence": 0.666417800122872,
+ "modele": "gemini-3.5-flash-lite"
+}

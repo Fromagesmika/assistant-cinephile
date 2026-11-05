@@ -1,0 +1,8 @@
+{
+ "texte": "{\"statut\": \"reponse\", \"texte\": \"La musique du film Le Samouraï de Jean-Pierre Melville a été composée par François de Roubaix. Sa partition contribue grandement à l'atmosphère froide et mélancolique du film.\"}",
+ "tokens_entree": 227,
+ "tokens_sortie": 53,
+ "tokens_total": 280,
+ "latence": 0.6621646001003683,
+ "modele": "gemini-3.5-flash-lite"
+}

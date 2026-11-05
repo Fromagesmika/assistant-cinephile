@@ -1,0 +1,8 @@
+{
+ "texte": "{\"statut\": \"reponse\", \"texte\": \"Au Festival de Cannes 2016, le film Divines de Houda Benyamina a reçu la Caméra d'or, qui récompense le meilleur premier film de toutes les sélections confondues.\"}",
+ "tokens_entree": 240,
+ "tokens_sortie": 59,
+ "tokens_total": 299,
+ "latence": 0.6333570000715554,
+ "modele": "gemini-3.5-flash-lite"
+}

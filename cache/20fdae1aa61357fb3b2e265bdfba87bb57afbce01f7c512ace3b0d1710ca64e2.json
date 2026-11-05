@@ -1,0 +1,8 @@
+{
+ "texte": "{\"statut\": \"precision\", \"texte\": \"Il existe de nombreuses adaptations de Frankenstein. S'agit-il du célèbre film classique de 1931 avec Boris Karloff dans le rôle du monstre, ou d'une autre version plus récente comme celle de Kenneth Branagh en 1994 ?\"}",
+ "tokens_entree": 215,
+ "tokens_sortie": 67,
+ "tokens_total": 282,
+ "latence": 0.6838954999111593,
+ "modele": "gemini-3.5-flash-lite"
+}

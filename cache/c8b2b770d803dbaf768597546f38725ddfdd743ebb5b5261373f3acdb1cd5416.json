@@ -1,0 +1,8 @@
+{
+ "texte": "{\"statut\": \"abstention\", \"texte\": \"Je ne dispose pas d'informations sur le festival de Cannes 2025 ni sur ce film de Jafar Panahi.\"}",
+ "tokens_entree": 238,
+ "tokens_sortie": 40,
+ "tokens_total": 278,
+ "latence": 1.013944000005722,
+ "modele": "gemini-3.5-flash-lite"
+}

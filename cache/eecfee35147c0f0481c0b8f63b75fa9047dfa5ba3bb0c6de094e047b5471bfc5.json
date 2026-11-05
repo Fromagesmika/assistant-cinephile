@@ -1,0 +1,8 @@
+{
+ "texte": "{\n  \"statut\": \"reponse\",\n  \"texte\": \"La série Kaamelott, créée par Alexandre Astier, compte au total 458 épisodes répartis sur six livres. Les cinq premiers livres sont constitués de formats courts d'environ trois à sept minutes, tandis que le livre six adopte un format de type \\\"soirée\\\" avec des épisodes de 50 minutes.\"\n}",
+ "tokens_entree": 223,
+ "tokens_sortie": 90,
+ "tokens_total": 313,
+ "latence": 4.205872900085524,
+ "modele": "gemini-3.5-flash-lite"
+}

@@ -1,0 +1,8 @@
+{
+ "texte": "{\"statut\": \"abstention\", \"texte\": \"Je ne possède pas cette information précise concernant le nombre de tasses de café bues pendant le tournage de Mon oncle de Jacques Tati.\"}",
+ "tokens_entree": 234,
+ "tokens_sortie": 43,
+ "tokens_total": 277,
+ "latence": 4.974219499854371,
+ "modele": "gemini-3.5-flash-lite"
+}

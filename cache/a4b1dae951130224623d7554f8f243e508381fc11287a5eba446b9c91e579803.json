@@ -1,0 +1,8 @@
+{
+ "texte": "{\"statut\": \"reponse\", \"texte\": \"La musique du film Inception de Christopher Nolan a été composée par Hans Zimmer. Sa célèbre partition, notamment le morceau Time, est devenue l'une des plus emblématiques du cinéma moderne.\"}",
+ "tokens_entree": 223,
+ "tokens_sortie": 51,
+ "tokens_total": 274,
+ "latence": 1.0483700998593122,
+ "modele": "gemini-3.5-flash-lite"
+}

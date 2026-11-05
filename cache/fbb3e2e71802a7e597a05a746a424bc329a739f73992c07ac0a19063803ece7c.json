@@ -1,0 +1,8 @@
+{
+ "texte": "{\"statut\": \"reponse\", \"texte\": \"Le film Parasite réalisé par Bong Joon-ho, sorti en 2019, a une durée de 2 heures et 12 minutes (soit 132 minutes).\"}",
+ "tokens_entree": 232,
+ "tokens_sortie": 53,
+ "tokens_total": 285,
+ "latence": 0.9693301999941468,
+ "modele": "gemini-3.5-flash-lite"
+}

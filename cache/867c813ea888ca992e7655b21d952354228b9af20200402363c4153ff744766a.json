@@ -1,0 +1,8 @@
+{
+ "texte": "{\"statut\": \"reponse\", \"texte\": \"Le film original \\\"Nosferatu le vampyre\\\" (1922) a été réalisé par Friedrich Wilhelm Murnau. Une célèbre adaptation a également été réalisée par Werner Herzog en 1979, et Robert Eggers en a réalisé une nouvelle version sortie en 2024.\"}",
+ "tokens_entree": 217,
+ "tokens_sortie": 74,
+ "tokens_total": 291,
+ "latence": 1.1469752001576126,
+ "modele": "gemini-3.5-flash-lite"
+}

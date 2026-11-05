@@ -1,0 +1,8 @@
+{
+ "texte": "{\n  \"statut\": \"abstention\",\n  \"texte\": \"Je ne dispose pas d'informations certifiées sur une adaptation cinématographique portant ce titre et liée à l'œuvre de Thomas Pynchon.\"\n}",
+ "tokens_entree": 228,
+ "tokens_sortie": 49,
+ "tokens_total": 277,
+ "latence": 0.7368147000670433,
+ "modele": "gemini-3.5-flash-lite"
+}

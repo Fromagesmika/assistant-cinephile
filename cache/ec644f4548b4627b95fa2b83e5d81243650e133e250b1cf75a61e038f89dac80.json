@@ -1,0 +1,8 @@
+{
+ "texte": "{\"statut\": \"reponse\", \"texte\": \"Dans Le Dîner de cons, le prénom du personnage Juste Leblanc, incarné par Francis Huster, a été inspiré par le célèbre footballeur français Just Fontaine.\"}",
+ "tokens_entree": 233,
+ "tokens_sortie": 51,
+ "tokens_total": 284,
+ "latence": 1.452236199984327,
+ "modele": "gemini-3.5-flash-lite"
+}

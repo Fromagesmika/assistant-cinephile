@@ -1,0 +1,8 @@
+{
+ "texte": "{\n  \"statut\": \"abstention\",\n  \"texte\": \"Je ne dispose pas d'informations fiables concernant le nombre de saisons de cette série.\"\n}",
+ "tokens_entree": 223,
+ "tokens_sortie": 37,
+ "tokens_total": 260,
+ "latence": 4.370270299958065,
+ "modele": "gemini-3.5-flash-lite"
+}

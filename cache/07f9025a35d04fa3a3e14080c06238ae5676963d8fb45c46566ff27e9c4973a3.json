@@ -1,0 +1,8 @@
+{
+ "texte": "{\"statut\": \"reponse\", \"texte\": \"Une grande partie des scènes en studio du Fabuleux Destin d'Amélie Poulain a été tournée à Cologne, en Allemagne, plus précisément dans les studios de film de la ville (MMC Studios).\"}",
+ "tokens_entree": 237,
+ "tokens_sortie": 55,
+ "tokens_total": 292,
+ "latence": 1.2267694000620395,
+ "modele": "gemini-3.5-flash-lite"
+}

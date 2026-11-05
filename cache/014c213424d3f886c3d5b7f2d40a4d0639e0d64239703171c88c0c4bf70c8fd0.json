@@ -1,0 +1,8 @@
+{
+ "texte": "{\"statut\": \"reponse\", \"texte\": \"Le film d'animation La Tortue rouge a été coécrit et réalisé par le cinéaste néerlandais Michaël Dudok de Wit. Le scénario a également été coécrit en collaboration avec la scénariste française Pascale Ferran.\"}",
+ "tokens_entree": 225,
+ "tokens_sortie": 65,
+ "tokens_total": 290,
+ "latence": 7.108039099955931,
+ "modele": "gemini-3.5-flash-lite"
+}

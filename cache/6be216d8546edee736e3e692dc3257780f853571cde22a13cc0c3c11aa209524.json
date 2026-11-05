@@ -1,0 +1,8 @@
+{
+ "texte": "{\"statut\": \"precision\", \"texte\": \"De quel film ou de quelle série parlez-vous ? Veuillez préciser le titre pour que je puisse vous renseigner sur la date de sortie de la suite.\"}",
+ "tokens_entree": 218,
+ "tokens_sortie": 45,
+ "tokens_total": 263,
+ "latence": 1.0157316999975592,
+ "modele": "gemini-3.5-flash-lite"
+}

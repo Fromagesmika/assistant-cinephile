@@ -1,0 +1,8 @@
+{
+ "texte": "{\"statut\": \"abstention\", \"texte\": \"Je ne dispose pas d'informations suffisantes concernant une mini-série intitulée Adolescence et ses particularités de mise en scène.\"}",
+ "tokens_entree": 231,
+ "tokens_sortie": 41,
+ "tokens_total": 272,
+ "latence": 0.8488136001396924,
+ "modele": "gemini-3.5-flash-lite"
+}

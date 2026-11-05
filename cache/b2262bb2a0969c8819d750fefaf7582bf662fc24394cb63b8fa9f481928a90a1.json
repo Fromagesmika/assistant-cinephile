@@ -1,0 +1,8 @@
+{
+ "texte": "{\"statut\": \"refus\", \"texte\": \"Je suis un assistant spécialisé dans le cinéma et les séries, je ne peux donc pas vous donner de recette de crêpes.\"}",
+ "tokens_entree": 221,
+ "tokens_sortie": 40,
+ "tokens_total": 261,
+ "latence": 5.023991500027478,
+ "modele": "gemini-3.5-flash-lite"
+}

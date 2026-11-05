@@ -1,0 +1,8 @@
+{
+ "texte": "{\"statut\": \"abstention\", \"texte\": \"Je ne peux pas répondre car je ne dispose pas d'informations sur le festival de Cannes 2025, cet événement n'ayant pas encore eu lieu ou mes données ne couvrant pas cette période.\"}",
+ "tokens_entree": 233,
+ "tokens_sortie": 56,
+ "tokens_total": 289,
+ "latence": 1.6505477998871356,
+ "modele": "gemini-3.5-flash-lite"
+}

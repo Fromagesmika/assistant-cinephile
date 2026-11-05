@@ -1,0 +1,8 @@
+{
+ "texte": "{\"statut\": \"reponse\", \"texte\": \"Le directeur de la photographie du film Inception, sorti en 2010 et réalisé par Christopher Nolan, est Wally Pfister. Il a remporté l'Oscar de la meilleure photographie pour son travail sur ce film.\"}",
+ "tokens_entree": 222,
+ "tokens_sortie": 58,
+ "tokens_total": 280,
+ "latence": 0.8669197999406606,
+ "modele": "gemini-3.5-flash-lite"
+}
