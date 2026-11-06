@@ -1,8 +1,0 @@
-{
- "texte": "{\"statut\": \"abstention\", \"texte\": \"Les extraits fournis ne contiennent aucune information sur la dur\\u00e9e du film Le Dernier Phare de Kerlouan.\", \"sources\": []}",
- "tokens_entree": 1261,
- "tokens_sortie": 47,
- "tokens_total": 1308,
- "latence": 0.9172248998656869,
- "modele": "gemini-3.5-flash-lite"
-}

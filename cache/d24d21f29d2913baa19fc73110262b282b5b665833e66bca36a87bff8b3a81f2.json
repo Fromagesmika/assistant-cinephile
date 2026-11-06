@@ -1,0 +1,8 @@
+{
+ "texte": "{\"statut\": \"reponse\", \"texte\": \"La musique du film Valeur sentimentale est composée par Hania Rani [2].\", \"sources\": [2]}",
+ "tokens_entree": 1129,
+ "tokens_sortie": 36,
+ "tokens_total": 1165,
+ "latence": 0.7362469001673162,
+ "modele": "gemini-3.5-flash-lite"
+}

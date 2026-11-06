@@ -14,7 +14,7 @@ K = 5
 PROMPT_SYSTEME = """Tu es un assistant cinéphile francophone. Tu réponds à partir des extraits fournis, et uniquement à partir d'eux, même si tu crois connaître la réponse.
 
 Règles :
-- Chaque affirmation de ta réponse est suivie du numéro de l'extrait qui la justifie, par exemple [2].
+- Dans le champ "texte", chaque phrase se termine par le numéro de l'extrait qui la justifie. Exemple : "La musique est composée par Hans Zimmer [2]. Le film dure 148 minutes [4]." Une phrase sans numéro est interdite.
 - Ne donne aucun détail absent des extraits.
 - Si les extraits ne contiennent pas la réponse, utilise le statut "abstention".
 - Si le titre demandé désigne plusieurs œuvres présentes dans les extraits et que la question ne précise pas laquelle, ou si aucune œuvre n'est nommée, utilise le statut "precision" et pose une question.
@@ -31,7 +31,8 @@ def construire_contexte(passages):
 
 def numeros_cites(texte, donnees, nombre_passages):
     """Numéros cités dans le texte ou la liste `sources`, sans ceux qui ne correspondent à aucun extrait."""
-    numeros = {int(n) for n in re.findall(r"\[(\d+)\]", texte)}
+    # Une citation peut regrouper plusieurs extraits : [1] ou [1, 4].
+    numeros = {int(n) for groupe in re.findall(r"\[([\d\s,]+)\]", texte) for n in re.findall(r"\d+", groupe)}
     sources = donnees.get("sources", []) if isinstance(donnees, dict) else []
     if isinstance(sources, list):
         # Le modèle écrit parfois les numéros comme du texte : ["1"] au lieu de [1].

@@ -15,6 +15,7 @@ from src.juge import juger
 from src.levels import level0, level1
 from src.metrics import (
     abstention_correcte,
+    chaque_phrase_citee,
     moyenne,
     precision_ou_refus_correct,
     rang_pertinent,
@@ -57,6 +58,7 @@ def mesures_rag(sortie, cas):
         fidele, detail, tokens_juge = juger(cas["question"], sortie["texte"], sortie["passages"])
         mesures.update({
             "source_citee": source_citee(sortie, cas),
+            "phrases_citees": chaque_phrase_citee(sortie["texte"]),
             "fidele": fidele,
             "detail_juge": detail,
             "tokens_juge": tokens_juge,  # coût de l'évaluation, pas du système : hors tableau
@@ -122,22 +124,24 @@ def tableau(resultats):
     """Le tableau du sujet, plus le détail de l'exactitude par strate de films."""
     titres = {0: "0 · LLM seul", 1: "1 · RAG", 2: "2 · Agent", 3: "3 · Extension"}
     sortie = [
-        "| Niveau | Recall@5 | MRR | Exactitude | Source citée | Fidélité | Abstention | Précision/refus | Succès tâches | pass^3 | Tokens / requête | Latence (s) |",
-        "|---|---|---|---|---|---|---|---|---|---|---|---|",
+        "| Niveau | Recall@5 | MRR | Exactitude | Source citée | Phrases citées | Fidélité | Abstention | Précision/refus | Succès tâches | pass^3 | Tokens / requête | Latence (s) |",
+        "|---|---|---|---|---|---|---|---|---|---|---|---|---|",
     ]
     for numero, lignes in sorted(resultats.items()):
         recall, mrr = recall_et_mrr(lignes)
         citees = [l["source_citee"] for l in lignes if "source_citee" in l]
+        phrases = [l["phrases_citees"] for l in lignes if "phrases_citees" in l]
         fideles = [l["fidele"] for l in lignes if "fidele" in l]
         sortie.append(
             f"| {titres[numero]} | {pourcent(recall)} | {'—' if mrr is None else f'{mrr:.3f}'} "
-            f"| {pourcent(taux(lignes, 'exactitude'))} | {pourcent(moyenne(citees))} | {pourcent(moyenne(fideles))} "
+            f"| {pourcent(taux(lignes, 'exactitude'))} | {pourcent(moyenne(citees))} | {pourcent(moyenne(phrases))} "
+            f"| {pourcent(moyenne(fideles))} "
             f"| {pourcent(taux(lignes, 'abstention'))} | {pourcent(taux(lignes, 'precision_refus'))} | — | — "
             f"| {moyenne(l['tokens'] for l in lignes):.0f} | {moyenne(l['latence'] for l in lignes):.2f} |"
         )
     sortie += [
         "",
-        "Source citée et fidélité portent sur les réponses données aux cas `document`. "
+        "Source citée, phrases citées et fidélité portent sur les réponses données aux cas `document`. "
         "La fidélité vient du juge LLM (voir results/calibration_juge.md pour sa fiabilité).",
         "",
         "Exactitude par strate :",

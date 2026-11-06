@@ -1,0 +1,8 @@
+{
+ "texte": "{\n  \"statut\": \"reponse\",\n  \"texte\": \"Nadia Melliti a reçu le prix d'interprétation féminine à Cannes 2025 pour La Petite Dernière [1].\",\n  \"sources\": [\n    1\n  ]\n}",
+ "tokens_entree": 1015,
+ "tokens_sortie": 60,
+ "tokens_total": 1075,
+ "latence": 0.6063032001256943,
+ "modele": "gemini-3.5-flash-lite"
+}

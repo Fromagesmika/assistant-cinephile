@@ -1,0 +1,8 @@
+{
+ "texte": "{\"statut\": \"precision\", \"texte\": \"De quel film parlez-vous ?\", \"sources\": []}",
+ "tokens_entree": 1044,
+ "tokens_sortie": 24,
+ "tokens_total": 1068,
+ "latence": 1.8329569001216441,
+ "modele": "gemini-3.5-flash-lite"
+}

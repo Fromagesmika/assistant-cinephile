@@ -1,0 +1,8 @@
+{
+ "texte": "{\n  \"statut\": \"reponse\",\n  \"texte\": \"Un simple accident a remporté la Palme d'or et le Prix de la Citoyenneté au Festival de Cannes 2025 [1, 4].\",\n  \"sources\": [\n    1,\n    4\n  ]\n}",
+ "tokens_entree": 973,
+ "tokens_sortie": 70,
+ "tokens_total": 1043,
+ "latence": 0.7762516001239419,
+ "modele": "gemini-3.5-flash-lite"
+}

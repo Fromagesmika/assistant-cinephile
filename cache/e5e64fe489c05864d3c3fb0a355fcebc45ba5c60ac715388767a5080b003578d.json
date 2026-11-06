@@ -1,8 +1,0 @@
-{
- "texte": "{\"statut\": \"reponse\", \"texte\": \"Le film d'animation La Tortue rouge a été réalisé par Michael Dudok de Wit [1, 2]. Il a également écrit le scénario du film [1], en collaboration avec Pascale Ferran [2].\", \"sources\": [1, 2]}",
- "tokens_entree": 1116,
- "tokens_sortie": 68,
- "tokens_total": 1184,
- "latence": 0.8094115999992937,
- "modele": "gemini-3.5-flash-lite"
-}

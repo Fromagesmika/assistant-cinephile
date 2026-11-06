@@ -1,8 +1,0 @@
-{
- "texte": "{\"statut\": \"reponse\", \"texte\": \"Au festival de Cannes 2016, le film Divines a reçu la Caméra d'or [1, 5].\", \"sources\": [1, 5]}",
- "tokens_entree": 1097,
- "tokens_sortie": 50,
- "tokens_total": 1147,
- "latence": 1.0631279000081122,
- "modele": "gemini-3.5-flash-lite"
-}

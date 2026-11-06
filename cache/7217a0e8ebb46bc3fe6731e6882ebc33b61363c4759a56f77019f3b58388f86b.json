@@ -1,0 +1,8 @@
+{
+ "texte": "{\"statut\": \"reponse\", \"texte\": \"Le film Parasite a une durée de 132 minutes [4].\", \"sources\": [4]}",
+ "tokens_entree": 1235,
+ "tokens_sortie": 35,
+ "tokens_total": 1270,
+ "latence": 0.8359820998739451,
+ "modele": "gemini-3.5-flash-lite"
+}

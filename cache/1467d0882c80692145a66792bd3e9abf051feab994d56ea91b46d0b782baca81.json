@@ -1,8 +1,0 @@
-{
- "texte": "{\n  \"statut\": \"reponse\",\n  \"texte\": \"L'action du film se déroule le 21 juin 1961 à Paris [5].\",\n  \"sources\": [\n    5\n  ]\n}",
- "tokens_entree": 865,
- "tokens_sortie": 55,
- "tokens_total": 920,
- "latence": 0.8229740001261234,
- "modele": "gemini-3.5-flash-lite"
-}

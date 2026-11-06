@@ -1,0 +1,8 @@
+{
+ "texte": "{\"statut\": \"reponse\", \"texte\": \"La série Le Bureau des légendes compte cinquante épisodes [1].\", \"sources\": [1]}",
+ "tokens_entree": 933,
+ "tokens_sortie": 34,
+ "tokens_total": 967,
+ "latence": 0.6628597998060286,
+ "modele": "gemini-3.5-flash-lite"
+}

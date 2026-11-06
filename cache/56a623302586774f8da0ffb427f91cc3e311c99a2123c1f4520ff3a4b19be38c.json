@@ -1,8 +1,0 @@
-{
- "texte": "{\"statut\": \"precision\", \"texte\": \"Il existe plusieurs films intitul\\u00e9s Nosferatu, r\\u00e9alis\\u00e9s par Robert Eggers en 2024 [1] et par Friedrich Wilhelm Murnau en 1922 [2]. Lequel des deux films vous int\\u00e9resse ?\", \"sources\": [1, 2]}",
- "tokens_entree": 1172,
- "tokens_sortie": 94,
- "tokens_total": 1266,
- "latence": 1.5727440000046045,
- "modele": "gemini-3.5-flash-lite"
-}

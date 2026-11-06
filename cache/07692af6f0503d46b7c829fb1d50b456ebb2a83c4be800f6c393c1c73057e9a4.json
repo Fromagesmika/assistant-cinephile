@@ -1,0 +1,8 @@
+{
+ "texte": "{\"statut\": \"precision\", \"texte\": \"Souhaitez-vous parler du film Nosferatu de 2024 réalisé par Robert Eggers [1] ou du film Nosferatu le vampire de 1922 réalisé par Friedrich Wilhelm Murnau [2] ?\", \"sources\": [1, 2]}",
+ "tokens_entree": 1203,
+ "tokens_sortie": 69,
+ "tokens_total": 1272,
+ "latence": 4.796414999989793,
+ "modele": "gemini-3.5-flash-lite"
+}

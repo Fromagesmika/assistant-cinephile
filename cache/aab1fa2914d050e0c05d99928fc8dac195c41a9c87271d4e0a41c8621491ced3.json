@@ -1,0 +1,8 @@
+{
+ "texte": "{\"statut\": \"abstention\", \"texte\": \"Les extraits ne contiennent aucune information sur le film Les Horloges de Valpara\\u00edso.\", \"sources\": []}",
+ "tokens_entree": 1222,
+ "tokens_sortie": 41,
+ "tokens_total": 1263,
+ "latence": 1.2505505001172423,
+ "modele": "gemini-3.5-flash-lite"
+}

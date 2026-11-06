@@ -1,0 +1,8 @@
+{
+ "texte": "{\"statut\": \"refus\", \"texte\": \"Je ne peux répondre qu'à des questions concernant le cinéma ou les séries d'après les extraits fournis.\", \"sources\": []}",
+ "tokens_entree": 667,
+ "tokens_sortie": 40,
+ "tokens_total": 707,
+ "latence": 1.0931657999753952,
+ "modele": "gemini-3.5-flash-lite"
+}

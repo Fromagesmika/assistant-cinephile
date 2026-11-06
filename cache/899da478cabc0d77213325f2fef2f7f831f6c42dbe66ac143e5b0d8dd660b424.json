@@ -1,0 +1,8 @@
+{
+ "texte": "{\"statut\": \"reponse\", \"texte\": \"Le film Frankenstein met en vedette Oscar Isaac dans le rôle du Dr Victor Frankenstein et Jacob Elordi dans celui de la Créature [1]. Mia Goth y incarne Elizabeth Harlander et la baronne Claire Frankenstein, tandis que Christoph Waltz joue Henrich Harlander [1].\", \"sources\": [1]}",
+ "tokens_entree": 1171,
+ "tokens_sortie": 76,
+ "tokens_total": 1247,
+ "latence": 4.34270660020411,
+ "modele": "gemini-3.5-flash-lite"
+}

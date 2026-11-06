@@ -1,0 +1,8 @@
+{
+ "texte": "{\"statut\": \"precision\", \"texte\": \"De quelle œuvre parlez-vous ?\", \"sources\": []}",
+ "tokens_entree": 832,
+ "tokens_sortie": 24,
+ "tokens_total": 856,
+ "latence": 1.1681347999256104,
+ "modele": "gemini-3.5-flash-lite"
+}

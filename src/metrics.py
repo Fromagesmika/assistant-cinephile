@@ -51,6 +51,12 @@ def rang_pertinent(passages, cas, avec_fait=True):
     return None
 
 
+def chaque_phrase_citee(texte):
+    """Vrai si chaque phrase contient au moins une citation, [1] ou [1, 4] (exigence du sujet)."""
+    phrases = [p for p in re.split(r"(?<=[.!?…])\s+", texte.strip()) if p]
+    return bool(phrases) and all(re.search(r"\[\s*\d+(\s*,\s*\d+)*\s*\]", p) for p in phrases)
+
+
 def abstention_correcte(sortie):
     return sortie["statut"] == "abstention"
 

@@ -1,0 +1,8 @@
+{
+ "texte": "{\n  \"statut\": \"reponse\",\n  \"texte\": \"Le livre adapté dans Le Salaire de la peur est un roman écrit par Georges Arnaud [1].\",\n  \"sources\": [\n    1\n  ]\n}",
+ "tokens_entree": 1238,
+ "tokens_sortie": 52,
+ "tokens_total": 1290,
+ "latence": 1.4313264000229537,
+ "modele": "gemini-3.5-flash-lite"
+}

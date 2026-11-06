@@ -1,0 +1,8 @@
+{
+ "texte": "{\"statut\": \"abstention\", \"texte\": \"Les extraits fournis ne contiennent pas d'informations sur le nombre de tasses de café bues pendant le tournage de Mon oncle.\", \"sources\": []}",
+ "tokens_entree": 1068,
+ "tokens_sortie": 46,
+ "tokens_total": 1114,
+ "latence": 0.7089190999977291,
+ "modele": "gemini-3.5-flash-lite"
+}

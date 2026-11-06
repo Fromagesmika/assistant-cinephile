@@ -1,0 +1,8 @@
+{
+ "texte": "{\"statut\": \"reponse\", \"texte\": \"Le budget du film Un p'tit truc en plus s'élève à 6 100 000 € [2].\", \"sources\": [2]}",
+ "tokens_entree": 1228,
+ "tokens_sortie": 48,
+ "tokens_total": 1276,
+ "latence": 7.806549099972472,
+ "modele": "gemini-3.5-flash-lite"
+}

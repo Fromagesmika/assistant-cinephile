@@ -1,8 +1,0 @@
-{
- "texte": "{\"statut\": \"abstention\", \"texte\": \"Les extraits ne contiennent pas l'information concernant la pointure de chaussures de Christopher Nolan.\", \"sources\": []}",
- "tokens_entree": 1155,
- "tokens_sortie": 36,
- "tokens_total": 1191,
- "latence": 0.7422400000505149,
- "modele": "gemini-3.5-flash-lite"
-}

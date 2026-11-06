@@ -1,0 +1,8 @@
+{
+ "texte": "{\"statut\": \"abstention\", \"texte\": \"Les extraits ne contiennent pas d'informations sur la couleur de la voiture du monteur de Whiplash pendant le montage.\", \"sources\": []}",
+ "tokens_entree": 1146,
+ "tokens_sortie": 42,
+ "tokens_total": 1188,
+ "latence": 0.801012400072068,
+ "modele": "gemini-3.5-flash-lite"
+}

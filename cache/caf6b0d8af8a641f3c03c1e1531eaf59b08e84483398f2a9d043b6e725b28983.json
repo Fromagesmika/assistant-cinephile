@@ -1,8 +1,0 @@
-{
- "texte": "{\"statut\": \"abstention\", \"texte\": \"Les extraits fournis ne contiennent pas d'information sur le budget du film d'animation Flow.\", \"sources\": []}",
- "tokens_entree": 1158,
- "tokens_sortie": 37,
- "tokens_total": 1195,
- "latence": 2.899017499992624,
- "modele": "gemini-3.5-flash-lite"
-}

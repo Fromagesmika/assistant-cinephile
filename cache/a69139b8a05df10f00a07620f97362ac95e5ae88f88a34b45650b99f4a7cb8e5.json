@@ -1,0 +1,8 @@
+{
+ "texte": "{\"statut\": \"reponse\", \"texte\": \"Une partie du Fabuleux Destin d'Amélie Poulain a été tourné en studio à Cologne [4].\", \"sources\": [4]}",
+ "tokens_entree": 1119,
+ "tokens_sortie": 43,
+ "tokens_total": 1162,
+ "latence": 28.472352899843827,
+ "modele": "gemini-3.5-flash-lite"
+}

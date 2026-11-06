@@ -1,8 +1,0 @@
-{
- "texte": "{\"statut\": \"reponse\", \"texte\": \"Le film Parasite de Bong Joon-ho a une durée de 132 minutes [4].\", \"sources\": [4]}",
- "tokens_entree": 1204,
- "tokens_sortie": 40,
- "tokens_total": 1244,
- "latence": 6.0842999999877065,
- "modele": "gemini-3.5-flash-lite"
-}

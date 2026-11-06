@@ -1,0 +1,8 @@
+{
+ "texte": "{\"statut\": \"reponse\", \"texte\": \"L'auteur du roman adapté dans Le film L'Amour ouf est l'écrivain Neville Thompson [1]. Son roman s'intitule Jackie Loves Johnser OK?, et a été paru en français sous le titre L'Amour ouf [1].\", \"sources\": [1]}",
+ "tokens_entree": 1258,
+ "tokens_sortie": 76,
+ "tokens_total": 1334,
+ "latence": 1.2802929000463337,
+ "modele": "gemini-3.5-flash-lite"
+}

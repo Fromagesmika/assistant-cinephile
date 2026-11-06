@@ -1,0 +1,8 @@
+{
+ "texte": "{\"statut\": \"reponse\", \"texte\": \"Monsieur Arpel est le directeur d'une usine de tuyaux en plastique [1].\", \"sources\": [1]}",
+ "tokens_entree": 1053,
+ "tokens_sortie": 39,
+ "tokens_total": 1092,
+ "latence": 1.6551032001152635,
+ "modele": "gemini-3.5-flash-lite"
+}
