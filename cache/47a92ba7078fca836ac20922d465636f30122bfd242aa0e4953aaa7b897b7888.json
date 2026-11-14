@@ -1,0 +1,34 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TOwC+BqTmFx8Pdnu8H0JMZWEeKy/ZIR2fVMb8btf1Fp+x1Jo8tIUlM+RGHSvzv6TsyUC1BYv5KuuktFkdwJtrFPJmse4ca+Aj/G3tjgwww5Yu0Q7sbVFNy08="
+     }
+    },
+    "function": {
+     "arguments": "{\"titre\":\"Grave\"}",
+     "name": "rechercher_oeuvre"
+    },
+    "id": "call_16350202111339540033",
+    "type": "function"
+   },
+   {
+    "function": {
+     "arguments": "{\"titre\":\"Titane\"}",
+     "name": "rechercher_oeuvre"
+    },
+    "id": "call_16350202111339539620",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1135,
+ "tokens_sortie": 40,
+ "tokens_total": 1175,
+ "latence": 1.194203999999445,
+ "modele": "gemini-3.5-flash-lite"
+}

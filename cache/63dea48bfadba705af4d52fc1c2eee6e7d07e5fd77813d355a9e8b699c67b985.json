@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0Tkqpv7sE6acZ9LqKwga4aCmou93aPEHf06ogitSndtEipkuchY6gn0tspRh1F8zHC5K+6LHmOY0C+YbD/Bh1VYQeIc5NgqMFPNk5UMCm8lAjvC0r6AJjQO04="
+     }
+    },
+    "function": {
+     "arguments": "{\"requete\":\"Adolescence mini-série mise en scène particularité\"}",
+     "name": "rechercher_documents"
+    },
+    "id": "call_12098377771572975420",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1134,
+ "tokens_sortie": 30,
+ "tokens_total": 1164,
+ "latence": 1.719333299988648,
+ "modele": "gemini-3.5-flash-lite"
+}

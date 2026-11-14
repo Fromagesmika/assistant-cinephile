@@ -1,0 +1,17 @@
+{
+ "texte": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"Entre Memories of Murder (sorti en 2003) [11] et Parasite (sorti en 2019) [12], tous deux réalisés par Bong Joon-ho [11, 12], le plus ancien est Memories of Murder (2003) [11]. Il a donc été ajouté à votre liste « à voir ».\",\n  \"sources\": [\n    11,\n    12\n  ]\n}\n```",
+ "message": {
+  "content": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"Entre Memories of Murder (sorti en 2003) [11] et Parasite (sorti en 2019) [12], tous deux réalisés par Bong Joon-ho [11, 12], le plus ancien est Memories of Murder (2003) [11]. Il a donc été ajouté à votre liste « à voir ».\",\n  \"sources\": [\n    11,\n    12\n  ]\n}\n```",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EmAKXgFpFH0TFmY47Sg4fUseAJuNxUYsQYWtqIEDQE8Oebl7GhVyRWYJ3CW6LMfnKh+gfoIbGOV5sOp43ucaTbxKJ0hPuBGITekmhLIU009gtfFMBqRA6rH1Q5bSHBSiuGM="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 2629,
+ "tokens_sortie": 123,
+ "tokens_total": 2752,
+ "latence": 2.384959599992726,
+ "modele": "gemini-3.5-flash-lite"
+}

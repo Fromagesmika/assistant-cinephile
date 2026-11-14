@@ -1,0 +1,17 @@
+{
+ "texte": "{\"statut\": \"reponse\", \"texte\": \"L'action d'ajouter le film « Drive My Car » (2021) à votre liste à voir a été refusée.\", \"sources\": []}",
+ "message": {
+  "content": "{\"statut\": \"reponse\", \"texte\": \"L'action d'ajouter le film « Drive My Car » (2021) à votre liste à voir a été refusée.\", \"sources\": []}",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EmAKXgFpFH0TeXXCy8bBJpKAqqkYvQR9L0KZPkGHJF4qvtbJJaUMYwWQqNPpYIXwokkLr73Zt+ccc/bSWw9AaL1AvOqia6bt0nyO6/kqT6Jj7yFbMD1Cx5sYU3c1WRdZHXY="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 1721,
+ "tokens_sortie": 46,
+ "tokens_total": 1767,
+ "latence": 1.9037888000020757,
+ "modele": "gemini-3.5-flash-lite"
+}

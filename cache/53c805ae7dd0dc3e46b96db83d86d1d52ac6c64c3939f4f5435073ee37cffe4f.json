@@ -1,0 +1,34 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0T1sbDpHRh7vopMcgfs9rQTn5XiBVuJgRNao6wcoUjj3YSPxpPtUbSk83G9Ll7Vr51lDsR1XjRZ2Bbsckaon+IejqFPrwFkMS3JfAsfuf5QBa4kiFS4bqpwqA="
+     }
+    },
+    "function": {
+     "arguments": "{}",
+     "name": "lire_liste"
+    },
+    "id": "call_14618471547798259636",
+    "type": "function"
+   },
+   {
+    "function": {
+     "arguments": "{\"titre\":\"Oppenheimer\"}",
+     "name": "rechercher_oeuvre"
+    },
+    "id": "call_14618471547798259457",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1133,
+ "tokens_sortie": 31,
+ "tokens_total": 1164,
+ "latence": 1.8276405000069644,
+ "modele": "gemini-3.5-flash-lite"
+}

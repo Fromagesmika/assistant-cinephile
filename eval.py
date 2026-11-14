@@ -12,7 +12,8 @@ import json
 from pathlib import Path
 
 from src.juge import juger
-from src.levels import level0, level1
+from src.levels import level0, level1, level2
+from src.liste import ListeAVoir
 from src.metrics import (
     abstention_correcte,
     chaque_phrase_citee,
@@ -25,9 +26,14 @@ from src.metrics import (
 from src.traces import ecrire_trace, vider_traces
 
 RACINE = Path(__file__).resolve().parent
-NIVEAUX = {0: level0, 1: level1}  # on ajoutera 2 et 3 ici au fil des semaines
+NIVEAUX = {0: level0, 1: level1, 2: level2}  # le niveau 3 s'ajoutera ici
 # Les niveaux 0 et 1 n'ont pas d'outils : les tâches en plusieurs étapes ne les concernent pas.
-TYPES_PAR_NIVEAU = {0: {"document", "absent", "ambigu"}, 1: {"document", "absent", "ambigu"}}
+TYPES_PAR_NIVEAU = {
+    0: {"document", "absent", "ambigu"},
+    1: {"document", "absent", "ambigu"},
+    2: {"document", "absent", "ambigu", "tache"},
+}
+ESSAIS_TACHE = 3  # pass^3 : une tâche n'est réussie que si ses 3 essais indépendants réussissent
 
 
 def charger_tests():
@@ -50,9 +56,12 @@ def mesures_rag(sortie, cas):
     """Mesures propres aux niveaux qui consultent des documents (cas `document` seulement)."""
     if cas["type"] != "document" or "passages" not in sortie:
         return {}
+    # Recall@5 et MRR portent sur les 5 extraits d'une recherche. L'agent peut en lancer
+    # plusieurs (ou aucune) : on retient la première, et l'absence de recherche compte comme un échec.
+    recherche = sortie.get("passages_recherche", sortie["passages"])
     mesures = {
-        "rang": rang_pertinent(sortie["passages"], cas, avec_fait=True),
-        "rang_page": rang_pertinent(sortie["passages"], cas, avec_fait=False),
+        "rang": rang_pertinent(recherche, cas, avec_fait=True),
+        "rang_page": rang_pertinent(recherche, cas, avec_fait=False),
     }
     if sortie["statut"] == "reponse":
         fidele, detail, tokens_juge = juger(cas["question"], sortie["texte"], sortie["passages"])
@@ -66,12 +75,53 @@ def mesures_rag(sortie, cas):
     return mesures
 
 
+def etat_final_correct(liste, cas):
+    """Tâche réussie si la liste contient exactement les œuvres attendues (vérifié par le code)."""
+    return liste.identifiants() == sorted(f["tmdb_id"] for f in cas["etat_final"])
+
+
+def evaluer_tache(numero, module, cas):
+    """Lance ESSAIS_TACHE essais indépendants, chacun sur une liste remise à l'état initial.
+
+    L'utilisateur est simulé : il accepte ou refuse chaque type d'action comme le prévoit le cas.
+    """
+    essais = []
+    for essai in range(ESSAIS_TACHE):
+        liste = ListeAVoir(cas["etat_initial"])
+        confirmer = lambda action: cas["confirmations"][action["type"]] == "accepter"
+        sortie = module.repondre(cas["question"], essai=essai, liste=liste, confirmer=confirmer)
+        essais.append((sortie, etat_final_correct(liste, cas)))
+        ecrire_trace(numero, {"id": f"{cas['id']}#{essai}", **sortie})
+    sorties = [s for s, _ in essais]
+    succes = [ok for _, ok in essais]
+    print(f"  [{'ok' if all(succes) else 'KO'}] {cas['id']} essais {''.join('1' if ok else '0' for ok in succes)} "
+          f"({moyenne(s['tokens'] for s in sorties):.0f} tokens)", flush=True)
+    return {
+        "id": cas["id"],
+        "type": cas["type"],
+        "strate": None,
+        "critere": "tache",
+        "reussi": all(succes),
+        "succes_essais": succes,
+        "question": cas["question"],
+        "statut": sorties[0]["statut"],
+        "reponse": sorties[0]["texte"],
+        "sources": sorties[0]["sources"],
+        "listes_finales": [s["liste_finale"] for s in sorties],
+        "tokens": moyenne(s["tokens"] for s in sorties),
+        "latence": round(moyenne(s["latence"] for s in sorties), 3),
+    }
+
+
 def evaluer_niveau(numero, tests):
     module = NIVEAUX[numero]
     vider_traces(numero)
     lignes = []
     for cas in tests:
         if cas["type"] not in TYPES_PAR_NIVEAU[numero]:
+            continue
+        if cas["type"] == "tache":
+            lignes.append(evaluer_tache(numero, module, cas))
             continue
         sortie = module.repondre(cas["question"])
         critere, reussi = noter(sortie, cas)
@@ -136,13 +186,17 @@ def tableau(resultats):
             f"| {titres[numero]} | {pourcent(recall)} | {'—' if mrr is None else f'{mrr:.3f}'} "
             f"| {pourcent(taux(lignes, 'exactitude'))} | {pourcent(moyenne(citees))} | {pourcent(moyenne(phrases))} "
             f"| {pourcent(moyenne(fideles))} "
-            f"| {pourcent(taux(lignes, 'abstention'))} | {pourcent(taux(lignes, 'precision_refus'))} | — | — "
+            f"| {pourcent(taux(lignes, 'abstention'))} | {pourcent(taux(lignes, 'precision_refus'))} "
+            f"| {pourcent(moyenne(ok for l in lignes for ok in l.get('succes_essais', [])))} "
+            f"| {pourcent(taux(lignes, 'tache'))} "
             f"| {moyenne(l['tokens'] for l in lignes):.0f} | {moyenne(l['latence'] for l in lignes):.2f} |"
         )
     sortie += [
         "",
         "Source citée, phrases citées et fidélité portent sur les réponses données aux cas `document`. "
         "La fidélité vient du juge LLM (voir results/calibration_juge.md pour sa fiabilité).",
+        f"Succès tâches : part des {ESSAIS_TACHE} × 10 essais dont l'état final de la liste est correct ; "
+        f"pass^3 : part des tâches réussies aux {ESSAIS_TACHE} essais.",
         "",
         "Exactitude par strate :",
         "",

@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0Toa5hcU9s63FKHSYcmZWynRJmEWj9RJhbQiFbYokV1BfECHHj5CRtDe+4Q8LdCOc9ILO1AFV9/pRzYLhYovo2N6h8gWBZbR0cWogKnrj+JUN5R4TEbF6MWI4="
+     }
+    },
+    "function": {
+     "arguments": "{\"type\":\"film\",\"titre\":\"Les Horloges de Valparaíso\"}",
+     "name": "rechercher_oeuvre"
+    },
+    "id": "call_8592544877844728609",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1131,
+ "tokens_sortie": 32,
+ "tokens_total": 1163,
+ "latence": 2.1903389999934006,
+ "modele": "gemini-3.5-flash-lite"
+}

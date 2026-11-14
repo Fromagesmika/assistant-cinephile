@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TxIVu4Hve6luMMLy2BLFeeGFAZglCf9Eyo+rNIcP5PwE9x286TgiE64xLYJoeoNXSNaTdy7YxciaLvM0ZcZzWzN6talGdewT6RJVd/0S2AlmiqF1RiofSkqY="
+     }
+    },
+    "function": {
+     "arguments": "{\"requete\":\"Le Salaire de la peur Clouzot auteur livre romancier\"}",
+     "name": "rechercher_documents"
+    },
+    "id": "call_6025965541888430560",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1136,
+ "tokens_sortie": 32,
+ "tokens_total": 1168,
+ "latence": 2.4189157000218984,
+ "modele": "gemini-3.5-flash-lite"
+}

@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0Te2+NvpfHpawOezQ46gPrORT8wdIrLBUC66Eeqxa2ZMUB1Ok8I67nd60SmbP4NRdP0CQyWfkaqKeY1+0ByEP1+5pPRl2XlJWPVswNV6kmnK1zjy9z/up9wp8="
+     }
+    },
+    "function": {
+     "arguments": "{\"requete\":\"Un p'tit truc en plus Artus budget\"}",
+     "name": "rechercher_documents"
+    },
+    "id": "call_1309539888472379460",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1131,
+ "tokens_sortie": 28,
+ "tokens_total": 1159,
+ "latence": 1.531039299996337,
+ "modele": "gemini-3.5-flash-lite"
+}

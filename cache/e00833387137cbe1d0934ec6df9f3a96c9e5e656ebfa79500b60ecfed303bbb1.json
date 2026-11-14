@@ -1,0 +1,17 @@
+{
+ "texte": "```json\n{\"statut\": \"abstention\", \"texte\": \"Je ne dispose pas d'informations sur le nombre de tasses de café bues pendant le tournage du film Mon oncle de Jacques Tati.\", \"sources\": []}\n```",
+ "message": {
+  "content": "```json\n{\"statut\": \"abstention\", \"texte\": \"Je ne dispose pas d'informations sur le nombre de tasses de café bues pendant le tournage du film Mon oncle de Jacques Tati.\", \"sources\": []}\n```",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EmAKXgFpFH0TUu6soeQmyOGoXnYhC+wCI36tPdlLi5agBES3TeD1ziPde1SPVTtO8VLkcfoGAgowfEJ8eOfvLL1mu+ifuc13VnZbwGRsGOCZN/QlNxq/XPWHK24AZeayXvE="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 2939,
+ "tokens_sortie": 53,
+ "tokens_total": 2992,
+ "latence": 1.8294896000006702,
+ "modele": "gemini-3.5-flash-lite"
+}

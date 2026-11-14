@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TFkTMGLl1QtU9OO8JqgyQjO0zTrrvi4zUI2iWcEtGUqXsOaKWQr1aMdQ8d9bpLAqMpY3uIGVh+La/v/wJrHCmDA61l2qblgStvzwpAD+sw+pdIFL1untCAHU="
+     }
+    },
+    "function": {
+     "arguments": "{\"requete\":\"Mon oncle Jacques Tati tasses de café tournage\"}",
+     "name": "rechercher_documents"
+    },
+    "id": "call_13049161950804999190",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1137,
+ "tokens_sortie": 30,
+ "tokens_total": 1167,
+ "latence": 1.7223957999958657,
+ "modele": "gemini-3.5-flash-lite"
+}

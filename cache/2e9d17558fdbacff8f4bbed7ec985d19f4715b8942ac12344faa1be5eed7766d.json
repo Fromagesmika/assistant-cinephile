@@ -1,0 +1,17 @@
+{
+ "texte": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"La musique du film Valeur sentimentale de Joachim Trier a été composée par Hania Rani [2].\",\n  \"sources\": [2]\n}\n```",
+ "message": {
+  "content": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"La musique du film Valeur sentimentale de Joachim Trier a été composée par Hania Rani [2].\",\n  \"sources\": [2]\n}\n```",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EmAKXgFpFH0TSdq5iE3PIY4dukprGHUxkIGAhh2WwiXUZ8Fne8e4XJWghAlPYrtIB/772e7Y0fSPjNPq6iD8At4zk26S+9xlH9VL1tpajrGFX41ommZ2/OrefpCF86vWr/M="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 2284,
+ "tokens_sortie": 54,
+ "tokens_total": 2338,
+ "latence": 2.2416316000162624,
+ "modele": "gemini-3.5-flash-lite"
+}

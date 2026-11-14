@@ -1,0 +1,17 @@
+{
+ "texte": "{\"statut\": \"precision\", \"texte\": \"Il existe plusieurs adaptations cinématographiques intitulées Frankenstein (comme celle de 1931 ou celle de 1994). De quel film s'agit-il ?\", \"sources\": []}",
+ "message": {
+  "content": "{\"statut\": \"precision\", \"texte\": \"Il existe plusieurs adaptations cinématographiques intitulées Frankenstein (comme celle de 1931 ou celle de 1994). De quel film s'agit-il ?\", \"sources\": []}",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EmAKXgFpFH0TWsbkvEWBRNo7Q89ZTTP2auu7HVFFI5DcktFOsNmUdOnbz2lXVNyH0n54JOcnQnfjaN9HEZPaAk0+r+L+fzi59WmZIyB0kJBgWwpuoF3lOxkCHQV6OBTuWWw="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 1695,
+ "tokens_sortie": 53,
+ "tokens_total": 1748,
+ "latence": 1.9998201000271365,
+ "modele": "gemini-3.5-flash-lite"
+}

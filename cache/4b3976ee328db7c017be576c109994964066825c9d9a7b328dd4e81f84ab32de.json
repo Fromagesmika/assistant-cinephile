@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TzOcBdPieErD4vy7qvl14H3jTOwgKlhGuK3HpPz25kxnI17aIu69PoGLYycOQYyIGh9qO9oGhjYlmpyduqvB8pVPHSIFoF7pduUG96rTVW8HCxO1mWRLGX/g="
+     }
+    },
+    "function": {
+     "arguments": "{\"requete\":\"date action film Cleo de 5 a 7 21 juin\"}",
+     "name": "rechercher_documents"
+    },
+    "id": "call_1929049434557801613",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 2054,
+ "tokens_sortie": 33,
+ "tokens_total": 2087,
+ "latence": 1.8038904999848455,
+ "modele": "gemini-3.5-flash-lite"
+}

@@ -1,0 +1,34 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TRDPwlwlkztU2pnD1aJ25HzTVK2HES/wXweBPb10tBAZVodxTAtyieBiOA3AONBoyw3j1ArlzqzvstH5L10rWVjxw8Pr2LP6LiqQV87ZR7DuDsQCf6iVf9fY="
+     }
+    },
+    "function": {
+     "arguments": "{\"titre\":\"Fight Club\"}",
+     "name": "rechercher_oeuvre"
+    },
+    "id": "call_10938085694995461702",
+    "type": "function"
+   },
+   {
+    "function": {
+     "arguments": "{\"titre\":\"Seven\"}",
+     "name": "rechercher_oeuvre"
+    },
+    "id": "call_10938085694995461505",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1126,
+ "tokens_sortie": 39,
+ "tokens_total": 1165,
+ "latence": 1.6885972000018228,
+ "modele": "gemini-3.5-flash-lite"
+}

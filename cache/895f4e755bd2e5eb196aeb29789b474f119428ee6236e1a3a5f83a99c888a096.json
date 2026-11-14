@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TRyqKdVb0hQGHicnC/UOS+GLe8ScF3kCBJsA9MYErK02wb19fzZ4F9FTXnG5eUjzqupqLR/h89ZDIc+ML7+DIPW/2hOL7BEUvK/1u+cDhs7qPJFd53YRvkPI="
+     }
+    },
+    "function": {
+     "arguments": "{\"requete\":\"Une bataille après l'autre Thomas Pynchon roman\"}",
+     "name": "rechercher_documents"
+    },
+    "id": "call_3285959550481863749",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1131,
+ "tokens_sortie": 29,
+ "tokens_total": 1160,
+ "latence": 1.6354768000019249,
+ "modele": "gemini-3.5-flash-lite"
+}

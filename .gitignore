@@ -14,3 +14,6 @@ video/node_modules/
 data/index/*
 !data/index/e5_800_100.npy
 cache/requetes/minilm.json
+
+# Liste « à voir » partagée : état de l'application, pas une donnée du projet
+data/liste_a_voir.json

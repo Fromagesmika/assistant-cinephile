@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TQZlJSQ48fGZgxKH222vI0PeXZ6jzggSjdVjr5v7jreL+fP8wF5RP6vmnammkJrPl/lt3+hiHvhklH4jHuOb9WCjY6gfkgyO96afbptqqLcM3RYlArk48VOQ="
+     }
+    },
+    "function": {
+     "arguments": "{\"requete\":\"voiture monteur Whiplash montage couleur\"}",
+     "name": "rechercher_documents"
+    },
+    "id": "call_393809829233184384",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1130,
+ "tokens_sortie": 26,
+ "tokens_total": 1156,
+ "latence": 1.2568757999979425,
+ "modele": "gemini-3.5-flash-lite"
+}

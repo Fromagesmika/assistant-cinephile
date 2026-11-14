@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TPVBYIY8D/LUp5Ampy584P7SsNC2ODgJd7lQHIt4FCtsep+9P+Sx+uDpv60OD++AV2JeETTcGd453UyKxElefwl/F60wdhXxB70F5YuX97UmVLQ6hsjjbpzk="
+     }
+    },
+    "function": {
+     "arguments": "{\"requete\":\"\\\"Le Fabuleux Destin d'Amélie Poulain\\\" \\\"studio\\\" OU \\\"Cologne\\\" OU \\\"Berlin\\\" OU \\\"Babelsberg\\\"\"}",
+     "name": "rechercher_documents"
+    },
+    "id": "call_10986457178974028774",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 3663,
+ "tokens_sortie": 50,
+ "tokens_total": 3713,
+ "latence": 2.752081000013277,
+ "modele": "gemini-3.5-flash-lite"
+}

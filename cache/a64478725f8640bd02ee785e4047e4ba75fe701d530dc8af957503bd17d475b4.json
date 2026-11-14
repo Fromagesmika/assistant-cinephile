@@ -1,0 +1,17 @@
+{
+ "texte": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"Tous les films ont bien été retirés de votre liste à voir.\",\n  \"sources\": []\n}\n```",
+ "message": {
+  "content": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"Tous les films ont bien été retirés de votre liste à voir.\",\n  \"sources\": []\n}\n```",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EmAKXgFpFH0TJMvJWZXkuSONwopW45JD4Y9qM8mprHRSzDW3MZmdNbxaez2J7WyCHcPhl996bE308kV6ZhnORb8AFplhQeDUQ4RkfeHv0/A4rGcy42FI5LGv8BaNWa/vRIw="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 1355,
+ "tokens_sortie": 44,
+ "tokens_total": 1399,
+ "latence": 1.8352467000077013,
+ "modele": "gemini-3.5-flash-lite"
+}

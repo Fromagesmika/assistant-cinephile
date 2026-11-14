@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0T2MSjO8prfknEsjnoe0YlsWJ/Sh9Mds+7gMbTTq8WvFVvbzUn3JpZxWVCZmPScHXD9PFB+1G4s2JOphVHiP+qOAB2njjlxPZLpHVgPjpZBvOGfgIlD+Smz50="
+     }
+    },
+    "function": {
+     "arguments": "{\"requete\":\"Valeur sentimentale Joachim Trier musique compositeur\"}",
+     "name": "rechercher_documents"
+    },
+    "id": "call_13763796059868346946",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1127,
+ "tokens_sortie": 27,
+ "tokens_total": 1154,
+ "latence": 1.6210830000054557,
+ "modele": "gemini-3.5-flash-lite"
+}

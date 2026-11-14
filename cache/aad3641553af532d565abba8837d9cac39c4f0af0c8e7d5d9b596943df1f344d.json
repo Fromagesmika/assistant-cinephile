@@ -1,0 +1,17 @@
+{
+ "texte": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"L'écrivain irlandais Neville Thompson est l'auteur du roman dont est adapté le film L'Amour ouf de Gilles Lellouche [1, 4].\",\n  \"sources\": [1, 4]\n}\n```",
+ "message": {
+  "content": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"L'écrivain irlandais Neville Thompson est l'auteur du roman dont est adapté le film L'Amour ouf de Gilles Lellouche [1, 4].\",\n  \"sources\": [1, 4]\n}\n```",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EmAKXgFpFH0TqVh6lwteNr5OjU8EEGUwVpuK5S5FM0RofTxtTH3hmn70OMyjJnfz/DS2HiQRxs5c7bGAlHe2pKYPrKRZ+ocsjvqSLrjZDxK/S/CT96xxzFGSw72HvUf5Be8="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 2175,
+ "tokens_sortie": 73,
+ "tokens_total": 2248,
+ "latence": 2.0744109000079334,
+ "modele": "gemini-3.5-flash-lite"
+}

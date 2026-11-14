@@ -1,0 +1,17 @@
+{
+ "texte": "```json\n{\"statut\": \"abstention\", \"texte\": \"Je ne dispose d'aucune information sur la couleur de la voiture du monteur de Whiplash pendant le montage.\", \"sources\": []}\n```",
+ "message": {
+  "content": "```json\n{\"statut\": \"abstention\", \"texte\": \"Je ne dispose d'aucune information sur la couleur de la voiture du monteur de Whiplash pendant le montage.\", \"sources\": []}\n```",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EmAKXgFpFH0TEZbU+n49qzKBCl4raOrrqIyfYCi63EvBCLMNkO5Z88FDwHZclhyes2UHlbiryCsxHJZAfeJ175nfc4UDKqMtlfm5rSNmDkj67ki/rB/18IdYDBFBAg9WnuI="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 3011,
+ "tokens_sortie": 45,
+ "tokens_total": 3056,
+ "latence": 1.5391643999901135,
+ "modele": "gemini-3.5-flash-lite"
+}

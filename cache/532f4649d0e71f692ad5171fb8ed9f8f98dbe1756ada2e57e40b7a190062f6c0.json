@@ -1,0 +1,34 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TBXycDwuc4GE7Valg9/6Dhy2q+tkanKFmZ+tDLWGq22UfM8nlGQ9IrO3pVrXC4jtmUNmbUDljRyTnnSfZnfElwUtYHUKzH6senf7xizTeD6/RhHzpKhrP62w="
+     }
+    },
+    "function": {
+     "arguments": "{\"requete\":\"Parasite film 2019 realisation\"}",
+     "name": "rechercher_documents"
+    },
+    "id": "call_1658450789104893482",
+    "type": "function"
+   },
+   {
+    "function": {
+     "arguments": "{\"titre\":\"Mickey 17\"}",
+     "name": "rechercher_oeuvre"
+    },
+    "id": "call_1658450789104891247",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1140,
+ "tokens_sortie": 50,
+ "tokens_total": 1190,
+ "latence": 1.6474302999849897,
+ "modele": "gemini-3.5-flash-lite"
+}

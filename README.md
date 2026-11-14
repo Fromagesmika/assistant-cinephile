@@ -8,7 +8,7 @@ sur le même protocole de test.
 |---|---|---|
 | 0 | LLM seul | Évalué (37 cas) |
 | 1 | RAG, sources citées, abstention | Évalué (37 cas), juge calibré (95 % d'accord sur 20 cas) |
-| 2 | Agent outillé, confirmation des actions | Semaine 3 |
+| 2 | Agent outillé (7 outils), confirmation des actions | Évalué (37 cas + 10 tâches × 3 essais) |
 | 3 | Extension mesurée | Semaine 4 |
 
 ## Installation
@@ -52,6 +52,8 @@ Le tableau est écrit dans `results/tableau.md`. Les réponses déjà obtenues s
 | `src/levels/` | Un fichier par niveau |
 | `src/rag.py` | Découpage, index de vecteurs et recherche |
 | `src/juge.py` | Juge LLM de fidélité aux sources |
+| `src/tmdb.py` | Accès à l'API TMDB, avec cache (`cache/tmdb/`) |
+| `src/liste.py` | Liste « à voir » et règles métier vérifiées par le code |
 | `data/index/` | Vecteurs des passages (configuration retenue) |
 | `scripts/` | Corpus, contrôle des clés et des tests, comparaison de la recherche, calibration du juge |
 | `results/`, `traces/` | Résultats bruts et traces |

@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TX9KPyTIG/xPH/e48h0tmZFnrBB82YcmcHFvr7vqNe4efPM9fMlP8w2/Yd9CK4kHKTulmfcL6olclokbQ+0WNiAW0MNtWFMfrxO/ornDauVcvZYP+NPhdJZE="
+     }
+    },
+    "function": {
+     "arguments": "{\"requete\":\"La Haine Mathieu Kassovitz musique groupe\"}",
+     "name": "rechercher_documents"
+    },
+    "id": "call_11736575963928439950",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1132,
+ "tokens_sortie": 27,
+ "tokens_total": 1159,
+ "latence": 2.0560889999906067,
+ "modele": "gemini-3.5-flash-lite"
+}

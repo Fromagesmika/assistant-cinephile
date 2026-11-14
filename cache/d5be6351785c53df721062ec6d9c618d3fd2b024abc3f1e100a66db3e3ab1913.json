@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TJ2TjWo83KkwNT2mCw/ME5NysTS6zrpqEHrZuBm/Fp7itwS1W4giCB+YX+f6+lTZcPcxEqggquq5z4/YYQYBh9WYgSUbGECe4BzPJQeBVEA/7kW/HzevUvoo="
+     }
+    },
+    "function": {
+     "arguments": "{\"requete\":\"Un simple accident Jafar Panahi festival de Cannes 2025\"}",
+     "name": "rechercher_documents"
+    },
+    "id": "call_1373633330758973457",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1141,
+ "tokens_sortie": 33,
+ "tokens_total": 1174,
+ "latence": 1.5831165999989025,
+ "modele": "gemini-3.5-flash-lite"
+}

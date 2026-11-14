@@ -1,0 +1,17 @@
+{
+ "texte": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"La musique du film Sirāt d'Óliver Laxe a été composée par Kangding Ray [1].\",\n  \"sources\": [1]\n}\n```",
+ "message": {
+  "content": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"La musique du film Sirāt d'Óliver Laxe a été composée par Kangding Ray [1].\",\n  \"sources\": [1]\n}\n```",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EmAKXgFpFH0TC+CIOdF4me30C/gk8/TqmPh7KRqLx7H65k4Zf59Jgzskz2CDBFj/bfZ+Jl+/12CHWAajvF7qTfUYga9rxnHDHkCJOFpSiVGjakWssCufEzdVpRnAFJJQItU="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 2010,
+ "tokens_sortie": 55,
+ "tokens_total": 2065,
+ "latence": 2.126891500025522,
+ "modele": "gemini-3.5-flash-lite"
+}

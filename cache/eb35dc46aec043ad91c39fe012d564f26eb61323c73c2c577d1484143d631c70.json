@@ -1,0 +1,17 @@
+{
+ "texte": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"Le footballeur Just Fontaine a inspiré à Francis Veber le choix du prénom de « Juste Leblanc » [1].\",\n  \"sources\": [1]\n}\n```",
+ "message": {
+  "content": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"Le footballeur Just Fontaine a inspiré à Francis Veber le choix du prénom de « Juste Leblanc » [1].\",\n  \"sources\": [1]\n}\n```",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EmAKXgFpFH0TYFux4ZuqxR3wTKtg+Q0RJg8Q+9tTUPW66WzwupU0kJIYSRpOfmoOo86Omy/gT4dmuNzDTc4lqO6o+/5xF3mg9ST+z0O7HYsoi33uBzknxqdgOOaa/QIVBwY="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 2262,
+ "tokens_sortie": 60,
+ "tokens_total": 2322,
+ "latence": 1.4075563999940641,
+ "modele": "gemini-3.5-flash-lite"
+}

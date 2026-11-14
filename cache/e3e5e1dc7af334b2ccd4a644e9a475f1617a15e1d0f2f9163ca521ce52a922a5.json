@@ -1,0 +1,17 @@
+{
+ "texte": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"J'ai retiré *Titanic* (1997) de votre liste à voir et j'y ai ajouté *Interstellar* (2014) à sa place.\",\n  \"sources\": []\n}\n```",
+ "message": {
+  "content": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"J'ai retiré *Titanic* (1997) de votre liste à voir et j'y ai ajouté *Interstellar* (2014) à sa place.\",\n  \"sources\": []\n}\n```",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EmAKXgFpFH0TxK4VqW50CoEh8SMdu5aYGvLsTZ1gLc+R5zNFKtYcXqctn/9+VY48J6SQc/iVDaUiG1/ZSyEe87tNQoPcNhB185AZfbSSS1ati1qWjwUte7t9SMPfizNlhtk="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 2505,
+ "tokens_sortie": 69,
+ "tokens_total": 2574,
+ "latence": 1.3900200999923982,
+ "modele": "gemini-3.5-flash-lite"
+}

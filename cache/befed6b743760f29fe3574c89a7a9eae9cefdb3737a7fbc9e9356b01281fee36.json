@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TI9vwXVogiAihpHvu/RrsVkb6yUTVV1e0ouASyvvQWVi8uzqYcyugMIkDLgAK+SqVm6O9nW/gGgSJ5jw6iMEhufCyT7wc+p+OwFVsRPuCTHpkjD0jzZJqszA="
+     }
+    },
+    "function": {
+     "arguments": "{\"requete\":\"Le Bureau des légendes nombre d'épisodes\"}",
+     "name": "rechercher_documents"
+    },
+    "id": "call_8212485471705697824",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1128,
+ "tokens_sortie": 28,
+ "tokens_total": 1156,
+ "latence": 2.4227177999855485,
+ "modele": "gemini-3.5-flash-lite"
+}

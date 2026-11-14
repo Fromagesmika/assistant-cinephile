@@ -1,0 +1,17 @@
+{
+ "texte": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"La série Le Bureau des légendes compte cinquante épisodes répartis sur cinq saisons [3].\",\n  \"sources\": [3]\n}\n```",
+ "message": {
+  "content": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"La série Le Bureau des légendes compte cinquante épisodes répartis sur cinq saisons [3].\",\n  \"sources\": [3]\n}\n```",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EmAKXgFpFH0TPDYinttkzSOLCNv/Kexf3qNqXW928lhr7DnzV5O/g+kqXK8ehPNinU2Q6jjhPvnzQx/byAf/pTKx2hfghz/BiYA8qmBIsYvuGV9PGALya/XDr7zZAIlg2sw="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 1829,
+ "tokens_sortie": 53,
+ "tokens_total": 1882,
+ "latence": 1.7197397999989334,
+ "modele": "gemini-3.5-flash-lite"
+}

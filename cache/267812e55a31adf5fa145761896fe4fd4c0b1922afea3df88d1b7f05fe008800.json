@@ -1,0 +1,17 @@
+{
+ "texte": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"J'ai ajouté les films *Grave* (2017) et *Titane* (2021) de Julia Ducournau à votre liste à voir.\",\n  \"sources\": []\n}\n```",
+ "message": {
+  "content": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"J'ai ajouté les films *Grave* (2017) et *Titane* (2021) de Julia Ducournau à votre liste à voir.\",\n  \"sources\": []\n}\n```",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EmAKXgFpFH0TgZIZfKwONrkBKo+w/HL9aNgy9tqid4bPRwYygQGPKmaDMmGl7o2xJgYhlC3HtRSYYmF5j+1fC+7PT7PqVqsMDWgcj0W9aFNc+cs0dyaBncXtFkjeiM/mW90="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 2614,
+ "tokens_sortie": 68,
+ "tokens_total": 2682,
+ "latence": 1.738790000003064,
+ "modele": "gemini-3.5-flash-lite"
+}

@@ -1,0 +1,17 @@
+{
+ "texte": "{\"statut\": \"reponse\", \"texte\": \"J'ai ajouté Fight Club à la liste à voir. Cependant, le retrait de Seven n'a pas pu être effectué car l'action a été refusée.\", \"sources\": []}",
+ "message": {
+  "content": "{\"statut\": \"reponse\", \"texte\": \"J'ai ajouté Fight Club à la liste à voir. Cependant, le retrait de Seven n'a pas pu être effectué car l'action a été refusée.\", \"sources\": []}",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EmAKXgFpFH0Tj0Q80PxTqXoajwME792HrR1PjV3TuB4kqR/uTf3NZLCRn3DtuLRDE4YyMmWsnyFd/fNGqmnaguRAe6SAMK0Jgmv7dv3GrTUTT/UfLsNgNoIIdcL5LdUQgUc="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 2599,
+ "tokens_sortie": 51,
+ "tokens_total": 2650,
+ "latence": 1.9652568000019528,
+ "modele": "gemini-3.5-flash-lite"
+}

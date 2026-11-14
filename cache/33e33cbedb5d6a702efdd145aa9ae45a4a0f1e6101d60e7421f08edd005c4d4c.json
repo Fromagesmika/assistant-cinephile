@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TIgPR1Uys/27MVO7jzrqrmu+/q0tlCd3q8W+J2PPsfqKizB/Z1KTaYrd5dbWVHOLNS7LU96n9HHEPFosSTT4//qE4hDrkQBJU2GtFCO+8FDNg5u7q0XiqkMg="
+     }
+    },
+    "function": {
+     "arguments": "{\"requete\":\"La Tortue rouge film ecrit par realisé par\"}",
+     "name": "rechercher_documents"
+    },
+    "id": "call_7667421779504052269",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1447,
+ "tokens_sortie": 29,
+ "tokens_total": 1476,
+ "latence": 1.2199907999893185,
+ "modele": "gemini-3.5-flash-lite"
+}

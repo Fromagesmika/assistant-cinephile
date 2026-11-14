@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TIanCjpEOJa8N+p1+nyeIvDGy0ekdFOdEPqcv6Hf/ln7JVYTy70jklw4B0jFYtPb3StHv/s2VJWmWL53IascCG8C5a/JzJINYNhkTZcIyJBfLqXJZfgNZI5s="
+     }
+    },
+    "function": {
+     "arguments": "{}",
+     "name": "lire_liste"
+    },
+    "id": "call_13001181396113580599",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1124,
+ "tokens_sortie": 10,
+ "tokens_total": 1134,
+ "latence": 1.7603929000033531,
+ "modele": "gemini-3.5-flash-lite"
+}

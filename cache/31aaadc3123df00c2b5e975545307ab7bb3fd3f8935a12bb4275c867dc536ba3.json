@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TRnz0WSW2oVO/SykVCrP/w1nYoxu5c1HwNO8qV/Z5OZPKGbbGJJSBITM3hL0LRugIRJn1268WizGb47DNEpL7u+8idwlvJY6BlB0jgLHv+3mq2L1ECx4VvyE="
+     }
+    },
+    "function": {
+     "arguments": "{\"titre\":\"Frankenstein\"}",
+     "name": "rechercher_oeuvre"
+    },
+    "id": "call_7243701577270952089",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1118,
+ "tokens_sortie": 20,
+ "tokens_total": 1138,
+ "latence": 2.3893080000125337,
+ "modele": "gemini-3.5-flash-lite"
+}

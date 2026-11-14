@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TZE6m9oCNCEJtcDyGgUCJUk0JuePRQ7/dLyxaIZOHhcsaXUotSn9Tt+B5ea2nmH91JsmDQyFAy3m8FQXj+AHRWUq0RErrM0SZy4ECnukH7Wr2Mbqzpv5K1DQ="
+     }
+    },
+    "function": {
+     "arguments": "{\"requete\":\"Christopher Nolan pointure de chaussures tournage Inception\"}",
+     "name": "rechercher_documents"
+    },
+    "id": "call_5061400736884685421",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1133,
+ "tokens_sortie": 28,
+ "tokens_total": 1161,
+ "latence": 1.6549567999900319,
+ "modele": "gemini-3.5-flash-lite"
+}

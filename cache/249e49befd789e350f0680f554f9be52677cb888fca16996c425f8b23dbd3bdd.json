@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0Tt/aLfRidEGRksfP7hbpw1UFLvhRIqMm6U/PBL/3/LZMt29e+ObB1H3/4S5+KuyIojmCg4mzYZrX+FCfmM1Ot5QCb/cMhuAx4ht5NNj48GQEjrC2plV3E5UA="
+     }
+    },
+    "function": {
+     "arguments": "{\"requete\":\"Flow film d'animation Gints Zilbalodis budget\"}",
+     "name": "rechercher_documents"
+    },
+    "id": "call_14238940315790153160",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1130,
+ "tokens_sortie": 29,
+ "tokens_total": 1159,
+ "latence": 1.6510245999961626,
+ "modele": "gemini-3.5-flash-lite"
+}

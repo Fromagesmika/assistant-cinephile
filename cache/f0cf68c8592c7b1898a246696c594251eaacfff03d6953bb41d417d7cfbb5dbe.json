@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0THY1/pJxxg0SV1rAdfBrtK9/7IanJlVLz5mP1+EFEn4DT2rzWE1NOsYLP8kdJhduFu/PdkYDVe/0Atk7Yyjk+rGWf1yevBmKJAWkN2suwLBuPUE8ZAWVPoY8="
+     }
+    },
+    "function": {
+     "arguments": "{\"titre\":\"La Tortue rouge\"}",
+     "name": "rechercher_oeuvre"
+    },
+    "id": "call_11647957279756783402",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1128,
+ "tokens_sortie": 22,
+ "tokens_total": 1150,
+ "latence": 1.5211063000024296,
+ "modele": "gemini-3.5-flash-lite"
+}

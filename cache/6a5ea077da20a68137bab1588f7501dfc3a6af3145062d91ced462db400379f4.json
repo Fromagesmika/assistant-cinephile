@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TJnAyw5W13AZY15XRq89cPaAPt1jS5B1NML0hi8et8xYP5hMF0FTejbfHE1OszojXpQSdyV+fEzYeAYipkeBFLeR9hxfHo7AV8+wk05vWMZGoAEu8jvHkDsM="
+     }
+    },
+    "function": {
+     "arguments": "{\"requete\":\"prix d interpretation feminine Cannes 2025 La Petite Derniere\"}",
+     "name": "rechercher_documents"
+    },
+    "id": "call_9214801766225247955",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1136,
+ "tokens_sortie": 32,
+ "tokens_total": 1168,
+ "latence": 1.7751749999879394,
+ "modele": "gemini-3.5-flash-lite"
+}

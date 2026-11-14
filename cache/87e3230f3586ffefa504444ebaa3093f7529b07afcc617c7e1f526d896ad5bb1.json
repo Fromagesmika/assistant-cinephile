@@ -1,0 +1,34 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0Tv13Q/LM3DbKmT3ooM8fu6Hqj/6PYGxy20iXfSTtdooNVfkclCHaYl6uwe3alG22qUOlQECeT0Ltl2rxqxfmpi0EHOdvctsxhhS0K2dOcHCvaqeOD2NNV140="
+     }
+    },
+    "function": {
+     "arguments": "{\"requete\":\"Parasite 2019 réalisation\"}",
+     "name": "rechercher_documents"
+    },
+    "id": "call_936344532261028918",
+    "type": "function"
+   },
+   {
+    "function": {
+     "arguments": "{\"annee\":2025,\"titre\":\"Mickey 17\"}",
+     "name": "rechercher_oeuvre"
+    },
+    "id": "call_936344532261029295",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1140,
+ "tokens_sortie": 57,
+ "tokens_total": 1197,
+ "latence": 1.39833169998019,
+ "modele": "gemini-3.5-flash-lite"
+}

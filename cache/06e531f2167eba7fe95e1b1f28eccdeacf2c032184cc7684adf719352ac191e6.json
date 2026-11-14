@@ -1,0 +1,17 @@
+{
+ "texte": "```json\n{\n  \"statut\": \"abstention\",\n  \"texte\": \"Je ne dispose pas d'informations sur le budget du film Flow dans les documents disponibles.\",\n  \"sources\": []\n}\n```",
+ "message": {
+  "content": "```json\n{\n  \"statut\": \"abstention\",\n  \"texte\": \"Je ne dispose pas d'informations sur le budget du film Flow dans les documents disponibles.\",\n  \"sources\": []\n}\n```",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EmAKXgFpFH0TqK5L7fbqkpBLBdy6vh4HtQ6uoP93WCs5J/1jQzAgRfS0FS57U+eCcjLb2tZ+84c0oA9IqKqrHtR2ShVl8Psnj5GEGNzwdHt3P8d2DdEOJOqOdWXRxwWv3IE="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 3584,
+ "tokens_sortie": 48,
+ "tokens_total": 3632,
+ "latence": 2.0353469000256155,
+ "modele": "gemini-3.5-flash-lite"
+}

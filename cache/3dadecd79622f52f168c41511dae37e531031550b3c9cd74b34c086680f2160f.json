@@ -1,0 +1,17 @@
+{
+ "texte": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"Le film le plus ancien entre Memories of Murder (2003) et Parasite (2019) est Memories of Murder. Il a été ajouté à votre liste « à voir ».\",\n  \"sources\": []\n}\n```",
+ "message": {
+  "content": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"Le film le plus ancien entre Memories of Murder (2003) et Parasite (2019) est Memories of Murder. Il a été ajouté à votre liste « à voir ».\",\n  \"sources\": []\n}\n```",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EmAKXgFpFH0TjbVSyI4lpq581x7c0l1rBW22TWWAOci0aFrMNrOgCfmUTsssnH1EbNl6kUYYn359/B8qbgjlr/MQXkLyda8e7CQmVCssvCW9naY0MTADJ+oHCO6cnVsJlCs="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 2287,
+ "tokens_sortie": 71,
+ "tokens_total": 2358,
+ "latence": 2.1764010000042617,
+ "modele": "gemini-3.5-flash-lite"
+}

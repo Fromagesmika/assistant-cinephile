@@ -1,0 +1,17 @@
+{
+ "texte": "```json\n{\"statut\": \"reponse\", \"texte\": \"J'ai retiré Casablanca (1943) et Alien (1979) de votre liste, car ils sont sortis avant 2000, et j'ai ajouté Oppenheimer (2023) à la place.\", \"sources\": []}\n```",
+ "message": {
+  "content": "```json\n{\"statut\": \"reponse\", \"texte\": \"J'ai retiré Casablanca (1943) et Alien (1979) de votre liste, car ils sont sortis avant 2000, et j'ai ajouté Oppenheimer (2023) à la place.\", \"sources\": []}\n```",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EmAKXgFpFH0TWLhH8i+PIJutjM8Orl9LUKS2TFUlDTpLrMHFIWRmildC+t+f+KsVVi9qolPgxpyg3ocIBuwsW+gKUIBQklblW64v2mzDRiLMYAd9GeKsl3RYCkzDRLouNsY="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 2165,
+ "tokens_sortie": 75,
+ "tokens_total": 2240,
+ "latence": 1.4380509999755304,
+ "modele": "gemini-3.5-flash-lite"
+}

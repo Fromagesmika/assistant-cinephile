@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0T91j0KN6nN8+m4wgc11aVunDWKpDQdWgDGOur2sTGUyo3YQSJpnI9dJ70MBBRQq704H0afBKjrHumDnAVyu0bJCRdfAkT5sVsyAo/mUyLoREwvAbM7OvHnwo="
+     }
+    },
+    "function": {
+     "arguments": "{\"requete\":\"Breaking Bad budget par episode\"}",
+     "name": "rechercher_documents"
+    },
+    "id": "call_4179251312864355302",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1125,
+ "tokens_sortie": 23,
+ "tokens_total": 1148,
+ "latence": 1.1392507999844383,
+ "modele": "gemini-3.5-flash-lite"
+}

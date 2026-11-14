@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TBic+rDXUc07vdgDreoc52KMYLbkqMpFT6d7tAO2cSzR5NbfdbPpyQltdBDTEt7TM74GwULx4FTHpDSBFzo50WIp7wnH4OLKSwJjupaiw753yE1qeT/jysDw="
+     }
+    },
+    "function": {
+     "arguments": "{\"annee\":2019,\"titre\":\"Parasite\"}",
+     "name": "rechercher_oeuvre"
+    },
+    "id": "call_12281933441411318864",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1135,
+ "tokens_sortie": 28,
+ "tokens_total": 1163,
+ "latence": 2.0896835000021383,
+ "modele": "gemini-3.5-flash-lite"
+}

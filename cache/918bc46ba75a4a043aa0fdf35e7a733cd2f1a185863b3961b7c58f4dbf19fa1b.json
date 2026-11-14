@@ -1,0 +1,17 @@
+{
+ "texte": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"Je n'ai pas trouvé de film intitulé \\\"Les Horloges de Valparaíso\\\" sur TMDB, je ne peux donc pas l'ajouter à votre liste.\",\n  \"sources\": []\n}\n```",
+ "message": {
+  "content": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"Je n'ai pas trouvé de film intitulé \\\"Les Horloges de Valparaíso\\\" sur TMDB, je ne peux donc pas l'ajouter à votre liste.\",\n  \"sources\": []\n}\n```",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EmAKXgFpFH0ToYWhEAWUIxghg9mtrni9ZV4gAS1rTQoLAxeB8g6eGXMKi/DHgOkRkVGUi4RSCUN7Uj71h1gZGjE48M7WETGY6rlKq2wzeU27XJocJmRXdMj9k21QwxrpiNE="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 1194,
+ "tokens_sortie": 65,
+ "tokens_total": 1259,
+ "latence": 1.7288018999970518,
+ "modele": "gemini-3.5-flash-lite"
+}

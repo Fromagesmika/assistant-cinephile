@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TtG8fkmLiiAzCMzS+VRhpBdkUa1fLHiCRC8T1Me0hQYTaGvCPp51NEKtBW0VmWpLnBpPJgQmJ+BFpCmE/O366fhwvYik2cBF1J79xK5jHnre+DqMvDxwHxHc="
+     }
+    },
+    "function": {
+     "arguments": "{\"requete\":\"Kaamelott nombre d'episodes\"}",
+     "name": "rechercher_documents"
+    },
+    "id": "call_9649148016586774505",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1126,
+ "tokens_sortie": 26,
+ "tokens_total": 1152,
+ "latence": 1.119786800001748,
+ "modele": "gemini-3.5-flash-lite"
+}

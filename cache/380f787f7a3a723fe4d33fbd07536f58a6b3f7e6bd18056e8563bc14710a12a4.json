@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TUJZZS6GM8GV+drF696JABDHyyYu3XQtkXZjQVsusg4mTXKUPuaA14bdOPJfdR2AGMGHACVY1anTBm1vfG0xKRJbW+h68keYgxNDxTTc7Am5q3CLKfpnWcIA="
+     }
+    },
+    "function": {
+     "arguments": "{\"tmdb_id\":27205,\"type\":\"film\"}",
+     "name": "ajouter_a_la_liste"
+    },
+    "id": "call_7180482350112273649",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1558,
+ "tokens_sortie": 31,
+ "tokens_total": 1589,
+ "latence": 1.1100900000019465,
+ "modele": "gemini-3.5-flash-lite"
+}

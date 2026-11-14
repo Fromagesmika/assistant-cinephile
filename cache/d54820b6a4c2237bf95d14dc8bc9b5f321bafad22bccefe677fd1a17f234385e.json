@@ -1,0 +1,17 @@
+{
+ "texte": "```json\n{\"statut\": \"refus\", \"texte\": \"Je suis un assistant spécialisé dans le cinéma et les séries, je ne peux pas répondre aux questions de géographie.\", \"sources\": []}\n```",
+ "message": {
+  "content": "```json\n{\"statut\": \"refus\", \"texte\": \"Je suis un assistant spécialisé dans le cinéma et les séries, je ne peux pas répondre aux questions de géographie.\", \"sources\": []}\n```",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EmAKXgFpFH0TWQqQpgoKa3XfARnI5Gi6NyLUiU37VH+c4n49MPXGWLd2yGd5nIoKf8sv5h36i09GHAzBqlkymRWvyMYyQXgUGl7Gx4GxcdFS4xQBoANoOIzGJ5GgdHZwO1g="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 1123,
+ "tokens_sortie": 46,
+ "tokens_total": 1169,
+ "latence": 2.4734085999953095,
+ "modele": "gemini-3.5-flash-lite"
+}

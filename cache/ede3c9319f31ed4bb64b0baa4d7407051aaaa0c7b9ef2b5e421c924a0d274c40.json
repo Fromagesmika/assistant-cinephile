@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TglgeLOTCn+rChsC8x9gvkBfVncLmfdRT4PJCjliM6HbNIulF39uKNQJ9U6u5KQYq0G9IWEcTv3W0CsTeGD1iI/8IdTKN8YlczkubSg1qNHMftkQQUQP5GM8="
+     }
+    },
+    "function": {
+     "arguments": "{\"titre\":\"Brume sur Tromsø\",\"type\":\"serie\"}",
+     "name": "rechercher_oeuvre"
+    },
+    "id": "call_7917772628537504298",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1553,
+ "tokens_sortie": 29,
+ "tokens_total": 1582,
+ "latence": 1.9644157000002451,
+ "modele": "gemini-3.5-flash-lite"
+}
