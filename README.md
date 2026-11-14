@@ -7,7 +7,7 @@ sur le même protocole de test.
 | Niveau | Contenu | État |
 |---|---|---|
 | 0 | LLM seul | Évalué (37 cas) |
-| 1 | RAG, sources citées, abstention | Évalué (37 cas), juge à calibrer |
+| 1 | RAG, sources citées, abstention | Évalué (37 cas), juge calibré (95 % d'accord sur 20 cas) |
 | 2 | Agent outillé, confirmation des actions | Semaine 3 |
 | 3 | Extension mesurée | Semaine 4 |
 

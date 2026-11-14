@@ -1,0 +1,8 @@
+{
+ "texte": "{\"fidele\": false, \"detail\": \"Le roman a été publié en 1949 selon les extraits, et non en 1950.\"}",
+ "tokens_entree": 1147,
+ "tokens_sortie": 37,
+ "tokens_total": 1184,
+ "latence": 1.4998098999785725,
+ "modele": "gemini-3.5-flash-lite"
+}

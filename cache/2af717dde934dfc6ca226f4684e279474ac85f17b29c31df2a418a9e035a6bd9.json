@@ -1,0 +1,8 @@
+{
+ "texte": "{\"fidele\": false, \"detail\": \"l'affirmation selon laquelle le tournage a eu lieu dans les studios de film de la ville (MMC Studios) est absente des extraits\"}",
+ "tokens_entree": 1027,
+ "tokens_sortie": 42,
+ "tokens_total": 1069,
+ "latence": 1.468555400002515,
+ "modele": "gemini-3.5-flash-lite"
+}

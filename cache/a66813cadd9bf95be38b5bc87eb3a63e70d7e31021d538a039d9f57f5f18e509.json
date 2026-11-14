@@ -1,0 +1,8 @@
+{
+ "texte": "{\"fidele\": false, \"detail\": \"notamment le morceau Time, est devenue l'une des plus emblématiques du cinéma moderne\"}",
+ "tokens_entree": 1020,
+ "tokens_sortie": 30,
+ "tokens_total": 1050,
+ "latence": 2.023195699992357,
+ "modele": "gemini-3.5-flash-lite"
+}

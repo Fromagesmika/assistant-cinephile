@@ -1,0 +1,8 @@
+{
+ "texte": "{\"fidele\": false, \"detail\": \"Il a remporté l'Oscar de la meilleure photographie pour son travail sur ce film.\"}",
+ "tokens_entree": 1192,
+ "tokens_sortie": 29,
+ "tokens_total": 1221,
+ "latence": 2.242514699988533,
+ "modele": "gemini-3.5-flash-lite"
+}

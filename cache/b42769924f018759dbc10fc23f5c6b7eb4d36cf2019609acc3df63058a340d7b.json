@@ -1,0 +1,8 @@
+{
+ "texte": "{\"fidele\": false, \"detail\": \"L'affirmation que Cléo attend les résultats d'une \\\"biopsie\\\" n'est pas soutenue par les extraits.\"}",
+ "tokens_entree": 841,
+ "tokens_sortie": 41,
+ "tokens_total": 882,
+ "latence": 1.8426420000032522,
+ "modele": "gemini-3.5-flash-lite"
+}

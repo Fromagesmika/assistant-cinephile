@@ -1,0 +1,8 @@
+{
+ "texte": "{\n  \"fidele\": false,\n  \"detail\": \"l'usine fabrique des produits de havage, et cette entreprise moderne symbolise l'absurdité du monde industriel et du progrès technique vu par le réalisateur\"\n}",
+ "tokens_entree": 976,
+ "tokens_sortie": 53,
+ "tokens_total": 1029,
+ "latence": 1.5289323000179138,
+ "modele": "gemini-3.5-flash-lite"
+}

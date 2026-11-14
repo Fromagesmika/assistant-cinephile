@@ -96,6 +96,11 @@ def mesurer():
         raise SystemExit("Aucune annotation : lancez d'abord l'étape « annoter ».")
     texte = [
         f"# Calibration du juge de fidélité ({total} cas annotés)", "",
+        "Protocole : un LLM (Claude) a pré-annoté chaque cas avec une justification "
+        "(data/pre_annotations.jsonl), sans connaître le verdict du juge ; un humain a relu "
+        "ces justifications face aux extraits et les a validées (data/annotations.jsonl). "
+        "Les cas n0-doc-06 et n0-doc-15 sont des cas limites, tranchés en « non fidèle » "
+        "en appliquant la règle à la lettre.", "",
         f"- Accord avec l'annotation humaine : {(vp + vn) / total:.0%}",
         f"- Réponses non fidèles selon l'humain : {vn + fp}, dont repérées par le juge : {vn}",
         f"- Réponses fidèles selon l'humain : {vp + fn}, dont reconnues par le juge : {vp}",

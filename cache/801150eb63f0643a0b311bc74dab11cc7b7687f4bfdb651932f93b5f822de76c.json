@@ -1,0 +1,8 @@
+{
+ "texte": "{\"fidele\": false, \"detail\": \"Le budget par épisode est de 3,2 millions de dollars américains, et les extraits ne mentionnent pas un montant estimé à 3 millions pour les premières saisons ni une augmentation à 3,5 millions pour la dernière saison.\"}",
+ "tokens_entree": 751,
+ "tokens_sortie": 61,
+ "tokens_total": 812,
+ "latence": 2.0698898999835365,
+ "modele": "gemini-3.5-flash-lite"
+}

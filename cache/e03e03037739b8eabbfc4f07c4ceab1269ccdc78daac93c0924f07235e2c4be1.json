@@ -1,0 +1,8 @@
+{
+ "texte": "{\n  \"fidele\": false,\n  \"detail\": \"Le budget est de 6 100 000 €, et non d'environ 5,5 millions d'euros.\"\n}",
+ "tokens_entree": 1153,
+ "tokens_sortie": 47,
+ "tokens_total": 1200,
+ "latence": 2.2340138999861665,
+ "modele": "gemini-3.5-flash-lite"
+}

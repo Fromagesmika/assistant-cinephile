@@ -1,0 +1,8 @@
+{
+ "texte": "{\"fidele\": false, \"detail\": \"L'affirmation selon laquelle chaque saison compte 10 épisodes n'est pas soutenue par les extraits (seules les saisons 2 et 5 sont mentionnées comme ayant dix épisodes).\"}",
+ "tokens_entree": 827,
+ "tokens_sortie": 55,
+ "tokens_total": 882,
+ "latence": 1.5612094000098296,
+ "modele": "gemini-3.5-flash-lite"
+}
