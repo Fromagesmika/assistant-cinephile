@@ -118,7 +118,7 @@ def enregistrer(question, niveau, sortie):
 
 
 def lancer(question, niveau):
-    with st.chat_message("user"):
+    with st.chat_message("user", avatar="🙂"):
         st.markdown(question)
     if niveau in (0, 1):
         module = level0 if niveau == 0 else level1
@@ -150,70 +150,112 @@ def decider(accepte):
 
 # --- Page ---------------------------------------------------------------------------------
 
-st.set_page_config(page_title="Assistant cinéphile", page_icon="🎬", layout="wide")
+SUGGESTIONS = {
+    "🎵 Musique": EXEMPLES[0],
+    "🎟️ Box-office": EXEMPLES[1],
+    "❓ Ambiguë": EXEMPLES[2],
+    "📋 Liste": EXEMPLES[3],
+}
+NIVEAUX_DISPONIBLES = [0, 1, 2]  # le niveau 3 s'ajoutera ici
+
+st.set_page_config(page_title="Assistant cinéphile", page_icon="🎬", layout="wide", initial_sidebar_state="collapsed")
+st.markdown(f"<style>{(RACINE / 'assets' / 'style.css').read_text(encoding='utf-8')}</style>", unsafe_allow_html=True)
 st.session_state.setdefault("historique", [])
 st.session_state.setdefault("en_attente", None)
-
-with st.sidebar:
-    st.title("🎬 Assistant cinéphile")
-    niveau = st.radio(
-        "Niveau", list(NIVEAUX), format_func=lambda n: NIVEAUX[n][0], index=2,
-        disabled=st.session_state.en_attente is not None,
-    )
-    st.caption(NIVEAUX[niveau][1])
-
-    st.divider()
-    liste = ListeAVoir(chemin=FICHIER_LISTE)
-    st.subheader(f"Liste à voir ({len(liste.films)})")
-    if liste.films:
-        st.dataframe(
-            [{"Titre": f["titre"], "Année": f.get("annee")} for f in liste.films],
-            hide_index=True, use_container_width=True,
-        )
-    else:
-        st.caption("La liste est vide. Demandez à l'agent (niveau 2) d'y ajouter un film.")
-
-    st.divider()
-    historique = st.session_state.historique
-    st.subheader("Coût de la session")
-    st.metric("Tokens consommés", f"{sum(e['sortie']['tokens'] for e in historique):,}".replace(",", " "))
-    st.caption(f"{len(historique)} requête(s), traces dans traces/interface.jsonl")
-    if historique and st.button("Effacer la conversation"):
-        st.session_state.historique = []
-        st.rerun()
-
-for entree in st.session_state.historique:
-    with st.chat_message("user"):
-        st.markdown(entree["question"])
-    with st.chat_message("assistant"):
-        afficher_reponse(entree)
+st.session_state.setdefault("niveau", 2)
 
 attente = st.session_state.en_attente
-if attente is not None:
-    action = attente["session"].attente["action"]
-    with st.chat_message("user"):
-        st.markdown(attente["question"])
-    with st.chat_message("assistant"):
-        st.warning(f"**Confirmation requise** · {action['texte']}", icon="🙋")
-        gauche, droite, _ = st.columns([1, 1, 4])
-        if gauche.button("Accepter", type="primary", use_container_width=True):
-            decider(True)
-            st.rerun()
-        if droite.button("Refuser", use_container_width=True):
-            decider(False)
-            st.rerun()
+accueil = not st.session_state.historique and attente is None
 
-if not st.session_state.historique and attente is None:
-    st.markdown("### Posez une question sur un film ou une série")
-    st.caption("Exemples :")
-    for exemple in EXEMPLES:
-        if st.button(exemple, key=exemple) and niveau != 3:
-            lancer(exemple, niveau)
-            st.rerun()
 
-if niveau == 3:
-    st.info("Le niveau 3 (extension) n'est pas encore construit.")
-question = st.chat_input("Votre question…", disabled=attente is not None or niveau == 3)
-if question:
-    lancer(question, niveau)
-    st.rerun()
+def choisir_niveau(cle):
+    st.session_state.niveau = st.session_state[cle]
+
+
+def barre_du_haut():
+    marque, centre, droite = st.columns([3, 2, 1.4], vertical_alignment="center")
+    marque.markdown('<div class="marque"><span class="logo"></span>Cinéphile</div>', unsafe_allow_html=True)
+    if not accueil:
+        centre.selectbox(
+            "Niveau", NIVEAUX_DISPONIBLES, index=NIVEAUX_DISPONIBLES.index(st.session_state.niveau),
+            format_func=lambda n: NIVEAUX[n][0], key="nav_niveau", label_visibility="collapsed",
+            on_change=choisir_niveau, args=("nav_niveau",), disabled=attente is not None,
+        )
+    liste = ListeAVoir(chemin=FICHIER_LISTE)
+    with droite.container(key="nav_liste"):
+        with st.popover(f"Liste à voir · {len(liste.films)}", use_container_width=True):
+            if liste.films:
+                st.dataframe([{"Titre": f["titre"], "Année": f.get("annee")} for f in liste.films],
+                             hide_index=True, use_container_width=True)
+            else:
+                st.caption("La liste est vide. Demandez à l'agent (niveau 2) d'y ajouter un film.")
+            historique = st.session_state.historique
+            st.divider()
+            st.metric("Tokens consommés pendant la session",
+                      f"{sum(e['sortie']['tokens'] for e in historique):,}".replace(",", " "))
+            st.caption(f"{len(historique)} requête(s), tracées dans traces/interface.jsonl")
+            if historique and st.button("Effacer la conversation", use_container_width=True):
+                st.session_state.historique = []
+                st.rerun()
+
+
+def page_accueil():
+    st.markdown('<div class="titre-accueil">Une question de cinéma ? On vous répond.</div>', unsafe_allow_html=True)
+    st.markdown("<p class=\"sous-titre\">Films, séries, box-office et liste à voir, avec les sources à l'appui.</p>",
+                unsafe_allow_html=True)
+    _, milieu, _ = st.columns([0.6, 4, 0.6])
+    with milieu.container(key="carte"):
+        with st.form("demande", clear_on_submit=True, border=False):
+            question = st.text_input("Question", placeholder="Qui a composé la musique de…",
+                                     label_visibility="collapsed")
+            colonnes = st.columns([1.1, 1.25, 1.1, 0.95, 1.6, 0.45], vertical_alignment="center")
+            choix = None
+            for colonne, (libelle, exemple) in zip(colonnes[:4], SUGGESTIONS.items()):
+                if colonne.form_submit_button(libelle, use_container_width=True):
+                    choix = exemple
+            niveau = colonnes[4].selectbox(
+                "Niveau", NIVEAUX_DISPONIBLES, index=NIVEAUX_DISPONIBLES.index(st.session_state.niveau),
+                format_func=lambda n: NIVEAUX[n][0], label_visibility="collapsed",
+            )
+            envoyer = colonnes[5].form_submit_button("↑", key="envoyer")
+    st.markdown(
+        '<div class="sources-accueil"><div class="libelle">Réponses construites à partir de</div>'
+        '<div class="noms"><span>Wikipédia</span><span>TMDB</span><span>Gemini</span></div></div>',
+        unsafe_allow_html=True,
+    )
+    texte = choix or (question.strip() if envoyer else "")
+    if texte:
+        st.session_state.niveau = niveau
+        lancer(texte, niveau)
+        st.rerun()
+
+
+barre_du_haut()
+
+if accueil:
+    page_accueil()
+else:
+    for entree in st.session_state.historique:
+        with st.chat_message("user", avatar="🙂"):
+            st.markdown(entree["question"])
+        with st.chat_message("assistant", avatar="🎬"):
+            afficher_reponse(entree)
+
+    if attente is not None:
+        action = attente["session"].attente["action"]
+        with st.chat_message("user", avatar="🙂"):
+            st.markdown(attente["question"])
+        with st.container(key="confirmation"):
+            st.markdown(f"🙋 **Confirmation requise** · {action['texte']}")
+            gauche, droite, _ = st.columns([1, 1, 4])
+            if gauche.button("Accepter", type="primary", use_container_width=True):
+                decider(True)
+                st.rerun()
+            if droite.button("Refuser", use_container_width=True):
+                decider(False)
+                st.rerun()
+
+    question = st.chat_input("Posez une autre question…", disabled=attente is not None)
+    if question:
+        lancer(question, st.session_state.niveau)
+        st.rerun()

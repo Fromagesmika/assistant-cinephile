@@ -1,0 +1,110 @@
+/* Design de l'interface : ciel de crépuscule dessiné en CSS (aucune image externe),
+   cartes sombres translucides, accent violet. Injecté par app.py. */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+:root {
+  --violet: #8b5cf6;
+  --violet-clair: #a78bfa;
+  --carte: rgba(24, 20, 38, 0.80);
+  --carte-claire: rgba(36, 30, 56, 0.72);
+  --bord: rgba(255, 255, 255, 0.12);
+  --texte: #f4f1fb;
+  --texte-doux: rgba(244, 241, 251, 0.68);
+}
+
+/* Police sur le texte seulement : les icônes Streamlit gardent leur propre police. */
+.stApp, .stApp p, .stApp input, .stApp textarea, .stApp button p, .stApp label { font-family: 'Inter', system-ui, sans-serif; }
+
+/* Ciel : nuages éclairés, lueur du couchant, dégradé vertical ; collines en SVG au premier plan. */
+.stApp {
+  background:
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320' preserveAspectRatio='none'><path fill='%234a3878' fill-opacity='.55' d='M0 170 C 240 110 430 160 630 132 C 850 100 1040 150 1240 112 C 1340 95 1400 102 1440 108 L1440 320 L0 320Z'/><path fill='%232c2150' fill-opacity='.88' d='M0 228 C 200 190 380 226 560 206 C 760 182 960 236 1160 212 C 1300 197 1390 206 1440 214 L1440 320 L0 320Z'/><path fill='%23161129' d='M0 280 C 260 254 520 286 760 270 C 1000 254 1220 286 1440 272 L1440 320 L0 320Z'/></svg>") bottom / 100% 36vh no-repeat fixed,
+    radial-gradient(ellipse 28% 22% at 34% 24%, rgba(255, 196, 170, 0.55), transparent 70%),
+    radial-gradient(ellipse 34% 30% at 26% 30%, rgba(236, 150, 160, 0.40), transparent 70%),
+    radial-gradient(ellipse 22% 14% at 47% 16%, rgba(255, 224, 205, 0.30), transparent 70%),
+    radial-gradient(ellipse 30% 12% at 78% 12%, rgba(232, 140, 175, 0.35), transparent 70%),
+    radial-gradient(ellipse 18% 10% at 86% 63%, rgba(255, 214, 150, 0.85), transparent 70%),
+    radial-gradient(ellipse 55% 22% at 82% 62%, rgba(255, 150, 110, 0.45), transparent 70%),
+    linear-gradient(180deg, #3a2e7c 0%, #5a45a6 26%, #8f6cc4 46%, #c48bbf 58%, #6f4f97 70%, #2b2350 84%, #151129 100%) fixed;
+  color: var(--texte);
+}
+
+/* Habillage Streamlit : pas d'en-tête, pas de barre latérale, fonds transparents. */
+[data-testid="stHeader"] { background: transparent; }
+[data-testid="stSidebar"], [data-testid="stSidebarCollapsedControl"] { display: none; }
+[data-testid="stMainBlockContainer"] { padding-top: 1.6rem; padding-bottom: 7rem; max-width: 1100px; }
+[data-testid="stBottom"], [data-testid="stBottom"] > div, [data-testid="stBottomBlockContainer"] { background: transparent; }
+[data-testid="stBottomBlockContainer"] { max-width: 1100px; }
+
+/* Barre du haut */
+.marque { display: flex; align-items: center; gap: .6rem; font-size: 1.15rem; font-weight: 500; color: var(--texte); }
+.marque .logo {
+  width: 30px; height: 30px; border-radius: 50%; background: radial-gradient(circle at 35% 35%, #c4b5fd, var(--violet));
+  display: grid; place-items: center; box-shadow: 0 0 18px rgba(139, 92, 246, .55);
+}
+.marque .logo::after { content: ""; width: 10px; height: 10px; border-radius: 50%; background: #120e22; }
+.st-key-nav_liste button, .st-key-nav_niveau [data-baseweb="select"] > div {
+  background: rgba(20, 16, 32, 0.85) !important; border: 1px solid var(--bord) !important;
+  border-radius: 10px !important; color: var(--texte) !important;
+}
+
+/* Accueil */
+.titre-accueil {
+  text-align: center; font-size: clamp(1.9rem, 4vw, 2.8rem); font-weight: 400; letter-spacing: -0.02em; line-height: 1.2;
+  margin: 22vh 0 1.4rem; color: var(--texte); text-shadow: 0 2px 24px rgba(40, 20, 80, .55);
+}
+.sous-titre { text-align: center; color: var(--texte-doux); margin: -1rem 0 1.8rem; text-shadow: 0 1px 12px rgba(40, 20, 80, .6); }
+.sources-accueil { text-align: center; margin-top: 18vh; color: var(--texte); text-shadow: 0 1px 10px rgba(0, 0, 0, .5); }
+.sources-accueil .libelle { font-size: .85rem; color: var(--texte-doux); margin-bottom: .6rem; }
+.sources-accueil .noms { display: flex; gap: 2.6rem; justify-content: center; font-size: 1.45rem; font-weight: 600; letter-spacing: -0.01em; }
+
+/* Carte de saisie */
+.st-key-carte {
+  background: var(--carte); border: 1px solid var(--bord); border-radius: 22px; padding: 1rem 1rem .8rem;
+  backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+  box-shadow: 0 18px 50px rgba(15, 8, 35, .55), inset 0 1px 0 rgba(255, 255, 255, .06);
+}
+.st-key-carte [data-testid="stForm"] { border: none; padding: 0; }
+.st-key-carte [data-baseweb="input"], .st-key-carte [data-baseweb="input"] > div, .st-key-carte input {
+  background: transparent !important; border: none !important; box-shadow: none !important; font-size: 1rem;
+}
+.st-key-carte [data-baseweb="select"] > div { background: transparent !important; border: none !important; color: var(--texte-doux); }
+.st-key-carte button[kind="secondaryFormSubmit"] {
+  background: rgba(255, 255, 255, .06); border: 1px solid var(--bord); border-radius: 12px;
+  color: var(--texte-doux); padding: .25rem .6rem; min-height: 2.1rem; white-space: nowrap;
+}
+.st-key-carte button[kind="secondaryFormSubmit"] p { font-size: .8rem; white-space: nowrap; overflow: visible; }
+.st-key-carte button[kind="secondaryFormSubmit"]:hover { border-color: var(--violet-clair); color: var(--texte); }
+.st-key-envoyer button {
+  background: radial-gradient(circle at 35% 30%, #c4b5fd, var(--violet) 70%) !important; border: none !important;
+  border-radius: 50% !important; width: 2.5rem; height: 2.5rem; min-height: 2.5rem; padding: 0 !important;
+  color: white !important; font-size: 1.1rem; box-shadow: 0 0 18px rgba(139, 92, 246, .6);
+}
+
+/* Conversation */
+[data-testid="stChatMessage"] {
+  background: var(--carte); border: 1px solid var(--bord); border-radius: 18px; padding: 1rem 1.2rem;
+  backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); box-shadow: 0 10px 30px rgba(15, 8, 35, .35);
+}
+[data-testid="stExpander"] details { background: var(--carte-claire); border: 1px solid var(--bord); border-radius: 12px; }
+[data-testid="stMetricValue"] { font-size: 1.35rem; }
+[data-testid="stMetricLabel"] { color: var(--texte-doux); }
+[data-testid="stChatInput"] {
+  background: var(--carte); border: 1px solid var(--bord) !important; border-radius: 18px;
+  backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); box-shadow: 0 12px 36px rgba(15, 8, 35, .5);
+}
+[data-testid="stChatInput"] textarea { background: transparent; }
+[data-testid="stChatInputSubmitButton"] { background: var(--violet) !important; border-radius: 50% !important; color: white !important; }
+
+/* Demande de confirmation */
+.st-key-confirmation {
+  background: rgba(60, 40, 20, .55); border: 1px solid rgba(251, 191, 36, .45); border-radius: 18px; padding: 1rem 1.2rem;
+  backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+}
+.st-key-confirmation button[kind="primary"] { background: var(--violet); border: none; }
+
+@media (max-width: 640px) {
+  .titre-accueil { margin-top: 8vh; }
+  .sources-accueil { margin-top: 8vh; }
+  .sources-accueil .noms { gap: 1.2rem; font-size: 1.1rem; }
+}
