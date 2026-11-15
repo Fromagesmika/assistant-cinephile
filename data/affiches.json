@@ -1,0 +1,1094 @@
+{
+ "Inception": {
+  "tmdb_id": 27205,
+  "type": "film",
+  "titre": "Inception",
+  "annee": 2010,
+  "affiche": "data/affiches/film_27205.jpg"
+ },
+ "Interstellar": {
+  "tmdb_id": 157336,
+  "type": "film",
+  "titre": "Interstellar",
+  "annee": 2014,
+  "affiche": "data/affiches/film_157336.jpg"
+ },
+ "Le Parrain (film)": {
+  "tmdb_id": 238,
+  "type": "film",
+  "titre": "Le Parrain",
+  "annee": 1972,
+  "affiche": "data/affiches/film_238.jpg"
+ },
+ "Pulp Fiction": {
+  "tmdb_id": 680,
+  "type": "film",
+  "titre": "Pulp Fiction",
+  "annee": 1994,
+  "affiche": "data/affiches/film_680.jpg"
+ },
+ "Titanic (film, 1997)": {
+  "tmdb_id": 597,
+  "type": "film",
+  "titre": "Titanic",
+  "annee": 1997,
+  "affiche": "data/affiches/film_597.jpg"
+ },
+ "Forrest Gump": {
+  "tmdb_id": 13,
+  "type": "film",
+  "titre": "Forrest Gump",
+  "annee": 1994,
+  "affiche": "data/affiches/film_13.jpg"
+ },
+ "Matrix (film)": {
+  "tmdb_id": 603,
+  "type": "film",
+  "titre": "Matrix",
+  "annee": 1999,
+  "affiche": "data/affiches/film_603.jpg"
+ },
+ "Le Seigneur des anneaux : La Communauté de l'anneau": {
+  "tmdb_id": 120,
+  "type": "film",
+  "titre": "Le Seigneur des anneaux : La Communauté de l'anneau",
+  "annee": 2001,
+  "affiche": "data/affiches/film_120.jpg"
+ },
+ "Star Wars, épisode IV : Un nouvel espoir": {
+  "tmdb_id": 11,
+  "type": "film",
+  "titre": "La Guerre des étoiles",
+  "annee": 1977,
+  "affiche": "data/affiches/film_11.jpg"
+ },
+ "Jurassic Park": {
+  "tmdb_id": 329,
+  "type": "film",
+  "titre": "Jurassic Park",
+  "annee": 1993,
+  "affiche": "data/affiches/film_329.jpg"
+ },
+ "Retour vers le futur": {
+  "tmdb_id": 105,
+  "type": "film",
+  "titre": "Retour vers le futur",
+  "annee": 1985,
+  "affiche": "data/affiches/film_105.jpg"
+ },
+ "Les Dents de la mer": {
+  "tmdb_id": 578,
+  "type": "film",
+  "titre": "Les Dents de la Mer",
+  "annee": 1975,
+  "affiche": "data/affiches/film_578.jpg"
+ },
+ "Alien (film)": {
+  "tmdb_id": 348,
+  "type": "film",
+  "titre": "Alien, le huitième passager",
+  "annee": 1979,
+  "affiche": "data/affiches/film_348.jpg"
+ },
+ "Blade Runner": {
+  "tmdb_id": 78,
+  "type": "film",
+  "titre": "Blade Runner",
+  "annee": 1982,
+  "affiche": "data/affiches/film_78.jpg"
+ },
+ "Fight Club (film)": {
+  "tmdb_id": 550,
+  "type": "film",
+  "titre": "Fight Club",
+  "annee": 1999,
+  "affiche": "data/affiches/film_550.jpg"
+ },
+ "Le Silence des agneaux (film)": {
+  "tmdb_id": 274,
+  "type": "film",
+  "titre": "Le Silence des agneaux",
+  "annee": 1991,
+  "affiche": "data/affiches/film_274.jpg"
+ },
+ "Seven (film)": {
+  "tmdb_id": 807,
+  "type": "film",
+  "titre": "Seven",
+  "annee": 1995,
+  "affiche": "data/affiches/film_807.jpg"
+ },
+ "Les Évadés (film, 1994)": {
+  "tmdb_id": 278,
+  "type": "film",
+  "titre": "Les Évadés",
+  "annee": 1994,
+  "affiche": "data/affiches/film_278.jpg"
+ },
+ "La Liste de Schindler": {
+  "tmdb_id": 424,
+  "type": "film",
+  "titre": "La Liste de Schindler",
+  "annee": 1993,
+  "affiche": "data/affiches/film_424.jpg"
+ },
+ "Il faut sauver le soldat Ryan": {
+  "tmdb_id": 857,
+  "type": "film",
+  "titre": "Il faut sauver le soldat Ryan",
+  "annee": 1998,
+  "affiche": "data/affiches/film_857.jpg"
+ },
+ "Gladiator (film, 2000)": {
+  "tmdb_id": 98,
+  "type": "film",
+  "titre": "Gladiator",
+  "annee": 2000,
+  "affiche": "data/affiches/film_98.jpg"
+ },
+ "Avatar (film, 2009)": {
+  "tmdb_id": 19995,
+  "type": "film",
+  "titre": "Avatar",
+  "annee": 2009,
+  "affiche": "data/affiches/film_19995.jpg"
+ },
+ "The Dark Knight : Le Chevalier noir": {
+  "tmdb_id": 155,
+  "type": "film",
+  "titre": "The Dark Knight : Le Chevalier noir",
+  "annee": 2008,
+  "affiche": "data/affiches/film_155.jpg"
+ },
+ "Parasite (film, 2019)": {
+  "tmdb_id": 496243,
+  "type": "film",
+  "titre": "Parasite",
+  "annee": 2019,
+  "affiche": "data/affiches/film_496243.jpg"
+ },
+ "Intouchables (film)": {
+  "tmdb_id": 77338,
+  "type": "film",
+  "titre": "Intouchables",
+  "annee": 2011,
+  "affiche": "data/affiches/film_77338.jpg"
+ },
+ "Le Fabuleux Destin d'Amélie Poulain": {
+  "tmdb_id": 194,
+  "type": "film",
+  "titre": "Le Fabuleux Destin d'Amélie Poulain",
+  "annee": 2001,
+  "affiche": "data/affiches/film_194.jpg"
+ },
+ "La Haine": {
+  "tmdb_id": 406,
+  "type": "film",
+  "titre": "La Haine",
+  "annee": 1995,
+  "affiche": "data/affiches/film_406.jpg"
+ },
+ "Le Dîner de cons (film)": {
+  "tmdb_id": 9421,
+  "type": "film",
+  "titre": "Le Dîner de cons",
+  "annee": 1998,
+  "affiche": "data/affiches/film_9421.jpg"
+ },
+ "Les Visiteurs (film, 1993)": {
+  "tmdb_id": 11687,
+  "type": "film",
+  "titre": "Les Visiteurs",
+  "annee": 1993,
+  "affiche": "data/affiches/film_11687.jpg"
+ },
+ "La Grande Vadrouille": {
+  "tmdb_id": 8290,
+  "type": "film",
+  "titre": "La Grande Vadrouille",
+  "annee": 1966,
+  "affiche": "data/affiches/film_8290.jpg"
+ },
+ "Bienvenue chez les Ch'tis": {
+  "tmdb_id": 8265,
+  "type": "film",
+  "titre": "Bienvenue chez les Ch'tis",
+  "annee": 2008,
+  "affiche": "data/affiches/film_8265.jpg"
+ },
+ "Le Voyage de Chihiro": {
+  "tmdb_id": 129,
+  "type": "film",
+  "titre": "Le Voyage de Chihiro",
+  "annee": 2001,
+  "affiche": "data/affiches/film_129.jpg"
+ },
+ "Mon voisin Totoro": {
+  "tmdb_id": 8392,
+  "type": "film",
+  "titre": "Mon voisin Totoro",
+  "annee": 1988,
+  "affiche": "data/affiches/film_8392.jpg"
+ },
+ "Le Roi lion": {
+  "tmdb_id": 8587,
+  "type": "film",
+  "titre": "Le Roi lion",
+  "annee": 1994,
+  "affiche": "data/affiches/film_8587.jpg"
+ },
+ "Toy Story": {
+  "tmdb_id": 862,
+  "type": "film",
+  "titre": "Toy Story",
+  "annee": 1995,
+  "affiche": "data/affiches/film_862.jpg"
+ },
+ "Whiplash": {
+  "tmdb_id": 244786,
+  "type": "film",
+  "titre": "Whiplash",
+  "annee": 2014,
+  "affiche": "data/affiches/film_244786.jpg"
+ },
+ "La La Land": {
+  "tmdb_id": 313369,
+  "type": "film",
+  "titre": "La La Land",
+  "annee": 2016,
+  "affiche": "data/affiches/film_313369.jpg"
+ },
+ "Joker (film, 2019)": {
+  "tmdb_id": 475557,
+  "type": "film",
+  "titre": "Joker",
+  "annee": 2019,
+  "affiche": "data/affiches/film_475557.jpg"
+ },
+ "Django Unchained": {
+  "tmdb_id": 68718,
+  "type": "film",
+  "titre": "Django Unchained",
+  "annee": 2012,
+  "affiche": "data/affiches/film_68718.jpg"
+ },
+ "Kill Bill : Volume 1": {
+  "tmdb_id": 24,
+  "type": "film",
+  "titre": "Kill Bill : Volume 1",
+  "annee": 2003,
+  "affiche": "data/affiches/film_24.jpg"
+ },
+ "Reservoir Dogs": {
+  "tmdb_id": 500,
+  "type": "film",
+  "titre": "Reservoir Dogs",
+  "annee": 1992,
+  "affiche": "data/affiches/film_500.jpg"
+ },
+ "Shining (film)": {
+  "tmdb_id": 694,
+  "type": "film",
+  "titre": "Shining",
+  "annee": 1980,
+  "affiche": "data/affiches/film_694.jpg"
+ },
+ "2001, l'Odyssée de l'espace": {
+  "tmdb_id": 62,
+  "type": "film",
+  "titre": "2001 : L'Odyssée de l'espace",
+  "annee": 1968,
+  "affiche": "data/affiches/film_62.jpg"
+ },
+ "Orange mécanique": {
+  "tmdb_id": 185,
+  "type": "film",
+  "titre": "Orange mécanique",
+  "annee": 1971,
+  "affiche": "data/affiches/film_185.jpg"
+ },
+ "Psychose (film)": {
+  "tmdb_id": 539,
+  "type": "film",
+  "titre": "Psychose",
+  "annee": 1960,
+  "affiche": "data/affiches/film_539.jpg"
+ },
+ "Sueurs froides": {
+  "tmdb_id": 426,
+  "type": "film",
+  "titre": "Sueurs froides",
+  "annee": 1958,
+  "affiche": "data/affiches/film_426.jpg"
+ },
+ "Casablanca (film)": {
+  "tmdb_id": 289,
+  "type": "film",
+  "titre": "Casablanca",
+  "annee": 1943,
+  "affiche": "data/affiches/film_289.jpg"
+ },
+ "Les Affranchis (film)": {
+  "tmdb_id": 769,
+  "type": "film",
+  "titre": "Les Affranchis",
+  "annee": 1990,
+  "affiche": "data/affiches/film_769.jpg"
+ },
+ "Taxi Driver": {
+  "tmdb_id": 103,
+  "type": "film",
+  "titre": "Taxi Driver",
+  "annee": 1976,
+  "affiche": "data/affiches/film_103.jpg"
+ },
+ "Apocalypse Now": {
+  "tmdb_id": 28,
+  "type": "film",
+  "titre": "Apocalypse Now",
+  "annee": 1979,
+  "affiche": "data/affiches/film_28.jpg"
+ },
+ "Mad Max: Fury Road": {
+  "tmdb_id": 76341,
+  "type": "film",
+  "titre": "Mad Max : Fury Road",
+  "annee": 2015,
+  "affiche": "data/affiches/film_76341.jpg"
+ },
+ "Get Out (film)": {
+  "tmdb_id": 419430,
+  "type": "film",
+  "titre": "Get Out",
+  "annee": 2017,
+  "affiche": "data/affiches/film_419430.jpg"
+ },
+ "Oppenheimer (film)": {
+  "tmdb_id": 872585,
+  "type": "film",
+  "titre": "Oppenheimer",
+  "annee": 2023,
+  "affiche": "data/affiches/film_872585.jpg"
+ },
+ "Barbie (film)": {
+  "tmdb_id": 346698,
+  "type": "film",
+  "titre": "Barbie",
+  "annee": 2023,
+  "affiche": "data/affiches/film_346698.jpg"
+ },
+ "Les Temps modernes": {
+  "tmdb_id": 3082,
+  "type": "film",
+  "titre": "Les Temps Modernes",
+  "annee": 1936,
+  "affiche": "data/affiches/film_3082.jpg"
+ },
+ "Le Cinquième Élément": {
+  "tmdb_id": 18,
+  "type": "film",
+  "titre": "Le Cinquième Élément",
+  "annee": 1997,
+  "affiche": "data/affiches/film_18.jpg"
+ },
+ "Léon (film)": {
+  "tmdb_id": 101,
+  "type": "film",
+  "titre": "Léon",
+  "annee": 1994,
+  "affiche": "data/affiches/film_101.jpg"
+ },
+ "The Artist": {
+  "tmdb_id": 74643,
+  "type": "film",
+  "titre": "The Artist",
+  "annee": 2011,
+  "affiche": "data/affiches/film_74643.jpg"
+ },
+ "Le Cercle rouge": {
+  "tmdb_id": 11657,
+  "type": "film",
+  "titre": "Le Cercle rouge",
+  "annee": 1970,
+  "affiche": "data/affiches/film_11657.jpg"
+ },
+ "Le Samouraï": {
+  "tmdb_id": 5511,
+  "type": "film",
+  "titre": "Le Samouraï",
+  "annee": 1967,
+  "affiche": "data/affiches/film_5511.jpg"
+ },
+ "Les Yeux sans visage": {
+  "tmdb_id": 31417,
+  "type": "film",
+  "titre": "Les Yeux sans visage",
+  "annee": 1960,
+  "affiche": "data/affiches/film_31417.jpg"
+ },
+ "Le Salaire de la peur": {
+  "tmdb_id": 204,
+  "type": "film",
+  "titre": "Le Salaire de la peur",
+  "annee": 1953,
+  "affiche": "data/affiches/film_204.jpg"
+ },
+ "Les Diaboliques (film)": {
+  "tmdb_id": 827,
+  "type": "film",
+  "titre": "Les Diaboliques",
+  "annee": 1955,
+  "affiche": "data/affiches/film_827.jpg"
+ },
+ "Pickpocket (film)": {
+  "tmdb_id": 690,
+  "type": "film",
+  "titre": "Pickpocket",
+  "annee": 1959,
+  "affiche": "data/affiches/film_690.jpg"
+ },
+ "Jeanne Dielman, 23, quai du Commerce, 1080 Bruxelles": {
+  "tmdb_id": 44012,
+  "type": "film",
+  "titre": "Jeanne Dielman, 23, quai du Commerce, 1080 Bruxelles",
+  "annee": 1976,
+  "affiche": "data/affiches/film_44012.jpg"
+ },
+ "Stalker (film, 1979)": {
+  "tmdb_id": 1398,
+  "type": "film",
+  "titre": "Stalker",
+  "annee": 1979,
+  "affiche": "data/affiches/film_1398.jpg"
+ },
+ "Andreï Roublev (film)": {
+  "tmdb_id": 895,
+  "type": "film",
+  "titre": "Andreï Roublev",
+  "annee": 1966,
+  "affiche": "data/affiches/film_895.jpg"
+ },
+ "Les Ailes du désir": {
+  "tmdb_id": 144,
+  "type": "film",
+  "titre": "Les Ailes du désir",
+  "annee": 1987,
+  "affiche": "data/affiches/film_144.jpg"
+ },
+ "Paris, Texas": {
+  "tmdb_id": 655,
+  "type": "film",
+  "titre": "Paris, Texas",
+  "annee": 1984,
+  "affiche": "data/affiches/film_655.jpg"
+ },
+ "Voyage à Tokyo": {
+  "tmdb_id": 18148,
+  "type": "film",
+  "titre": "Voyage à Tokyo",
+  "annee": 1953,
+  "affiche": "data/affiches/film_18148.jpg"
+ },
+ "Rashōmon (film, 1950)": {
+  "tmdb_id": 548,
+  "type": "film",
+  "titre": "Rashōmon",
+  "annee": 1950,
+  "affiche": "data/affiches/film_548.jpg"
+ },
+ "Les Sept Samouraïs": {
+  "tmdb_id": 346,
+  "type": "film",
+  "titre": "Les Sept Samouraïs",
+  "annee": 1954,
+  "affiche": "data/affiches/film_346.jpg"
+ },
+ "La Ballade de Narayama (film, 1983)": {
+  "tmdb_id": 42113,
+  "type": "film",
+  "titre": "La Ballade de Narayama",
+  "annee": 1983,
+  "affiche": "data/affiches/film_42113.jpg"
+ },
+ "Cléo de 5 à 7": {
+  "tmdb_id": 499,
+  "type": "film",
+  "titre": "Cléo de 5 à 7",
+  "annee": 1962,
+  "affiche": "data/affiches/film_499.jpg"
+ },
+ "Sans toit ni loi": {
+  "tmdb_id": 44018,
+  "type": "film",
+  "titre": "Sans toit ni loi",
+  "annee": 1985,
+  "affiche": "data/affiches/film_44018.jpg"
+ },
+ "Le Septième Sceau": {
+  "tmdb_id": 490,
+  "type": "film",
+  "titre": "Le Septième Sceau",
+  "annee": 1957,
+  "affiche": "data/affiches/film_490.jpg"
+ },
+ "Persona (film)": {
+  "tmdb_id": 797,
+  "type": "film",
+  "titre": "Persona",
+  "annee": 1966,
+  "affiche": "data/affiches/film_797.jpg"
+ },
+ "La Passion de Jeanne d'Arc": {
+  "tmdb_id": 780,
+  "type": "film",
+  "titre": "La Passion de Jeanne d'Arc",
+  "annee": 1928,
+  "affiche": "data/affiches/film_780.jpg"
+ },
+ "Metropolis (film, 1927)": {
+  "tmdb_id": 19,
+  "type": "film",
+  "titre": "Metropolis",
+  "annee": 1927,
+  "affiche": "data/affiches/film_19.jpg"
+ },
+ "Nosferatu le vampire": {
+  "tmdb_id": 653,
+  "type": "film",
+  "titre": "Nosferatu",
+  "annee": 1922,
+  "affiche": "data/affiches/film_653.jpg"
+ },
+ "Aguirre, la colère de Dieu": {
+  "tmdb_id": 2000,
+  "type": "film",
+  "titre": "Aguirre, la colère de Dieu",
+  "annee": 1972,
+  "affiche": "data/affiches/film_2000.jpg"
+ },
+ "Fitzcarraldo": {
+  "tmdb_id": 9343,
+  "type": "film",
+  "titre": "Fitzcarraldo",
+  "annee": 1982,
+  "affiche": "data/affiches/film_9343.jpg"
+ },
+ "La Jetée": {
+  "tmdb_id": 662,
+  "type": "film",
+  "titre": "La Jetée",
+  "annee": 1962,
+  "affiche": "data/affiches/film_662.jpg"
+ },
+ "Le Mépris (film)": {
+  "tmdb_id": 266,
+  "type": "film",
+  "titre": "Le Mépris",
+  "annee": 1963,
+  "affiche": "data/affiches/film_266.jpg"
+ },
+ "À bout de souffle": {
+  "tmdb_id": 269,
+  "type": "film",
+  "titre": "À bout de souffle",
+  "annee": 1960,
+  "affiche": "data/affiches/film_269.jpg"
+ },
+ "Playtime (film)": {
+  "tmdb_id": 10227,
+  "type": "film",
+  "titre": "PlayTime",
+  "annee": 1967,
+  "affiche": "data/affiches/film_10227.jpg"
+ },
+ "Mon oncle": {
+  "tmdb_id": 427,
+  "type": "film",
+  "titre": "Mon oncle",
+  "annee": 1958,
+  "affiche": "data/affiches/film_427.jpg"
+ },
+ "Les Vacances de monsieur Hulot": {
+  "tmdb_id": 778,
+  "type": "film",
+  "titre": "Les Vacances de monsieur Hulot",
+  "annee": 1953,
+  "affiche": "data/affiches/film_778.jpg"
+ },
+ "In the Mood for Love": {
+  "tmdb_id": 843,
+  "type": "film",
+  "titre": "In the Mood for Love",
+  "annee": 2000,
+  "affiche": "data/affiches/film_843.jpg"
+ },
+ "Une séparation": {
+  "tmdb_id": 60243,
+  "type": "film",
+  "titre": "Une séparation",
+  "annee": 2011,
+  "affiche": "data/affiches/film_60243.jpg"
+ },
+ "Oncle Boonmee, celui qui se souvient de ses vies antérieures": {
+  "tmdb_id": 38368,
+  "type": "film",
+  "titre": "Oncle Boonmee (celui qui se souvient de ses vies antérieures)",
+  "annee": 2010,
+  "affiche": "data/affiches/film_38368.jpg"
+ },
+ "Timbuktu (film)": {
+  "tmdb_id": 265228,
+  "type": "film",
+  "titre": "Timbuktu",
+  "annee": 2014,
+  "affiche": "data/affiches/film_265228.jpg"
+ },
+ "Portrait de la jeune fille en feu": {
+  "tmdb_id": 531428,
+  "type": "film",
+  "titre": "Portrait de la jeune fille en feu",
+  "annee": 2019,
+  "affiche": "data/affiches/film_531428.jpg"
+ },
+ "Grave (film, 2016)": {
+  "tmdb_id": 393519,
+  "type": "film",
+  "titre": "Grave",
+  "annee": 2017,
+  "affiche": "data/affiches/film_393519.jpg"
+ },
+ "Titane (film)": {
+  "tmdb_id": 630240,
+  "type": "film",
+  "titre": "Titane",
+  "annee": 2021,
+  "affiche": "data/affiches/film_630240.jpg"
+ },
+ "Les Misérables (film, 2019)": {
+  "tmdb_id": 586863,
+  "type": "film",
+  "titre": "Les Misérables",
+  "annee": 2019,
+  "affiche": "data/affiches/film_586863.jpg"
+ },
+ "Divines": {
+  "tmdb_id": 393729,
+  "type": "film",
+  "titre": "Divines",
+  "annee": 2016,
+  "affiche": "data/affiches/film_393729.jpg"
+ },
+ "Une affaire de famille": {
+  "tmdb_id": 505192,
+  "type": "film",
+  "titre": "Une Affaire de famille",
+  "annee": 2018,
+  "affiche": "data/affiches/film_505192.jpg"
+ },
+ "Drive My Car (film)": {
+  "tmdb_id": 758866,
+  "type": "film",
+  "titre": "Drive My Car",
+  "annee": 2021,
+  "affiche": "data/affiches/film_758866.jpg"
+ },
+ "Burning (film)": {
+  "tmdb_id": 491584,
+  "type": "film",
+  "titre": "Burning",
+  "annee": 2018,
+  "affiche": "data/affiches/film_491584.jpg"
+ },
+ "Memories of Murder": {
+  "tmdb_id": 11423,
+  "type": "film",
+  "titre": "Memories of Murder",
+  "annee": 2003,
+  "affiche": "data/affiches/film_11423.jpg"
+ },
+ "Old Boy (film, 2003)": {
+  "tmdb_id": 670,
+  "type": "film",
+  "titre": "Old Boy",
+  "annee": 2003,
+  "affiche": "data/affiches/film_670.jpg"
+ },
+ "Mademoiselle (film, 2016)": {
+  "tmdb_id": 290098,
+  "type": "film",
+  "titre": "Mademoiselle",
+  "annee": 2016,
+  "affiche": "data/affiches/film_290098.jpg"
+ },
+ "Les Harmonies Werckmeister": {
+  "tmdb_id": 23160,
+  "type": "film",
+  "titre": "Les Harmonies Werckmeister",
+  "annee": 2001,
+  "affiche": "data/affiches/film_23160.jpg"
+ },
+ "Le Tombeau des lucioles": {
+  "tmdb_id": 12477,
+  "type": "film",
+  "titre": "Le Tombeau des Lucioles",
+  "annee": 1988,
+  "affiche": "data/affiches/film_12477.jpg"
+ },
+ "Akira (film d'animation)": {
+  "tmdb_id": 149,
+  "type": "film",
+  "titre": "Akira",
+  "annee": 1988,
+  "affiche": "data/affiches/film_149.jpg"
+ },
+ "Persepolis (film)": {
+  "tmdb_id": 2011,
+  "type": "film",
+  "titre": "Persepolis",
+  "annee": 2007,
+  "affiche": "data/affiches/film_2011.jpg"
+ },
+ "Valse avec Bachir": {
+  "tmdb_id": 8885,
+  "type": "film",
+  "titre": "Valse avec Bachir",
+  "annee": 2008,
+  "affiche": "data/affiches/film_8885.jpg"
+ },
+ "La Tortue rouge": {
+  "tmdb_id": 337703,
+  "type": "film",
+  "titre": "La Tortue rouge",
+  "annee": 2016,
+  "affiche": "data/affiches/film_337703.jpg"
+ },
+ "J'ai perdu mon corps": {
+  "tmdb_id": 586940,
+  "type": "film",
+  "titre": "J'ai perdu mon corps",
+  "annee": 2019,
+  "affiche": "data/affiches/film_586940.jpg"
+ },
+ "Les Triplettes de Belleville": {
+  "tmdb_id": 9662,
+  "type": "film",
+  "titre": "Les Triplettes de Belleville",
+  "annee": 2003,
+  "affiche": "data/affiches/film_9662.jpg"
+ },
+ "Dune, deuxième partie": {
+  "tmdb_id": 693134,
+  "type": "film",
+  "titre": "Dune : Deuxième partie",
+  "annee": 2024,
+  "affiche": "data/affiches/film_693134.jpg"
+ },
+ "Emilia Pérez": {
+  "tmdb_id": 974950,
+  "type": "film",
+  "titre": "Emilia Pérez",
+  "annee": 2024,
+  "affiche": "data/affiches/film_974950.jpg"
+ },
+ "Anora (film)": {
+  "tmdb_id": 1064213,
+  "type": "film",
+  "titre": "Anora",
+  "annee": 2024,
+  "affiche": "data/affiches/film_1064213.jpg"
+ },
+ "The Brutalist": {
+  "tmdb_id": 549509,
+  "type": "film",
+  "titre": "The Brutalist",
+  "annee": 2024,
+  "affiche": "data/affiches/film_549509.jpg"
+ },
+ "Conclave (film)": {
+  "tmdb_id": 974576,
+  "type": "film",
+  "titre": "Conclave",
+  "annee": 2024,
+  "affiche": "data/affiches/film_974576.jpg"
+ },
+ "Un p'tit truc en plus": {
+  "tmdb_id": 1152014,
+  "type": "film",
+  "titre": "Un p'tit truc en plus",
+  "annee": 2024,
+  "affiche": "data/affiches/film_1152014.jpg"
+ },
+ "Le Comte de Monte-Cristo (film, 2024)": {
+  "tmdb_id": 1084736,
+  "type": "film",
+  "titre": "Le Comte de Monte-Cristo",
+  "annee": 2024,
+  "affiche": "data/affiches/film_1084736.jpg"
+ },
+ "L'Amour ouf": {
+  "tmdb_id": 959604,
+  "type": "film",
+  "titre": "L'Amour ouf",
+  "annee": 2024,
+  "affiche": "data/affiches/film_959604.jpg"
+ },
+ "The Substance": {
+  "tmdb_id": 933260,
+  "type": "film",
+  "titre": "The Substance",
+  "annee": 2024,
+  "affiche": "data/affiches/film_933260.jpg"
+ },
+ "Flow (film, 2024)": {
+  "tmdb_id": 1281775,
+  "type": "film",
+  "titre": "FLOW",
+  "annee": 2024,
+  "affiche": "data/affiches/film_1281775.jpg"
+ },
+ "Sinners (film)": {
+  "tmdb_id": 1233413,
+  "type": "film",
+  "titre": "Sinners",
+  "annee": 2025,
+  "affiche": "data/affiches/film_1233413.jpg"
+ },
+ "Mickey 17": {
+  "tmdb_id": 696506,
+  "type": "film",
+  "titre": "Mickey 17",
+  "annee": 2025,
+  "affiche": "data/affiches/film_696506.jpg"
+ },
+ "Une bataille après l'autre": {
+  "tmdb_id": 1054867,
+  "type": "film",
+  "titre": "Une Bataille après l'autre",
+  "annee": 2025,
+  "affiche": "data/affiches/film_1054867.jpg"
+ },
+ "F1 (film)": {
+  "tmdb_id": 911430,
+  "type": "film",
+  "titre": "F1® Le Film",
+  "annee": 2025,
+  "affiche": "data/affiches/film_911430.jpg"
+ },
+ "Superman (film, 2025)": {
+  "tmdb_id": 1061474,
+  "type": "film",
+  "titre": "Superman",
+  "annee": 2025,
+  "affiche": "data/affiches/film_1061474.jpg"
+ },
+ "Frankenstein (film, 2025)": {
+  "tmdb_id": 1062722,
+  "type": "film",
+  "titre": "Frankenstein",
+  "annee": 2025,
+  "affiche": "data/affiches/film_1062722.jpg"
+ },
+ "Nosferatu (film, 2024)": {
+  "tmdb_id": 426063,
+  "type": "film",
+  "titre": "Nosferatu",
+  "annee": 2024,
+  "affiche": "data/affiches/film_426063.jpg"
+ },
+ "Wicked (film)": {
+  "tmdb_id": 402431,
+  "type": "film",
+  "titre": "Wicked",
+  "annee": 2024,
+  "affiche": "data/affiches/film_402431.jpg"
+ },
+ "Gladiator 2": {
+  "tmdb_id": 558449,
+  "type": "film",
+  "titre": "Gladiator II",
+  "annee": 2024,
+  "affiche": "data/affiches/film_558449.jpg"
+ },
+ "Alien: Romulus": {
+  "tmdb_id": 945961,
+  "type": "film",
+  "titre": "Alien : Romulus",
+  "annee": 2024,
+  "affiche": "data/affiches/film_945961.jpg"
+ },
+ "Vice-versa 2": {
+  "tmdb_id": 1022789,
+  "type": "film",
+  "titre": "Vice-versa 2",
+  "annee": 2024,
+  "affiche": "data/affiches/film_1022789.jpg"
+ },
+ "Un simple accident": {
+  "tmdb_id": 1456349,
+  "type": "film",
+  "titre": "Un simple accident",
+  "annee": 2025,
+  "affiche": "data/affiches/film_1456349.jpg"
+ },
+ "Valeur sentimentale": {
+  "tmdb_id": 1124566,
+  "type": "film",
+  "titre": "Valeur sentimentale",
+  "annee": 2025,
+  "affiche": "data/affiches/film_1124566.jpg"
+ },
+ "Sirāt": {
+  "tmdb_id": 1151272,
+  "type": "film",
+  "titre": "Sirāt",
+  "annee": 2025,
+  "affiche": "data/affiches/film_1151272.jpg"
+ },
+ "La Petite Dernière (film)": {
+  "tmdb_id": 961077,
+  "type": "film",
+  "titre": "La Petite Dernière",
+  "annee": 2025,
+  "affiche": "data/affiches/film_961077.jpg"
+ },
+ "Breaking Bad": {
+  "tmdb_id": 1396,
+  "type": "serie",
+  "titre": "Breaking Bad",
+  "annee": 2008,
+  "affiche": "data/affiches/serie_1396.jpg"
+ },
+ "Les Soprano": {
+  "tmdb_id": 1398,
+  "type": "serie",
+  "titre": "Les Soprano",
+  "annee": 1999,
+  "affiche": "data/affiches/serie_1398.jpg"
+ },
+ "Sur écoute": {
+  "tmdb_id": 1438,
+  "type": "serie",
+  "titre": "Sur écoute",
+  "annee": 2002,
+  "affiche": "data/affiches/serie_1438.jpg"
+ },
+ "Game of Thrones": {
+  "tmdb_id": 1399,
+  "type": "serie",
+  "titre": "Game of Thrones",
+  "annee": 2011,
+  "affiche": "data/affiches/serie_1399.jpg"
+ },
+ "Stranger Things": {
+  "tmdb_id": 66732,
+  "type": "serie",
+  "titre": "Stranger Things",
+  "annee": 2016,
+  "affiche": "data/affiches/serie_66732.jpg"
+ },
+ "Friends": {
+  "tmdb_id": 1668,
+  "type": "serie",
+  "titre": "Friends",
+  "annee": 1994,
+  "affiche": "data/affiches/serie_1668.jpg"
+ },
+ "Chernobyl (mini-série)": {
+  "tmdb_id": 87108,
+  "type": "serie",
+  "titre": "Chernobyl",
+  "annee": 2019,
+  "affiche": "data/affiches/serie_87108.jpg"
+ },
+ "Kaamelott": {
+  "tmdb_id": 11466,
+  "type": "serie",
+  "titre": "Kaamelott",
+  "annee": 2005,
+  "affiche": "data/affiches/serie_11466.jpg"
+ },
+ "Lupin (série télévisée, 2021)": {
+  "tmdb_id": 96677,
+  "type": "serie",
+  "titre": "Lupin",
+  "annee": 2021,
+  "affiche": "data/affiches/serie_96677.jpg"
+ },
+ "Squid Game": {
+  "tmdb_id": 93405,
+  "type": "serie",
+  "titre": "Squid Game",
+  "annee": 2021,
+  "affiche": "data/affiches/serie_93405.jpg"
+ },
+ "Le Bureau des légendes": {
+  "tmdb_id": 62476,
+  "type": "serie",
+  "titre": "Le Bureau des légendes",
+  "annee": 2015,
+  "affiche": "data/affiches/serie_62476.jpg"
+ },
+ "Baron noir": {
+  "tmdb_id": 65430,
+  "type": "serie",
+  "titre": "Baron Noir",
+  "annee": 2016,
+  "affiche": "data/affiches/serie_65430.jpg"
+ },
+ "Dark (série télévisée)": {
+  "tmdb_id": 70523,
+  "type": "serie",
+  "titre": "Dark",
+  "annee": 2017,
+  "affiche": "data/affiches/serie_70523.jpg"
+ },
+ "Engrenages (série télévisée)": {
+  "tmdb_id": 11726,
+  "type": "serie",
+  "titre": "Engrenages",
+  "annee": 2005,
+  "affiche": "data/affiches/serie_11726.jpg"
+ },
+ "Les Revenants (série télévisée)": {
+  "tmdb_id": 46616,
+  "type": "serie",
+  "titre": "Les Revenants",
+  "annee": 2012,
+  "affiche": "data/affiches/serie_46616.jpg"
+ },
+ "Severance (série télévisée)": {
+  "tmdb_id": 95396,
+  "type": "serie",
+  "titre": "Severance",
+  "annee": 2022,
+  "affiche": "data/affiches/serie_95396.jpg"
+ },
+ "The Last of Us (série télévisée)": {
+  "tmdb_id": 100088,
+  "type": "serie",
+  "titre": "The Last of Us",
+  "annee": 2023,
+  "affiche": "data/affiches/serie_100088.jpg"
+ },
+ "Adolescence (mini-série)": {
+  "tmdb_id": 249042,
+  "type": "serie",
+  "titre": "Adolescence",
+  "annee": 2025,
+  "affiche": "data/affiches/serie_249042.jpg"
+ },
+ "The Pitt": {
+  "tmdb_id": 250307,
+  "type": "serie",
+  "titre": "The Pitt",
+  "annee": 2025,
+  "affiche": "data/affiches/serie_250307.jpg"
+ },
+ "Andor (série télévisée)": {
+  "tmdb_id": 83867,
+  "type": "serie",
+  "titre": "Star Wars : Andor",
+  "annee": 2022,
+  "affiche": "data/affiches/serie_83867.jpg"
+ }
+}

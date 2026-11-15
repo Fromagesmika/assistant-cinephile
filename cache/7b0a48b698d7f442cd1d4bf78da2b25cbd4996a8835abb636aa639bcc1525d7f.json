@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TqsUWIDoQwg/NYiYtt3/F/Ir2M6aAog8qt167dHhJdDNtYJxEeTg4tNf6+usqDj7V6IuNCY6gvXXdyHzifkGuyB5VRRW/QVB3pd8kMwfuVPw1JjD4e9dyHBQ="
+     }
+    },
+    "function": {
+     "arguments": "{\"titre\":\"Titane\"}",
+     "name": "rechercher_oeuvre"
+    },
+    "id": "call_12804926233646913765",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1142,
+ "tokens_sortie": 20,
+ "tokens_total": 1162,
+ "latence": 2.046120200015139,
+ "modele": "gemini-3.5-flash-lite"
+}

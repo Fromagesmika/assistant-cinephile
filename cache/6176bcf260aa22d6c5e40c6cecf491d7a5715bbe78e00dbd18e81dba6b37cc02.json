@@ -1,0 +1,17 @@
+{
+ "texte": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"Les films Grave et Titane ont bien été retirés de votre liste à voir.\",\n  \"sources\": []\n}\n```",
+ "message": {
+  "content": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"Les films Grave et Titane ont bien été retirés de votre liste à voir.\",\n  \"sources\": []\n}\n```",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EmAKXgFpFH0Ty09UHDM4pHBkpsQvn7+Ga48KYjfg22CcZzCkpYYewRYanX4afDvdjb2INv0CukRAxhHAyh7MYHueZF9Y9n0bsCUw+f7vidnK3ajwINAK24j0sADXniG6bGI="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 2708,
+ "tokens_sortie": 47,
+ "tokens_total": 2755,
+ "latence": 3.2668507000198588,
+ "modele": "gemini-3.5-flash-lite"
+}

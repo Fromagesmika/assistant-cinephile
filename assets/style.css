@@ -108,3 +108,50 @@
   .sources-accueil { margin-top: 8vh; }
   .sources-accueil .noms { gap: 1.2rem; font-size: 1.1rem; }
 }
+
+/* --- Lisibilité : chaque exigence du sujet a sa rubrique, bien visible ------------------ */
+
+/* Choix du niveau : quatre cartes côte à côte, la carte choisie est bordée de violet. */
+.st-key-niveau_choix [role="radiogroup"] { display: grid; grid-template-columns: repeat(4, 1fr); gap: .7rem; width: 100%; }
+.st-key-niveau_choix [role="radiogroup"] > div {
+  margin: 0; background: var(--carte); border: 1px solid var(--bord); border-radius: 14px; padding: .75rem .9rem;
+  backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); align-items: flex-start; transition: border-color .15s;
+}
+.st-key-niveau_choix [role="radiogroup"] > div:hover { border-color: var(--violet-clair); }
+.st-key-niveau_choix [role="radiogroup"] > div:has(input:checked) {
+  border: 1.5px solid var(--violet-clair); background: rgba(76, 52, 140, .78); box-shadow: 0 0 22px rgba(139, 92, 246, .35);
+}
+.st-key-niveau_choix [role="radiogroup"] > div p { font-weight: 600; }
+.st-key-niveau_choix [data-testid="stCaptionContainer"] p { font-weight: 400; color: var(--texte-doux); font-size: .8rem; }
+
+.titre-accueil { margin-top: 9vh; }
+.libelle-suggestions, .rubrique {
+  font-size: .72rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--violet-clair);
+  margin: .9rem 0 .45rem;
+}
+.libelle-suggestions { margin: .5rem 0 .3rem; color: var(--texte-doux); }
+.rubrique.centre { text-align: center; margin-top: 3rem; color: var(--texte); text-shadow: 0 1px 10px rgba(0, 0, 0, .5); }
+.texte-reponse { font-size: 1.12rem; line-height: 1.6; margin: .5rem 0 .2rem; }
+
+/* Bouton d'envoi de la carte d'accueil */
+.st-key-envoyer button { font-size: 1.2rem; }
+
+/* Mur d'affiches de l'accueil */
+.st-key-mur img { border-radius: 10px; box-shadow: 0 10px 26px rgba(10, 5, 25, .55); opacity: .92; transition: transform .2s, opacity .2s; }
+.st-key-mur img:hover { transform: translateY(-4px); opacity: 1; }
+
+/* Affiches dans les réponses et la liste */
+[data-testid="stChatMessage"] img, .st-key-confirmation img, [data-testid="stPopoverBody"] img { border-radius: 8px; }
+[data-testid="stTabs"] [data-baseweb="tab-list"] { gap: 1rem; }
+[data-testid="stTabs"] button p { font-weight: 600; }
+
+.pied { text-align: center; font-size: .72rem; color: var(--texte-doux); margin-top: 3rem; }
+@media (max-width: 760px) {
+  .st-key-niveau_choix [role="radiogroup"] { grid-template-columns: repeat(2, 1fr); }
+}
+.st-key-niveau_choix [data-testid="stRadioOption"] { width: 100%; cursor: pointer; }
+.st-key-niveau_choix [data-testid="stRadioCaption"] { padding-left: 1.6rem; }
+.st-key-niveau_choix [data-testid="stRadio"], .st-key-niveau_choix [data-testid="stRadio"] > div,
+.st-key-niveau_choix [role="radiogroup"] { width: 100% !important; max-width: none; }
+.st-key-niveau_choix [role="radiogroup"] { align-items: stretch; }
+.sous-titre-accueil { text-align: center; color: var(--texte-doux); margin: -.6rem 0 1.6rem; text-shadow: 0 1px 12px rgba(40, 20, 80, .6); }

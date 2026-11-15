@@ -20,3 +20,6 @@ data/liste_a_voir.json
 
 # Traces de l'interface : usage réel, pas les résultats de l'évaluation
 traces/interface.jsonl
+
+# Affiches TMDB : régénérées par scripts/telecharger_affiches.py (droits des ayants droit)
+data/affiches/

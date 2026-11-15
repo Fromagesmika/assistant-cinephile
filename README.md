@@ -32,12 +32,17 @@ python scripts/check_keys.py
 ## Lancer l'interface
 
 ```bash
+python scripts/telecharger_affiches.py
 streamlit run app.py
 ```
 
-L'interface s'ouvre sur http://localhost:8501. On y choisit le niveau (0 à 2), puis on voit la
-réponse, les sources citées, les coûts (tokens, latence, appels au modèle) et la trace de
-chaque étape. Au niveau 2, chaque ajout ou retrait dans la liste « à voir » attend un clic sur
+La première commande télécharge une fois les affiches des 156 œuvres depuis TMDB (dossier
+`data/affiches/`, non versionné). Sans elle, l'interface fonctionne mais sans affiches.
+
+L'interface s'ouvre sur http://localhost:8501. On y choisit le niveau (0 à 3 ; le 3 est en
+préparation), puis on voit la réponse, les œuvres citées avec leur affiche, les sources citées,
+le coût de la requête (tokens, latence, appels au modèle) et la trace de chaque étape (outil,
+arguments, tokens, durée). Au niveau 2, chaque ajout ou retrait dans la liste « à voir » attend un clic sur
 « Accepter » ou « Refuser ». La liste est partagée dans `data/liste_a_voir.json` et chaque
 requête est tracée dans `traces/interface.jsonl`.
 
@@ -67,13 +72,18 @@ Le tableau est écrit dans `results/tableau.md`. Les réponses déjà obtenues s
 | `src/juge.py` | Juge LLM de fidélité aux sources |
 | `src/tmdb.py` | Accès à l'API TMDB, avec cache (`cache/tmdb/`) |
 | `src/liste.py` | Liste « à voir » et règles métier vérifiées par le code |
+| `src/affiches.py`, `data/affiches.json` | Affiches TMDB et correspondance page Wikipédia → fiche TMDB (interface seulement) |
+| `assets/style.css` | Apparence de l'interface |
 | `data/index/` | Vecteurs des passages (configuration retenue) |
 | `scripts/` | Corpus, contrôle des clés et des tests, comparaison de la recherche, calibration du juge |
 | `results/`, `traces/` | Résultats bruts et traces |
 | `rapport/`, `video/` | Rapport PDF et sources de la vidéo |
 
-## Licence du corpus
+## Licence du corpus et des affiches
 
 Les textes de `data/corpus.jsonl` proviennent de Wikipédia en français, sous licence
 [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.fr). L'URL et la révision de
 chaque page sont conservées dans le fichier.
+
+Les affiches et les données de films viennent de [TMDB](https://www.themoviedb.org). Ce produit
+utilise l'API TMDB mais n'est ni approuvé ni certifié par TMDB. Les affiches ne sont pas versionnées.

@@ -1,0 +1,17 @@
+{
+ "texte": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"Je n'ai pas pu ajouter le film *Titane* à votre liste « à voir » car vous avez refusé cette action.\",\n  \"sources\": []\n}\n```",
+ "message": {
+  "content": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"Je n'ai pas pu ajouter le film *Titane* à votre liste « à voir » car vous avez refusé cette action.\",\n  \"sources\": []\n}\n```",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EmAKXgFpFH0TYEpbUst9uLrjdJ34BpXiHZPP7ek3VrZLCyAy6LTZdyAOkRuBoh843UzmYC07u4lND3ym50Ctc+SDmRLUKCb0nLiUz5m2LztKrQwHT1pBujnzuKp1n9GydrY="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 1749,
+ "tokens_sortie": 58,
+ "tokens_total": 1807,
+ "latence": 2.0210517999948934,
+ "modele": "gemini-3.5-flash-lite"
+}
