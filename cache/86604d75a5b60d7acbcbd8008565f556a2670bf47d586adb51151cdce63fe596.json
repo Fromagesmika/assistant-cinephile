@@ -1,0 +1,17 @@
+{
+ "texte": "{\"statut\": \"reponse\", \"texte\": \"Le film Le Salaire de la peur réalisé par Henri-Georges Clouzot, sorti en 1953, a totalisé environ 5,9 millions d'entrées en France lors de son exploitation en salles.\"}",
+ "message": {
+  "content": "{\"statut\": \"reponse\", \"texte\": \"Le film Le Salaire de la peur réalisé par Henri-Georges Clouzot, sorti en 1953, a totalisé environ 5,9 millions d'entrées en France lors de son exploitation en salles.\"}",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EmAKXgFpFH0TX3G6NLn6wQcd3Wa5CGD/+o7VWQdARu9DTqxrG1YwnVhjTPoiNuEGgDKxHIRdrgBNBGC+EcJpexStPJo8sTtiIF6/rnFXHFXfeJAZBpQJg0itd2lylsz+uok="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 235,
+ "tokens_sortie": 60,
+ "tokens_total": 295,
+ "latence": 1.3646250999881886,
+ "modele": "gemini-3.5-flash-lite"
+}

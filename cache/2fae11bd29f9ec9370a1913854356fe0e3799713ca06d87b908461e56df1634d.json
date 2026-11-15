@@ -1,0 +1,17 @@
+{
+ "texte": "{\"statut\": \"reponse\", \"texte\": \"Le film a réalisé 279 635 entrées le premier jour de sa sortie, le 1er mai [2].\", \"sources\": [2]}",
+ "message": {
+  "content": "{\"statut\": \"reponse\", \"texte\": \"Le film a réalisé 279 635 entrées le premier jour de sa sortie, le 1er mai [2].\", \"sources\": [2]}",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EmAKXgFpFH0TNPkgwKI0FCu7b/cvtPNkPqn0Ia0s9Gb3rsKiwJQQpf+Sq2nEl/IYfJ8R2u7J92Fa34PYMwwFJjp5YVkLhEfyzDWSpAH58M7D2X+bVzpqhSyJL79BCYjPk5k="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 1306,
+ "tokens_sortie": 48,
+ "tokens_total": 1354,
+ "latence": 1.3362176999798976,
+ "modele": "gemini-3.5-flash-lite"
+}

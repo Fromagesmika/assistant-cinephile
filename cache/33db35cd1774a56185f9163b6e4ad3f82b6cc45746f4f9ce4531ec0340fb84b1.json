@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TIjxr+s0M6ivOYuJoKGk4+fSV8DJB16ZdkvCBztvMy0Ue6iH1XuqAqcgwii9kYP2nl4aGHFP3fmRDAdTFa6rPhVTHnWKjK+1JqZ/WYtcNSV/zE8bRn2f5I50="
+     }
+    },
+    "function": {
+     "arguments": "{\"requete\":\"Brume sur Tromsø\"}",
+     "name": "rechercher_documents"
+    },
+    "id": "call_6087491608852281446",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1638,
+ "tokens_sortie": 23,
+ "tokens_total": 1661,
+ "latence": 1.5902302999747917,
+ "modele": "gemini-3.5-flash-lite"
+}

@@ -1,0 +1,17 @@
+{
+ "texte": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"Le prénom de Juste Leblanc a été inspiré à Francis Veber par le footballeur Just Fontaine [1].\",\n  \"sources\": [1]\n}\n```",
+ "message": {
+  "content": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"Le prénom de Juste Leblanc a été inspiré à Francis Veber par le footballeur Just Fontaine [1].\",\n  \"sources\": [1]\n}\n```",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EmAKXgFpFH0TA39G2kHV41h3APgpXIoCpGwD7+zOi9SL/6kmqfCiuO6cyuldvZliwo6sc+EM48W9Iy9pVUDOTabp6dVx354wiXhiGR7bxHtqZ9HJPOO52sBQctedQBCscYI="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 2279,
+ "tokens_sortie": 58,
+ "tokens_total": 2337,
+ "latence": 1.4964984999969602,
+ "modele": "gemini-3.5-flash-lite"
+}

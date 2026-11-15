@@ -191,11 +191,12 @@ def tableau(resultats):
             f"| {pourcent(taux(lignes, 'tache'))} "
             f"| {moyenne(l['tokens'] for l in lignes):.0f} | {moyenne(l['latence'] for l in lignes):.2f} |"
         )
+    nombre_taches = max((sum(l["critere"] == "tache" for l in lignes) for lignes in resultats.values()), default=0)
     sortie += [
         "",
         "Source citée, phrases citées et fidélité portent sur les réponses données aux cas `document`. "
         "La fidélité vient du juge LLM (voir results/calibration_juge.md pour sa fiabilité).",
-        f"Succès tâches : part des {ESSAIS_TACHE} × 10 essais dont l'état final de la liste est correct ; "
+        f"Succès tâches : part des {ESSAIS_TACHE} × {nombre_taches} essais dont l'état final de la liste est correct ; "
         f"pass^3 : part des tâches réussies aux {ESSAIS_TACHE} essais.",
         "",
         "Exactitude par strate :",

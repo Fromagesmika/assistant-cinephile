@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TUV4vtpR+e7FPQdlmMxTrJzAfI6UFshoT1BbN7/rV1xFyaT8XSuUYazaMIY3xYG8RfbLjk/Dma5X2lQ33RXrKyGmz9tEoib6jkDye/b0qa1CXexnXtpqNfgM="
+     }
+    },
+    "function": {
+     "arguments": "{\"requete\":\"Un p'tit truc en plus entrées premier jour sortie\"}",
+     "name": "rechercher_documents"
+    },
+    "id": "call_14103261705669231897",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 2250,
+ "tokens_sortie": 30,
+ "tokens_total": 2280,
+ "latence": 1.4541417000000365,
+ "modele": "gemini-3.5-flash-lite"
+}

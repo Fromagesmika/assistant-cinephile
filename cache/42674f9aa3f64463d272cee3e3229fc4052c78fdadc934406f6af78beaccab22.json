@@ -1,0 +1,17 @@
+{
+ "texte": "{\"statut\": \"reponse\", \"texte\": \"J'ai retiré tous les films (« La Haine » et « Seven ») de votre liste à voir.\", \"sources\": []}",
+ "message": {
+  "content": "{\"statut\": \"reponse\", \"texte\": \"J'ai retiré tous les films (« La Haine » et « Seven ») de votre liste à voir.\", \"sources\": []}",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EmAKXgFpFH0T94QDEVpUr/cZNwFxuKuwZya7KPZRStaSTyLNq3qsrqLI+/SinkwO3PZirViV44J2t+VMxq3ic4SbFp+/Ks2zafdaq+mJT+Zg1RWguq8UCoXOO0E8mzobopk="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 1423,
+ "tokens_sortie": 41,
+ "tokens_total": 1464,
+ "latence": 1.8023338000057265,
+ "modele": "gemini-3.5-flash-lite"
+}

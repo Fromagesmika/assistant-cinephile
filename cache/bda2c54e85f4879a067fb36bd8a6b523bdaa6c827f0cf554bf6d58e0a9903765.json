@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TeWL4BMHNkR3Ca8C3RceAqDP8j/bUCjRB+/VTpHTOHQSN6Rimdk8didE/OXKKJjND1xxkRBwpVwJxLgUYYZT4tIpAnZfwXfC40luLO1IxdqWVWnnqr2oWE3E="
+     }
+    },
+    "function": {
+     "arguments": "{\"requete\":\"Divines Houda Benyamina festival de Cannes 2016 récompense\"}",
+     "name": "rechercher_documents"
+    },
+    "id": "call_10034613515092685652",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1162,
+ "tokens_sortie": 35,
+ "tokens_total": 1197,
+ "latence": 1.6160198000143282,
+ "modele": "gemini-3.5-flash-lite"
+}

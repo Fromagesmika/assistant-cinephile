@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TbjHRwsnYdnl1CvadeaoKXIN5kLAJFkklbpVMKJjFopK6Bvh4agv5odsBvzRkiqfuXeLNsUJ60y8XcDg2x3Ila+3lhwFZBDczT6Ko6dhTEKDdU9HA14+K36Q="
+     }
+    },
+    "function": {
+     "arguments": "{\"requete\":\"Cleo de 5 a 7 date de l action Agnes Varda\"}",
+     "name": "rechercher_documents"
+    },
+    "id": "call_3237130472091827666",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1158,
+ "tokens_sortie": 33,
+ "tokens_total": 1191,
+ "latence": 3.3578722999664024,
+ "modele": "gemini-3.5-flash-lite"
+}

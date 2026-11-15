@@ -1,0 +1,17 @@
+{
+ "texte": "{\"statut\": \"reponse\", \"texte\": \"Le film Le Fabuleux Destin d'Amélie Poulain, réalisé par Jean-Pierre Jeunet et sorti en 2001, a réalisé environ 8,6 millions d'entrées en France. C'est l'un des plus grands succès du cinéma français au box-office.\"}",
+ "message": {
+  "content": "{\"statut\": \"reponse\", \"texte\": \"Le film Le Fabuleux Destin d'Amélie Poulain, réalisé par Jean-Pierre Jeunet et sorti en 2001, a réalisé environ 8,6 millions d'entrées en France. C'est l'un des plus grands succès du cinéma français au box-office.\"}",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EmAKXgFpFH0TNUmZyTIZ7YR/FkEMqNlj9uo32Gp7Qcy9OMuA/6czkrqZ3tKiMHTb4sbzeT5JVUeJYDslffVeUIThjdDRJ/Ca8xhkfQRfhxNxS/rH2PmLvqrQ0Lrz5DWJLaA="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 236,
+ "tokens_sortie": 76,
+ "tokens_total": 312,
+ "latence": 1.1402659000013955,
+ "modele": "gemini-3.5-flash-lite"
+}

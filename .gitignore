@@ -17,3 +17,6 @@ cache/requetes/minilm.json
 
 # Liste « à voir » partagée : état de l'application, pas une donnée du projet
 data/liste_a_voir.json
+
+# Traces de l'interface : usage réel, pas les résultats de l'évaluation
+traces/interface.jsonl

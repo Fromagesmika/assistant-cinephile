@@ -1,0 +1,17 @@
+{
+ "texte": "```json\n{\"statut\": \"reponse\", \"texte\": \"Le groupe de rap français Assassin est crédité pour la musique du film La Haine de Mathieu Kassovitz [1].\", \"sources\": [1]}\n```",
+ "message": {
+  "content": "```json\n{\"statut\": \"reponse\", \"texte\": \"Le groupe de rap français Assassin est crédité pour la musique du film La Haine de Mathieu Kassovitz [1].\", \"sources\": [1]}\n```",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EmAKXgFpFH0TL0yCcJVchggIn88TH2rG4MPXfEaav08+QuFnyHd8f9GjJOTul9njkp+oZdNUW678OJQ8JN+rHSo//UVXDRQ+vvE7Gf0/T7k2qqP7zJFwW7Ja2o9YtX4uBdA="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 2153,
+ "tokens_sortie": 49,
+ "tokens_total": 2202,
+ "latence": 1.3142289000097662,
+ "modele": "gemini-3.5-flash-lite"
+}

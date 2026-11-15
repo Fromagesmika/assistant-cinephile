@@ -1,0 +1,17 @@
+{
+ "texte": "```json\n{\"statut\": \"reponse\", \"texte\": \"J'ai retiré Titanic de votre liste à voir et j'y ai ajouté Interstellar à sa place.\", \"sources\": []}\n```",
+ "message": {
+  "content": "```json\n{\"statut\": \"reponse\", \"texte\": \"J'ai retiré Titanic de votre liste à voir et j'y ai ajouté Interstellar à sa place.\", \"sources\": []}\n```",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EmAKXgFpFH0TpesetjvBnByH54BYgHE+JaXeRaqMb2ITqvLxW6X7Jy3yGcNKhN1qmf/QBmWXg0ujOGbk+rcUL4778xFKNSRnUVAu2F3/3mV4tXKYrEU3CDmQroWTXkDADV8="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 2572,
+ "tokens_sortie": 45,
+ "tokens_total": 2617,
+ "latence": 1.9986335000139661,
+ "modele": "gemini-3.5-flash-lite"
+}

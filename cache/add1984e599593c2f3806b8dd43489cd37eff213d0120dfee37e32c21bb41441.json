@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TKNqkidYX46aIrRN8iqUjwptje2hOAhiU5W8imSMRKlRUePnwB3o/qOtZRUMKCKyrlnOplOLm7ddzLJe9+D1BWZZXeBbI9HggnmmByDNJg8ZHyFwbU42PRU8="
+     }
+    },
+    "function": {
+     "arguments": "{\"requete\":\"Le Dîner de cons Juste Leblanc footballeur prénom\"}",
+     "name": "rechercher_documents"
+    },
+    "id": "call_10391153428264841668",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1155,
+ "tokens_sortie": 32,
+ "tokens_total": 1187,
+ "latence": 1.2567511000088416,
+ "modele": "gemini-3.5-flash-lite"
+}

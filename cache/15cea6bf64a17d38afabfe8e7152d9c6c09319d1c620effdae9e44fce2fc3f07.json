@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TKAS/loJZAuN+vlqekl8QrI8n5thQX65Oulx2yFaR7qYCKL0f4ITC46rGltj4R+TeZ4B5vYomvf3vDsiOJL/ZdCp2QxKh2Ce51HiWdxtXqqqMhQX/KQFXFnY="
+     }
+    },
+    "function": {
+     "arguments": "{\"requete\":\"Une bataille après l'autre Thomas Pynchon roman adaptation\"}",
+     "name": "rechercher_documents"
+    },
+    "id": "call_12734174935914658841",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1150,
+ "tokens_sortie": 30,
+ "tokens_total": 1180,
+ "latence": 1.6180577999912202,
+ "modele": "gemini-3.5-flash-lite"
+}

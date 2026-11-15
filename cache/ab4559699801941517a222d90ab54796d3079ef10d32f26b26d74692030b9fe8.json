@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TI24SAdD5ZVYptt6O3k/LUQLTsxiWdBAZ/UjIuazInIuZ4AbZScw6r5QacETsTdPSDpIHw7WXb2LHTpEBwtu4Om2DE4KG8dBajxfI1BHz6DTquhgcigC30Aw="
+     }
+    },
+    "function": {
+     "arguments": "{\"titre\":\"Flow\"}",
+     "name": "rechercher_oeuvre"
+    },
+    "id": "call_1942967274043724908",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1149,
+ "tokens_sortie": 19,
+ "tokens_total": 1168,
+ "latence": 1.6103753999923356,
+ "modele": "gemini-3.5-flash-lite"
+}

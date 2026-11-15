@@ -1,0 +1,17 @@
+{
+ "texte": "{\"statut\": \"reponse\", \"texte\": \"Le Fabuleux Destin d'Amélie Poulain a réalisé 8 636 041 entrées en France [5].\", \"sources\": [5]}",
+ "message": {
+  "content": "{\"statut\": \"reponse\", \"texte\": \"Le Fabuleux Destin d'Amélie Poulain a réalisé 8 636 041 entrées en France [5].\", \"sources\": [5]}",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EmAKXgFpFH0TCzbB0+17WjZtDiukPFrM+t7YIlrCMDtXEaTmjZSjVaAsbpRWWbF+lrsS1I3O/GzFvMio5qRXUdWXXlDOhBU0nxPtjZAWh+fzDOAf1ddTGTNNOKfXsqS/ogg="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 1168,
+ "tokens_sortie": 49,
+ "tokens_total": 1217,
+ "latence": 1.9358499000081792,
+ "modele": "gemini-3.5-flash-lite"
+}

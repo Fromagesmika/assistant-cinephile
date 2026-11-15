@@ -99,6 +99,12 @@ def details(tmdb_id, type_oeuvre="film"):
     else:
         fiche["realisation"] = [p["name"] for p in equipe if p.get("job") == "Director"]
         fiche["duree_minutes"] = donnees.get("runtime")
+        # Box-office : TMDB met 0 quand le montant est inconnu ; on ne l'affiche pas plutôt
+        # que de laisser le modèle conclure que le film n'a rien rapporté.
+        if donnees.get("budget"):
+            fiche["budget_dollars"] = donnees["budget"]
+        if donnees.get("revenue"):
+            fiche["recettes_mondiales_dollars"] = donnees["revenue"]
     return fiche, duree
 
 

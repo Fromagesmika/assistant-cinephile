@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TqF1ufm582XlTb6/zRb3VkzSyvuGwEAao3isPEEbI0qRSGYyQi5m7fr019NXiqIeL0ydn2loxj1RCyatUX19Nlyw1XKqin4j8DBfArWKtlKoQpOXTtHKd25g="
+     }
+    },
+    "function": {
+     "arguments": "{\"requete\":\"Le Salaire de la peur entrées France\"}",
+     "name": "rechercher_documents"
+    },
+    "id": "call_11712655388378457826",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1157,
+ "tokens_sortie": 27,
+ "tokens_total": 1184,
+ "latence": 1.4901772000011988,
+ "modele": "gemini-3.5-flash-lite"
+}

@@ -1,0 +1,17 @@
+{
+ "texte": "```json\n{\n  \"statut\": \"precision\",\n  \"texte\": \"Il existe plusieurs films intitulés *Nosferatu* : *Nosferatu le vampire* (1922) a été réalisé par Friedrich Wilhelm Murnau [1], et le film *Nosferatu* sorti en 2024 a été réalisé par Robert Eggers [1]. Lequel des deux films vous intéresse ?\",\n  \"sources\": [1]\n}\n```",
+ "message": {
+  "content": "```json\n{\n  \"statut\": \"precision\",\n  \"texte\": \"Il existe plusieurs films intitulés *Nosferatu* : *Nosferatu le vampire* (1922) a été réalisé par Friedrich Wilhelm Murnau [1], et le film *Nosferatu* sorti en 2024 a été réalisé par Robert Eggers [1]. Lequel des deux films vous intéresse ?\",\n  \"sources\": [1]\n}\n```",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EmAKXgFpFH0TBzHy8iTofKzbQfs9BAOjcSvOyK6efV6yGaFadS6jObS/JTL8CHuQZm3uVZBVyLeAkg24TqHk6snprjun+dWU282DvFd8ObnAFdprs4/a4H3eOcB9p89b9Lc="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 2287,
+ "tokens_sortie": 101,
+ "tokens_total": 2388,
+ "latence": 2.1551665000151843,
+ "modele": "gemini-3.5-flash-lite"
+}

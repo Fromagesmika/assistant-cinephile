@@ -1,0 +1,17 @@
+{
+ "texte": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"Souhaitez-vous vraiment ajouter le film *Drive My Car* (2021) à votre liste « à voir » ?\",\n  \"sources\": []\n}\n```",
+ "message": {
+  "content": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"Souhaitez-vous vraiment ajouter le film *Drive My Car* (2021) à votre liste « à voir » ?\",\n  \"sources\": []\n}\n```",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EmAKXgFpFH0TQWsZJAaKyjWmSJ8Yn00XIdlScsZCHsIuO0fiK4DM8tASsfQfXA1bAGdR1QPcNU5hnIy173YS4/EaM7cwUO2sg6Sgc2wPBjXfQ0S46m9qZe8w5iX53YHH9gg="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 1762,
+ "tokens_sortie": 58,
+ "tokens_total": 1820,
+ "latence": 1.1394133999710903,
+ "modele": "gemini-3.5-flash-lite"
+}

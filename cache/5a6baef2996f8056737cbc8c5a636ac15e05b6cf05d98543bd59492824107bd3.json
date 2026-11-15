@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TUEhF2N4HLq2KHjnfcaS9Hi6QaZ2ptbz4MAYNZ6YKeCVUkdk+kIu5EWOLei6R1GlRcpCxLhv/qnHoRUnNNXSJVbOYu2kEzzMioNnsmM+qFs0ESPw/FDL9zXw="
+     }
+    },
+    "function": {
+     "arguments": "{\"requete\":\"Un p'tit truc en plus entrées jour de sortie Artus\"}",
+     "name": "rechercher_documents"
+    },
+    "id": "call_5384270464906267493",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1161,
+ "tokens_sortie": 32,
+ "tokens_total": 1193,
+ "latence": 1.411866300040856,
+ "modele": "gemini-3.5-flash-lite"
+}

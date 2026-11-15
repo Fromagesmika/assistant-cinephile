@@ -1,0 +1,17 @@
+{
+ "texte": "{\"statut\": \"abstention\", \"texte\": \"Les extraits fournis ne mentionnent pas le nombre d'entrées réalisées par Le Salaire de la peur de Clouzot en France.\", \"sources\": []}",
+ "message": {
+  "content": "{\"statut\": \"abstention\", \"texte\": \"Les extraits fournis ne mentionnent pas le nombre d'entrées réalisées par Le Salaire de la peur de Clouzot en France.\", \"sources\": []}",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EmAKXgFpFH0T3uup6js2iRn1zclEGOaQPh2JqfsRy+c62CXkk3MNs3tqxXVozrcELb1UwdRX5zNOwOx8R8++bOEtZ/ZmD/t6y8fj+EFyNd4Me4E68kB8DR8bS3d8jLOq4N8="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 1210,
+ "tokens_sortie": 46,
+ "tokens_total": 1256,
+ "latence": 1.8211967999814078,
+ "modele": "gemini-3.5-flash-lite"
+}

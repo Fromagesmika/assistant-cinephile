@@ -1,0 +1,17 @@
+{
+ "texte": "```json\n{\n  \"statut\": \"abstention\",\n  \"texte\": \"Je ne dispose pas d'informations sur le budget du film Flow de Gints Zilbalodis dans mes sources actuelles.\",\n  \"sources\": []\n}\n```",
+ "message": {
+  "content": "```json\n{\n  \"statut\": \"abstention\",\n  \"texte\": \"Je ne dispose pas d'informations sur le budget du film Flow de Gints Zilbalodis dans mes sources actuelles.\",\n  \"sources\": []\n}\n```",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EmAKXgFpFH0TlCPhA3suKgURtdGOX7pz1b0frpSZCJLaQOR5A3sivWGRYmtTxLNqkbJu2uCBaXIyyCApjiD2B/JZ0CaDXHFmcjhFElYm65c0SeDicGB3jMgl+30E+ubmLu4="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 4312,
+ "tokens_sortie": 55,
+ "tokens_total": 4367,
+ "latence": 2.1754430000437424,
+ "modele": "gemini-3.5-flash-lite"
+}

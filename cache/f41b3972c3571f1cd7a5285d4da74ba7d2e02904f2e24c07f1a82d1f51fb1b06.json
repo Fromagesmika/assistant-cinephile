@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0Tix2zsmRv2VUtZf9rFQ8+vC6v0xODI3bFhqtPmpYu9Xhk/CpsIZCDJiy6c4atd22oYdYlxxp0b8Ex2PVatJ3m4Sej/4DIwt9OtZeE2loJruQI+fNL4GuHOfY="
+     }
+    },
+    "function": {
+     "arguments": "{\"requete\":\"Cleo de 5 a 7 date jour action\"}",
+     "name": "rechercher_documents"
+    },
+    "id": "call_17735412535343860068",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 2075,
+ "tokens_sortie": 29,
+ "tokens_total": 2104,
+ "latence": 4.7434193000080995,
+ "modele": "gemini-3.5-flash-lite"
+}

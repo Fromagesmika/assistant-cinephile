@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0Tzk5tl5HVY4KA/Q6huxiu/IhPsUwttRy4Dv7kQmgnJT57dWOjQ9sy5o9fxVO+AEQw2TNxraLjfgOTinpsgw2kxRp2BecpbvcR+SHh+yfv24Lnas9++XDWfyI="
+     }
+    },
+    "function": {
+     "arguments": "{\"requete\":\"Le Samourai Jean Pierre Melville musique compositeur\"}",
+     "name": "rechercher_documents"
+    },
+    "id": "call_16380351131896331287",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1149,
+ "tokens_sortie": 28,
+ "tokens_total": 1177,
+ "latence": 0.9979595000040717,
+ "modele": "gemini-3.5-flash-lite"
+}

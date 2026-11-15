@@ -1,0 +1,17 @@
+{
+ "texte": "```json\n{\n  \"statut\": \"precision\",\n  \"texte\": \"De quel film parlez-vous ? Pourriez-vous préciser son titre ?\",\n  \"sources\": []\n}\n```",
+ "message": {
+  "content": "```json\n{\n  \"statut\": \"precision\",\n  \"texte\": \"De quel film parlez-vous ? Pourriez-vous préciser son titre ?\",\n  \"sources\": []\n}\n```",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EmAKXgFpFH0TAMQaZZyLpwyipDbl1DQmTDUGHhART7uf/dR5qB7RpPpwoFe6+npdvNPZEz9MQGhWtV8USdQSLa39rZqj+mVieUQNDO8yveZ8r9+T3ZwaoPHJnqkS93bBiL0="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 1772,
+ "tokens_sortie": 45,
+ "tokens_total": 1817,
+ "latence": 1.2772107999771833,
+ "modele": "gemini-3.5-flash-lite"
+}

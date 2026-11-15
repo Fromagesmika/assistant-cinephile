@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0T+MgMckjVWhnJYjOb+vVaVXJ170JHJ2AIW7b2Netf4EpxqcVDstxHFg4e/ALUGk/B0BGulvt6tRWfSpS9O+M5v+ahTs/dx73jD8bw1Phk5VDOui4fw4lZWIk="
+     }
+    },
+    "function": {
+     "arguments": "{\"requete\":\"Inception Christopher Nolan compositeur musique\"}",
+     "name": "rechercher_documents"
+    },
+    "id": "call_10151012658288315524",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1145,
+ "tokens_sortie": 25,
+ "tokens_total": 1170,
+ "latence": 0.9164718000101857,
+ "modele": "gemini-3.5-flash-lite"
+}

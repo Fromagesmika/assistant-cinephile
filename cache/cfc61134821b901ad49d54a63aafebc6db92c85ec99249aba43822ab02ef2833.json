@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TaZ0dqCdMSfN8PDJW+nIvGZmSROmVzEcms91o4UILd5FnbD7/irUq6EmHJpVgoUj6bbj2y2ZmRTWqgBNy1r5qjRHufyxpt+N17/arvANvcuUxMrCZtt3a4ck="
+     }
+    },
+    "function": {
+     "arguments": "{\"requete\":\"\\\"Flow\\\" \\\"budget\\\" Gints Zilbalodis\"}",
+     "name": "rechercher_documents"
+    },
+    "id": "call_8344457013489300263",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 3008,
+ "tokens_sortie": 29,
+ "tokens_total": 3037,
+ "latence": 1.448966299998574,
+ "modele": "gemini-3.5-flash-lite"
+}

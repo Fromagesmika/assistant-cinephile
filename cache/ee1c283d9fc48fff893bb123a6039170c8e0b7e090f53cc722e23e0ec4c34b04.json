@@ -1,0 +1,17 @@
+{
+ "texte": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"La musique du film Le Samouraï de Jean-Pierre Melville a été composée par François de Roubaix [1].\",\n  \"sources\": [1]\n}\n```",
+ "message": {
+  "content": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"La musique du film Le Samouraï de Jean-Pierre Melville a été composée par François de Roubaix [1].\",\n  \"sources\": [1]\n}\n```",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EmAKXgFpFH0TSBzM8aPnocqdAbKQwLrSkoCxELLD5LQOERXuzBzYfXjdECtqLrpOen5MqMvUftJ9unTjQ/rLnX+xOjxTaF76QY+VCf00aEbWACzfV6F+IurGvrCbMr58YtM="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 2368,
+ "tokens_sortie": 57,
+ "tokens_total": 2425,
+ "latence": 1.74945810000645,
+ "modele": "gemini-3.5-flash-lite"
+}

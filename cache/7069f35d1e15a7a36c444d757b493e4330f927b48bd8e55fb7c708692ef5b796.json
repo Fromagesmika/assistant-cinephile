@@ -1,0 +1,17 @@
+{
+ "texte": "{\"statut\": \"reponse\", \"texte\": \"Le film \\\"Un p'tit truc en plus\\\" réalisé par Artus a réalisé plus de 280 000 entrées le jour de sa sortie en France le 1er mai 2024, réalisant ainsi l'un des meilleurs démarrage pour un film français depuis plusieurs années.\"}",
+ "message": {
+  "content": "{\"statut\": \"reponse\", \"texte\": \"Le film \\\"Un p'tit truc en plus\\\" réalisé par Artus a réalisé plus de 280 000 entrées le jour de sa sortie en France le 1er mai 2024, réalisant ainsi l'un des meilleurs démarrage pour un film français depuis plusieurs années.\"}",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EmAKXgFpFH0T37OFjiyVhvzotTLE9wb1scrxS465aS5/M4Zb0WIjllTfOty4tdUljpFrWIcvwcDLOuiZsD2taQ6H3fdRPY8VF7/AM1IzmjI+yCpMYGcpUtDDZTfXLpka60E="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 239,
+ "tokens_sortie": 77,
+ "tokens_total": 316,
+ "latence": 1.099398399994243,
+ "modele": "gemini-3.5-flash-lite"
+}

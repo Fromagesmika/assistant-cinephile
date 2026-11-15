@@ -1,0 +1,17 @@
+{
+ "texte": "{\"statut\": \"precision\", \"texte\": \"De quelle suite de film ou de série parlez-vous ?\", \"sources\": []}",
+ "message": {
+  "content": "{\"statut\": \"precision\", \"texte\": \"De quelle suite de film ou de série parlez-vous ?\", \"sources\": []}",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EmAKXgFpFH0TXeJl/Zx0e5YYkucCfQg11C2jRCqZ0IuRyIqas5RRgpcn7NKOEv0DBGdkR1mW6C6F9FY63kmaZQGgw/vpR9ea2MBNkQK/GrylkJvkJXc62Gmf5SaqlwMb/kg="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 1140,
+ "tokens_sortie": 29,
+ "tokens_total": 1169,
+ "latence": 1.4431208999594674,
+ "modele": "gemini-3.5-flash-lite"
+}

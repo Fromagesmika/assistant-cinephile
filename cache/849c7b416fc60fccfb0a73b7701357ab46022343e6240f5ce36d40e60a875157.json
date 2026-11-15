@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0T2ebdeLxgZ6L/qlXzcz/KsfUQ0Thka57+GBT4LoJRF2rkXz24gx5sD3OKKR/BU3m9msgnyBA2GiHgNLxNCDSM78iLcDauPzvEreBpBw+nFJpw6+XRMgZvq1Q="
+     }
+    },
+    "function": {
+     "arguments": "{\"titre\":\"Parasite\",\"type\":\"film\",\"annee\":2019}",
+     "name": "rechercher_oeuvre"
+    },
+    "id": "call_9190324315019963915",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1154,
+ "tokens_sortie": 34,
+ "tokens_total": 1188,
+ "latence": 1.6380552999908105,
+ "modele": "gemini-3.5-flash-lite"
+}

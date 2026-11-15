@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0Tlt6zQe+p1VYQgDGYaWxkvpnvSBvEfiQLO5KA6KhK1YyyXJEuIGZLXSyFGEUm3mEtHzfHTYJcxlm+wlyPIKyM7+nuvnUJlZsANsVeatYji8zOjU9aljVELRA="
+     }
+    },
+    "function": {
+     "arguments": "{\"requete\":\"Brume sur Tromsø serie saisons\"}",
+     "name": "rechercher_documents"
+    },
+    "id": "call_11292862811403500599",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1145,
+ "tokens_sortie": 25,
+ "tokens_total": 1170,
+ "latence": 1.8429734999663197,
+ "modele": "gemini-3.5-flash-lite"
+}

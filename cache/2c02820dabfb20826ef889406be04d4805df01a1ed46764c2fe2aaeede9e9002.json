@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TufgbB/pYixQhaK7UA7nCINqtv7EfkOc9bYzpUqRG5q/eGOrU1QJANU0XWPTh1WAv0NZPLay8wifpkXgy7tH0OQ5iDLyYr67oBlaipJgTfu4+haC1nGz766c="
+     }
+    },
+    "function": {
+     "arguments": "{\"requete\":\"Tom Cross monteur Whiplash voiture\"}",
+     "name": "rechercher_documents"
+    },
+    "id": "call_6295500035639295909",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 2251,
+ "tokens_sortie": 25,
+ "tokens_total": 2276,
+ "latence": 1.481098500022199,
+ "modele": "gemini-3.5-flash-lite"
+}

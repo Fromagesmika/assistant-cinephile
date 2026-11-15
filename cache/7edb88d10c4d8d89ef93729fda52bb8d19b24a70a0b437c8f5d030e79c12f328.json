@@ -1,0 +1,17 @@
+{
+ "texte": "```json\n{\n  \"statut\": \"refus\",\n  \"texte\": \"Je ne peux répondre qu'aux questions concernant le cinéma et les séries.\",\n  \"sources\": []\n}\n```",
+ "message": {
+  "content": "```json\n{\n  \"statut\": \"refus\",\n  \"texte\": \"Je ne peux répondre qu'aux questions concernant le cinéma et les séries.\",\n  \"sources\": []\n}\n```",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EmAKXgFpFH0TSCxtioyRBfJOKEW3hq68JiTwS7pkLOIiqy56bop3rWg0SLGJG0rEsokx7YvzC9wI4xpHOnRyLrDJzbxbGZ3vWRnUX5cOh6Qf8J8Vg3XgxpJrrVtCtZoLyA4="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 1142,
+ "tokens_sortie": 45,
+ "tokens_total": 1187,
+ "latence": 1.4386687999940477,
+ "modele": "gemini-3.5-flash-lite"
+}

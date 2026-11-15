@@ -23,6 +23,9 @@
 {"id": "doc-23", "type": "document", "strate": "recent", "question": "Qui a composé la musique de Valeur sentimentale de Joachim Trier ?", "attendu": [["Hania Rani"]], "sources": ["Valeur sentimentale"]}
 {"id": "doc-24", "type": "document", "strate": "recent", "question": "Quelle particularité de mise en scène ont tous les épisodes de la mini-série Adolescence ?", "attendu": [["plan séquence"]], "sources": ["Adolescence (mini-série)"]}
 {"id": "doc-25", "type": "document", "strate": "recent", "question": "De quel roman de Thomas Pynchon est librement adapté Une bataille après l'autre ?", "attendu": [["Vineland"]], "sources": ["Une bataille après l'autre"]}
+{"id": "doc-26", "type": "document", "strate": "populaire", "question": "Combien d'entrées Le Fabuleux Destin d'Amélie Poulain a-t-il réalisées en France ?", "attendu": [["8 636 041"]], "sources": ["Le Fabuleux Destin d'Amélie Poulain"]}
+{"id": "doc-27", "type": "document", "strate": "peu_connu", "question": "Combien d'entrées Le Salaire de la peur de Clouzot a-t-il réalisées en France ?", "attendu": [["6 944 306"]], "sources": ["Le Salaire de la peur"]}
+{"id": "doc-28", "type": "document", "strate": "recent", "question": "Combien d'entrées Un p'tit truc en plus d'Artus a-t-il réalisées le jour de sa sortie ?", "attendu": [["279 635"]], "sources": ["Un p'tit truc en plus"]}
 {"id": "abs-01", "type": "absent", "question": "Qui a réalisé le film Les Horloges de Valparaíso, sorti en 2019 ?", "termes_absents": ["Horloges de Valparaíso"]}
 {"id": "abs-02", "type": "absent", "question": "Quelle est la durée du film Le Dernier Phare de Kerlouan ?", "termes_absents": ["Dernier Phare de Kerlouan"]}
 {"id": "abs-03", "type": "absent", "question": "Combien de saisons compte la série Brume sur Tromsø ?", "termes_absents": ["Brume sur Tromsø"]}
@@ -39,6 +42,7 @@
 {"id": "task-08", "type": "tache", "question": "Ajoute le film Les Horloges de Valparaíso à la liste à voir.", "etat_initial": [{"titre": "La Haine", "annee": 1995, "tmdb_id": 406}], "etat_final": [{"titre": "La Haine", "annee": 1995, "tmdb_id": 406}], "confirmations": {"ajouter": "accepter", "retirer": "accepter"}}
 {"id": "task-09", "type": "tache", "question": "Ajoute Drive My Car à la liste à voir.", "etat_initial": [{"titre": "La Haine", "annee": 1995, "tmdb_id": 406}], "etat_final": [{"titre": "La Haine", "annee": 1995, "tmdb_id": 406}], "confirmations": {"ajouter": "refuser", "retirer": "refuser"}}
 {"id": "task-10", "type": "tache", "question": "Ajoute Fight Club à la liste à voir et retire Seven.", "etat_initial": [{"titre": "Seven", "annee": 1995, "tmdb_id": 807}], "etat_final": [{"titre": "Seven", "annee": 1995, "tmdb_id": 807}, {"titre": "Fight Club", "annee": 1999, "tmdb_id": 550}], "confirmations": {"ajouter": "accepter", "retirer": "refuser"}}
+{"id": "task-11", "type": "tache", "question": "Entre Inception et Interstellar, ajoute à la liste à voir celui qui a fait les plus grosses recettes au box-office mondial.", "etat_initial": [], "etat_final": [{"titre": "Inception", "annee": 2010, "tmdb_id": 27205}], "confirmations": {"ajouter": "accepter", "retirer": "accepter"}}
 {"id": "amb-01", "type": "ambigu", "question": "Qui a réalisé Nosferatu ?", "comportement": "precision"}
 {"id": "amb-02", "type": "ambigu", "question": "Qui joue dans Frankenstein ?", "comportement": "precision"}
 {"id": "amb-03", "type": "ambigu", "question": "Il dure combien de temps, ce film ?", "comportement": "precision"}

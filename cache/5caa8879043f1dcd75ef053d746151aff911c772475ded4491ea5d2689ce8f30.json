@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TJhp8+s4ycSlrL4lffig9Rtckb8VVCHmpt68n2LhyPP73xuf8CwxSoEAn7mr75CjENCNahDAfwJXDKDh5bHUhcyyTthaetCWNYzp6MNCNOlt78CVN1Hi13e4="
+     }
+    },
+    "function": {
+     "arguments": "{\"requete\":\"Whiplash couleur voiture monteur\"}",
+     "name": "rechercher_documents"
+    },
+    "id": "call_6716665034173175008",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1149,
+ "tokens_sortie": 24,
+ "tokens_total": 1173,
+ "latence": 1.8278637999901548,
+ "modele": "gemini-3.5-flash-lite"
+}

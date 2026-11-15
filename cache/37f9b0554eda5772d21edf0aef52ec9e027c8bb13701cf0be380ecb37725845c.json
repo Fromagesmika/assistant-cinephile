@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TTf5Q/f3ksi7kkGnapeuIOqKSrZ+bzifbclETh2enDOGA5WcGCTfhHPa3fAQQ4dJb4Eigr2xjDIVADJ1s9/V5KipcaEW8KmlQTLqAkyd13s448+tNc/A1NIE="
+     }
+    },
+    "function": {
+     "arguments": "{\"titre\":\"Oppenheimer\"}",
+     "name": "rechercher_oeuvre"
+    },
+    "id": "call_15409749533748631931",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1273,
+ "tokens_sortie": 21,
+ "tokens_total": 1294,
+ "latence": 1.1154471000190824,
+ "modele": "gemini-3.5-flash-lite"
+}

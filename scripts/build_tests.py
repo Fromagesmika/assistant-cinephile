@@ -89,6 +89,10 @@ DOCUMENTS = [
     doc("recent", "Qui a composé la musique de Valeur sentimentale de Joachim Trier ?", [["Hania Rani"]], "Valeur sentimentale"),
     doc("recent", "Quelle particularité de mise en scène ont tous les épisodes de la mini-série Adolescence ?", [["plan séquence"]], "Adolescence (mini-série)"),
     doc("recent", "De quel roman de Thomas Pynchon est librement adapté Une bataille après l'autre ?", [["Vineland"]], "Une bataille après l'autre"),
+    # Box-office (ajout de la semaine 3) : chiffres de fréquentation tirés des sections « Box-office ».
+    doc("populaire", "Combien d'entrées Le Fabuleux Destin d'Amélie Poulain a-t-il réalisées en France ?", [["8 636 041"]], "Le Fabuleux Destin d'Amélie Poulain"),
+    doc("peu_connu", "Combien d'entrées Le Salaire de la peur de Clouzot a-t-il réalisées en France ?", [["6 944 306"]], "Le Salaire de la peur"),
+    doc("recent", "Combien d'entrées Un p'tit truc en plus d'Artus a-t-il réalisées le jour de sa sortie ?", [["279 635"]], "Un p'tit truc en plus"),
 ]
 
 ABSENTS = [
@@ -124,6 +128,9 @@ TACHES = [
           [("La Haine", 1995)], [("La Haine", 1995)], {"ajouter": "refuser", "retirer": "refuser"}),
     tache("Ajoute Fight Club à la liste à voir et retire Seven.",  # ajout accepté, retrait refusé
           [("Seven", 1995)], [("Seven", 1995), ("Fight Club", 1999)], {"ajouter": "accepter", "retirer": "refuser"}),
+    # Box-office (ajout de la semaine 3) : recettes mondiales TMDB, 839 M$ contre 747 M$.
+    tache("Entre Inception et Interstellar, ajoute à la liste à voir celui qui a fait les plus grosses recettes au box-office mondial.",
+          [], [("Inception", 2010)]),
 ]
 
 AMBIGUS = [

@@ -1,0 +1,17 @@
+{
+ "texte": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"J'ai ajouté \\\"Memories of Murder\\\" (2003) à votre liste à voir, car c'est le plus ancien des deux films de Bong Joon-ho par rapport à \\\"Parasite\\\" (2019) [1] [6].\",\n  \"sources\": [\n    1,\n    6\n  ]\n}\n```",
+ "message": {
+  "content": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"J'ai ajouté \\\"Memories of Murder\\\" (2003) à votre liste à voir, car c'est le plus ancien des deux films de Bong Joon-ho par rapport à \\\"Parasite\\\" (2019) [1] [6].\",\n  \"sources\": [\n    1,\n    6\n  ]\n}\n```",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EmAKXgFpFH0Tv4YdzEMZlF/ADRFAQsJ4unfNn+Q8drROiAPviYFL/EdOg2vTLXWdY/Oi0mXx5LoYcoPbrOo8LtX2KutTY8KsI3497ZitMaw7+wjfX+61oTmdhiwibSISRTs="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 2330,
+ "tokens_sortie": 97,
+ "tokens_total": 2427,
+ "latence": 2.1756956999888644,
+ "modele": "gemini-3.5-flash-lite"
+}

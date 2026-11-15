@@ -1,0 +1,17 @@
+{
+ "texte": "```json\n{\"statut\": \"precision\", \"texte\": \"Il existe plusieurs adaptations et films intitulés Frankenstein (comme le film de 2025 réalisé par Guillermo del Toro avec Oscar Isaac et Jacob Elordi). Précisez de quel film ou de quelle version vous parlez.\", \"sources\": []}\n```",
+ "message": {
+  "content": "```json\n{\"statut\": \"precision\", \"texte\": \"Il existe plusieurs adaptations et films intitulés Frankenstein (comme le film de 2025 réalisé par Guillermo del Toro avec Oscar Isaac et Jacob Elordi). Précisez de quel film ou de quelle version vous parlez.\", \"sources\": []}\n```",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EmAKXgFpFH0T2IGJsgSKtjSh9yhSsenItOxUORzi/mzG2e1Y3byI6wf6sFBKqy24bqTHpS+4GR0aI5cGQI6VwbJBvniQ2jy4L7yfxb1QT5JSo6anvHg/8+y15yLAHTwiHy4="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 2249,
+ "tokens_sortie": 67,
+ "tokens_total": 2316,
+ "latence": 1.9362003999995068,
+ "modele": "gemini-3.5-flash-lite"
+}

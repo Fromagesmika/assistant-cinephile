@@ -1,0 +1,17 @@
+{
+ "texte": "{\"statut\": \"refus\", \"texte\": \"Je suis un assistant cinéphile, je ne peux pas vous fournir de recette de cuisine. Je suis à votre disposition pour parler de films ou de séries !\", \"sources\": []}",
+ "message": {
+  "content": "{\"statut\": \"refus\", \"texte\": \"Je suis un assistant cinéphile, je ne peux pas vous fournir de recette de cuisine. Je suis à votre disposition pour parler de films ou de séries !\", \"sources\": []}",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EmAKXgFpFH0TjwK6maGpXtUf4tgu4XeQGtDOeWdoGXrZpXEEmfanOYLK0vtu9J/B2hylG53Mv3Pasnfj1T/bjP1x3O6isL4ozCJh+WipGHS0n/LmW1kWAk8lKDuZaW3KaY0="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 1143,
+ "tokens_sortie": 49,
+ "tokens_total": 1192,
+ "latence": 1.734052999992855,
+ "modele": "gemini-3.5-flash-lite"
+}

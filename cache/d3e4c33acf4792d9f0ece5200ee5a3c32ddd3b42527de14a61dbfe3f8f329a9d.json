@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0Tov7718cx31NSw3R7loCkq5BYeFNAqeo4PFLRng90T2E9alfIlO3KcxHjMGv/muQOh7bCfvvWIMULvplEmqQtRkSpdvTgpsMv9yZJe0SjYeQrT5fGBrstahM="
+     }
+    },
+    "function": {
+     "arguments": "{\"requete\":\"budget par episode serie Breaking Bad\"}",
+     "name": "rechercher_documents"
+    },
+    "id": "call_13596216017325544965",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1144,
+ "tokens_sortie": 24,
+ "tokens_total": 1168,
+ "latence": 1.173960900050588,
+ "modele": "gemini-3.5-flash-lite"
+}

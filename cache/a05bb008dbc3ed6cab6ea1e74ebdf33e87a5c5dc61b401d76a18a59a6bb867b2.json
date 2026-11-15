@@ -1,0 +1,34 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TNORiKuCOtbT7st3BgPpbcT37jWZWcQL6xl8/0XGDolJWTz+CouPpfb7y+fLDSFm2kHbQsw9nSUsuJKIW0DHpLf01htSjtqj7DLj8N0S7G8JBpnXeDdztQdw="
+     }
+    },
+    "function": {
+     "arguments": "{\"titre\":\"Memories of Murder\"}",
+     "name": "rechercher_oeuvre"
+    },
+    "id": "call_5090265558751854912",
+    "type": "function"
+   },
+   {
+    "function": {
+     "arguments": "{\"titre\":\"Parasite\"}",
+     "name": "rechercher_oeuvre"
+    },
+    "id": "call_5090265558751856745",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1158,
+ "tokens_sortie": 42,
+ "tokens_total": 1200,
+ "latence": 1.6062486000009812,
+ "modele": "gemini-3.5-flash-lite"
+}

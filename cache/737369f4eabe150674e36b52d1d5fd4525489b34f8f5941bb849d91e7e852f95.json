@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TsTfBYH68KE9v53HSAT8WT4psWc795BcKLh8w8v/JV8mogwc7/8c4Dp4fYwKXssJorENVQ1HKJtJUSIk4VE55cpjZSh0SHvX/BRikm4BVETJ5ukXfzTUUO6U="
+     }
+    },
+    "function": {
+     "arguments": "{\"requete\":\"\\\"Le Fabuleux Destin d'Amélie Poulain\\\" studio Cologne Berlin Munich Allemagne\"}",
+     "name": "rechercher_documents"
+    },
+    "id": "call_17981024948445173325",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 2266,
+ "tokens_sortie": 36,
+ "tokens_total": 2302,
+ "latence": 1.1175644000177272,
+ "modele": "gemini-3.5-flash-lite"
+}

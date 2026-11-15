@@ -1,0 +1,17 @@
+{
+ "texte": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"Le directeur de la photographie du film Inception est Wally Pfister [1].\",\n  \"sources\": [1]\n}\n```",
+ "message": {
+  "content": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"Le directeur de la photographie du film Inception est Wally Pfister [1].\",\n  \"sources\": [1]\n}\n```",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EmAKXgFpFH0TQVUsvLV9E8eMDLTujP7TS3bUBJyFYI+RLW+2K1yn4VN6Xk8NyCte1Xem4Qp3QfeKACn1d4tqCf50yGHrhZZf8O19DILxjOpKm2L4WhV83a0ef+HU7I1qM1k="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 2261,
+ "tokens_sortie": 49,
+ "tokens_total": 2310,
+ "latence": 1.108742100012023,
+ "modele": "gemini-3.5-flash-lite"
+}

@@ -6,9 +6,9 @@ sur le même protocole de test.
 
 | Niveau | Contenu | État |
 |---|---|---|
-| 0 | LLM seul | Évalué (37 cas) |
-| 1 | RAG, sources citées, abstention | Évalué (37 cas), juge calibré (95 % d'accord sur 20 cas) |
-| 2 | Agent outillé (7 outils), confirmation des actions | Évalué (37 cas + 10 tâches × 3 essais) |
+| 0 | LLM seul | Évalué (40 cas) |
+| 1 | RAG, sources citées, abstention | Évalué (40 cas), juge calibré (95 % d'accord sur 20 cas) |
+| 2 | Agent outillé (7 outils), confirmation des actions | Évalué (40 cas + 11 tâches × 3 essais) |
 | 3 | Extension mesurée | Semaine 4 |
 
 ## Installation
@@ -29,6 +29,18 @@ python scripts/check_keys.py
 - Clé Gemini : https://aistudio.google.com/apikey
 - Clé TMDB (API v3) : https://www.themoviedb.org/settings/api
 
+## Lancer l'interface
+
+```bash
+streamlit run app.py
+```
+
+L'interface s'ouvre sur http://localhost:8501. On y choisit le niveau (0 à 2), puis on voit la
+réponse, les sources citées, les coûts (tokens, latence, appels au modèle) et la trace de
+chaque étape. Au niveau 2, chaque ajout ou retrait dans la liste « à voir » attend un clic sur
+« Accepter » ou « Refuser ». La liste est partagée dans `data/liste_a_voir.json` et chaque
+requête est tracée dans `traces/interface.jsonl`.
+
 ## Reproduire les résultats
 
 ```bash
@@ -42,9 +54,10 @@ Le tableau est écrit dans `results/tableau.md`. Les réponses déjà obtenues s
 
 | Chemin | Rôle |
 |---|---|
+| `app.py` | Interface Streamlit |
 | `data/films.csv` | Œuvres retenues et strate (populaire, peu connu, récent) |
 | `data/corpus.jsonl` | Pages Wikipédia téléchargées, avec leur révision |
-| `tests.jsonl` | Jeu de test commun à tous les niveaux |
+| `tests.jsonl` | Jeu de test commun à tous les niveaux (51 cas, dont 3 questions et 1 tâche sur le box-office) |
 | `eval.py` | Exécute les niveaux et produit le tableau |
 | `src/llm.py` | Appel au modèle, cache, tokens et latence |
 | `src/metrics.py` | Règles de notation |

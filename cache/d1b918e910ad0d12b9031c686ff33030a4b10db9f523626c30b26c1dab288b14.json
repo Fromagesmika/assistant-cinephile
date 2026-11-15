@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TPxwkMGHvWitpOlxUoP46ZuN/Bya7R53zk+pChwu2xdwN0yU2Gf4Ea40dFXoCCWcwluVan8MpKJsNtjPvPx+XbnYApdoglDW9jQv4XMHvwy1FqsoLfUH7Mj8="
+     }
+    },
+    "function": {
+     "arguments": "{\"titre\":\"Drive My Car\"}",
+     "name": "rechercher_oeuvre"
+    },
+    "id": "call_10657192961358207807",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1143,
+ "tokens_sortie": 21,
+ "tokens_total": 1164,
+ "latence": 1.2122630999656394,
+ "modele": "gemini-3.5-flash-lite"
+}

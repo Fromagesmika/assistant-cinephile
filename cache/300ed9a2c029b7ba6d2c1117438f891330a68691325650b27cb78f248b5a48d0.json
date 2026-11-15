@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TQ3U5hlr/ognXGp4/uDyLJnFrNxIukpk46YGVTH27vocYD/3rfEi0HiO6QropTFWl7aJaIhFRJjRafeSUIFIumdJY1dsHbd/3e9TAnpzyOgZPLUpHO1isBdk="
+     }
+    },
+    "function": {
+     "arguments": "{\"requete\":\"Le Fabuleux Destin d Amelie Poulain entrees France\"}",
+     "name": "rechercher_documents"
+    },
+    "id": "call_15105010523617782921",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1158,
+ "tokens_sortie": 30,
+ "tokens_total": 1188,
+ "latence": 1.3322215999942273,
+ "modele": "gemini-3.5-flash-lite"
+}

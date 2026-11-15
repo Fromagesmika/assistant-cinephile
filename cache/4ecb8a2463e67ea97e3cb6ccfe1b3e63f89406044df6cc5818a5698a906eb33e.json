@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TZ3VtpB9uw6WbZ7fh5jxlgrBu7Z+ZWTgSiRCPnWh6NU03Nzln8Iy68PHkakDF0iBigxO5I8oGWa6yLHvWZIxZZQuoLOfqHtapaydkCoJXwr5uML2f6BvCodY="
+     }
+    },
+    "function": {
+     "arguments": "{\"requete\":\"La Tortue rouge film d animation ecrit realise\"}",
+     "name": "rechercher_documents"
+    },
+    "id": "call_5870355935487628770",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1147,
+ "tokens_sortie": 28,
+ "tokens_total": 1175,
+ "latence": 2.011398000002373,
+ "modele": "gemini-3.5-flash-lite"
+}

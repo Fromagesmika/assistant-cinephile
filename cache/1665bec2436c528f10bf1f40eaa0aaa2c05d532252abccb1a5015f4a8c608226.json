@@ -1,0 +1,17 @@
+{
+ "texte": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"J'ai ajouté le film Memories of Murder (2003), qui est le plus ancien des deux films de Bong Joon-ho, à votre liste à voir [1, 6].\",\n  \"sources\": [\n    1,\n    6\n  ]\n}\n```",
+ "message": {
+  "content": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"J'ai ajouté le film Memories of Murder (2003), qui est le plus ancien des deux films de Bong Joon-ho, à votre liste à voir [1, 6].\",\n  \"sources\": [\n    1,\n    6\n  ]\n}\n```",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EmAKXgFpFH0T6CH3EenarpwxdBL0U0SkVVkrC2SekzRn+zH0IyHB2Aj0FFyZvGFHKe5pD1uJGMoXa6+YaWEyetKQSH2QFtiKGwy8EeMH1rEFwyT/PR4GYLZHwlZ9kU4MXeo="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 2330,
+ "tokens_sortie": 81,
+ "tokens_total": 2411,
+ "latence": 2.062262399995234,
+ "modele": "gemini-3.5-flash-lite"
+}

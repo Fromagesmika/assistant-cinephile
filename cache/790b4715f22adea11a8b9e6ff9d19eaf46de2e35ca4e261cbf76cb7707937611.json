@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0T5JJ2ICniSyV5W34M6q8f2D0l8RgNyRBMwhAxlU/YwjYCqQ9VkOwx51L6WSIvsQTEmGLt4uJvN9WRwwznA0457bk8sO93CvhK9BXmcM4p0k8blp61tu53bRQ="
+     }
+    },
+    "function": {
+     "arguments": "{\"tmdb_id\":62476,\"type\":\"serie\"}",
+     "name": "details_oeuvre"
+    },
+    "id": "call_10350132354756244012",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1330,
+ "tokens_sortie": 27,
+ "tokens_total": 1357,
+ "latence": 1.2790209999657236,
+ "modele": "gemini-3.5-flash-lite"
+}

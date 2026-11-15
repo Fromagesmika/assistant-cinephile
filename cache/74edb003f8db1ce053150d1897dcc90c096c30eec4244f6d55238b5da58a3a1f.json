@@ -1,0 +1,17 @@
+{
+ "texte": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"Inception a réalisé des recettes mondiales de 839 030 630 $ [11], tandis qu'Interstellar a atteint 746 606 706 $ [12]. Inception a donc fait les plus grosses recettes au box-office mondial et a été ajouté à votre liste à voir.\",\n  \"sources\": [\n    11,\n    12\n  ]\n}\n```",
+ "message": {
+  "content": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"Inception a réalisé des recettes mondiales de 839 030 630 $ [11], tandis qu'Interstellar a atteint 746 606 706 $ [12]. Inception a donc fait les plus grosses recettes au box-office mondial et a été ajouté à votre liste à voir.\",\n  \"sources\": [\n    11,\n    12\n  ]\n}\n```",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EmAKXgFpFH0TNYCPThBVwfX+ltO+rQUmXGJ6Oo3FQXT2f0MQ5Zh5TCc/njdVPCV0eteZ8BmqLnYqF4lGmoquL0259tpE/z/oGLGm8cS6tVLrFF081bxYLPnEvbSgJ3VhLwM="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 2575,
+ "tokens_sortie": 116,
+ "tokens_total": 2691,
+ "latence": 1.9147050000028685,
+ "modele": "gemini-3.5-flash-lite"
+}

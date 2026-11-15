@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TSrBY0DIZrassFBWjqpg9YCgZz9xgfu0KEZOmZ3ErbTJ/1vqk6Gldj1RDl80zWFz1JiKZq85umMHDTCtAH3N8tMjOXaELKQukJyn0hV4eDOdqzKSkdIIUmMA="
+     }
+    },
+    "function": {
+     "arguments": "{\"titre\":\"Inception\"}",
+     "name": "rechercher_oeuvre"
+    },
+    "id": "call_18070355231262005223",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1142,
+ "tokens_sortie": 20,
+ "tokens_total": 1162,
+ "latence": 1.941783000016585,
+ "modele": "gemini-3.5-flash-lite"
+}

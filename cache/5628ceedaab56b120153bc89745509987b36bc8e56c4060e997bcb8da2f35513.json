@@ -1,0 +1,17 @@
+{
+ "texte": "```json\n{\n  \"statut\": \"abstention\",\n  \"texte\": \"Je ne dispose d'aucun élément permettant de connaître la pointure de chaussures de Christopher Nolan pendant le tournage d'Inception.\",\n  \"sources\": []\n}\n```",
+ "message": {
+  "content": "```json\n{\n  \"statut\": \"abstention\",\n  \"texte\": \"Je ne dispose d'aucun élément permettant de connaître la pointure de chaussures de Christopher Nolan pendant le tournage d'Inception.\",\n  \"sources\": []\n}\n```",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EmAKXgFpFH0Ty6wlMfSo1ouVOtxWLkw5meMlk3jUCWGCzBHGL6BLnss3RfSZKqRUGsBYtduM2FFQemi66papWTsVp63CMMN2fe5v49Jj+/bmAAnIg+IU9/sNVcbXZzJ30K4="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 2255,
+ "tokens_sortie": 58,
+ "tokens_total": 2313,
+ "latence": 1.7412763999891467,
+ "modele": "gemini-3.5-flash-lite"
+}

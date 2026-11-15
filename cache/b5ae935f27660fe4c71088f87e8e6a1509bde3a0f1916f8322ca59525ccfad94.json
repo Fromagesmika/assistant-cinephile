@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0T9x0TWs3HopfVVG411rZVcIrb7lEptEXo4lgowilSNZEfhhZFFVvSXLRQoia4qDxcVXFPdVIara79by2FyYc+FBm23NaT2S/FVMqn8rPitkbfsdWfIvueNi8="
+     }
+    },
+    "function": {
+     "arguments": "{\"requete\":\"Sirāt Óliver Laxe musique compositeur\"}",
+     "name": "rechercher_documents"
+    },
+    "id": "call_3439621222195767623",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1148,
+ "tokens_sortie": 27,
+ "tokens_total": 1175,
+ "latence": 1.1309263999573886,
+ "modele": "gemini-3.5-flash-lite"
+}

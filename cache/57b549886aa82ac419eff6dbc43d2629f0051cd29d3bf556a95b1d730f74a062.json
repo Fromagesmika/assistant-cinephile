@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0Tuf5R3GF8+6ZrewZ+1QKxAwdA/nu4VGg57UiGAwA1EBFRtX61nnsfp0B91U3uBTLIEx1G+VC/h86UO/dS+QQisf94eVS727QUyihpQcN0ik7WOoV4HBNrdZ4="
+     }
+    },
+    "function": {
+     "arguments": "{\"requete\":\"Nosferatu realisateur\"}",
+     "name": "rechercher_documents"
+    },
+    "id": "call_5774560357824584749",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1139,
+ "tokens_sortie": 23,
+ "tokens_total": 1162,
+ "latence": 1.6140295999939553,
+ "modele": "gemini-3.5-flash-lite"
+}

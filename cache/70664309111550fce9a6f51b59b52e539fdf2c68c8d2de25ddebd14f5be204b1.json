@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TCh2c5AV+SJZzzdBUJ/u9Y0+aVlbXdx4/f+mqSk9unspsbTiGEHNYMMbzxnm0FjVAVGdpqc4kjPnPlW9fvcgtWQHz4pM5ruGo7vONSDXTQfbCk9gT83n6ZM0="
+     }
+    },
+    "function": {
+     "arguments": "{\"titre\":\"Le Bureau des légendes\",\"type\":\"serie\"}",
+     "name": "rechercher_oeuvre"
+    },
+    "id": "call_11157580460089012020",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1147,
+ "tokens_sortie": 29,
+ "tokens_total": 1176,
+ "latence": 1.1385368999908678,
+ "modele": "gemini-3.5-flash-lite"
+}

@@ -1,0 +1,34 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TE17xlpd/1cq/JbDjqPuXN27M/wDghYsO9HpcYOzOhcMgCSnZwVPwTEQsowbq3cM7aMmqrDypu941l7MpvOAgabXNFK0WJ2xJOMSdaUZrbfnH6UlwIGOQdEc="
+     }
+    },
+    "function": {
+     "arguments": "{\"annee\":2019,\"titre\":\"Parasite\"}",
+     "name": "rechercher_oeuvre"
+    },
+    "id": "call_5478678906608809217",
+    "type": "function"
+   },
+   {
+    "function": {
+     "arguments": "{\"titre\":\"Mickey 17\"}",
+     "name": "rechercher_oeuvre"
+    },
+    "id": "call_5478678906608808966",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1159,
+ "tokens_sortie": 51,
+ "tokens_total": 1210,
+ "latence": 1.3282183000119403,
+ "modele": "gemini-3.5-flash-lite"
+}

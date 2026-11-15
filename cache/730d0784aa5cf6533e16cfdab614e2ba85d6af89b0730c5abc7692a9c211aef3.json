@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TPf0975bpT3LC6Mw7wUguRDoFeye7DoYaJqUIaB9SudvqicZ+UUOF/HYEgsR85qucoTKE02SD0/lvGfaOwaWsuGlXTlQMmKQOqONoIYOgzuLOnT6DowiZw1w="
+     }
+    },
+    "function": {
+     "arguments": "{\"requete\":\"Flow Gints Zilbalodis budget\"}",
+     "name": "rechercher_documents"
+    },
+    "id": "call_14122623376639036295",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1818,
+ "tokens_sortie": 25,
+ "tokens_total": 1843,
+ "latence": 1.6210744000272825,
+ "modele": "gemini-3.5-flash-lite"
+}

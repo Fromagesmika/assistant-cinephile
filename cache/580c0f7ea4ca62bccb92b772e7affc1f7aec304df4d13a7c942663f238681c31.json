@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TlykG2e2G1MPj9lQOY3RsO0Ndb+EwiSBqSSEK5EDqS2CMwggxTfUwZTzV0Wx4rMwVU2W0b6hlxmqHGaAY8FWiZm8EKMa0db4yv6VkAoQanMcgpEugSifk3pE="
+     }
+    },
+    "function": {
+     "arguments": "{\"requete\":\"La Haine Mathieu Kassovitz musique groupe crédité\"}",
+     "name": "rechercher_documents"
+    },
+    "id": "call_784748441233778977",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1151,
+ "tokens_sortie": 29,
+ "tokens_total": 1180,
+ "latence": 1.1812570999609306,
+ "modele": "gemini-3.5-flash-lite"
+}

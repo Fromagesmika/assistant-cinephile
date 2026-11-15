@@ -56,7 +56,7 @@ OUTILS = [
            {"requete": {"type": "string", "description": "la question ou les mots-clés à chercher"}}, ["requete"]),
     _outil("rechercher_oeuvre", "Cherche un film ou une série par son titre dans TMDB. Renvoie au plus 5 œuvres avec tmdb_id et année.",
            {"titre": {"type": "string"}, "type": _TYPE, "annee": {"type": "integer", "description": "année de sortie, si connue"}}, ["titre"]),
-    _outil("details_oeuvre", "Fiche TMDB d'une œuvre : année, durée, réalisation ou création, genres, acteurs.",
+    _outil("details_oeuvre", "Fiche TMDB d'une œuvre : année, durée, réalisation ou création, genres, acteurs, et pour un film son budget et ses recettes mondiales au box-office (en dollars).",
            {"tmdb_id": _ID, "type": _TYPE}, ["tmdb_id"]),
     _outil("recommander_oeuvres", "Œuvres recommandées par TMDB à partir d'une œuvre, avec un filtre facultatif sur les années.",
            {"tmdb_id": _ID, "type": _TYPE, "annee_min": {"type": "integer"}, "annee_max": {"type": "integer"}}, ["tmdb_id"]),
@@ -256,7 +256,10 @@ class Session:
                 self.liste.ajouter(action["fiche"])
             else:
                 self.liste.retirer(action["tmdb_id"], action["type_oeuvre"])
-            resultat = {"ok": True, "liste": self.liste.films}
+            # Message explicite : avec un simple {"ok": true}, le modèle redemandait parfois
+            # l'accord de l'utilisateur alors que l'action était déjà faite.
+            resultat = {"ok": True, "message": "L'utilisateur a confirmé : l'action est faite. Ne redemande pas son accord.",
+                        "liste": self.liste.films}
         except ErreurRegle as erreur:  # la liste partagée a pu changer pendant l'attente
             resultat = {"ok": False, "erreur": str(erreur)}
         self.etapes.append({"type": "ecriture", "action": action["type"], "tmdb_id": action["tmdb_id"], "ok": resultat["ok"]})

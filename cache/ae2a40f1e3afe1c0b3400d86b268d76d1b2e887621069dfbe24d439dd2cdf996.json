@@ -1,0 +1,17 @@
+{
+ "texte": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"Le film Un p'tit truc en plus a réalisé 279 635 entrées le premier jour de sa sortie, le 1er mai 2024 [7].\",\n  \"sources\": [\n    7\n  ]\n}\n```",
+ "message": {
+  "content": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"Le film Un p'tit truc en plus a réalisé 279 635 entrées le premier jour de sa sortie, le 1er mai 2024 [7].\",\n  \"sources\": [\n    7\n  ]\n}\n```",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EmAKXgFpFH0TKnRYT3exKW0v+UBl7zygl9tabZ+fXVADQZUGgjCh/mDLSkFKscg6qoOArQH1r7m/NaLEsvrtxHm8loCuu2MZvZ2l9AdMS0v5y3Q3a9CkdYyW8JXEL+AzRxQ="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 3313,
+ "tokens_sortie": 78,
+ "tokens_total": 3391,
+ "latence": 1.7293467000126839,
+ "modele": "gemini-3.5-flash-lite"
+}

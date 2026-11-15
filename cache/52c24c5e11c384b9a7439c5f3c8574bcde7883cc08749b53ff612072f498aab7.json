@@ -1,0 +1,17 @@
+{
+ "texte": "{\"statut\": \"reponse\", \"texte\": \"L'ajout de « Drive My Car » (2021) à votre liste « à voir » n'a pas pu être effectué car l'action a été refusée.\", \"sources\": []}",
+ "message": {
+  "content": "{\"statut\": \"reponse\", \"texte\": \"L'ajout de « Drive My Car » (2021) à votre liste « à voir » n'a pas pu être effectué car l'action a été refusée.\", \"sources\": []}",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EmAKXgFpFH0TzH6uEbWhIqHWl1gqYLolCpT6NnACOPHgs0PcUI+f9+drukQRWIrkizWhu0dW+xuNGzy6VDNn8/erYFCAMYfQDqCoqGZa6/Itk4vWBsFojfvhPs/GR+kLAYg="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 1740,
+ "tokens_sortie": 55,
+ "tokens_total": 1795,
+ "latence": 1.3335855000186712,
+ "modele": "gemini-3.5-flash-lite"
+}

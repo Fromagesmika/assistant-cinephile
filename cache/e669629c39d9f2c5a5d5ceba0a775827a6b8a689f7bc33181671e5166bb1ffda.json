@@ -1,0 +1,17 @@
+{
+ "texte": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"J'ai ajouté *Fight Club* (1999) à votre liste à voir, mais vous avez refusé de retirer *Seven* (1995).\",\n  \"sources\": []\n}\n```",
+ "message": {
+  "content": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"J'ai ajouté *Fight Club* (1999) à votre liste à voir, mais vous avez refusé de retirer *Seven* (1995).\",\n  \"sources\": []\n}\n```",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EmAKXgFpFH0Tdgo16gS5Z68yLf5VXQ0bl0vSg7xD4nYizD7TfPMg+6huOGUP01gTZ+7pXLQ9z6JSNFlft0kbjwyetd+EP7waIsqNfJjpLHx9BAbCjLYd+ij0SIz2aUuskKo="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 2643,
+ "tokens_sortie": 67,
+ "tokens_total": 2710,
+ "latence": 1.5769785000011325,
+ "modele": "gemini-3.5-flash-lite"
+}

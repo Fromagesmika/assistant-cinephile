@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0T6TxwufFdZroEjbGlDygrl0r8OHOW0x91XVgNSISgv+rKQUGSFNz3htQEPNmWIpP3MVdKP6l2G2eqzccafz927FzQOLdM7H9y7hdf9RTWuUtlx66/sTHPMs4="
+     }
+    },
+    "function": {
+     "arguments": "{\"requete\":\"L Amour ouf Gilles Lellouche roman auteur ecrivain\"}",
+     "name": "rechercher_documents"
+    },
+    "id": "call_7134273499896054700",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1155,
+ "tokens_sortie": 32,
+ "tokens_total": 1187,
+ "latence": 1.5452220999868587,
+ "modele": "gemini-3.5-flash-lite"
+}
