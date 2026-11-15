@@ -1,0 +1,17 @@
+{
+ "texte": "```json\n{\n  \"statut\": \"abstention\",\n  \"texte\": \"Je ne dispose pas d'informations sur le nombre de tasses de café bues pendant le tournage du film Mon oncle.\",\n  \"sources\": []\n}\n```",
+ "message": {
+  "content": "```json\n{\n  \"statut\": \"abstention\",\n  \"texte\": \"Je ne dispose pas d'informations sur le nombre de tasses de café bues pendant le tournage du film Mon oncle.\",\n  \"sources\": []\n}\n```",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EmAKXgFpFH0Tz1mzVvymDhRKhUKd3EptKLrAODIKHUR51WE+FBWqV3YIJgOW7sAETs98bnnGcqMe/zvyQqtAHBIUHP3xLvUvj/dRKqsKJ2bTHTDhuDFxb+I0eFTGc0n2SbY="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 2935,
+ "tokens_sortie": 57,
+ "tokens_total": 2992,
+ "latence": 1.5785247000167146,
+ "modele": "gemini-3.5-flash-lite"
+}

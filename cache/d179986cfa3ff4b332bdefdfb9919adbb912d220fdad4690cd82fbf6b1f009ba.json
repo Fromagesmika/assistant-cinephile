@@ -1,0 +1,17 @@
+{
+ "texte": "```json\n{\n  \"statut\": \"precision\",\n  \"texte\": \"Il existe plusieurs films portant le titre Nosferatu : le film original muet *Nosferatu le vampire* (1922) a été réalisé par Friedrich Wilhelm Murnau [1, 2], et un remake est sorti en 2024, réalisé par Robert Eggers [2]. Lequel des deux films vous intéresse ?\",\n  \"sources\": [1, 2]\n}\n```",
+ "message": {
+  "content": "```json\n{\n  \"statut\": \"precision\",\n  \"texte\": \"Il existe plusieurs films portant le titre Nosferatu : le film original muet *Nosferatu le vampire* (1922) a été réalisé par Friedrich Wilhelm Murnau [1, 2], et un remake est sorti en 2024, réalisé par Robert Eggers [2]. Lequel des deux films vous intéresse ?\",\n  \"sources\": [1, 2]\n}\n```",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EmAKXgFpFH0TB5uMjFA2hwjHSYFDNP2LKCezmzVsTfXJAFz2zXfsyFGjYIGW52DN8KItDJKqTzrilD8wfrFX2uyMjodj0f8r5Uwhrwv/nTGRxvkf7XmS4lkth2hj4JT5Py8="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 2344,
+ "tokens_sortie": 106,
+ "tokens_total": 2450,
+ "latence": 1.7910948999924585,
+ "modele": "gemini-3.5-flash-lite"
+}

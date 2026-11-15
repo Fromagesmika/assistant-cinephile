@@ -1,0 +1,17 @@
+{
+ "texte": "{\"statut\": \"reponse\", \"texte\": \"Inception est un film écrit et réalisé par Christopher Nolan [1].\", \"sources\": [1]}",
+ "message": {
+  "content": "{\"statut\": \"reponse\", \"texte\": \"Inception est un film écrit et réalisé par Christopher Nolan [1].\", \"sources\": [1]}",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EmAKXgFpFH0TIBYNzUsQzr0MNUhqMILy4LsN3Bf/qLPWOEnhmKhtfRHDTosSGQxgwYCt4+nIFv4bpqKQVvm1X94iJwjKkuu9HBiPaxPk1QxWtlvCsYPswDSW0BloegAKqOg="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 1094,
+ "tokens_sortie": 33,
+ "tokens_total": 1127,
+ "latence": 2.870153099996969,
+ "modele": "gemini-3.5-flash-lite"
+}

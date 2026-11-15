@@ -1,0 +1,17 @@
+{
+ "texte": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"Le livre adapté dans Le Salaire de la peur d'Henri-Georges Clouzot a été écrit par le romancier Georges Arnaud [1].\",\n  \"sources\": [1]\n}\n```",
+ "message": {
+  "content": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"Le livre adapté dans Le Salaire de la peur d'Henri-Georges Clouzot a été écrit par le romancier Georges Arnaud [1].\",\n  \"sources\": [1]\n}\n```",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EmAKXgFpFH0TyE0wDwS27pQv8mpnkHv1OkHvT45OdkBzFhedrd7GvCoXYATxLb3rLQo+rqSOka4PzMMvjGr1ARTZISjxXX8QklaoRx954KttfgSLNodVFSfaj1NK2Vf+7Hg="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 2125,
+ "tokens_sortie": 64,
+ "tokens_total": 2189,
+ "latence": 1.5945455999462865,
+ "modele": "gemini-3.5-flash-lite"
+}

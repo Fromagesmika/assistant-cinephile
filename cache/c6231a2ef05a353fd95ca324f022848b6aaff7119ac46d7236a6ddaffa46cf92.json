@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0T4WZ5sX7AEENLRkOMyYgWKv9t6kBPfappaC9E3fZKlF41vLsAZD7zpaffrC+jcSR8GpCrhSbDPo2poN0vhKqekbgR0fXX0nsoICjD5zRdQS7YVaFdHj3e3d4="
+     }
+    },
+    "function": {
+     "arguments": "{\"requete\":\"Mon oncle Jacques Tati tasses café\"}",
+     "name": "rechercher_documents"
+    },
+    "id": "call_709745033131225799",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 2036,
+ "tokens_sortie": 27,
+ "tokens_total": 2063,
+ "latence": 1.7781245000078343,
+ "modele": "gemini-3.5-flash-lite"
+}

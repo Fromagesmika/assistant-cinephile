@@ -18,7 +18,7 @@ from pathlib import Path
 import streamlit as st
 
 from src import affiches, tmdb
-from src.levels import level0, level1, level2
+from src.levels import level0, level1, level2, level3
 from src.liste import ListeAVoir
 from src.traces import ecrire_trace_interface
 
@@ -29,9 +29,9 @@ NIVEAUX = {
     0: ("Niveau 0 · LLM seul", "Répond de mémoire, sans document ni outil."),
     1: ("Niveau 1 · RAG", "Cherche 5 extraits Wikipédia et les cite."),
     2: ("Niveau 2 · Agent", "Choisit ses outils et gère la liste à voir, avec votre accord."),
-    3: ("Niveau 3 · Extension", "En préparation."),
+    3: ("Niveau 3 · Agent + RAG avancé", "L'agent du niveau 2, avec une recherche hybride et un reranking."),
 }
-NIVEAUX_PRETS = {0, 1, 2}
+NIVEAUX_PRETS = {0, 1, 2, 3}
 STATUTS = {
     "reponse": ("Réponse", "green", "Réponse appuyée sur les sources citées."),
     "abstention": ("Abstention", "orange", "Les sources ne contiennent pas la réponse : l'assistant préfère ne pas inventer."),
@@ -237,7 +237,8 @@ def lancer(question, niveau):
         return
     # Niveau 2 : la session peut s'arrêter pour demander une confirmation ; on la garde
     # en mémoire entre deux affichages de la page.
-    session = level2.Session(question, ListeAVoir(chemin=FICHIER_LISTE))
+    classe = level3.Session if niveau == 3 else level2.Session
+    session = classe(question, ListeAVoir(chemin=FICHIER_LISTE))
     with st.spinner("L'agent consulte ses outils…"):
         session.avancer()
     poursuivre(session, question)
@@ -248,7 +249,7 @@ def poursuivre(session, question):
         st.session_state.en_attente = {"session": session, "question": question}
     else:
         st.session_state.en_attente = None
-        enregistrer(question, 2, session.sortie())
+        enregistrer(question, session.niveau, session.sortie())
 
 
 def decider(accepte):

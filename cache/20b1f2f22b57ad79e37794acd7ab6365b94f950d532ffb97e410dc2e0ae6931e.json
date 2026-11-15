@@ -1,0 +1,17 @@
+{
+ "texte": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"Le film Une bataille après l'autre est librement adapté du roman Vineland de Thomas Pynchon [1].\",\n  \"sources\": [1]\n}\n```",
+ "message": {
+  "content": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"Le film Une bataille après l'autre est librement adapté du roman Vineland de Thomas Pynchon [1].\",\n  \"sources\": [1]\n}\n```",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EmAKXgFpFH0TyF6ftaZ4h4G3OHiFU+P98ZU7FDGBF4zZoZOVv7otoNiHQW/S+uKocDdy44Zqyk4YfIFVHuKqQwMnUEELZ+G21O/TOQCbekph2gP18SovMumhIOOiWojEhY0="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 2036,
+ "tokens_sortie": 56,
+ "tokens_total": 2092,
+ "latence": 1.52626340003917,
+ "modele": "gemini-3.5-flash-lite"
+}

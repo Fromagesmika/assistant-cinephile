@@ -1,0 +1,17 @@
+{
+ "texte": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"Le film L'Amour ouf de Gilles Lellouche est une adaptation du roman Jackie Loves Johnser OK? de l'écrivain irlandais Neville Thompson [1, 2].\",\n  \"sources\": [1, 2]\n}\n```",
+ "message": {
+  "content": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"Le film L'Amour ouf de Gilles Lellouche est une adaptation du roman Jackie Loves Johnser OK? de l'écrivain irlandais Neville Thompson [1, 2].\",\n  \"sources\": [1, 2]\n}\n```",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EmAKXgFpFH0Tf8MyVovsLcij0khAARj5EB5eaQ6AwjcQjQsiIzTfckEUBeGiocZAiYRJfwHsHyVB7HLH2eT4qYrR7bPktpB6nJN3YLYM65EDHynjcseL4+4UZAiELP4bHLc="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 2303,
+ "tokens_sortie": 76,
+ "tokens_total": 2379,
+ "latence": 1.6134133000159636,
+ "modele": "gemini-3.5-flash-lite"
+}

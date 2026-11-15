@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0Tdk3XJxaKIXpC5egQXk3cmoD1LXRxu+ZJca6hVMwo+GvAKqz7K4Za08dray8aBIboRuxpPhan0aoX95I1oThFvDENLTQefbYiRdcWb+S8ebqYKH7S3OEM7AM="
+     }
+    },
+    "function": {
+     "arguments": "{\"type\":\"serie\",\"titre\":\"Tromsø\"}",
+     "name": "rechercher_oeuvre"
+    },
+    "id": "call_18224868575209802339",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 2417,
+ "tokens_sortie": 27,
+ "tokens_total": 2444,
+ "latence": 1.573935899999924,
+ "modele": "gemini-3.5-flash-lite"
+}

@@ -3,6 +3,7 @@
 | 0 · LLM seul | — | — | 57% | — | — | — | 100% | 83% | — | — | 282 | 2.14 |
 | 1 · RAG | 93% | 0.684 | 93% | 100% | 100% | 100% | 100% | 83% | — | — | 1158 | 2.14 |
 | 2 · Agent | 71% | 0.586 | 89% | 89% | 89% | 100% | 100% | 100% | 100% | 100% | 4510 | 4.80 |
+| 3 · Agent + RAG avancé | 89% | 0.768 | 93% | 89% | 93% | 100% | 100% | 100% | 100% | 100% | 4205 | 6.94 |
 
 Source citée, phrases citées et fidélité portent sur les réponses données aux cas `document`. La fidélité vient du juge LLM (voir results/calibration_juge.md pour sa fiabilité).
 Succès tâches : part des 3 × 11 essais dont l'état final de la liste est correct ; pass^3 : part des tâches réussies aux 3 essais.
@@ -14,3 +15,4 @@ Exactitude par strate :
 | 0 · LLM seul | 78% | 89% | 10% |
 | 1 · RAG | 100% | 89% | 90% |
 | 2 · Agent | 89% | 100% | 80% |
+| 3 · Agent + RAG avancé | 89% | 100% | 90% |

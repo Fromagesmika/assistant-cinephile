@@ -12,7 +12,7 @@ import json
 from pathlib import Path
 
 from src.juge import juger
-from src.levels import level0, level1, level2
+from src.levels import level0, level1, level2, level3
 from src.liste import ListeAVoir
 from src.metrics import (
     abstention_correcte,
@@ -26,12 +26,13 @@ from src.metrics import (
 from src.traces import ecrire_trace, vider_traces
 
 RACINE = Path(__file__).resolve().parent
-NIVEAUX = {0: level0, 1: level1, 2: level2}  # le niveau 3 s'ajoutera ici
+NIVEAUX = {0: level0, 1: level1, 2: level2, 3: level3}
 # Les niveaux 0 et 1 n'ont pas d'outils : les tâches en plusieurs étapes ne les concernent pas.
 TYPES_PAR_NIVEAU = {
     0: {"document", "absent", "ambigu"},
     1: {"document", "absent", "ambigu"},
     2: {"document", "absent", "ambigu", "tache"},
+    3: {"document", "absent", "ambigu", "tache"},
 }
 ESSAIS_TACHE = 3  # pass^3 : une tâche n'est réussie que si ses 3 essais indépendants réussissent
 
@@ -172,7 +173,7 @@ def recall_et_mrr(lignes):
 
 def tableau(resultats):
     """Le tableau du sujet, plus le détail de l'exactitude par strate de films."""
-    titres = {0: "0 · LLM seul", 1: "1 · RAG", 2: "2 · Agent", 3: "3 · Extension"}
+    titres = {0: "0 · LLM seul", 1: "1 · RAG", 2: "2 · Agent", 3: "3 · Agent + RAG avancé"}
     sortie = [
         "| Niveau | Recall@5 | MRR | Exactitude | Source citée | Phrases citées | Fidélité | Abstention | Précision/refus | Succès tâches | pass^3 | Tokens / requête | Latence (s) |",
         "|---|---|---|---|---|---|---|---|---|---|---|---|---|",

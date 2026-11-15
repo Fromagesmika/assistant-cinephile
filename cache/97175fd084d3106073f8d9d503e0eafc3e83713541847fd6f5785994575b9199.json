@@ -1,0 +1,17 @@
+{
+ "texte": "```json\n{\"statut\": \"abstention\", \"texte\": \"Je n'ai trouvé aucune information sur un film ou une série intitulé « Le Dernier Phare de Kerlouan ».\", \"sources\": []}\n```",
+ "message": {
+  "content": "```json\n{\"statut\": \"abstention\", \"texte\": \"Je n'ai trouvé aucune information sur un film ou une série intitulé « Le Dernier Phare de Kerlouan ».\", \"sources\": []}\n```",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EmAKXgFpFH0TC/gGJleWPybiiPFWllrqzapASXUiLFaq2j1FrtWeWrMpzWNiPUQztgvX1QNevDymeA2LoRqGx2uVEdKa9GU6YE/KYW4Taf1f98E8Fubm5SsuaucX14sqPOc="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 2389,
+ "tokens_sortie": 48,
+ "tokens_total": 2437,
+ "latence": 1.5722594000399113,
+ "modele": "gemini-3.5-flash-lite"
+}

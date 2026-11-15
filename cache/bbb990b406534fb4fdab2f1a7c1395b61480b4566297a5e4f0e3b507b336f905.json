@@ -1,0 +1,17 @@
+{
+ "texte": "```json\n{\"statut\": \"abstention\", \"texte\": \"Je n'ai pas trouvé d'informations sur le film Les Horloges de Valparaíso dans mes sources.\", \"sources\": []}\n```",
+ "message": {
+  "content": "```json\n{\"statut\": \"abstention\", \"texte\": \"Je n'ai pas trouvé d'informations sur le film Les Horloges de Valparaíso dans mes sources.\", \"sources\": []}\n```",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EmAKXgFpFH0TYCLP6iQ049RYx2shydBW8bZC6CUzYIXq1knh7vPDPaEcAiF4wF5RlpHDtxtaFjyKBVQABi1oOYyUh0AjIAYBEJHKQO7TrSwAxds2zF8qRaCBrC8z4VU3Wv0="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 2241,
+ "tokens_sortie": 46,
+ "tokens_total": 2287,
+ "latence": 1.5745272999629378,
+ "modele": "gemini-3.5-flash-lite"
+}

@@ -1,0 +1,17 @@
+{
+ "texte": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"Le film Le Salaire de la peur d'Henri-Georges Clouzot a réalisé un immense succès en France avec 6 944 306 entrées (près de sept millions de spectateurs) [3].\",\n  \"sources\": [3]\n}\n```",
+ "message": {
+  "content": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"Le film Le Salaire de la peur d'Henri-Georges Clouzot a réalisé un immense succès en France avec 6 944 306 entrées (près de sept millions de spectateurs) [3].\",\n  \"sources\": [3]\n}\n```",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EmAKXgFpFH0TIYhNFLijxh/3ugFVrzp+fRZAigIq79xbKk9l6YCvoUgzvfw8iYr8YcHKnHFCDfP6am4ThLSXynGsQ94EhEgLycKLMBnLZSBLa+EcDfXitNwLxmP2M5357C4="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 2114,
+ "tokens_sortie": 81,
+ "tokens_total": 2195,
+ "latence": 1.8094522000174038,
+ "modele": "gemini-3.5-flash-lite"
+}

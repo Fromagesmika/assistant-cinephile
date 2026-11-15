@@ -116,6 +116,13 @@ def valider_arguments(nom, texte_arguments):
 class Session:
     """Une requête traitée par l'agent. Elle peut s'arrêter pour attendre une confirmation."""
 
+    niveau = 2
+
+    @staticmethod
+    def rechercher_passages(requete, k):
+        """Recherche documentaire de l'agent ; le niveau 3 la remplace (et seulement elle)."""
+        return index_principal().rechercher(requete, k=k)
+
     def __init__(self, question, liste=None, essai=0):
         self.liste = liste if liste is not None else ListeAVoir()
         self.essai = essai
@@ -208,7 +215,7 @@ class Session:
         """Exécute un outil sans effet. Renvoie (résultat pour le modèle, durée d'un appel externe)."""
         type_oeuvre = a.get("type", "film")
         if nom == "rechercher_documents":
-            passages = index_principal().rechercher(a["requete"], k=K)
+            passages = self.rechercher_passages(a["requete"], K)
             if not self.passages_recherche:
                 self.passages_recherche = passages
             return {"extraits": [
@@ -287,7 +294,7 @@ class Session:
 
     def sortie(self):
         return {
-            "niveau": 2,
+            "niveau": self.niveau,
             **self.fin,
             "passages": self.preuves,  # tout ce que le modèle a vu et pouvait citer (pour le juge)
             "passages_recherche": self.passages_recherche,
@@ -314,12 +321,12 @@ def refuser_tout(action):
     return False
 
 
-def repondre(question, essai=0, liste=None, confirmer=refuser_tout):
+def repondre(question, essai=0, liste=None, confirmer=refuser_tout, classe=Session):
     """Traite une requête de bout en bout. `confirmer(action)` joue le rôle de l'utilisateur.
 
     Par défaut, toute écriture est refusée : une question simple ne doit jamais modifier la liste.
     """
-    session = Session(question, liste, essai).avancer()
+    session = classe(question, liste, essai).avancer()
     while session.attente is not None:
         session.avancer(confirmer(session.attente["action"]))
     return session.sortie()

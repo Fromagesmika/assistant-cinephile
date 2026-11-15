@@ -9,7 +9,7 @@ sur le même protocole de test.
 | 0 | LLM seul | Évalué (40 cas) |
 | 1 | RAG, sources citées, abstention | Évalué (40 cas), juge calibré (95 % d'accord sur 20 cas) |
 | 2 | Agent outillé (7 outils), confirmation des actions | Évalué (40 cas + 11 tâches × 3 essais) |
-| 3 | Extension mesurée | Semaine 4 |
+| 3 | Agent + RAG avancé (recherche hybride BM25 + dense, reranking) | Évalué contre le niveau 2 (mêmes 51 cas) |
 
 ## Installation
 
@@ -39,8 +39,7 @@ streamlit run app.py
 La première commande télécharge une fois les affiches des 156 œuvres depuis TMDB (dossier
 `data/affiches/`, non versionné). Sans elle, l'interface fonctionne mais sans affiches.
 
-L'interface s'ouvre sur http://localhost:8501. On y choisit le niveau (0 à 3 ; le 3 est en
-préparation), puis on voit la réponse, les œuvres citées avec leur affiche, les sources citées,
+L'interface s'ouvre sur http://localhost:8501. On y choisit le niveau (0 à 3), puis on voit la réponse, les œuvres citées avec leur affiche, les sources citées,
 le coût de la requête (tokens, latence, appels au modèle) et la trace de chaque étape (outil,
 arguments, tokens, durée). Au niveau 2, chaque ajout ou retrait dans la liste « à voir » attend un clic sur
 « Accepter » ou « Refuser ». La liste est partagée dans `data/liste_a_voir.json` et chaque
@@ -68,14 +67,15 @@ Le tableau est écrit dans `results/tableau.md`. Les réponses déjà obtenues s
 | `src/metrics.py` | Règles de notation |
 | `src/traces.py` | Traces JSONL de chaque exécution |
 | `src/levels/` | Un fichier par niveau |
-| `src/rag.py` | Découpage, index de vecteurs et recherche |
+| `src/rag.py` | Découpage, index de vecteurs et recherche dense |
+| `src/hybride.py` | Niveau 3 : BM25, fusion et reranking (choix dans `results/choix_hybride.md`) |
 | `src/juge.py` | Juge LLM de fidélité aux sources |
 | `src/tmdb.py` | Accès à l'API TMDB, avec cache (`cache/tmdb/`) |
 | `src/liste.py` | Liste « à voir » et règles métier vérifiées par le code |
 | `src/affiches.py`, `data/affiches.json` | Affiches TMDB et correspondance page Wikipédia → fiche TMDB (interface seulement) |
 | `assets/style.css` | Apparence de l'interface |
 | `data/index/` | Vecteurs des passages (configuration retenue) |
-| `scripts/` | Corpus, contrôle des clés et des tests, comparaison de la recherche, calibration du juge |
+| `scripts/` | Corpus, contrôle des clés et des tests, comparaison de la recherche (dense, puis hybride), calibration du juge, affiches |
 | `results/`, `traces/` | Résultats bruts et traces |
 | `rapport/`, `video/` | Rapport PDF et sources de la vidéo |
 

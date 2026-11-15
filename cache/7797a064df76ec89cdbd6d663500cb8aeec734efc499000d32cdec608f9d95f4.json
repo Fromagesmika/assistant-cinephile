@@ -1,0 +1,17 @@
+{
+ "texte": "```json\n{\n  \"statut\": \"precision\",\n  \"texte\": \"Plusieurs films s'intitulent Frankenstein. S'agit-il par exemple du film de Guillermo del Toro (2025) ou d'une autre version ?\",\n  \"sources\": []\n}\n```",
+ "message": {
+  "content": "```json\n{\n  \"statut\": \"precision\",\n  \"texte\": \"Plusieurs films s'intitulent Frankenstein. S'agit-il par exemple du film de Guillermo del Toro (2025) ou d'une autre version ?\",\n  \"sources\": []\n}\n```",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EmAKXgFpFH0TCnRnL0t31D6mbfd9t1mSUMUn85CIc6+F6dMDmAIg0rYC4x1c5iHuDUinWn6TnreKMpafOzX/uPPdTPKmRTLwyvW8y9fsv8xVCPI06v8xyDW+nscHIxrRvyM="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 2249,
+ "tokens_sortie": 65,
+ "tokens_total": 2314,
+ "latence": 1.6177734999801032,
+ "modele": "gemini-3.5-flash-lite"
+}
