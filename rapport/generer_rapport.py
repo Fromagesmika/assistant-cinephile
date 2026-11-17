@@ -39,7 +39,7 @@ VIOLET_CLAIR = colors.HexColor("#ece7f8")
 GRIS = colors.HexColor("#5f5b6b")
 LIGNE = colors.HexColor("#cfc8e3")
 
-corps = ParagraphStyle("corps", fontName="Texte", fontSize=9.4, leading=13.2, spaceAfter=5, alignment=4)
+corps = ParagraphStyle("corps", fontName="Texte", fontSize=9.4, leading=12.9, spaceAfter=4.6, alignment=4)
 titre = ParagraphStyle("titre", fontName="Gras", fontSize=18, leading=22, textColor=VIOLET, spaceAfter=3)
 sous_titre = ParagraphStyle("sous", fontName="Texte", fontSize=9.4, leading=13, textColor=GRIS, spaceAfter=8)
 h1 = ParagraphStyle("h1", fontName="Gras", fontSize=12, leading=15, textColor=VIOLET, spaceBefore=10, spaceAfter=4)
@@ -122,7 +122,7 @@ def schema():
     xn, ln = 112, 210
     niveaux = [
         ("Niveau 0 · LLM seul", "prompt soigné → Gemini 3.5 Flash-Lite"),
-        ("Niveau 1 · RAG", "e5 (7 860 passages de 800 car.) → 5 extraits → réponse citée [n]"),
+        ("Niveau 1 · RAG", "e5 (8 748 extraits, 3 sources) → 5 extraits → réponse citée [n]"),
         ("Niveau 2 · Agent", "boucle bornée (8 appels, 40 k tokens), 7 outils JSON"),
         ("Niveau 3 · Agent + RAG avancé", "niveau 2 avec recherche hybride BM25 + dense et reranking"),
     ]
@@ -132,7 +132,7 @@ def schema():
         fleche(d, 90, 91, xn, y + 14)
     # Colonne de droite : sources et actions
     xd, ld = 346, w - 346
-    boite(d, xd, 150, ld, 28, "Wikipédia FR · 156 pages", "révision figée, CC BY-SA 4.0")
+    boite(d, xd, 150, ld, 28, "Wikipédia · TMDB · IMDb", "156 œuvres, 3 sources, 8 748 extraits")
     boite(d, xd, 116, ld, 28, "API TMDB (cache disque)", "recherche, fiche, box-office, recommandations")
     boite(d, xd, 48, ld, 62, "Écriture dans la liste", "1. arguments validés contre le schéma\n2. règles métier (doublon, existence)\n3. confirmation dans l'interface\n4. écriture dans la liste partagée")
     # Niveau 1 : Wikipédia seulement. Niveaux 2 et 3 (accolade) : Wikipédia, TMDB et écriture.
@@ -146,7 +146,7 @@ def schema():
     fleche(d, xa, 70, xd, 79)
     # Bas : traces et évaluation
     boite(d, 0, 0, w, 36, "Traces JSONL et évaluation",
-          "chaque exécution : étapes, outils, arguments, tokens, durée (traces/) · python eval.py : 51 cas × 4 niveaux, réponses relues\n"
+          "chaque exécution : étapes, outils, arguments, tokens, durée (traces/) · python eval.py : 57 cas × 4 niveaux, réponses relues\n"
           "dans cache/ (LLM et TMDB) → results/niveauN.jsonl et results/tableau.md, reproductible sans clé d'API")
     return d
 
@@ -170,16 +170,23 @@ histoire += [
       "restent disponibles dans l'interface et dans le script d'évaluation, et ils passent exactement le même jeu de "
       "test. C'est ce qui nous permet de dire, chiffres à l'appui, ce que chaque niveau apporte et ce qu'il coûte."),
 
-    p("2. Les données", h1),
-    p("<b>Le corpus</b> rassemble 156 pages Wikipédia en français : 136 films et 20 séries. Nous les avons "
+    p("2. Les données : trois sources", h1),
+    p("<b>Le corpus</b> couvre 156 œuvres (136 films et 20 séries) et puise dans trois plateformes différentes. "
+      "La première est <b>Wikipédia</b> en français : 156 pages encyclopédiques. Nous les avons "
       "téléchargées avec l'API de Wikipédia en gardant le numéro de révision de chaque page, pour savoir exactement "
       "quelle version du texte a servi à l'évaluation. Les œuvres sont réparties en trois groupes, choisis pour "
       "mettre le système en difficulté de façons différentes : 68 œuvres <i>populaires</i>, que le modèle connaît "
       "déjà ; 58 œuvres <i>peu connues</i> ; et 30 œuvres <i>récentes</i> (2024-2025), sorties après les données "
       "d'entraînement du modèle."),
-    p("<b>Les outils</b> de l'agent passent par l'API TMDB, une base de films gratuite : recherche d'une œuvre, fiche "
-      "détaillée (dont le budget et les recettes au box-office), recommandations. <b>Le modèle</b> est Gemini 3.5 "
-      "Flash-Lite, utilisé par API dans l'offre gratuite, avec une température de 0."),
+    p("La deuxième est <b>TMDB</b>, une base de films collaborative : pour chaque œuvre, une fiche en français "
+      "(synopsis, slogan, équipe, budget, recettes, mots-clés) et jusqu'à deux critiques d'utilisateurs. La troisième "
+      "est <b>IMDb</b>, la référence du public : la note moyenne et le nombre de votes, tirés de ses jeux de données "
+      "publics. Les trois sources sont découpées et indexées ensemble (8 748 extraits) ; chaque extrait garde le nom de "
+      "sa plateforme, si bien qu'une réponse dit toujours d'où vient chaque information. Les fiches sont reconstruites "
+      "par <i>scripts/build_sources.py</i>."),
+    p("<b>Les outils</b> de l'agent interrogent aussi l'API TMDB en direct : recherche d'une œuvre, fiche détaillée, "
+      "recommandations. <b>Le modèle</b> est Gemini 3.5 Flash-Lite, utilisé par API dans l'offre gratuite, avec une "
+      "température de 0."),
 
     p("3. Architecture", h1),
     schema(),
@@ -208,7 +215,9 @@ histoire += [
 histoire += [
     p("4. Comment nous évaluons", h1),
     p(f"Le jeu de test (<i>tests.jsonl</i>) compte {len(tests)} cas. Nous l'avons écrit en semaine 1, puis complété "
-      f"en semaine 3 par quatre cas sur le box-office ; à ce moment-là, tous les niveaux ont été réévalués. On y "
+      f"en semaine 3 par quatre cas sur le box-office, puis en semaine 4 par six cas dont la réponse ne se trouve que "
+      f"sur TMDB ou sur IMDb (un slogan, une note, un nombre de votes). Chaque ajout a entraîné une réévaluation de "
+      f"tous les niveaux. On y "
       f"trouve {nb['document']} questions dont la réponse est dans le corpus, {nb['absent']} questions sans réponse "
       f"possible (des films inventés, ou des détails qu'aucune source ne donne), {nb['tache']} tâches en plusieurs "
       f"étapes sur la liste, et {nb['ambigu']} demandes ambiguës ou hors sujet. Un script vérifie que chaque réponse "
@@ -231,7 +240,8 @@ histoire += [
 
 histoire += [
     p("5. Les choix, et les mesures qui les justifient", h1),
-    p("<b>Découpage et embeddings.</b> Nous avons comparé quatre configurations sur 25 questions. Le modèle e5-small "
+    p("<b>Découpage et embeddings.</b> Nous avons comparé quatre configurations sur 25 questions, avant l'ajout de "
+      "TMDB et d'IMDb. Le modèle e5-small "
       "multilingue l'emporte nettement sur MiniLM (le fait est retrouvé dans 96 % des cas, contre 60 %). Avec e5, des "
       "passages de 400, 800 ou 1 500 caractères donnent des résultats proches (92 à 96 %) ; nous avons gardé 800, qui "
       "a le meilleur MRR (0,74). Un détail s'est révélé important : chaque passage commence par le titre de l'œuvre "
@@ -241,24 +251,26 @@ histoire += [
       "C'est donc le modèle qui décide de s'abstenir, et le code qui contrôle : une réponse qui ne cite aucun extrait "
       "valide est remplacée par une abstention."),
     p("<b>L'extension du niveau 3 part d'un défaut mesuré.</b> En passant du RAG à l'agent, le Recall@5 chute de "
-      "93 % à 71 %. Les traces montrent pourquoi. D'abord, l'agent reformule la question en mots-clés, souvent sans "
+      "88 % à 71 %. Les traces montrent pourquoi. D'abord, l'agent reformule la question en mots-clés, souvent sans "
       "accents (« Cleo de 5 a 7 date action Agnes Varda »), et la recherche par vecteurs retrouve mal ce genre de "
       "requête. Ensuite, il lui arrive de sauter Wikipédia pour aller directement sur TMDB. La première cause relève "
       "du RAG avancé, l'une des extensions proposées par le sujet. Avant de construire quoi que ce soit, nous avons "
       "comparé cinq façons de chercher, sur les vraies requêtes écrites par l'agent :"),
     KeepTogether([tableau([["Recherche", "Questions d'origine", "Requêtes de l'agent"],
-             ["Dense e5 (niveaux 1 et 2)", "93 % · MRR 0,68", "80 % · MRR 0,66"],
-             ["BM25 seul (écrit sans framework)", "68 % · MRR 0,53", "76 % · MRR 0,60"],
-             ["Hybride, fusion RRF", "82 % · MRR 0,63", "88 % · MRR 0,70"],
-             ["Dense + reranking", "96 % · MRR 0,91", "96 % · MRR 0,82"],
-             ["<b>Hybride + reranking (retenu)</b>", "<b>96 % · MRR 0,91</b>", "<b>100 % · MRR 0,86</b>"]],
+             ["Dense e5 (niveaux 1 et 2)", "88 % · MRR 0,62", "75 % · MRR 0,63"],
+             ["BM25 seul (écrit sans framework)", "62 % · MRR 0,44", "69 % · MRR 0,46"],
+             ["Hybride, fusion RRF", "82 % · MRR 0,61", "78 % · MRR 0,58"],
+             ["Dense + reranking", "97 % · MRR 0,89", "94 % · MRR 0,72"],
+             ["<b>Hybride + reranking (retenu)</b>", "<b>97 % · MRR 0,89</b>", "<b>94 % · MRR 0,72</b>"]],
             [6.4, 5.4, 5.4]),
-    p("Tableau 1 · Recall@5 et MRR sur les 28 questions document (détail dans results/choix_hybride.md).", legende)]),
+    p("Tableau 1 · Recall@5 et MRR sur les 34 questions document, corpus à trois sources (results/choix_hybride.md).", legende)]),
     p("Le résultat nous a surpris. La recherche hybride seule aide l'agent, mais elle <b>dégrade</b> les questions "
       "bien formulées : BM25 ne voit aucun rapport entre « compositeur » et « composée », et une racinisation simple "
       "n'y a rien changé. Ce qui fonctionne, c'est d'ajouter un reranking : on réunit les 20 meilleurs candidats de "
       "chaque recherche, puis un petit modèle (un cross-encoder multilingue) relit chaque paire question-extrait pour "
-      "les reclasser. Nous n'avons réglé aucun paramètre sur le jeu de test et avons gardé les valeurs usuelles."),
+      "les reclasser. Sur le corpus Wikipédia seul, l'union avec BM25 apportait un peu plus que le reranking seul "
+      "(100 % contre 96 % sur les requêtes de l'agent) ; avec les trois sources, les deux font jeu égal. Nous avons "
+      "gardé l'hybride, sans régler aucun paramètre sur le jeu de test."),
 ]
 
 histoire += [
@@ -269,7 +281,8 @@ histoire += [
              ligne_niveau(3, "3 · Agent + RAG avancé")],
             [3.5, 1.55, 0.95, 1.8, 1.35, 1.7, 1.45, 1.4, 1.15, 1.35, 1.35], gras_premiere_colonne=True),
     p("Tableau 2 · Calculé à partir de results/niveauN.jsonl. Exactitude sur les 28 cas document, abstention sur les 6 "
-      "cas absents, précision ou refus sur les 6 cas ambigus, tâches sur 11 tâches × 3 essais.", legende),
+      "cas absents, précision ou refus sur les 6 cas ambigus, tâches sur 11 tâches × 3 essais. La latence dépend aussi "
+      "de la charge de l'API au moment de la mesure (voir section 8).", legende),
 ]
 strates = [["Exactitude par groupe d'œuvres", "Populaires", "Peu connues", "Récentes"]]
 for n, nom in enumerate(["0 · LLM seul", "1 · RAG", "2 · Agent", "3 · Agent + RAG avancé"]):
@@ -277,22 +290,27 @@ for n, nom in enumerate(["0 · LLM seul", "1 · RAG", "2 · Agent", "3 · Agent 
 histoire += [
     tableau(strates, [5.4, 2.4, 2.4, 2.4], gras_premiere_colonne=True),
     Spacer(1, 6),
-    p("<b>Niveau 0, le LLM seul.</b> C'est la référence à battre. Il s'en sort bien sur les œuvres connues, mais il "
-      "tombe à <b>10 % sur les films récents</b>, et rien dans ses réponses ne permet de les vérifier. Point positif : "
-      "il ne s'invente pas de réponse sur les films qui n'existent pas."),
-    p("<b>Niveau 1, le RAG.</b> C'est le plus grand pas en avant. L'exactitude passe de 57 % à 93 %, et de 10 % à "
-      "90 % sur les films récents. Chaque phrase cite sa source, et le juge ne trouve aucune réponse infidèle. Le prix "
-      "à payer : quatre fois plus de tokens, pour une latence identique."),
+    p("<b>Niveau 0, le LLM seul.</b> C'est la référence à battre. Il s'en sort sur les œuvres connues, mais il "
+      "tombe à <b>8 % sur les films récents</b>, il ne connaît ni les slogans ni les notes du public, et rien dans ses "
+      "réponses ne permet de les vérifier. Point positif : il ne s'invente pas de réponse sur les films qui n'existent "
+      "pas."),
+    p("<b>Niveau 1, le RAG.</b> C'est le plus grand pas en avant. L'exactitude passe de 47 % à 82 %, et de 8 % à "
+      "92 % sur les films récents. Les réponses citent leurs sources et le juge n'en trouve aucune infidèle. Les "
+      "trois sources ont un double effet. Elles répondent à des questions qu'aucune page Wikipédia ne couvre, et quand "
+      "elles se contredisent, le RAG donne parfois les deux valeurs (« 135 minutes selon TMDB, ou 132 minutes selon la "
+      "fiche technique »). Mais elles ajoutent aussi des extraits concurrents : avec Wikipédia seul, le RAG atteignait "
+      "93 % d'exactitude. Le prix à payer : quatre fois plus de tokens que le LLM seul."),
     p("<b>Niveau 2, l'agent.</b> Il réussit les 11 tâches aux trois essais, y compris les pièges que nous lui avions "
       "tendus : un doublon, un film qui n'existe pas, un ajout refusé, un retrait refusé. Il gère aussi les demandes "
-      "ambiguës : sur TMDB, il voit qu'il existe plusieurs « Nosferatu » et demande lequel. En contrepartie, il "
-      "consomme quatre fois plus de tokens que le RAG, il met deux fois plus de temps, et il retrouve moins bien les "
-      "documents (71 %)."),
+      "ambiguës : sur TMDB, il voit qu'il existe plusieurs « Nosferatu » et demande lequel. Son exactitude monte à "
+      "88 %. En contrepartie, il consomme quatre fois plus de tokens que le RAG, il met beaucoup plus de temps, et il "
+      "retrouve moins bien les documents (71 %)."),
     p("<b>Niveau 3, l'agent avec le RAG avancé.</b> Il corrige précisément ce dernier point : le Recall@5 remonte de "
-      "71 % à 89 %, le MRR de 0,59 à 0,77, et l'exactitude de 89 % à 93 %. Il consomme même un peu moins de tokens, "
-      "parce que l'agent relance moins souvent ses recherches. En revanche, chaque requête prend environ deux "
-      "secondes de plus. Les 11 % qui manquent au Recall@5 correspondent aux trois questions où l'agent n'a pas "
-      "consulté Wikipédia : chaque fois qu'il l'a fait, le bon extrait figurait parmi les cinq premiers."),
+      "71 % à 88 %, le MRR de 0,60 à 0,67, et l'exactitude de 88 % à <b>94 %</b>, le meilleur score des quatre "
+      "niveaux. Il consomme un peu moins de tokens que le niveau 2, parce que l'agent relance moins souvent ses "
+      "recherches, mais le reranking ajoute environ deux secondes par recherche. Sur les quatre questions où le bon "
+      "extrait manque, l'agent n'a pas consulté les documents dans deux cas. Il perd aussi un cas ambigu que le niveau 2 "
+      "réussissait (« Qui joue dans Frankenstein ? »), d'où 83 % en précision ou refus."),
 ]
 
 echecs = [
@@ -303,18 +321,21 @@ echecs = [
     ("Le RAG ne voit pas l'ambiguïté (amb-02).",
      "À la question « Qui joue dans Frankenstein ? », le niveau 1 répond pour l'adaptation de 2025 au lieu de "
      "demander de laquelle on parle. La raison est simple : notre corpus ne contient qu'un seul Frankenstein. "
-     "L'ambiguïté existe dans le monde, pas dans les extraits. L'agent, lui, la voit sur TMDB et pose la question."),
+     "L'ambiguïté existe dans le monde, pas dans les extraits. L'agent du niveau 2 la voit sur TMDB et pose la "
+     "question ; celui du niveau 3, dont les extraits mieux classés désignent tous le film de 2025, répond trop vite."),
     ("Le bon passage n'est pas dans les cinq extraits (doc-27).",
      "Le nombre d'entrées du <i>Salaire de la peur</i> figure bien dans sa page Wikipédia, mais la recherche du "
      "niveau 1 ne remonte pas la section « Box-office ». Le modèle s'abstient, ce qui est le bon réflexe, mais la "
-     "réponse existait. L'agent la retrouve au rang 5, et le reranking du niveau 3 la fait remonter au rang 3."),
-    ("L'agent cherche mal (doc-17).",
-     "Pour le budget de <i>Flow</i>, l'agent lance deux recherches en mots-clés, « Flow Gints Zilbalodis budget » "
-     "puis une variante. Aucune ne fait remonter le bon passage, et il s'abstient. C'est exactement le défaut qui a "
-     "motivé le niveau 3, où le passage arrive au rang 3 et la réponse devient exacte."),
+     "réponse existait. L'agent des niveaux 2 et 3, qui relance ses recherches, finit par la trouver et répond juste."),
+    ("Trois sources, deux budgets (doc-17).",
+     "Pour le budget de <i>Flow</i>, Wikipédia indique 3,5 millions d'euros et TMDB 3,7 millions de dollars. Le RAG et "
+     "l'agent ne retrouvent que la fiche TMDB et répondent « 3 700 000 dollars ». Le niveau 3, grâce au reranking, "
+     "remonte aussi le passage Wikipédia et cite les deux sources. Avec Wikipédia seul, le RAG et l'agent "
+     "s'abstenaient : ajouter une source a changé une abstention en réponse discutable."),
     ("Deux sources se contredisent (doc-20, niveaux 2 et 3).",
      "L'agent répond « 6 400 000 dollars » pour le budget d'<i>Un p'tit truc en plus</i> : il a pris le chiffre de "
-     "TMDB sans consulter Wikipédia, qui indique 6,1 millions d'euros. Le juge déclare la réponse fidèle, et il a "
+     "TMDB en direct, sans consulter les documents, alors que Wikipédia indique 6,1 millions d'euros. Le juge déclare "
+     "la réponse fidèle, et il a "
      "raison : elle est fidèle à sa source. Mais elle est fausse par rapport à notre référence. Cet échec est apparu "
      "quand nous avons ajouté les données de box-office de TMDB : enrichir les outils a créé un conflit que ni le "
      "juge ni la recherche ne détectent. La durée de <i>Parasite</i> (135 minutes sur TMDB, 132 sur Wikipédia) en "
@@ -322,34 +343,38 @@ echecs = [
      "d'abord, ou lui faire signaler les écarts entre sources."),
 ]
 histoire.append(p("7. Cinq échecs, regardés de près", h1))
-histoire.append(p("Les quatre premiers échecs sont corrigés par le niveau suivant, ce qui montre que chaque niveau "
-                  "a une raison d'exister. Le cinquième ne l'est pas, et c'est sans doute le plus instructif."))
+histoire.append(p("Les échecs 1, 3 et 4 sont corrigés par un niveau supérieur, ce qui montre que chaque niveau a "
+                  "une raison d'exister. Les échecs 4 et 5 viennent tous deux des contradictions entre sources : c'est "
+                  "le revers de l'ajout de TMDB et d'IMDb."))
 for i, (titre_echec, texte_echec) in enumerate(echecs, start=1):
     histoire.append(p(f"<b>{i}. {titre_echec}</b> {texte_echec}"))
 
 histoire += [
     p("8. Ce que ça coûte, et les limites", h1),
-    p("<b>Le coût.</b> Une requête consomme 282 tokens au niveau 0, 1 158 au niveau 1 et entre 4 200 et 4 500 pour "
-      "l'agent, soit environ quinze fois plus que le LLM seul. La latence passe de 2,1 secondes à 6,9 secondes au "
-      "niveau 3, dont environ deux secondes de reranking sur processeur, sans compter les 27 secondes de chargement "
-      "du modèle au démarrage. Le juge consomme ses propres tokens, que nous n'avons pas comptés dans le tableau, car "
+    p("<b>Le coût.</b> Une requête consomme 282 tokens au niveau 0, 1 214 au niveau 1 et entre 4 400 et 4 800 pour "
+      "l'agent, soit environ seize fois plus que le LLM seul. Le reranking ajoute environ deux secondes par recherche "
+      "sur processeur, plus 27 secondes de chargement du modèle au démarrage. Les latences du tableau mélangent deux "
+      "journées : les réponses déjà en cache gardent la latence de leur première mesure, et la réévaluation après "
+      "l'ajout des sources a eu lieu un jour où l'API répondait lentement (de 2 à 5 secondes par appel, avec des "
+      "erreurs 503). Elles sont donc à lire comme des ordres de grandeur. Le juge consomme ses propres tokens, que nous n'avons pas comptés dans le tableau, car "
       "ils servent à l'évaluation et non au système. Il faut aussi compter quelques coûts payés une seule fois, "
       "comme l'encodage du corpus (875 secondes). Tout le projet tourne sans GPU, dans l'offre gratuite de Gemini."),
-    p("<b>Les limites.</b> Notre jeu de test est petit : une question document pèse 3,6 points d'exactitude, et un "
+    p("<b>Les limites.</b> Notre jeu de test est petit : une question document pèse 2,9 points d'exactitude, et un "
       "écart de 4 points entre deux niveaux tient à un ou deux cas. En dehors des tâches, chaque cas n'est lancé "
       "qu'une fois, et même à température 0, Gemini n'est pas parfaitement déterministe : le cache garantit qu'on "
       "retrouve exactement notre tableau, pas que le modèle répondrait pareil demain. Le niveau 3 a été choisi en "
       "regardant les requêtes de ce même jeu de test ; nous avons limité le risque de sur-ajustement en ne réglant "
       "aucun paramètre. La latence des niveaux 2 et 3 varie légèrement d'une exécution à l'autre, car la recherche "
       "locale est chronométrée en direct. Les tests et l'annotation du juge ont été faits par nous, avec l'aide d'un "
-      "LLM pour la pré-annotation. Enfin, l'agent n'a pas de mémoire d'une question à l'autre : à « Et la suite, elle "
-      "sort quand ? », il demande de quelle œuvre on parle."),
+      "LLM pour la pré-annotation. Les notes IMDb changent avec le temps : nos tests portent sur la photographie du "
+      "17 novembre 2026. Enfin, l'agent n'a pas de mémoire d'une question à l'autre : à « Et la suite, elle sort "
+      "quand ? », il demande de quelle œuvre on parle."),
 
     p("9. Reproduire les résultats", h1),
-    p("Après <i>pip install -r requirements.txt</i>, la commande <b><i>python eval.py</i></b> rejoue les 51 cas sur "
+    p("Après <i>pip install -r requirements.txt</i>, la commande <b><i>python eval.py</i></b> rejoue les 57 cas sur "
       "les quatre niveaux et réécrit <i>results/tableau.md</i>. Les réponses du modèle et de TMDB sont relues dans le "
       "dossier <i>cache/</i>, si bien qu'aucune clé d'API n'est nécessaire pour retrouver nos chiffres. Le dépôt "
-      "contient aussi le jeu de test, les résultats bruts et les traces de chaque niveau, les comparaisons de "
+      "contient aussi les trois sources, le jeu de test, les résultats bruts et les traces de chaque niveau, les comparaisons de "
       "recherche, la calibration du juge et le fichier <i>.env.example</i> ; aucune clé n'y est versionnée. "
       "L'interface se lance avec <i>streamlit run app.py</i>. Ce rapport est lui-même généré par "
       "<i>rapport/generer_rapport.py</i> à partir des résultats bruts, ce qui garantit que ses tableaux "
@@ -359,8 +384,8 @@ histoire += [
     p("Chaque niveau a gagné sa place par une mesure. Le RAG rend l'assistant fiable sur les films qu'il ne connaît "
       "pas et lui fait citer ses sources. L'agent sait agir sur la liste sans jamais le faire dans le dos de "
       "l'utilisateur, et il repère les demandes ambiguës. Le RAG avancé répare la recherche que l'agent avait "
-      "dégradée. Mais chaque pas vers plus d'autonomie se paie en tokens et en secondes, et ouvre de nouvelles façons "
-      "de se tromper, comme le conflit entre deux sources. Si nous devions continuer, c'est par là que nous "
+      "dégradée. Trois sources rendent l'assistant plus complet, mais aussi plus exposé aux contradictions. Et chaque "
+      "pas vers plus d'autonomie se paie en tokens et en secondes. Si nous devions continuer, c'est par là que nous "
       "commencerions : apprendre à l'agent à confronter ses sources plutôt qu'à faire confiance à la première."),
 ]
 

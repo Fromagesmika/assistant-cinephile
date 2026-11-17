@@ -3,51 +3,54 @@
     #root { position: absolute; inset: 0; }
     #s06-tete { position: absolute; left: 170px; top: 96px; }
     #s06-tete .titre { margin-top: 10px; }
-    #s06-carte { position: absolute; left: 170px; top: 290px; width: 1220px; opacity: 0; }
+    #s06-fenetre { position: absolute; left: 170px; top: 290px; width: 1220px; height: 540px; overflow: hidden; border-radius: 18px;
+      box-shadow: 0 30px 80px rgba(10, 5, 25, 0.55); opacity: 0; }
+    #s06-carte { width: 1220px; display: block; }
     #s06-compteur { position: absolute; left: 170px; top: 870px; height: 140px; width: 1300px; }
     .s06-val { position: absolute; left: 0; top: 0; display: flex; align-items: baseline; gap: 28px; opacity: 0; }
     .s06-val b { font-size: 120px; font-weight: 900; letter-spacing: -0.04em; line-height: 0.9; }
-    .s06-val span { font-size: 48px; font-weight: 500; }
-    #s06-rien b { color: var(--orange); }
-    #s06-requetes { position: absolute; left: 1520px; top: 300px; width: 330px; }
+    .s06-val span { font-size: 44px; font-weight: 500; }
+    #s06-meme b { color: #ffb37a; }
+    #s06-requetes { position: absolute; left: 1450px; top: 300px; width: 330px; }
     #s06-requetes .etq { margin-bottom: 22px; }
     .s06-req { font-size: 30px; padding: 18px 22px; border-radius: 14px; background: var(--carte); border: 1px solid var(--bord);
       margin-bottom: 18px; opacity: 0; font-family: "JetBrains Mono", monospace; line-height: 1.25; }
+    #s06-manque { font-size: 30px; opacity: 0; margin-top: 8px; }
   </style>
   <div id="root" class="sc" data-composition-id="s06" data-width="1920" data-height="1080">
     <div id="s06-tete"><div class="etq">Niveau 2</div><div class="titre">L'agent</div></div>
-    <img id="s06-carte" class="ecran" src="assets/ecrans/c12_carte_flow_niveau2.png" alt="Réponse du niveau 2 : abstention" />
+    <div id="s06-fenetre"><img id="s06-carte" src="assets/ecrans/c12_carte_flow_niveau2.png" alt="Réponse du niveau 2" /></div>
     <div id="s06-compteur">
-      <div id="s06-etapes" class="s06-val"><b>9</b><span>étapes</span></div>
+      <div id="s06-etapes" class="s06-val"><b>7</b><span>étapes</span></div>
       <div id="s06-tokens" class="s06-val"><b id="s06-n">0</b><span>tokens</span></div>
-      <div id="s06-rien" class="s06-val"><b>0</b><span>réponse</span></div>
+      <div id="s06-meme" class="s06-val"><b>3,7 M$</b><span>le même chiffre</span></div>
     </div>
     <div id="s06-requetes">
-      <div class="etq">Ses requêtes</div>
+      <div class="etq">Sa requête</div>
       <div id="s06-r1" class="s06-req">Flow Gints Zilbalodis budget</div>
-      <div id="s06-r2" class="s06-req">"Flow" "budget" Gints Zilbalodis</div>
+      <div id="s06-manque">Wikipédia lui échappe</div>
     </div>
   </div>
   <script>
-    const T = { tete: 0.1, carte: 0.4, recherches: 1.6, etapes: 3.0, tokens: 3.9, rien: 5.6, sortie: 11.0 };
+    const T = { tete: 0.1, carte: 0.4, recherches: 1.6, etapes: 3.0, tokens: 3.9, rien: 5.6, faible: 7.6, sortie: 11.0 };
     const tl = gsap.timeline({ paused: true });
     tl.fromTo("#s06-tete", { opacity: 0, filter: "blur(8px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.25 }, T.tete);
-    tl.fromTo("#s06-carte", { opacity: 0, y: 50 }, { opacity: 1, y: 0, duration: 0.8, ease: "expo.out" }, T.carte);
+    tl.fromTo("#s06-fenetre", { opacity: 0, y: 50 }, { opacity: 1, y: 0, duration: 0.8, ease: "expo.out" }, T.carte);
     tl.fromTo("#s06-r1", { opacity: 0, x: 40 }, { opacity: 1, x: 0, duration: 0.5, ease: "expo.out" }, T.recherches);
-    tl.fromTo("#s06-r2", { opacity: 0, x: 40 }, { opacity: 1, x: 0, duration: 0.5, ease: "expo.out" }, T.recherches + 0.6);
-    // Un seul emplacement : 9 étapes, puis les tokens qui défilent, puis le résultat.
+    // Un seul emplacement : 7 étapes, puis les tokens qui défilent, puis le chiffre retenu.
     tl.fromTo("#s06-etapes", { opacity: 0, filter: "blur(8px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.3 }, T.etapes);
     tl.to("#s06-etapes", { opacity: 0, y: -30, filter: "blur(8px)", duration: 0.22, ease: "power3.in" }, T.tokens - 0.2);
     tl.fromTo("#s06-tokens", { opacity: 0, filter: "blur(8px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.3 }, T.tokens);
     const n = { v: 0 };
-    tl.fromTo(n, { v: 0 }, { v: 12141, duration: 1.4, ease: "expo.out", onUpdate: () => {
+    tl.fromTo(n, { v: 0 }, { v: 7915, duration: 1.4, ease: "expo.out", onUpdate: () => {
       document.querySelector("#s06-n").textContent = Math.round(n.v).toLocaleString("fr-FR").replace(/ | /g, " ");
     } }, T.tokens);
     tl.to("#s06-tokens", { opacity: 0, y: -30, filter: "blur(8px)", duration: 0.22, ease: "power3.in" }, T.rien - 0.2);
-    tl.fromTo("#s06-rien", { opacity: 0, filter: "blur(8px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.3 }, T.rien);
-    // « Il formule mal ses requêtes » : les deux requêtes s'allument en orange.
-    tl.to(["#s06-r1", "#s06-r2"], { borderColor: "rgba(251,146,60,0.95)", scale: 1.04, duration: 0.3, ease: "power2.out", stagger: 0.15 }, T.rien + 1.0);
-    tl.to(["#s06-tete", "#s06-carte", "#s06-compteur", "#s06-requetes"], { opacity: 0, filter: "blur(10px)", duration: 0.35, ease: "power3.in" }, T.sortie);
+    tl.fromTo("#s06-meme", { opacity: 0, filter: "blur(8px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.3 }, T.rien);
+    // « Il formule mal ses requêtes, et le passage de Wikipédia lui échappe. »
+    tl.to("#s06-r1", { borderColor: "rgba(251,146,60,0.95)", scale: 1.04, duration: 0.3, ease: "power2.out" }, T.faible);
+    tl.fromTo("#s06-manque", { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.4, ease: "expo.out" }, T.faible + 0.6);
+    tl.to(["#s06-tete", "#s06-fenetre", "#s06-compteur", "#s06-requetes"], { opacity: 0, filter: "blur(10px)", duration: 0.35, ease: "power3.in" }, T.sortie);
     window.__timelines["s06"] = tl;
   </script>
 </template>

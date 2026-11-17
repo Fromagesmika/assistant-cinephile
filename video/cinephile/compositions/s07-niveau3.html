@@ -15,12 +15,14 @@
     #s07-sortie { position: absolute; left: 1500px; top: 380px; width: 300px; opacity: 0; }
     #s07-sortie .etq { margin-bottom: 16px; }
     .s07-res { height: 50px; border-radius: 10px; background: rgba(244, 241, 251, 0.22); margin-bottom: 14px; }
-    #s07-gagnant { background: var(--violet); height: auto; padding: 14px 16px; font-size: 28px; font-weight: 700; line-height: 1.2; }
+    .s07-gagnant { background: var(--violet); height: auto; padding: 12px 16px; font-size: 28px; font-weight: 700; line-height: 1.2; }
     .s07-trait { position: absolute; height: 3px; background: rgba(196, 181, 253, 0.7); transform-origin: left center; transform: scaleX(0); }
     #s07-reponse { position: absolute; inset: 0; }
-    #s07-carte { position: absolute; left: 170px; top: 140px; width: 1000px; opacity: 0; }
+    #s07-fenetre { position: absolute; left: 170px; top: 140px; width: 1000px; height: 840px; overflow: hidden; border-radius: 18px;
+      box-shadow: 0 30px 80px rgba(10, 5, 25, 0.55); opacity: 0; }
+    #s07-carte { width: 1000px; display: block; }
     #s07-droite { position: absolute; left: 1260px; top: 300px; width: 520px; opacity: 0; }
-    #s07-droite .valeur { font-size: 92px; font-weight: 900; letter-spacing: -0.03em; line-height: 1; color: var(--violet-clair); margin: 18px 0 26px; }
+    #s07-droite .valeur { font-size: 46px; font-weight: 900; letter-spacing: -0.03em; line-height: 1; color: var(--violet-clair); margin: 18px 0 26px; }
   </style>
   <div id="root" class="sc" data-composition-id="s07" data-width="1920" data-height="1080">
     <div id="s07-tete"><div class="etq">Niveau 3</div><div class="titre">Agent + RAG avancé</div></div>
@@ -42,17 +44,19 @@
       <div id="s07-t5" class="s07-trait" style="left: 1430px; top: 545px; width: 70px;"></div>
       <div id="s07-sortie">
         <div class="etq">5 extraits</div>
-        <div class="s07-res"></div><div class="s07-res"></div>
-        <div id="s07-gagnant" class="s07-res">Flow · Fiche technique · Budget : 3,5 M€</div>
-        <div class="s07-res"></div><div class="s07-res"></div>
+        <div class="s07-res"></div>
+        <div id="s07-g1" class="s07-res s07-gagnant">TMDB · Budget : 3,7 M$</div>
+        <div class="s07-res"></div>
+        <div id="s07-g2" class="s07-res s07-gagnant">Wikipédia · Budget : 3,5 M€</div>
+        <div class="s07-res"></div>
       </div>
     </div>
     <div id="s07-reponse">
-      <img id="s07-carte" class="ecran" src="assets/ecrans/c13_carte_flow_niveau3.png" alt="Réponse du niveau 3 : 3,5 millions d'euros" />
+      <div id="s07-fenetre"><img id="s07-carte" src="assets/ecrans/c13_carte_flow_niveau3.png" alt="Réponse du niveau 3 : les deux sources" /></div>
       <div id="s07-droite">
         <span class="badge vert">Réponse</span>
-        <div class="valeur">3,5 millions d'euros</div>
-        <div class="ligne">Source citée : Wikipédia, fiche technique de Flow</div>
+        <div class="valeur">3,7 M$ selon TMDB<br />3,5 M€ selon Wikipédia</div>
+        <div class="ligne">Les deux sources sont citées</div>
       </div>
     </div>
   </div>
@@ -71,11 +75,12 @@
     tl.fromTo("#s07-relecture", { opacity: 0, scale: 0.85 }, { opacity: 1, scale: 1, duration: 0.6, ease: "back.out(1.4)" }, T.relecture);
     tl.fromTo("#s07-t5", { scaleX: 0 }, { scaleX: 1, duration: 0.4, ease: "power2.out" }, T.remonte - 0.4);
     tl.fromTo("#s07-sortie", { opacity: 0 }, { opacity: 1, duration: 0.2 }, T.remonte);
-    // Le bon passage « remonte » depuis le bas de la liste jusqu'au rang 3.
-    tl.fromTo("#s07-gagnant", { y: 260, opacity: 0 }, { y: 0, opacity: 1, duration: 0.9, ease: "expo.out" }, T.remonte + 0.1);
+    // Les deux bons passages « remontent » depuis le bas de la liste.
+    tl.fromTo("#s07-g1", { y: 260, opacity: 0 }, { y: 0, opacity: 1, duration: 0.9, ease: "expo.out" }, T.remonte + 0.1);
+    tl.fromTo("#s07-g2", { y: 200, opacity: 0 }, { y: 0, opacity: 1, duration: 0.9, ease: "expo.out" }, T.remonte + 0.35);
     // Le schéma s'efface, la vraie réponse de l'interface prend sa place.
     tl.to(["#s07-schema", "#s07-tete"], { opacity: 0, filter: "blur(12px)", duration: 0.35, ease: "power3.in" }, T.reponse + 0.3);
-    tl.fromTo("#s07-carte", { opacity: 0, scale: 1.08 }, { opacity: 1, scale: 1, duration: 0.9, ease: "expo.out" }, T.reponse + 0.55);
+    tl.fromTo("#s07-fenetre", { opacity: 0, scale: 1.06 }, { opacity: 1, scale: 1, duration: 0.9, ease: "expo.out" }, T.reponse + 0.55);
     tl.fromTo("#s07-droite", { opacity: 0, x: 50 }, { opacity: 1, x: 0, duration: 0.7, ease: "expo.out" }, T.reponse + 1.1);
     tl.fromTo("#s07-droite .ligne", { opacity: 0 }, { opacity: 1, duration: 0.3 }, T.source);
     tl.to("#s07-reponse", { opacity: 0, filter: "blur(10px)", duration: 0.35, ease: "power3.in" }, T.sortie);

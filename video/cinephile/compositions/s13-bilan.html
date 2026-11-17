@@ -9,20 +9,20 @@
       border-top: 1px solid rgba(255, 255, 255, 0.08); padding-left: 48px; }
     .s13-ligne.entete { height: 96px; border-top: none; background: rgba(139, 92, 246, 0.16); }
     .s13-ligne.entete div { font-size: 28px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--violet-clair); }
-    .s13-niveau { font-size: 40px; font-weight: 700; }
+    .s13-niveau { font-size: 36px; font-weight: 700; }
     .s13-niveau small { display: block; font-size: 28px; font-weight: 400; color: var(--encre-douce); margin-top: 4px; }
     .s13-v { font-size: 64px; font-weight: 900; letter-spacing: -0.03em; opacity: 0; }
     .s13-v.fort { color: var(--violet-clair); }
     .s13-v.faible { color: var(--orange); }
   </style>
   <div id="root" class="sc" data-composition-id="s13" data-width="1920" data-height="1080">
-    <div id="s13-tete"><div class="etq">Sur les mêmes 51 tests</div><div class="titre">Le bilan</div></div>
+    <div id="s13-tete"><div class="etq">Sur les mêmes 57 tests · 3 sources</div><div class="titre">Le bilan</div></div>
     <div id="s13-table">
       <div class="s13-ligne entete"><div>Niveau</div><div>Exactitude</div><div>Recherche · Recall@5</div><div>Tokens / requête</div></div>
-      <div class="s13-ligne"><div class="s13-niveau">0 · LLM seul</div><div id="s13-e0" class="s13-v faible">57 %</div><div id="s13-r0" class="s13-v">—</div><div id="s13-t0" class="s13-v">282</div></div>
-      <div class="s13-ligne"><div class="s13-niveau">1 · RAG</div><div id="s13-e1" class="s13-v fort">93 %</div><div id="s13-r1" class="s13-v">93 %</div><div id="s13-t1" class="s13-v">1 158</div></div>
-      <div class="s13-ligne"><div class="s13-niveau">2 · Agent<small>sait agir sur la liste</small></div><div id="s13-e2" class="s13-v">89 %</div><div id="s13-r2" class="s13-v faible">71 %</div><div id="s13-t2" class="s13-v faible">4 510</div></div>
-      <div class="s13-ligne"><div class="s13-niveau">3 · Agent + RAG avancé</div><div id="s13-e3" class="s13-v fort">93 %</div><div id="s13-r3" class="s13-v fort">89 %</div><div id="s13-t3" class="s13-v">4 205</div></div>
+      <div class="s13-ligne"><div class="s13-niveau">0 · LLM seul</div><div id="s13-e0" class="s13-v faible">47 %</div><div id="s13-r0" class="s13-v">—</div><div id="s13-t0" class="s13-v">282</div></div>
+      <div class="s13-ligne"><div class="s13-niveau">1 · RAG</div><div id="s13-e1" class="s13-v fort">82 %</div><div id="s13-r1" class="s13-v">88 %</div><div id="s13-t1" class="s13-v">1 214</div></div>
+      <div class="s13-ligne"><div class="s13-niveau">2 · Agent<small>sait agir sur la liste</small></div><div id="s13-e2" class="s13-v">88 %</div><div id="s13-r2" class="s13-v faible">71 %</div><div id="s13-t2" class="s13-v faible">4 771</div></div>
+      <div class="s13-ligne"><div class="s13-niveau">3 · Agent + RAG avancé</div><div id="s13-e3" class="s13-v fort">94 %</div><div id="s13-r3" class="s13-v fort">88 %</div><div id="s13-t3" class="s13-v">4 393</div></div>
     </div>
   </div>
   <script>
