@@ -30,15 +30,25 @@ def annee_probable(texte):
     return int(m.group(1)) if m else None
 
 
+def nombre_votes(r):
+    """Popularité d'une œuvre sur TMDB : départage deux homonymes (Flow, le long métrage, et un court)."""
+    chemin = f"/tv/{r['tmdb_id']}" if r["type"] == "serie" else f"/movie/{r['tmdb_id']}"
+    fiche, _ = tmdb.appeler(chemin)
+    return fiche.get("vote_count") or 0
+
+
 def choisir(resultats, titre, annee):
-    """Titre identique d'abord (l'année Wikipédia peut différer d'un an de celle de TMDB), puis année."""
-    exacts = [r for r in resultats if normaliser(titre) in (normaliser(r["titre"] or ""), normaliser(r["titre_original"] or ""))]
+    """Titre qui commence par le titre cherché (« Flow, le chat qui… »), puis année à un an près (Wikipédia et TMDB diffèrent parfois),
+    puis l'œuvre la plus votée parmi les homonymes."""
+    cle = normaliser(titre)
+    exacts = [r for r in resultats if any(normaliser(t or "").startswith(cle) for t in (r["titre"], r["titre_original"]))]
     for groupe in (exacts, resultats):
         if annee:
             proches = [r for r in groupe if r["annee"] and abs(r["annee"] - annee) <= 1]
             if proches:
-                return min(proches, key=lambda r: abs(r["annee"] - annee))
-    return (exacts or resultats)[0]
+                return max(proches, key=nombre_votes)
+    groupe = exacts or resultats
+    return max(groupe, key=nombre_votes) if len(groupe) > 1 else groupe[0]
 
 
 def main():

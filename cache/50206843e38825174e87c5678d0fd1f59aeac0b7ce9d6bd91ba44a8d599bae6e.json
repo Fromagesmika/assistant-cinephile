@@ -1,0 +1,17 @@
+{
+ "texte": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"Chaque épisode de la mini-série Adolescence se présente sous la forme d'un seul et unique plan-séquence.\",\n  \"sources\": [1]\n}\n```",
+ "message": {
+  "content": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"Chaque épisode de la mini-série Adolescence se présente sous la forme d'un seul et unique plan-séquence.\",\n  \"sources\": [1]\n}\n```",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EokBCoYBAWkUfRMG0mb4BSar1W4ruImT/nAmwdzRG2OfK+Egr5g/dixILi6QYEraxu1c/L243AvJRHTNv2ZHx7Y+pbW+KDZj3DQ7KrJQOMG9HjEf6tnyMSvRAtEaA1TBVZk6yqsj90QsReGdvSuwa9hQxvaswrWcck55FQZiavW6rG9CJ+E7Vb1G51Q="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 2220,
+ "tokens_sortie": 60,
+ "tokens_total": 2280,
+ "latence": 1.4149192000040784,
+ "modele": "gemini-3.5-flash-lite"
+}

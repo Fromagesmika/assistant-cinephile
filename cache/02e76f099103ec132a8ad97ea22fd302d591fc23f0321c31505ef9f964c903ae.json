@@ -1,0 +1,17 @@
+{
+ "texte": "```json\n{\n  \"statut\": \"precision\",\n  \"texte\": \"De quelle œuvre parlez-vous ? Veuillez préciser le titre du film ou de la série dont vous attendez la suite.\",\n  \"sources\": []\n}\n```",
+ "message": {
+  "content": "```json\n{\n  \"statut\": \"precision\",\n  \"texte\": \"De quelle œuvre parlez-vous ? Veuillez préciser le titre du film ou de la série dont vous attendez la suite.\",\n  \"sources\": []\n}\n```",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EokBCoYBAWkUfRMr4bb4Q56fo9Uj+8tGsscYFlXkFD1+DAIK032d9zb0kC6XG/HhDVco7PGJzlC/I4scMcbTr7A2H+bPGJZJK/exW+ag+H0LEYa/byLUvEzj/c1xwkAn11DfGae3ilsFwuTffPPXU7skkHFeKMoiIYR1USNYLgrhH+S5oztL0GOK9rc="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 1926,
+ "tokens_sortie": 54,
+ "tokens_total": 1980,
+ "latence": 8.591502299997956,
+ "modele": "gemini-3.5-flash-lite"
+}

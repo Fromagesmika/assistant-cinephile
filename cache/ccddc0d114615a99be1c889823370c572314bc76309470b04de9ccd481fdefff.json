@@ -1,0 +1,17 @@
+{
+ "texte": "{\"statut\": \"reponse\", \"texte\": \"L'action du film est censée se passer à 18 heures [3]. Agnès Varda voulait à l'origine filmer le 21 mars [3].\", \"sources\": [3]}",
+ "message": {
+  "content": "{\"statut\": \"reponse\", \"texte\": \"L'action du film est censée se passer à 18 heures [3]. Agnès Varda voulait à l'origine filmer le 21 mars [3].\", \"sources\": [3]}",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EokBCoYBAWkUfRNth7b3mPLTcp4UflS2aD9Jgq0DawF5yP81ZjVlQKhm5iI6S0Bj1+YJcd4iJFMAzf9uJ9zGh04P/tKHqi1/ct3olfqEhf0CVbUqWPJaYEQBRh45KVwhZ0Zap4St9tLmEE80q7SPdlMpUcrYWzX5PTj2OXTQu+FPhSW3jqHXdZTG98Y="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 964,
+ "tokens_sortie": 56,
+ "tokens_total": 1020,
+ "latence": 4.291456500010099,
+ "modele": "gemini-3.5-flash-lite"
+}

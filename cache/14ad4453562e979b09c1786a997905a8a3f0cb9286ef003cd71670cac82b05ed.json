@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EokBCoYBAWkUfRMCSBpDgm717FUKAE0HoQ96wTVPEwCckRxLSkhDHkp9Xl7+nYi41ephzkOJNFQWnFmIUWXrLfWKU5PqUFasZZVia75jD48eI4M+vywBhRXjdD9lQCqkhysB1iSbjcUWxvLIKc2cqA5DOaQjudbc8WH3FOJSEvSRcQCpPAadeQ1jas8="
+     }
+    },
+    "function": {
+     "arguments": "{\"requete\":\"Mon oncle Jacques Tati usine Monsieur Arpel fabrique\"}",
+     "name": "rechercher_documents"
+    },
+    "id": "call_13994783682096422895",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1179,
+ "tokens_sortie": 31,
+ "tokens_total": 1210,
+ "latence": 9.5613642000244,
+ "modele": "gemini-3.5-flash-lite"
+}

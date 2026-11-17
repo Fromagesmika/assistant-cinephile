@@ -1,0 +1,17 @@
+{
+ "texte": "{\"fidele\": true, \"detail\": \"\"}",
+ "message": {
+  "content": "{\"fidele\": true, \"detail\": \"\"}",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EokBCoYBAWkUfROF3nacoK9DjoutOKJyOWwzYe4lhB3+8J61+EjUcBNp4zonh2OY2MbXHiecLBn3jLPHiTC/qm/CDabEJB+Zvz2qESJ9FhtHhQ1Ci6Ie0Vg2cNAUQObu8VUD0pNs3ZR6DhK1/QoDGLJbCoQScrh7Uj1yWKd6kxUoClLYREN7wywuqqg="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 2264,
+ "tokens_sortie": 11,
+ "tokens_total": 2275,
+ "latence": 5.330643200024497,
+ "modele": "gemini-3.5-flash-lite"
+}

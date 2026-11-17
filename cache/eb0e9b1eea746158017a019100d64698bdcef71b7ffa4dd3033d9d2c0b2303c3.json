@@ -1,0 +1,34 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EokBCoYBAWkUfRMZx4SBC8XS3kDmkKuz6ys0202u/iy8P6xoac07uKQfI1oN4G5M9cXzCQsp1xWgVeIAWV2Rl0Q0sEwOrkR8eDoCz9gCSGDsv/gLhJaH13vmEFaIV0krlXxFEVMsnIHGlG9phef1KCneYDww96Wao26ZfufA+afO1yJLibF9/fJSmak="
+     }
+    },
+    "function": {
+     "arguments": "{\"requete\":\"réalisateur Parasite 2019\"}",
+     "name": "rechercher_documents"
+    },
+    "id": "call_10919796473751217808",
+    "type": "function"
+   },
+   {
+    "function": {
+     "arguments": "{\"annee\":2025,\"titre\":\"Mickey 17\"}",
+     "name": "rechercher_oeuvre"
+    },
+    "id": "call_10919796473751218051",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1184,
+ "tokens_sortie": 59,
+ "tokens_total": 1243,
+ "latence": 1.6545307000051253,
+ "modele": "gemini-3.5-flash-lite"
+}

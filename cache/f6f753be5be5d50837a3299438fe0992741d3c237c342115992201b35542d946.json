@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EokBCoYBAWkUfRN10SjZZ5uKyrDu4obmFxKXhYeWxjdDySv+bZjwVwfTu5j6MtmMgTMcogZ0Uyf/JPVmQvCcuil3N/IBQzvi8RaipnUSw2LrtzZ+ctMHT4trt8hMntv1qep/zA3lt5iHm8id1zjJGIs2C76r8/5P8fAenkIWiQ8UIu/TZzMovmBoGDQ="
+     }
+    },
+    "function": {
+     "arguments": "{\"requete\":\"\\\"Votre esprit abrite la scène du crime\\\" Inception\"}",
+     "name": "rechercher_documents"
+    },
+    "id": "call_10414571995436421262",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 2312,
+ "tokens_sortie": 30,
+ "tokens_total": 2342,
+ "latence": 1.422494700003881,
+ "modele": "gemini-3.5-flash-lite"
+}

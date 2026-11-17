@@ -1,0 +1,17 @@
+{
+ "texte": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"Nadia Melliti a reçu le prix d'interprétation féminine au Festival de Cannes 2025 pour son rôle dans La Petite Dernière [1, 2].\",\n  \"sources\": [1, 2]\n}\n```",
+ "message": {
+  "content": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"Nadia Melliti a reçu le prix d'interprétation féminine au Festival de Cannes 2025 pour son rôle dans La Petite Dernière [1, 2].\",\n  \"sources\": [1, 2]\n}\n```",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EokBCoYBAWkUfRPDdeJm1s2WISd1yZDgH4SJsf/zCazOaAuAptok4tJuR8Ob86GNJf1sCUI9/5HuTvo2bfIMl6y5OrFZjm/GK95pGW5ztEwGkC6vb723bKURdhb74ATXt3sCFFp0TvOcDpbqLdWIo/j2Tf1ClZrVaVoWFna66vQgNzxw0yrnYGzpC9g="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 2081,
+ "tokens_sortie": 72,
+ "tokens_total": 2153,
+ "latence": 8.991500100004487,
+ "modele": "gemini-3.5-flash-lite"
+}

@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EokBCoYBAWkUfRNQCLtIyxqcOsLmd+CAc2b/UWE0UJby/jU2knhP9OOqYl/2r2DQKYgiIqGS3lmR4jqtCwvUpwGeszr09kyh/2f/3wyPOWHdirzrpizq4d2clJnNbsGXxTcxd0zqviIBC0L7WSwJ152hb2RzweveED++ZXCMVTFtDdk5qDPvMu4ByxA="
+     }
+    },
+    "function": {
+     "arguments": "{\"requete\":\"Une bataille après l'autre Thomas Pynchon\"}",
+     "name": "rechercher_documents"
+    },
+    "id": "call_14206516499975648862",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1175,
+ "tokens_sortie": 28,
+ "tokens_total": 1203,
+ "latence": 8.629788499965798,
+ "modele": "gemini-3.5-flash-lite"
+}

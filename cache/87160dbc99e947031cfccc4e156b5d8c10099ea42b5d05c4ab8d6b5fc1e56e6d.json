@@ -1,0 +1,17 @@
+{
+ "texte": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"Les utilisateurs d'IMDb attribuent à Anora de Sean Baker une note moyenne de 7,4/10 (basée sur 314 824 votes) [4].\",\n  \"sources\": [4]\n}\n```",
+ "message": {
+  "content": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"Les utilisateurs d'IMDb attribuent à Anora de Sean Baker une note moyenne de 7,4/10 (basée sur 314 824 votes) [4].\",\n  \"sources\": [4]\n}\n```",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EokBCoYBAWkUfRO0f/yb0necGE3/DKCLMfb/F0aAstmf/9vwYWF21naICfdLR93+IhXBPPn+mzAT9edYyhfe3Ta4vdPXZEd4VcOcPMIQH15jlHOVjMj4Zf+UIXdpmuMJUKZcmtqVsAZBZ4Ve/sU0LcxhL3k4LtDtjS8EGl3CiCUtrvza7KT/dRt+UVE="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 2187,
+ "tokens_sortie": 75,
+ "tokens_total": 2262,
+ "latence": 6.875090400048066,
+ "modele": "gemini-3.5-flash-lite"
+}

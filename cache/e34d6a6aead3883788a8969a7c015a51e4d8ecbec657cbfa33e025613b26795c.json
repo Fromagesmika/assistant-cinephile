@@ -1,0 +1,17 @@
+{
+ "texte": "{\"statut\": \"reponse\", \"texte\": \"Chaque épisode de la mini-série Adolescence se présente sous la forme d'un seul et unique plan-séquence [1]. De plus, chaque épisode est tourné en un plan-séquence unique, sans coupe [5].\", \"sources\": [1, 5]}",
+ "message": {
+  "content": "{\"statut\": \"reponse\", \"texte\": \"Chaque épisode de la mini-série Adolescence se présente sous la forme d'un seul et unique plan-séquence [1]. De plus, chaque épisode est tourné en un plan-séquence unique, sans coupe [5].\", \"sources\": [1, 5]}",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EokBCoYBAWkUfRPV7AIV+MiyuIpfATiLmKCP830KNsWaMcTCl53/DRJTUF8IaOIZUZGsr0lyergiHA9v0lkvAUJYduCDkLLbeV1jSAQX+s/pydU5pAjJzO6iXYzu9AlgjzUbtC3GBnL9vh8ZJk72FEAaN52+5sD+a7+zeizHPRsv+k3Vn+jOUB9msRQ="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 939,
+ "tokens_sortie": 74,
+ "tokens_total": 1013,
+ "latence": 5.005396100052167,
+ "modele": "gemini-3.5-flash-lite"
+}

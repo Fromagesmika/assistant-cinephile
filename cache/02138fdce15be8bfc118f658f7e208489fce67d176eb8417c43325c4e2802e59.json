@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EokBCoYBAWkUfRPd+3/VRtoACgaPeKxHFNZsJgwmk2fWghplvyEMDJwic2OrUFpVIsZOdi+oC5gSLHawtxo9XKE/v6tdtHbFc9On8w49wlH/t1M95Xsd1ncveMP/pUE1dgJwwKaLrSaMGHoEkOgfUnYZjhFO4w6A0I0XVrbRZ84yKkIj10jnpNGPT9w="
+     }
+    },
+    "function": {
+     "arguments": "{\"titre\":\"Un p'tit truc en plus\"}",
+     "name": "rechercher_oeuvre"
+    },
+    "id": "call_13740063647276009082",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1175,
+ "tokens_sortie": 25,
+ "tokens_total": 1200,
+ "latence": 9.48085589997936,
+ "modele": "gemini-3.5-flash-lite"
+}

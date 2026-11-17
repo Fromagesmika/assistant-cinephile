@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EokBCoYBAWkUfRP/VA0xVNQH1Gk//J8jFWZcbr6g1aiAg/DjGf57mG7gFy1GKLxOo9mnAPUtQ/ZPpnk6LUwozPKS4Bl7mjmvfbvNBRLhHmaZt0q0SSUqMClC5g7XB+0W6l/Hh6aAHEpa+zqrc02NRVEaWBijXikfDP8Hug698TvVmSbAtyvU8kp2ueE="
+     }
+    },
+    "function": {
+     "arguments": "{\"requete\":\"Parasite Bong Joon ho votes IMDb\"}",
+     "name": "rechercher_documents"
+    },
+    "id": "call_8181370232943405538",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1178,
+ "tokens_sortie": 25,
+ "tokens_total": 1203,
+ "latence": 4.543221700005233,
+ "modele": "gemini-3.5-flash-lite"
+}

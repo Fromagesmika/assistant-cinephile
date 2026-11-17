@@ -1,0 +1,17 @@
+{
+ "texte": "{\"statut\": \"reponse\", \"texte\": \"Le roman adapté dans le film est l'œuvre de l'écrivain Neville Thompson [1], [2], [3].\", \"sources\": [1, 2, 3]}",
+ "message": {
+  "content": "{\"statut\": \"reponse\", \"texte\": \"Le roman adapté dans le film est l'œuvre de l'écrivain Neville Thompson [1], [2], [3].\", \"sources\": [1, 2, 3]}",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EokBCoYBAWkUfRPJ6MVqbUoPULnQZqZJ1OR78CSOLlSCWIUk0Ns3zb/S9a/cPwWVwnu8/Cfl/hNwcHsSqNWXVicdakEGii330Gxo/9hpPhAt5pXhar24YcJue+InNsh1zpX4gBJK8G+PZSPZRdUqEeHN/RE/o7UMVczntvszRo+Uz+NLwIC9f0JjGNs="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 1362,
+ "tokens_sortie": 52,
+ "tokens_total": 1414,
+ "latence": 7.57117810001364,
+ "modele": "gemini-3.5-flash-lite"
+}

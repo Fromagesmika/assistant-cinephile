@@ -1,0 +1,17 @@
+{
+ "texte": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"Une partie du Fabuleux Destin d'Amélie Poulain a été tourné en studio à Cologne [10].\",\n  \"sources\": [10]\n}\n```",
+ "message": {
+  "content": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"Une partie du Fabuleux Destin d'Amélie Poulain a été tourné en studio à Cologne [10].\",\n  \"sources\": [10]\n}\n```",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EokBCoYBAWkUfRO2gzc/SrulrZwiKDG9rVLVAABQ9nAySsbVMgo8JXaJN3tzH6iQ9vLEvejQSZtArc5lkUKhD4vU5t1nUV06j/DlynAV3jMQoMn5GF1gNeENauv7Wgeknmt1jhraV7s1bHklELzu72uync7DFir2Zpj+483/WfRlZepg10kDNfVDSyY="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 3638,
+ "tokens_sortie": 59,
+ "tokens_total": 3697,
+ "latence": 1.985046699992381,
+ "modele": "gemini-3.5-flash-lite"
+}

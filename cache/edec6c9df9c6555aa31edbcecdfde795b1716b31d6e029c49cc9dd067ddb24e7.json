@@ -1,0 +1,17 @@
+{
+ "texte": "{\"statut\": \"abstention\", \"texte\": \"Les extraits ne contiennent pas d'information sur le slogan de l'affiche française d'Inception.\", \"sources\": []}",
+ "message": {
+  "content": "{\"statut\": \"abstention\", \"texte\": \"Les extraits ne contiennent pas d'information sur le slogan de l'affiche française d'Inception.\", \"sources\": []}",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EokBCoYBAWkUfRPNqwhifPcFBJCUdPXAmAL6xgzim8+ERrzrPmoBWkGNygLDnUyvHuQ4ROpChPVwJ+KDS9ujhOURRqQuP5wo8u3f5ebMNhhpRq6W7RuCFGEOpDzmm7SCi69BLLWksgFXMmak03S53JMkmCSOf0ps2tuvwbdnRBDltWVXwt3a2RE5nQU="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 1354,
+ "tokens_sortie": 39,
+ "tokens_total": 1393,
+ "latence": 1.6570359999896027,
+ "modele": "gemini-3.5-flash-lite"
+}

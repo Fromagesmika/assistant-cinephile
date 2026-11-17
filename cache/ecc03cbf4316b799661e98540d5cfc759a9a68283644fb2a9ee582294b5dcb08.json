@@ -1,0 +1,17 @@
+{
+ "texte": "{\"statut\": \"abstention\", \"texte\": \"Je ne peux pas fournir la note moyenne exacte en temps réel du film Le Samouraï sur IMDb.\"}",
+ "message": {
+  "content": "{\"statut\": \"abstention\", \"texte\": \"Je ne peux pas fournir la note moyenne exacte en temps réel du film Le Samouraï sur IMDb.\"}",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EokBCoYBAWkUfRMXYvCs/df//zPJTBTNfVs1DFHyQilNaVYstYpqATx3l6YlfoFqtfOg8kNOQJvSYhva5HerNLw/ojt5zh0WmcRogpzonrZda0AA1bGZqxxdNAZP0WDqxpaQEDhNPJ3TE4HTR+Zdnd6N2T7EtxUsKbJ31bKerFWd0DBitg2OWKhp5sw="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 227,
+ "tokens_sortie": 34,
+ "tokens_total": 261,
+ "latence": 9.54782510001678,
+ "modele": "gemini-3.5-flash-lite"
+}

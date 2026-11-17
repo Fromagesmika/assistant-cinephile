@@ -1,0 +1,17 @@
+{
+ "texte": "{\"statut\": \"reponse\", \"texte\": \"Les utilisateurs d'IMDb attribuent une note moyenne de 7,4/10 au film Anora [4].\", \"sources\": [4]}",
+ "message": {
+  "content": "{\"statut\": \"reponse\", \"texte\": \"Les utilisateurs d'IMDb attribuent une note moyenne de 7,4/10 au film Anora [4].\", \"sources\": [4]}",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EokBCoYBAWkUfRMzfpRcGP4IKaz0wRVhmdug7m+8LdjLO6pFyK7A4VLcw0eCQX4LYers9q8KHZbK8kHQHYONU1D6OjSedmWmBsXqZWT6nbvIIrbnvx7nBEwXEwP1iGN8jYTE77FBtS4LSwTkJKeSRzxv8QJoJSusZPcMtd/JX8HXWnvsUut99qoxdHo="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 1066,
+ "tokens_sortie": 45,
+ "tokens_total": 1111,
+ "latence": 2.147723499976564,
+ "modele": "gemini-3.5-flash-lite"
+}

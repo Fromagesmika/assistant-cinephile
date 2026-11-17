@@ -1,0 +1,17 @@
+{
+ "texte": "{\"statut\": \"refus\", \"texte\": \"Je ne peux pas répondre car la demande n'a aucun rapport avec le cinéma ou les séries.\", \"sources\": []}",
+ "message": {
+  "content": "{\"statut\": \"refus\", \"texte\": \"Je ne peux pas répondre car la demande n'a aucun rapport avec le cinéma ou les séries.\", \"sources\": []}",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EokBCoYBAWkUfROvkXImn818wdnHmFXPpirTaeVUPQeMnFvIPXvn1Gj8pNZ9mbJaDCTLLLmnk/sopxNZgqzq7wtZDRVK1kQm45TX9PHRKaP1greaaI9zvHfefmkYkmJQGy7UP4FSqnGKwVOmyFeKj6CfHsCO+o1zYCJiSV4IGpK/p1A1pQRgCr9ncQo="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 674,
+ "tokens_sortie": 37,
+ "tokens_total": 711,
+ "latence": 9.547121100011282,
+ "modele": "gemini-3.5-flash-lite"
+}

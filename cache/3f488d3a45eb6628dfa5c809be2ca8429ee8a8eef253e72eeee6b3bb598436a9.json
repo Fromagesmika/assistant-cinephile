@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EokBCoYBAWkUfRNfjzXGoi6/WcvYAJHduxBgUoI/MFwpgd+flnpB0Q1yck4BG40IgGvCI7ak3EwrFIH5Oqn4SGKYGw5aqKVfJA/Y0sQ3nPoLZAV7dxdSnfa6XvTdxyC3ovA+mkYCWVqL7G9jlZQ5Fnewfd4i9PyhpOSC8rlg/GZCCScmBUM6jh5IwYo="
+     }
+    },
+    "function": {
+     "arguments": "{\"requete\":\"Cléo de 5 à 7 se déroule le 21 juin solstice d'été\"}",
+     "name": "rechercher_documents"
+    },
+    "id": "call_14486977665897675740",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 2109,
+ "tokens_sortie": 38,
+ "tokens_total": 2147,
+ "latence": 7.475215800048318,
+ "modele": "gemini-3.5-flash-lite"
+}

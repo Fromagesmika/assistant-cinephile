@@ -1,0 +1,17 @@
+{
+ "texte": "{\"statut\": \"reponse\", \"texte\": \"Je n'ai pas pu ajouter le film Drive My Car à votre liste à voir puisque vous avez refusé cette action.\", \"sources\": []}",
+ "message": {
+  "content": "{\"statut\": \"reponse\", \"texte\": \"Je n'ai pas pu ajouter le film Drive My Car à votre liste à voir puisque vous avez refusé cette action.\", \"sources\": []}",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EokBCoYBAWkUfRNPQBew1tuWLDUUrsKBFMmOjX5d3Ys/ibJ1WRv+/g8BdPpgr0hFcRFKYW4MYszp4mP0O8bUGTcNMf1md9eEVQExv57cMo1cWAg3gz1qcppCKZW78oLJHnUGbVZ6Y2yrtoI6WDIx7g0by+9ExuuQv7HiOuVnRPiXhOk94eqV5h/agLI="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 1765,
+ "tokens_sortie": 42,
+ "tokens_total": 1807,
+ "latence": 9.152298700006213,
+ "modele": "gemini-3.5-flash-lite"
+}

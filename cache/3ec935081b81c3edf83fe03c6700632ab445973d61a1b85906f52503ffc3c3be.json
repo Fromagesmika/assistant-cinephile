@@ -1,0 +1,17 @@
+{
+ "texte": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"Dans le film Mon oncle de Jacques Tati, Monsieur Arpel dirige une usine qui fabrique des tuyaux en plastique [2].\",\n  \"sources\": [2]\n}\n```",
+ "message": {
+  "content": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"Dans le film Mon oncle de Jacques Tati, Monsieur Arpel dirige une usine qui fabrique des tuyaux en plastique [2].\",\n  \"sources\": [2]\n}\n```",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EokBCoYBAWkUfROAL5g7Wjhm0DCbY3tx6kAHjIB7OSUGJhFpN+tdnEO8erB0VR/nvaqUVvdTwmsV+QynWzxJOl9XvpyKBzXVx8UWIoCWBJ8+0DS9kMS6zTlA/2dFtxkX/vjkf/gG/oc6qOChhNywiLmH7lBtue+PMuTFWMlPhwXOETsXfYyaHeItiGQ="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 2320,
+ "tokens_sortie": 62,
+ "tokens_total": 2382,
+ "latence": 8.177216099982616,
+ "modele": "gemini-3.5-flash-lite"
+}

@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EokBCoYBAWkUfROxZcDoVmUajxtuiadtZvfYS5/ofb3ngSsl8H7RlUUzGCpwpMApXqclxpryINR0f9IPiq7PsVVi+84mcIVYNUFPrmciH6Po5tsDprEPEEuhdfwrLz73Cfi2upUts9gs+umOReYmc676wsH6nrbmTPTmR74AxR7z6JSgEsMyIeMuaZw="
+     }
+    },
+    "function": {
+     "arguments": "{\"requete\":\"Anora IMDb note moyenne\"}",
+     "name": "rechercher_documents"
+    },
+    "id": "call_9739239982180128462",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 2250,
+ "tokens_sortie": 23,
+ "tokens_total": 2273,
+ "latence": 8.74631070002215,
+ "modele": "gemini-3.5-flash-lite"
+}

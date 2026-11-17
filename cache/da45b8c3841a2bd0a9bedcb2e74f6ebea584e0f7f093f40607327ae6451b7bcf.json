@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EokBCoYBAWkUfRNLLwfxiM45XAo3h8Cm2065J0Um3CxrH62RfHFcO1To23hVWt2KQBMaQXwktpJUBR+akgZG4LaHZcKQUwGadEyfrIkiOhzMdwOCIbEVJ+Qsp2/p0Vhacg0m80apTmvv1/eC4tFqI5Wr/wIqZP19bMNVjR5dkwVe6YRBC/ifAXEvvr4="
+     }
+    },
+    "function": {
+     "arguments": "{\"requete\":\"Un simple accident Jafar Panahi festival de Cannes 2025 récompense\"}",
+     "name": "rechercher_documents"
+    },
+    "id": "call_15451701998047100862",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1185,
+ "tokens_sortie": 35,
+ "tokens_total": 1220,
+ "latence": 8.819039499969222,
+ "modele": "gemini-3.5-flash-lite"
+}

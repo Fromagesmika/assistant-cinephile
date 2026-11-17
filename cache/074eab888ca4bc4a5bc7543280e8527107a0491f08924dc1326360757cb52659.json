@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EokBCoYBAWkUfRNjmSeY7DybOINSmhyFBZNevEVe9AX52wF94HUgvRDOGWYshHatsNbOjnIZnGWTgr/rmH/sNDKtXdrGlibEfsJQk7pfD3I9xl4w1S0B6KYMYPKkcQQNMeETHPzwlS/p1Q78HicddgvrDbk60vmOymX+a0pzcY3D5amNODCcQW0Eg9c="
+     }
+    },
+    "function": {
+     "arguments": "{\"requete\":\"compositeur musique film Inception Christopher Nolan\"}",
+     "name": "rechercher_documents"
+    },
+    "id": "call_12940760540082866510",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1170,
+ "tokens_sortie": 26,
+ "tokens_total": 1196,
+ "latence": 8.462244199996348,
+ "modele": "gemini-3.5-flash-lite"
+}

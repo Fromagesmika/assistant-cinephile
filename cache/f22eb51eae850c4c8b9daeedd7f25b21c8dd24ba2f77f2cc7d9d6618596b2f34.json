@@ -1,0 +1,17 @@
+{
+ "texte": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"Le film Parasite de Bong Joon-ho, sorti en 2019, a une durée de 135 minutes [5].\",\n  \"sources\": [\n    5\n  ]\n}\n```",
+ "message": {
+  "content": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"Le film Parasite de Bong Joon-ho, sorti en 2019, a une durée de 135 minutes [5].\",\n  \"sources\": [\n    5\n  ]\n}\n```",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EokBCoYBAWkUfROIC6xCKD1sJEfzF6zwtkQW1Bft4zyW277Wpj1lXXOiKElz/HFXOZHXFUUNtSHN5IhsmKJRjw0PtkMpUnnXxQ58AVo4dq+gQ/OhdGzyq757VMyfKOWYP0IZnTf+wcht0QqMpsIgRaZpZoj9pNEYXjBxqJiw+sH18wbcY1QMQuKXH9g="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 1751,
+ "tokens_sortie": 67,
+ "tokens_total": 1818,
+ "latence": 8.887396900041495,
+ "modele": "gemini-3.5-flash-lite"
+}

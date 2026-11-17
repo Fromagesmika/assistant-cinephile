@@ -20,6 +20,7 @@ import streamlit as st
 from src import affiches, tmdb
 from src.levels import level0, level1, level2, level3
 from src.liste import ListeAVoir
+from src.rag import charger_corpus
 from src.traces import ecrire_trace_interface
 
 RACINE = Path(__file__).resolve().parent
@@ -27,7 +28,7 @@ FICHIER_LISTE = RACINE / "data" / "liste_a_voir.json"
 
 NIVEAUX = {
     0: ("Niveau 0 · LLM seul", "Répond de mémoire, sans document ni outil."),
-    1: ("Niveau 1 · RAG", "Cherche 5 extraits Wikipédia et les cite."),
+    1: ("Niveau 1 · RAG", "Cherche 5 extraits (Wikipédia, TMDB, IMDb) et les cite."),
     2: ("Niveau 2 · Agent", "Choisit ses outils et gère la liste à voir, avec votre accord."),
     3: ("Niveau 3 · Agent + RAG avancé", "L'agent du niveau 2, avec une recherche hybride et un reranking."),
 }
@@ -45,7 +46,7 @@ SUGGESTIONS = {
     "Modifier la liste": "Ajoute Grave et Titane, les deux films de Julia Ducournau, à la liste à voir.",
 }
 NOMS_OUTILS = {
-    "rechercher_documents": "Recherche Wikipédia", "rechercher_oeuvre": "Recherche TMDB",
+    "rechercher_documents": "Recherche documents", "rechercher_oeuvre": "Recherche TMDB",
     "details_oeuvre": "Fiche TMDB", "recommander_oeuvres": "Recommandations TMDB", "lire_liste": "Lecture de la liste",
     "ajouter_a_la_liste": "Ajout à la liste", "retirer_de_la_liste": "Retrait de la liste",
 }
@@ -55,8 +56,9 @@ NOMS_OUTILS = {
 
 @st.cache_data
 def corpus():
-    with open(RACINE / "data" / "corpus.jsonl", encoding="utf-8") as f:
-        return {d["doc_id"]: {"url": d["url"], "strate": d["strate"]} for d in map(json.loads, f)}
+    """Les trois sources (Wikipédia, TMDB, IMDb), indexées par identifiant de document."""
+    return {d["doc_id"]: {"url": d["url"], "strate": d["strate"], "source": d["source"],
+                          "page": d.get("page_wiki", d["doc_id"])} for d in charger_corpus()}
 
 
 @st.cache_data
@@ -81,8 +83,9 @@ def oeuvre_de_source(doc_id):
         return {"cle": (type_oeuvre, tmdb_id), "titre": connue["titre"],
                 "annee": connue["annee"], "affiche": affiches.affiche(tmdb_id, type_oeuvre),
                 "lien": ("TMDB", f"https://www.themoviedb.org/{'tv' if type_oeuvre == 'serie' else 'movie'}/{tmdb_id}")}
-    oeuvre = table_affiches().get(doc_id)
-    lien = ("Wikipédia", corpus().get(doc_id, {}).get("url"))
+    info = corpus().get(doc_id, {})
+    oeuvre = table_affiches().get(info.get("page", doc_id))
+    lien = (info.get("source", "Wikipédia"), info.get("url"))
     if not oeuvre:
         return {"cle": ("wiki", doc_id), "titre": doc_id, "annee": None, "affiche": None, "lien": lien}
     return {"cle": (oeuvre["type"], oeuvre["tmdb_id"]), "titre": oeuvre["titre"], "annee": oeuvre["annee"],
@@ -114,7 +117,7 @@ def lignes_trace(sortie):
                           "Tokens": etape.get("tokens", sortie["tokens"] if un_seul_appel else None),
                           "Durée (s)": etape.get("latence", round(sortie["latence"], 3) if un_seul_appel else None)})
         elif genre == "recherche":
-            ligne.update({"Étape": "Recherche dans les documents", "Outil": "Recherche Wikipédia",
+            ligne.update({"Étape": "Recherche dans les documents", "Outil": "Recherche documents",
                           "Arguments": f"k = {etape['k']}",
                           "Résultat": ", ".join(f"{pid} ({score:.2f})" for pid, score in etape["resultats"])})
         elif genre == "outil":
@@ -332,12 +335,13 @@ if accueil:
     oeuvres = [o for o in table_affiches().values() if o.get("affiche")]
     if oeuvres:
         strates = {}
-        for info in corpus().values():
+        pages = [info for info in corpus().values() if info["source"] == "Wikipédia"]
+        for info in pages:
             strates[info["strate"]] = strates.get(info["strate"], 0) + 1
         st.markdown(
-            f'<div class="rubrique centre">Le corpus : {len(corpus())} films et séries · '
+            f'<div class="rubrique centre">Le corpus : {len(pages)} films et séries · '
             f'{strates.get("populaire", 0)} populaires, {strates.get("peu_connu", 0)} peu connus, '
-            f'{strates.get("recent", 0)} récents</div>', unsafe_allow_html=True)
+            f'{strates.get("recent", 0)} récents · 3 sources : Wikipédia, TMDB, IMDb</div>', unsafe_allow_html=True)
         pas = max(1, len(oeuvres) // 16)
         selection = oeuvres[::pas][:16]
         with st.container(key="mur"):
@@ -377,5 +381,5 @@ else:
         lancer(question, niveau)
         st.rerun()
 
-st.markdown('<div class="pied">Sources : Wikipédia (CC BY-SA 4.0) et TMDB. Ce produit utilise l\'API TMDB '
+st.markdown('<div class="pied">Sources : Wikipédia (CC BY-SA 4.0), TMDB et IMDb. Ce produit utilise l\'API TMDB '
             'mais n\'est ni approuvé ni certifié par TMDB. Modèle : Gemini.</div>', unsafe_allow_html=True)

@@ -1,0 +1,17 @@
+{
+ "texte": "```json\n{\"statut\": \"reponse\", \"texte\": \"Sur IMDb, le film Parasite de Bong Joon-ho a reçu 1 209 613 votes [8].\", \"sources\": [8]}\n```",
+ "message": {
+  "content": "```json\n{\"statut\": \"reponse\", \"texte\": \"Sur IMDb, le film Parasite de Bong Joon-ho a reçu 1 209 613 votes [8].\", \"sources\": [8]}\n```",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EokBCoYBAWkUfRPJmWYukecfYMY4jcRw/WQqbajkVmUU65vP4Zs9Ck4IspbJTl3FVfig4OyXrbNNLR5Gn+P1FVUultXgBpKVBatphIINYFf2lnvNCxZAwCFqbIR0unRxof01wo8s/C/m6YXjJCZnA3sdMrUbPwKG1/zTrXbhqA28owqPlQxR6YjMElE="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 3424,
+ "tokens_sortie": 52,
+ "tokens_total": 3476,
+ "latence": 2.1127314000041224,
+ "modele": "gemini-3.5-flash-lite"
+}

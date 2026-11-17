@@ -1,0 +1,17 @@
+{
+ "texte": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"Inception a réalisé 839 030 630 $ de recettes mondiales contre 746 606 706 $ pour Interstellar [11, 12]. C'est donc Inception qui a été ajouté à votre liste « à voir ».\",\n  \"sources\": [11, 12]\n}\n```",
+ "message": {
+  "content": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"Inception a réalisé 839 030 630 $ de recettes mondiales contre 746 606 706 $ pour Interstellar [11, 12]. C'est donc Inception qui a été ajouté à votre liste « à voir ».\",\n  \"sources\": [11, 12]\n}\n```",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EokBCoYBAWkUfRMl3Zuyt61GGR5GCLNlLBFD2InSMwLYADZ7beLGmHx+CK3TIDAayanZem+EZ3gw7PfIhE3iGMA7IfKrft1mtM19f8Tj1R5Z10A6bxUhctlucR2zGsMVOMVHzHFAf628eVswJRN2SrIbTj0XDMAM4hLNk1DMPNuVlxpYA8j/sjqJhYk="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 2588,
+ "tokens_sortie": 101,
+ "tokens_total": 2689,
+ "latence": 5.989141599973664,
+ "modele": "gemini-3.5-flash-lite"
+}

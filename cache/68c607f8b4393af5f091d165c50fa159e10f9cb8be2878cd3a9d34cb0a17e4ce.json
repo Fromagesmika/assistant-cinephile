@@ -1,0 +1,17 @@
+{
+ "texte": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"L'action du film Cléo de 5 à 7 se déroule en temps réel le 21 juin 1961 à Paris [3].\",\n  \"sources\": [3]\n}\n```",
+ "message": {
+  "content": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"L'action du film Cléo de 5 à 7 se déroule en temps réel le 21 juin 1961 à Paris [3].\",\n  \"sources\": [3]\n}\n```",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EokBCoYBAWkUfRMxEXF1H5TSwwaFiFQ9lGMKd8jgY44aGfoh5azQEO6KJDGBMhsNbO0zseNUTw3CEe1VMDq5bWIlICj1bc+H4X8bXBeA5pHiG2O3cHXpXQ7f4hYJem0tTAIWCzs7JFiy7gAz5GUqD8Ki5aiB5xaFu09+xvQGAPOlmEDkq6CwYlIu7mU="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 2072,
+ "tokens_sortie": 67,
+ "tokens_total": 2139,
+ "latence": 2.2648054999881424,
+ "modele": "gemini-3.5-flash-lite"
+}

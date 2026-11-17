@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EokBCoYBAWkUfRPJ8Qpge0Jl0ygAlgFmmeXC2QsQsq30LhCqm+p6BeEV+Ch0ysII+SS6/pGSr98bksKbOGc7qemt11bMnhqPJryBB0nHVQSZaDKP5bx2/nY+nOO7Fr1S+klsZVKs6SffeYQuHgkV/QmVeJEtnMBLip9fV+NZWHblBeZYyi/RJFd70Ss="
+     }
+    },
+    "function": {
+     "arguments": "{\"requete\":\"Les Horloges de Valparaiso 2019 réalisation réalisateur\"}",
+     "name": "rechercher_documents"
+    },
+    "id": "call_1824058972828459853",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1179,
+ "tokens_sortie": 35,
+ "tokens_total": 1214,
+ "latence": 8.961833100009244,
+ "modele": "gemini-3.5-flash-lite"
+}

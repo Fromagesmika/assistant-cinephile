@@ -1,0 +1,17 @@
+{
+ "texte": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"Le groupe crédité pour la musique du film La Haine de Mathieu Kassovitz est Assassin [1].\",\n  \"sources\": [1]\n}\n```",
+ "message": {
+  "content": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"Le groupe crédité pour la musique du film La Haine de Mathieu Kassovitz est Assassin [1].\",\n  \"sources\": [1]\n}\n```",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EokBCoYBAWkUfRN4sqaIGb/Gnv+uBCFh5L3Y5RTAd5R2bRbG+9fTl7GHTGy4YotyfOcIB0OZir8vtX2NmADOKWazZ9tbw0wBo3xSkaSkr3OwXplwLBame6wegq1yofod3m8WNXCr/QwRfaIkhb/o6EyHMu3GqMMFAct/2uO6ukPakAA8TRsehjWRVyU="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 2230,
+ "tokens_sortie": 55,
+ "tokens_total": 2285,
+ "latence": 5.116812099993695,
+ "modele": "gemini-3.5-flash-lite"
+}

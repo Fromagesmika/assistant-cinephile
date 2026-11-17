@@ -1,0 +1,17 @@
+{
+ "texte": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"Le slogan du film Le Septième Sceau d'Ingmar Bergman est : « L'histoire d'un défi à la mort. » [4]\",\n  \"sources\": [4]\n}\n```",
+ "message": {
+  "content": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"Le slogan du film Le Septième Sceau d'Ingmar Bergman est : « L'histoire d'un défi à la mort. » [4]\",\n  \"sources\": [4]\n}\n```",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EokBCoYBAWkUfRNGyPsukip5E3xKSQuYc840HLhh5aWhbeKMlsGpiMWsx76Yt1Y5K2bwK8OADVTLynLjskTHWyNxrc4OGZUj+q8pWfe19nzZeH4ZprxmeTzzpHfEUlvZ7HL2g6vxcCaV/eB5GGOzJhKgV5DFysWJ+DQ9dD1s0s1VVGXkYgfuet8uWdM="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 2309,
+ "tokens_sortie": 64,
+ "tokens_total": 2373,
+ "latence": 7.5413692999864,
+ "modele": "gemini-3.5-flash-lite"
+}

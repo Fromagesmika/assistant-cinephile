@@ -1,0 +1,17 @@
+{
+ "texte": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"Le film Un p'tit truc en plus d'Artus a réalisé 279 635 entrées le premier jour de sa sortie en France, le 1er mai [1].\",\n  \"sources\": [1]\n}\n```",
+ "message": {
+  "content": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"Le film Un p'tit truc en plus d'Artus a réalisé 279 635 entrées le premier jour de sa sortie en France, le 1er mai [1].\",\n  \"sources\": [1]\n}\n```",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EokBCoYBAWkUfRMBKWF8W+gUVivwMApZkBMfQBstEh3wXy4JFWvcPM0PgBFex7/g7NBucuRtbyoTnGOIc/YHYYJXuXfFeXYsxzXwD1M5Z9DCjDPVDS4OF7alXrfsGTUP3a4536/D2F1RpubIPyaUXT1/+yId4eYWZoovCBqgykT6cc2ITNJ0591dd9U="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 2370,
+ "tokens_sortie": 75,
+ "tokens_total": 2445,
+ "latence": 7.98872849997133,
+ "modele": "gemini-3.5-flash-lite"
+}

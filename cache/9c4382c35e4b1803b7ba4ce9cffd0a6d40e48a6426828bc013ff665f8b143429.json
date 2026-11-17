@@ -1,0 +1,34 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EokBCoYBAWkUfRNBcNbaUEbenJk1PbNSckzrOfGyTG0vRGT3NGTvyPbUQ/LfTwKl0hLLUWEqiEO3XnKxrxAFDOZl3VMIKbGzxXNWPM4c3pz9X/zp3GHUhHovTg0Y8gc3r/isQe4LT3Ol19ihY30CvCFBc/C+JU+6Au5ug7Q5Z1OPD6+5RvbZ2VNucI8="
+     }
+    },
+    "function": {
+     "arguments": "{\"tmdb_id\":550,\"type\":\"film\"}",
+     "name": "ajouter_a_la_liste"
+    },
+    "id": "call_5554564664615910237",
+    "type": "function"
+   },
+   {
+    "function": {
+     "arguments": "{\"tmdb_id\":807,\"type\":\"film\"}",
+     "name": "retirer_de_la_liste"
+    },
+    "id": "call_5554564664615908234",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 2452,
+ "tokens_sortie": 59,
+ "tokens_total": 2511,
+ "latence": 3.7841192000196315,
+ "modele": "gemini-3.5-flash-lite"
+}

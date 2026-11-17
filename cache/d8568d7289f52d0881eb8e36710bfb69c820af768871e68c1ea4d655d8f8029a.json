@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EokBCoYBAWkUfRPduXmcdyeF0y2IUGYsAVV6uGhCeNnHSwlNL/I4NF9AbrjKuF5hkwrsG9Bzna4v7LZ3bBhUN0/MCQCcoeRc+dSHB6MZFOpghYbXyH4EbXUf3o6W3LxvymaC3OaEdHCEf4l6fXXZsZeRQYOCxRy/0gpe+NuommgRaGywtrnczjUTSfA="
+     }
+    },
+    "function": {
+     "arguments": "{\"type\":\"serie\",\"titre\":\"Tromso\"}",
+     "name": "rechercher_oeuvre"
+    },
+    "id": "call_14915061196712658258",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 2722,
+ "tokens_sortie": 27,
+ "tokens_total": 2749,
+ "latence": 9.046443299972452,
+ "modele": "gemini-3.5-flash-lite"
+}

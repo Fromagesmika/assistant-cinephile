@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EokBCoYBAWkUfROYa2lYk9ohKSrrxRSfTIkpQwAhaM22TBLu0d6DHX0vvGLItnm/hZnpbqfmh92nktVTDyM2HU4Y7Gk7tAjbpaoxTLwpDEqnIG/li2LBqoECCYCMjjZzOB2pH7LIEgg9tqBK1i112RDSS7VCt0U6BXphiBNWaOZKo8r55ycvKDTq7u0="
+     }
+    },
+    "function": {
+     "arguments": "{\"requete\":\"Le Salaire de la peur entrées France Clouzot\"}",
+     "name": "rechercher_documents"
+    },
+    "id": "call_18177622143719828487",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1182,
+ "tokens_sortie": 30,
+ "tokens_total": 1212,
+ "latence": 3.354591100011021,
+ "modele": "gemini-3.5-flash-lite"
+}

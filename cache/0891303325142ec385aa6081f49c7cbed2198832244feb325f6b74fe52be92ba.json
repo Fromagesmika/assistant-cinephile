@@ -1,0 +1,42 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EokBCoYBAWkUfRP7D9B/I6Mh+D21FeXb5TNLSJiST7Llks22YJUeqDjTFkEF4vVyWIB8RaqDZ7Tw8+01mv+K//z/TGj0AlEjHXPX7p7DYu+7pFfv9OZOpyE/N49mYbRFu3GYa7+J4IZiGpx3t6F7zNVsyqbT626jMOTupii2vZVlE+W6TuEuwvE4Yi0="
+     }
+    },
+    "function": {
+     "arguments": "{\"tmdb_id\":289,\"type\":\"film\"}",
+     "name": "retirer_de_la_liste"
+    },
+    "id": "call_16282006718997847354",
+    "type": "function"
+   },
+   {
+    "function": {
+     "arguments": "{\"tmdb_id\":348,\"type\":\"film\"}",
+     "name": "retirer_de_la_liste"
+    },
+    "id": "call_16282006718997844546",
+    "type": "function"
+   },
+   {
+    "function": {
+     "arguments": "{\"type\":\"film\",\"tmdb_id\":872585}",
+     "name": "ajouter_a_la_liste"
+    },
+    "id": "call_16282006718997844707",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1878,
+ "tokens_sortie": 94,
+ "tokens_total": 1972,
+ "latence": 17.922657899965998,
+ "modele": "gemini-3.5-flash-lite"
+}

@@ -25,7 +25,7 @@ K = 5
 PROMPT_SYSTEME = """Tu es un assistant cinéphile francophone. Tu réponds aux questions sur les films et les séries, et tu gères la liste « à voir » partagée de l'utilisateur. Tu disposes d'outils.
 
 Répondre à une question :
-- Commence par rechercher_documents (pages Wikipédia). Si les extraits ne suffisent pas, utilise rechercher_oeuvre et details_oeuvre (base TMDB).
+- Commence par rechercher_documents (pages Wikipédia, fiches et critiques TMDB, notes IMDb). Si les extraits ne suffisent pas, utilise rechercher_oeuvre et details_oeuvre (base TMDB en direct).
 - Réponds uniquement à partir des résultats des outils, même si tu crois connaître la réponse. Chaque phrase de ta réponse se termine par la référence [n] du résultat qui la justifie, par exemple [3].
 - Si les outils ne donnent pas la réponse, utilise le statut "abstention".
 - Si le titre désigne plusieurs œuvres différentes et que la question ne précise pas laquelle, ou si aucune œuvre n'est nommée, utilise le statut "precision" et pose une question.
@@ -52,7 +52,7 @@ _TYPE = {"type": "string", "enum": ["film", "serie"], "description": "film (par 
 _ID = {"type": "integer", "description": "identifiant TMDB obtenu avec rechercher_oeuvre"}
 
 OUTILS = [
-    _outil("rechercher_documents", "Cherche les 5 extraits de pages Wikipédia les plus proches d'une requête.",
+    _outil("rechercher_documents", "Cherche les 5 extraits les plus proches d'une requête dans les documents : pages Wikipédia, fiches et critiques TMDB, notes IMDb.",
            {"requete": {"type": "string", "description": "la question ou les mots-clés à chercher"}}, ["requete"]),
     _outil("rechercher_oeuvre", "Cherche un film ou une série par son titre dans TMDB. Renvoie au plus 5 œuvres avec tmdb_id et année.",
            {"titre": {"type": "string"}, "type": _TYPE, "annee": {"type": "integer", "description": "année de sortie, si connue"}}, ["titre"]),

@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EokBCoYBAWkUfROTFOMfXbiQAKG0BK+Ltx8QYEm/6HFSYoBJV49mE5SMOEToor0w5oc/OjC1JQYI2N1/uLj5+gIP773V78F0sTb8ykK23gg7rLJ2eYilSwIPajLCOd8xosYKBQlxN2/l26gyTIAu+CnVBiwnkWQKCF/fDe0ZM0+1wWWphT9EMDIxEkw="
+     }
+    },
+    "function": {
+     "arguments": "{\"requete\":\"\\\"Le Salaire de la peur\\\" box-office France entrées\"}",
+     "name": "rechercher_documents"
+    },
+    "id": "call_17970880118382471651",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 3654,
+ "tokens_sortie": 33,
+ "tokens_total": 3687,
+ "latence": 6.012247899954673,
+ "modele": "gemini-3.5-flash-lite"
+}

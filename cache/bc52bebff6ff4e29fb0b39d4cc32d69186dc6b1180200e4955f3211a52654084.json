@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EokBCoYBAWkUfRPdd+vYWASRe2Pi4XfvKTXLS/3sGYkJj8f1NtbK0Y8sx4uNyyrJ+qOpsbjO2Hewq/tlqUWQmwxsbA/ZFEoQIY+G9cZeot+KePuFBpZ+iln+ZZ+qlLOEGoMxgW8XG1YVhsof2zesl09Iuxvhawtz8QO7SJX9qs2stRU6dclk+kmEDnY="
+     }
+    },
+    "function": {
+     "arguments": "{\"requete\":\"Le Fabuleux Destin d'Amélie Poulain entrées France\"}",
+     "name": "rechercher_documents"
+    },
+    "id": "call_4473101625306892429",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1183,
+ "tokens_sortie": 32,
+ "tokens_total": 1215,
+ "latence": 5.350259600032587,
+ "modele": "gemini-3.5-flash-lite"
+}

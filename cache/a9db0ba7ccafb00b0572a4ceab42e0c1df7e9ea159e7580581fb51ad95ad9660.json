@@ -1,0 +1,17 @@
+{
+ "texte": "{\"statut\": \"abstention\", \"texte\": \"Je ne connais pas le nombre exact de votes reçus par le film Parasite sur IMDb en temps réel.\"}",
+ "message": {
+  "content": "{\"statut\": \"abstention\", \"texte\": \"Je ne connais pas le nombre exact de votes reçus par le film Parasite sur IMDb en temps réel.\"}",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EokBCoYBAWkUfROwZJw0+szGLTYSw0SJ3GH8Sde3r9kF+DdyJUq+EQ2IZ8SuxG/KnxV1k/+jHlGoCP3OvloeQbIEt+wyAedT8lkk/i6huhOl4/JjSIaaRzEEmHtZ3t9dw9pi52c7gzxJ86NZU0zgGgkyj7fskYaFpgIhigL0OzNXg+LW9aR//M22N7I="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 231,
+ "tokens_sortie": 36,
+ "tokens_total": 267,
+ "latence": 10.202286400017329,
+ "modele": "gemini-3.5-flash-lite"
+}

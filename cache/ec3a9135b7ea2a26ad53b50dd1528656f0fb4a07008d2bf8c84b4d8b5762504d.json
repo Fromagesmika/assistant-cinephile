@@ -1,0 +1,17 @@
+{
+ "texte": "{\"statut\": \"reponse\", \"texte\": \"Le film Parasite (2019) a été réalisé par Bong Joon-ho [1]. J'ai ajouté son film Mickey 17 à votre liste à voir.\", \"sources\": [1]}",
+ "message": {
+  "content": "{\"statut\": \"reponse\", \"texte\": \"Le film Parasite (2019) a été réalisé par Bong Joon-ho [1]. J'ai ajouté son film Mickey 17 à votre liste à voir.\", \"sources\": [1]}",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EokBCoYBAWkUfROUijQK3w+PBldEfMezq8jJRu+fyjLphc2vhGomUe/YMqG3S8NcB+Doc9pizuv20DGddRHiPKl/7ryQlv7x2mGD5W+8Hss6QBjlcWn9S4IBBGZ7Vuqmal/ZTKFPX618G+VyPHhphFhK7DD26M/VDRaXUSUP+tyG9eYkspZ5W6t1mrc="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 3468,
+ "tokens_sortie": 55,
+ "tokens_total": 3523,
+ "latence": 20.85307080001803,
+ "modele": "gemini-3.5-flash-lite"
+}

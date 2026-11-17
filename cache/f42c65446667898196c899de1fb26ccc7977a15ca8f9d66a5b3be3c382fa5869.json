@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EokBCoYBAWkUfRNxX0MWR5mPIRdNY++yjFNOOxKcfK20zLYe4zxk1UewZyUM5xtuMDkREXnbx2fd4YU+i4FDTihDCX+ruakF/2cMJl3qwgttySqz5XIELYCijtKFk87p6zjzrLxq/UzIux33snE4bEVSAKTMUMWkCz/c1MfCoYONJ7szmC2vKwPJw00="
+     }
+    },
+    "function": {
+     "arguments": "{\"requete\":\"café tournage Mon oncle Jacques Tati\"}",
+     "name": "rechercher_documents"
+    },
+    "id": "call_2103971926959359778",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 2190,
+ "tokens_sortie": 28,
+ "tokens_total": 2218,
+ "latence": 4.938789599982556,
+ "modele": "gemini-3.5-flash-lite"
+}

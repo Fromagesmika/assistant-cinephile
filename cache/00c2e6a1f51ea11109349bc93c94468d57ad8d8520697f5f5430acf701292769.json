@@ -1,0 +1,17 @@
+{
+ "texte": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"Le film Le Salaire de la peur d'Henri-Georges Clouzot a réalisé un immense succès public en France avec près de sept millions de spectateurs, plus précisément 6 944 306 entrées, ce qui en a fait le quatrième film le plus rentable de l'année 1953.\",\n  \"sources\": [16]\n}\n```",
+ "message": {
+  "content": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"Le film Le Salaire de la peur d'Henri-Georges Clouzot a réalisé un immense succès public en France avec près de sept millions de spectateurs, plus précisément 6 944 306 entrées, ce qui en a fait le quatrième film le plus rentable de l'année 1953.\",\n  \"sources\": [16]\n}\n```",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EokBCoYBAWkUfRPfr79Me1RV7aFOTAkIbcVXRxwePn0L2SLaYeTrjKP/v3IwLgQu4z/l9BgMdU1uWvfDev9TtLI6RqDepHbepZ3G89GnpAwVgD6VKXNP/OihP+V1e2Brai9N1CvET3QGc6c2tyZhS6ria2h8utYPmaPDafPNg5qB7YdqmpaVqlHMbss="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 4455,
+ "tokens_sortie": 102,
+ "tokens_total": 4557,
+ "latence": 4.001724099973217,
+ "modele": "gemini-3.5-flash-lite"
+}

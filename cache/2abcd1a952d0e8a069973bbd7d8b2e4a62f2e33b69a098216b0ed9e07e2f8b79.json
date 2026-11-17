@@ -1,0 +1,17 @@
+{
+ "texte": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"Dans *Mon oncle* de Jacques Tati, l'usine dirigée par Monsieur Arpel fabrique des tuyaux en plastique [4].\",\n  \"sources\": [4]\n}\n```",
+ "message": {
+  "content": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"Dans *Mon oncle* de Jacques Tati, l'usine dirigée par Monsieur Arpel fabrique des tuyaux en plastique [4].\",\n  \"sources\": [4]\n}\n```",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EokBCoYBAWkUfRMyu3PokwJFArtyRhwHRcSJjFqM6KbH0DSMwxaaa+Erzr5gVbgU/IQgKZB0beXL3PNa9+rZvKQz/1D20RhLa+71sc5vCPgFwjM1atsNqbihNw8/If/f3bNHTw8WLiI68kzrYCPLdzkW6gBpefdJqw/lusnZG+K8IFDLOoyaTi66rVg="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 2328,
+ "tokens_sortie": 63,
+ "tokens_total": 2391,
+ "latence": 9.0529886999866,
+ "modele": "gemini-3.5-flash-lite"
+}

@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EokBCoYBAWkUfRPFgO37je/Zp0kDrRgPdQOL3FmnkzMZsIOZatJtgvUm9cOc8I9xlwBEA2pVZgvUSemc5qub/B3irBV/dbzXwKAnIhAl8oUEIDfdRvDRfCENf3y9EEjhOjt75hQWhQkuhgiYI938yAZLXORYHA+S5SCI1HZgDLZzf9/kxeYuSEk0iGA="
+     }
+    },
+    "function": {
+     "arguments": "{\"requete\":\"Mon oncle Jacques Tati Oscar du meilleur film en langue étrangère année\"}",
+     "name": "rechercher_documents"
+    },
+    "id": "call_15702665381430076274",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1184,
+ "tokens_sortie": 33,
+ "tokens_total": 1217,
+ "latence": 8.977846399997361,
+ "modele": "gemini-3.5-flash-lite"
+}

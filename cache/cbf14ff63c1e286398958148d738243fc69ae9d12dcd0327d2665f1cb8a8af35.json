@@ -1,0 +1,17 @@
+{
+ "texte": "{\"statut\": \"reponse\", \"texte\": \"La musique du film Inception a \\u00e9t\\u00e9 compos\\u00e9e par Hans Zimmer [1].\", \"sources\": [1]}",
+ "message": {
+  "content": "{\"statut\": \"reponse\", \"texte\": \"La musique du film Inception a \\u00e9t\\u00e9 compos\\u00e9e par Hans Zimmer [1].\", \"sources\": [1]}",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EokBCoYBAWkUfRMH6tsRVid4fApPZBRt1IJ3wMV1BBWPCRai7OIwHOL7JtPdFU05ZE+zA+Gbxy5ijbh3Ay7owiyTfwWHoD+CtfjWjIwH9Sm20gc2dN0N4AnrqH7UwLPj9vcDCKAzl1V9V9XB/eBOe+P9J4FjHlS3zWrUuLUnp/1UxTv+fTCAEihfToo="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 1207,
+ "tokens_sortie": 53,
+ "tokens_total": 1260,
+ "latence": 3.6825034000212327,
+ "modele": "gemini-3.5-flash-lite"
+}

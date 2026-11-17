@@ -1,0 +1,17 @@
+{
+ "texte": "{\"statut\": \"reponse\", \"texte\": \"Monsieur Arpel est le directeur d'une usine qui fabrique des tuyaux en plastique [1, 2].\", \"sources\": [1, 2]}",
+ "message": {
+  "content": "{\"statut\": \"reponse\", \"texte\": \"Monsieur Arpel est le directeur d'une usine qui fabrique des tuyaux en plastique [1, 2].\", \"sources\": [1, 2]}",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EokBCoYBAWkUfRO5peW9pn08h3g2e2g4jrb+TPM0C5iEX8/QF4FXOHI4wocnAcbzjng/0p1B6TUnU+t6cB0D2c3p5sRRsVaNeZ0ELWOmHEwuz0Agg4Pj1P8cYQ4f7q86R6+hQ+a7CwpsFvD3NJzZJxzXGS7OZRiWF+7LuY2mMNJe027HK59rVRZI+m8="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 1145,
+ "tokens_sortie": 48,
+ "tokens_total": 1193,
+ "latence": 3.2075754000106826,
+ "modele": "gemini-3.5-flash-lite"
+}

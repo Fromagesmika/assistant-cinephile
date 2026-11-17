@@ -1,0 +1,17 @@
+{
+ "texte": "```json\n{\n  \"statut\": \"precision\",\n  \"texte\": \"Plusieurs films s'intitulent Frankenstein. S'agit-il du film de Guillermo del Toro prévu pour 2025 ou d'une autre version (comme le classique de 1931) ?\",\n  \"sources\": []\n}\n```",
+ "message": {
+  "content": "```json\n{\n  \"statut\": \"precision\",\n  \"texte\": \"Plusieurs films s'intitulent Frankenstein. S'agit-il du film de Guillermo del Toro prévu pour 2025 ou d'une autre version (comme le classique de 1931) ?\",\n  \"sources\": []\n}\n```",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EokBCoYBAWkUfRNdEoeLuVjjuyAuyjHkZFQ2XWeywJO8ygYb0PvZvVG06XdTTigI/7Nv3VypIX8tXxivIKHFU3O9Y5s4i5PkSIFpZI2SJBMttNQffIZIeku8hESZoLO4QOEjR1Z/fBBC6amq7PaFA5TejkK1DcboEo2TBXSGFDYgKndz/fbjKfxC2bo="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 2310,
+ "tokens_sortie": 75,
+ "tokens_total": 2385,
+ "latence": 3.537475099961739,
+ "modele": "gemini-3.5-flash-lite"
+}

@@ -1,0 +1,17 @@
+{
+ "texte": "{\"statut\": \"reponse\", \"texte\": \"Entre *Memories of Murder* (2003) et *Parasite* (2019), tous deux réalisés par Bong Joon-ho, le plus ancien est *Memories of Murder* [11, 12]. Il a donc été ajouté à votre liste à voir.\", \"sources\": [11, 12]}",
+ "message": {
+  "content": "{\"statut\": \"reponse\", \"texte\": \"Entre *Memories of Murder* (2003) et *Parasite* (2019), tous deux réalisés par Bong Joon-ho, le plus ancien est *Memories of Murder* [11, 12]. Il a donc été ajouté à votre liste à voir.\", \"sources\": [11, 12]}",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EokBCoYBAWkUfROSGGnyErN0ZqrHGVu2fXRHNrvIgjioZUrEfqAYKHd0+FX3Hr+LYoDDW2zAS8WjtFw1C78huyUStk4e6vJlXN4nzVNN5NmncoYG9DD1FIPXJCZ8yUWJ/gxiAqZH7RQV9dgjpsv7/sCgqkXxkEhP2iQk4dIiwrICjQQLG4Ikwo/x1bg="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 2765,
+ "tokens_sortie": 85,
+ "tokens_total": 2850,
+ "latence": 7.888243300025351,
+ "modele": "gemini-3.5-flash-lite"
+}

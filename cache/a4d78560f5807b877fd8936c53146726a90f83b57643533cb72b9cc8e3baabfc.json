@@ -1,0 +1,17 @@
+{
+ "texte": "```json\n{\"statut\": \"abstention\", \"texte\": \"Je ne dispose pas de l'information concernant la note moyenne IMDb du film Le Samouraï dans les documents fournis.\", \"sources\": []}\n```",
+ "message": {
+  "content": "```json\n{\"statut\": \"abstention\", \"texte\": \"Je ne dispose pas de l'information concernant la note moyenne IMDb du film Le Samouraï dans les documents fournis.\", \"sources\": []}\n```",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EokBCoYBAWkUfROkoObxMyOT8sO7EgxOPEwg2KlOk94yeNeh4+KlkmDds8IyzKMNxSVn4n5WDVz/TRyeKR4AZOfOvTVmByUqezaljAGrWQIUmqeYcnyA/ohIYDDyom8QP50gFE8u8zVNQLZSHvS5y2GFvCJIKRpikNnM7pqJvRrpPA8ddWGZqSyPhxE="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 2301,
+ "tokens_sortie": 46,
+ "tokens_total": 2347,
+ "latence": 5.19257190002827,
+ "modele": "gemini-3.5-flash-lite"
+}

@@ -1,0 +1,17 @@
+{
+ "texte": "{\"statut\": \"reponse\", \"texte\": \"Le film Le Septième Sceau d'Ingmar Bergman est souvent associé à des slogans mettant en scène son thème central de la confrontation avec la Mort, bien qu'il n'ait pas eu un slogan publicitaire unique et universellement officiel lors de sa sortie initiale en 1957. On retient surtout la célèbre image du chevalier jouant aux échecs avec la Mort sur une plage.\"}",
+ "message": {
+  "content": "{\"statut\": \"reponse\", \"texte\": \"Le film Le Septième Sceau d'Ingmar Bergman est souvent associé à des slogans mettant en scène son thème central de la confrontation avec la Mort, bien qu'il n'ait pas eu un slogan publicitaire unique et universellement officiel lors de sa sortie initiale en 1957. On retient surtout la célèbre image du chevalier jouant aux échecs avec la Mort sur une plage.\"}",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EokBCoYBAWkUfRNO2/eHp++29IfzExHrkHsN/parBa3Lej6GJfav1zt3UvspYdp3W6kmBG5U6qReKuO/m0NvZL9kusVBw/dEjCT5vv658P91Y9KP6ELUPAmqp5ujeKl9TGn7FYaZuobGvShsGcQH/204RzFFKHquYKN6BxjyvfkXPttEXsuU8VrxCoU="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 227,
+ "tokens_sortie": 98,
+ "tokens_total": 325,
+ "latence": 8.968414000002667,
+ "modele": "gemini-3.5-flash-lite"
+}

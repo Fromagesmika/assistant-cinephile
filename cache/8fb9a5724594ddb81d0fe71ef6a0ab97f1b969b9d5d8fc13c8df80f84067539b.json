@@ -1,0 +1,17 @@
+{
+ "texte": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"Au Festival de Cannes 2016, le film Divines de Houda Benyamina a reçu la Caméra d'or [1], ainsi qu'une mention spéciale du Prix SACD [2].\",\n  \"sources\": [1, 2]\n}\n```",
+ "message": {
+  "content": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"Au Festival de Cannes 2016, le film Divines de Houda Benyamina a reçu la Caméra d'or [1], ainsi qu'une mention spéciale du Prix SACD [2].\",\n  \"sources\": [1, 2]\n}\n```",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EokBCoYBAWkUfRN0R/6zdWOen+MFRuVHoORmmUe2gjfyLFkAurO/gayZwIBcOW706iSdOYeKBUi1C4evIftV2xlvy1gQV8tP0oHyk+PlYQt4rjfemSYp0zpEmM11dNjDSbGKLu9wXdY6u4TkNyiMoDwaJPK2xH7PHRSM93ooqoypGbuolssFgDH0wII="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 2149,
+ "tokens_sortie": 80,
+ "tokens_total": 2229,
+ "latence": 4.230467099987436,
+ "modele": "gemini-3.5-flash-lite"
+}

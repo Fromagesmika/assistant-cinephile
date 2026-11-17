@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EokBCoYBAWkUfRNz4mhWute28L17fZFyxSVSL7z7RE/hFe20nLoDpL7mj+JWMVo0ZUo9w4YCI50yxLF4jGjXpI65swhFW+aq0Hfu2uCeQIwjEZLts703skS9M8tSXL0l8t8uWzDiMBCNkkZrEb7wNAoW/nzr1XlGeGIDhfMlZ/4KTb1Gax8Wazz7tcc="
+     }
+    },
+    "function": {
+     "arguments": "{\"requete\":\"Brume sur Tromsø saisons\"}",
+     "name": "rechercher_documents"
+    },
+    "id": "call_16989141843478940836",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1170,
+ "tokens_sortie": 24,
+ "tokens_total": 1194,
+ "latence": 9.464257899962831,
+ "modele": "gemini-3.5-flash-lite"
+}

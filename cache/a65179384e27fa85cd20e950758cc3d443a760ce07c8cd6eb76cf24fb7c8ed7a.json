@@ -1,0 +1,17 @@
+{
+ "texte": "{\"statut\": \"reponse\", \"texte\": \"Les acteurs principaux du film sont Oscar Isaac dans le rôle de Victor Frankenstein, Jacob Elordi qui incarne la Créature, Christoph Waltz en tant qu'Harlander, Mia Goth qui joue Elizabeth / Claire Frankenstein, Felix Kammerer dans le rôle de William Frankenstein et Charles Dance qui incarne Leopold Frankenstein [1]. D'autres acteurs font partie de la distribution, tels que Christian Convery, David Bradley, Lars Mikkelsen, Lauren Collins, Ralph Ineson et Burn Gorman [2].\", \"sources\": [1, 2]}",
+ "message": {
+  "content": "{\"statut\": \"reponse\", \"texte\": \"Les acteurs principaux du film sont Oscar Isaac dans le rôle de Victor Frankenstein, Jacob Elordi qui incarne la Créature, Christoph Waltz en tant qu'Harlander, Mia Goth qui joue Elizabeth / Claire Frankenstein, Felix Kammerer dans le rôle de William Frankenstein et Charles Dance qui incarne Leopold Frankenstein [1]. D'autres acteurs font partie de la distribution, tels que Christian Convery, David Bradley, Lars Mikkelsen, Lauren Collins, Ralph Ineson et Burn Gorman [2].\", \"sources\": [1, 2]}",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EokBCoYBAWkUfRMhUuu3isrmZKorPga6tI/tyMhahkylm8Xb82iNddD8akNxwcTwTvMAbT9m7aCNq4Fn3oGluWVi0wtstngkMVyrGeoIH1qn2qcj9aM7jj0KrCKi66nbQFFfYiL7dUTAAkjJsvdsoQgfryPwS58eEAx5BQGy6tPRqqhhwgJAb6Hntxg="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 1317,
+ "tokens_sortie": 123,
+ "tokens_total": 1440,
+ "latence": 9.18182880000677,
+ "modele": "gemini-3.5-flash-lite"
+}

@@ -1,0 +1,17 @@
+{
+ "texte": "{\"statut\": \"reponse\", \"texte\": \"J'ai retiré de votre liste « à voir » les films sortis avant 2000 (Casablanca et Alien) et j'y ai ajouté Oppenheimer (2023). Votre liste comporte désormais Joker et Oppenheimer.\", \"sources\": []}",
+ "message": {
+  "content": "{\"statut\": \"reponse\", \"texte\": \"J'ai retiré de votre liste « à voir » les films sortis avant 2000 (Casablanca et Alien) et j'y ai ajouté Oppenheimer (2023). Votre liste comporte désormais Joker et Oppenheimer.\", \"sources\": []}",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EokBCoYBAWkUfRMLuQZ6RPiiut07pputT4em9xJh7FSt4/yb75aHRTJXSOwsWiV9c4o6YKpEieZwmBsq2XRlLhhzrBvkfalpW9Yeub5bdYM150FefEVAKzbGiLOxUSdW9z2+G9eY398xAPxO8ET2JRJHKHPyGlICqYmuwpG3VRmfghKHhk+XwOUHhuo="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 2280,
+ "tokens_sortie": 68,
+ "tokens_total": 2348,
+ "latence": 2.115051399974618,
+ "modele": "gemini-3.5-flash-lite"
+}

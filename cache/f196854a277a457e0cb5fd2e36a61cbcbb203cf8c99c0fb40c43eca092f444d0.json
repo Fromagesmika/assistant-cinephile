@@ -1,0 +1,17 @@
+{
+ "texte": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"Le slogan du film Conclave d'Edward Berger est : « Ce qui se déroule derrière ces murs changera tout. » [3]\",\n  \"sources\": [3]\n}\n```",
+ "message": {
+  "content": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"Le slogan du film Conclave d'Edward Berger est : « Ce qui se déroule derrière ces murs changera tout. » [3]\",\n  \"sources\": [3]\n}\n```",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EokBCoYBAWkUfRMYjgcyPsAp5gCwZ7Ci0yhOmXLQZ8dTqtfrmAfQMz4NBqjCJQ/4yy7NnvuifWA2khItRhXH75zH8hJtMeuM7xfJm1PaHDYB6HBcn3Pdspx4vQvgCkuvl49cIEtKQCRK0Me3mckmf2o2x34LwBUe42p/VqbJmgwxVrN61hqQYaqlfMU="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 2347,
+ "tokens_sortie": 61,
+ "tokens_total": 2408,
+ "latence": 9.659035599965136,
+ "modele": "gemini-3.5-flash-lite"
+}

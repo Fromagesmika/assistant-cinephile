@@ -19,8 +19,10 @@ MINIMUMS = {"document": 20, "absent": 5, "tache": 10, "ambigu": 5}
 
 with open(RACINE / "tests.jsonl", encoding="utf-8") as f:
     tests = [json.loads(l) for l in f if l.strip()]
-with open(RACINE / "data" / "corpus.jsonl", encoding="utf-8") as f:
-    corpus = {d["doc_id"]: d for d in map(json.loads, f)}
+from src.rag import charger_corpus  # noqa: E402
+
+# Les trois sources : Wikipédia, TMDB et IMDb.
+corpus = {d["doc_id"]: d for d in charger_corpus()}
 
 erreurs = []
 if len({c["id"] for c in tests}) != len(tests):

@@ -27,9 +27,20 @@ SECTIONS_IGNOREES = {"notes et références", "références", "voir aussi", "lie
 _modeles_charges = {}
 
 
+# Trois sources, trois plateformes : l'encyclopédie (Wikipédia), la base de films collaborative
+# (TMDB : fiches, synopsis, critiques) et les notes du public (IMDb). Voir scripts/build_sources.py.
+SOURCES = {"Wikipédia": "corpus.jsonl", "TMDB": "corpus_tmdb.jsonl", "IMDb": "corpus_imdb.jsonl"}
+
+
 def charger_corpus():
-    with open(RACINE / "data" / "corpus.jsonl", encoding="utf-8") as f:
-        return [json.loads(ligne) for ligne in f]
+    documents = []
+    for source, fichier in SOURCES.items():
+        chemin = RACINE / "data" / fichier
+        if not chemin.exists():
+            continue
+        with open(chemin, encoding="utf-8") as f:
+            documents += [{"source": source, **json.loads(ligne)} for ligne in f]
+    return documents
 
 
 def _unites(texte, taille):
@@ -67,6 +78,7 @@ def decouper(document, taille, chevauchement):
         passages.append({
             "passage_id": f"{document['doc_id']}#{len(passages)}",
             "doc_id": document["doc_id"],
+            "source": document.get("source", "Wikipédia"),
             "url": document["url"],
             "texte": f"{entete}\n{corps}",
         })

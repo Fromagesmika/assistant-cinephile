@@ -1,0 +1,17 @@
+{
+ "texte": "{\"statut\": \"reponse\", \"texte\": \"Le slogan de l'affiche française du film Inception de Christopher Nolan est : \\\"Votre esprit est le scène de tous les crimes\\\".\"}",
+ "message": {
+  "content": "{\"statut\": \"reponse\", \"texte\": \"Le slogan de l'affiche française du film Inception de Christopher Nolan est : \\\"Votre esprit est le scène de tous les crimes\\\".\"}",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EokBCoYBAWkUfRMMa/QET/DsRRa/WnGmB91igVa5fs9Zvb7Q1WImdncTPEg1dKpRIRdepbE2kkobYUhvtIjEPafLzZjbhzfK0INvr6UsEllr/5xsf6hmcMLgaCDGpL76FiPphiDaYOQS0dr3tTZiqJ5BQne85IR4eYWhwb7MgrjhzWo7PkNGMZYQQ6Y="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 224,
+ "tokens_sortie": 41,
+ "tokens_total": 265,
+ "latence": 8.661711200024001,
+ "modele": "gemini-3.5-flash-lite"
+}

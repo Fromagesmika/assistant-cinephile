@@ -1,0 +1,17 @@
+{
+ "texte": "{\"statut\": \"precision\", \"texte\": \"De quel film Nosferatu s'agit-il entre la version de 2024 réalisée par Robert Eggers et celle de 1922 réalisée par Friedrich Wilhelm Murnau ?\", \"sources\": [1, 2, 3, 4, 5]}",
+ "message": {
+  "content": "{\"statut\": \"precision\", \"texte\": \"De quel film Nosferatu s'agit-il entre la version de 2024 réalisée par Robert Eggers et celle de 1922 réalisée par Friedrich Wilhelm Murnau ?\", \"sources\": [1, 2, 3, 4, 5]}",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EokBCoYBAWkUfROHPwbuoDBECt3a+f4WHa2eDY3h5UVdt1lnIeK+1xzhBsxURyRpMN6ZDeBHz8epjB7m8bwfz0QLxlbg/1p8JE27ugpjzQXwXlg8lohZ5EFDjQht1ZXKKzBSgJ6hv4/CttJkBBzPnzFMzfE3A9TqApOMq28QhQrjyMZkpxi9Eo7a27w="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 1345,
+ "tokens_sortie": 69,
+ "tokens_total": 1414,
+ "latence": 10.55272929999046,
+ "modele": "gemini-3.5-flash-lite"
+}

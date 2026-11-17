@@ -1,0 +1,17 @@
+{
+ "texte": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"Désolé, je n'ai trouvé aucun film ou série correspondant au titre « Les Horloges de Valparaíso » dans la base de données, je ne peux donc pas l'ajouter à la liste à voir.\",\n  \"sources\": []\n}\n```",
+ "message": {
+  "content": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"Désolé, je n'ai trouvé aucun film ou série correspondant au titre « Les Horloges de Valparaíso » dans la base de données, je ne peux donc pas l'ajouter à la liste à voir.\",\n  \"sources\": []\n}\n```",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EokBCoYBAWkUfROzMvMGCRX+MnqKIVlbQNER76rcFvV5RNfxMDpiZR1pdFgKfWXBcudBb5O6kaijDUsjSCcUvVaHf5HemzJJSwUCd+M5vchAw4JBIV+NHeiT99fFwrallz/PJtKlU/hB+tNlNKJC62BOkluTomjkypucpc2zbjz8BQygKcHhPAmL/Fk="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 2114,
+ "tokens_sortie": 76,
+ "tokens_total": 2190,
+ "latence": 7.787698299973272,
+ "modele": "gemini-3.5-flash-lite"
+}

@@ -1,0 +1,17 @@
+{
+ "texte": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"Le slogan du film Inception est : « Votre esprit abrite la scène du crime. » [1]\",\n  \"sources\": [1]\n}\n```",
+ "message": {
+  "content": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"Le slogan du film Inception est : « Votre esprit abrite la scène du crime. » [1]\",\n  \"sources\": [1]\n}\n```",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EokBCoYBAWkUfRNc5EXyblJRasQRgFi8cAFolvPXL7O3fo/nW4W/zmbJj1LnpfXattBUnkuVGPf/HXKL9HzMbumEJ3nNet73BG6TzBzOYqOfkgmbBqvjjOXIPh3mYh8HW6xVdUy7AyicbkT7gfr/TXLNdITBuD94CbgjvcV59P9IbTpN+CB80FtWezE="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 2404,
+ "tokens_sortie": 54,
+ "tokens_total": 2458,
+ "latence": 13.63396190002095,
+ "modele": "gemini-3.5-flash-lite"
+}

@@ -93,6 +93,13 @@ DOCUMENTS = [
     doc("populaire", "Combien d'entrées Le Fabuleux Destin d'Amélie Poulain a-t-il réalisées en France ?", [["8 636 041"]], "Le Fabuleux Destin d'Amélie Poulain"),
     doc("peu_connu", "Combien d'entrées Le Salaire de la peur de Clouzot a-t-il réalisées en France ?", [["6 944 306"]], "Le Salaire de la peur"),
     doc("recent", "Combien d'entrées Un p'tit truc en plus d'Artus a-t-il réalisées le jour de sa sortie ?", [["279 635"]], "Un p'tit truc en plus"),
+    # Sources TMDB et IMDb (ajout de la semaine 4) : la réponse n'est pas sur Wikipédia.
+    doc("populaire", "Quel est le slogan de l'affiche française d'Inception ?", [["scène du crime"]], "Inception · TMDB"),
+    doc("peu_connu", "Quel est le slogan du film Le Septième Sceau d'Ingmar Bergman ?", [["défi à la mort"]], "Le Septième Sceau · TMDB"),
+    doc("recent", "Quel est le slogan du film Conclave d'Edward Berger ?", [["derrière ces murs"]], "Conclave (film) · TMDB"),
+    doc("populaire", "Combien de votes Parasite de Bong Joon-ho a-t-il reçus sur IMDb ?", [["1 209 613", "1209613"]], "Parasite (film, 2019) · IMDb"),
+    doc("peu_connu", "Quelle est la note moyenne du Samouraï de Jean-Pierre Melville sur IMDb ?", [["8,0", "8.0", "8/10"]], "Le Samouraï · IMDb"),
+    doc("recent", "Quelle note moyenne les utilisateurs d'IMDb donnent-ils à Anora de Sean Baker ?", [["7,4", "7.4"]], "Anora (film) · IMDb"),
 ]
 
 ABSENTS = [

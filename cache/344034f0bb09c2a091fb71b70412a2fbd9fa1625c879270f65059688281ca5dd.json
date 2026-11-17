@@ -1,0 +1,17 @@
+{
+ "texte": "{\"statut\": \"abstention\", \"texte\": \"Les extraits ne fournissent pas le nombre d'entrées du film en France.\", \"sources\": []}",
+ "message": {
+  "content": "{\"statut\": \"abstention\", \"texte\": \"Les extraits ne fournissent pas le nombre d'entrées du film en France.\", \"sources\": []}",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EokBCoYBAWkUfROkyZ3z8U14g8XQSBY0wKkcMI6/kiEmqpF+Hu5dPi6RjoXV+KACr1CGdMMrRtGm9cuSsXdfeWFKhePfOi2u/ibRzL3eQ/FZl71nQckcreelzDNe4GxAWXOBwAwJVOfRMRGUXpqalbNnlwZs3LoY+VpG6iXh9aBo9TxT804qWqrXs/E="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 1324,
+ "tokens_sortie": 35,
+ "tokens_total": 1359,
+ "latence": 7.870398200000636,
+ "modele": "gemini-3.5-flash-lite"
+}

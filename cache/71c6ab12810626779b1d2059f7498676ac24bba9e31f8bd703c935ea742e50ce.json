@@ -1,0 +1,17 @@
+{
+ "texte": "{\"statut\": \"abstention\", \"texte\": \"Les extraits ne contiennent pas d'information sur la pointure de chaussures de Christopher Nolan.\", \"sources\": []}",
+ "message": {
+  "content": "{\"statut\": \"abstention\", \"texte\": \"Les extraits ne contiennent pas d'information sur la pointure de chaussures de Christopher Nolan.\", \"sources\": []}",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EokBCoYBAWkUfRPoRfaafJanamYo1M8hwiB15cjXi1T3gOuEovfiApqqsx+uaqk0exFduTGLq5EFFOjTsLvr6zyOKNoK7+yEHgJkvVNwjqFBQ2PTgHTnUW1peiYdBqVOEcpb1H+V8YofYt1o0tRaXcAJ9Yl4PXXJNHOgzO0/ge7ATI5SB74vtPBpOL8="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 1301,
+ "tokens_sortie": 36,
+ "tokens_total": 1337,
+ "latence": 9.348162700014655,
+ "modele": "gemini-3.5-flash-lite"
+}

@@ -1,0 +1,17 @@
+{
+ "texte": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"Au Festival de Cannes 2025, le film *Un simple accident* de Jafar Panahi a remporté la Palme d'or ainsi que le Prix de la Citoyenneté [1, 3].\",\n  \"sources\": [1, 3]\n}\n```",
+ "message": {
+  "content": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"Au Festival de Cannes 2025, le film *Un simple accident* de Jafar Panahi a remporté la Palme d'or ainsi que le Prix de la Citoyenneté [1, 3].\",\n  \"sources\": [1, 3]\n}\n```",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EokBCoYBAWkUfRNxwmsaRo6vnx1UVFZJw8OwQxUfkXsrwlZDDY5JMZ8/eoZfbB0s1Uc21Ok+9FknPPzpOJDzxM/SbgNEqjXrl6guW7FGNT7F2eWzmZNiOlxvW2euMGLZOZd7pOyLRPJaCSiHlAST15AKKiwFJ7ghwL+FnvrcO+J53lR9FLotw0pWKzA="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 1969,
+ "tokens_sortie": 81,
+ "tokens_total": 2050,
+ "latence": 1.5193821999710053,
+ "modele": "gemini-3.5-flash-lite"
+}

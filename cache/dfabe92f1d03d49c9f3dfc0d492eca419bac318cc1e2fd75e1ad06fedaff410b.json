@@ -1,0 +1,17 @@
+{
+ "texte": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"Entre Inception (839 030 630 $ de recettes mondiales) et Interstellar (746 606 706 $ de recettes mondiales), c'est Inception qui a réalisé les plus grosses recettes [11, 12]. Inception a donc été ajouté à votre liste à voir [13].\",\n  \"sources\": [11, 12, 13]\n}\n```",
+ "message": {
+  "content": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"Entre Inception (839 030 630 $ de recettes mondiales) et Interstellar (746 606 706 $ de recettes mondiales), c'est Inception qui a réalisé les plus grosses recettes [11, 12]. Inception a donc été ajouté à votre liste à voir [13].\",\n  \"sources\": [11, 12, 13]\n}\n```",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EokBCoYBAWkUfRMCGee31+2UXIN0wU0x5SRJ4YQ11X/c5e29RyTAoXG4oxHaw0ezV0z/J/J6HawYtIHhMaBldXnH26gvqA//UGsggAMpPZ20tY5wrcZtQC0VHWgK5ieEEPk+Go0BbEoj8tkV1C/yO2gMoUHrS17CGdL08usMuRhn8BBLfpG86USmj34="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 2588,
+ "tokens_sortie": 119,
+ "tokens_total": 2707,
+ "latence": 1.720155299990438,
+ "modele": "gemini-3.5-flash-lite"
+}

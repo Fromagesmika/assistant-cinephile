@@ -1,0 +1,17 @@
+{
+ "texte": "{\"statut\": \"reponse\", \"texte\": \"La note moyenne des utilisateurs IMDb pour Le Samouraï est de 8,0 sur 10 [3].\", \"sources\": [3]}",
+ "message": {
+  "content": "{\"statut\": \"reponse\", \"texte\": \"La note moyenne des utilisateurs IMDb pour Le Samouraï est de 8,0 sur 10 [3].\", \"sources\": [3]}",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EokBCoYBAWkUfROuQXev9nB8yETe76m3DgqpbLhdYzH2GaatxSoCKgQtNKDUHnLyDMfMiBhBKBL0icQPTSON0OBc2IJIV058+wG/iYDs5nLJWvhzUAMqtiv36NNqUBCBbAkWl4Fz48n3h37fCYSLrWrVu9ikCXXKJABPlg+AzOpowX5HemEwFoJWHF4="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 1031,
+ "tokens_sortie": 43,
+ "tokens_total": 1074,
+ "latence": 8.699055200035218,
+ "modele": "gemini-3.5-flash-lite"
+}

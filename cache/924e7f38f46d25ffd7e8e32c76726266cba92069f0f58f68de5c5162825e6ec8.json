@@ -1,0 +1,17 @@
+{
+ "texte": "{\"statut\": \"reponse\", \"texte\": \"Le budget du film d'animation Flow de Gints Zilbalodis est de 3 700 000 dollars [4].\", \"sources\": [4]}",
+ "message": {
+  "content": "{\"statut\": \"reponse\", \"texte\": \"Le budget du film d'animation Flow de Gints Zilbalodis est de 3 700 000 dollars [4].\", \"sources\": [4]}",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EokBCoYBAWkUfRMz8jXXpBgXcHGPgQL5imujFKQ61WH+AjBdnRmj9WcEpPSva6OaQ89Jl5IYzbbFVK+ZQm3v09+mvkC1Kw5uzmoOVD/OOh4c7dw25H01z6PW9iQmKYO6jo6CDZB5of1nOSkOeyheJ+gzkn8O6vIhrKwMwZkjbtkgGF8DJoEb60mdFFg="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 1334,
+ "tokens_sortie": 49,
+ "tokens_total": 1383,
+ "latence": 7.712398500007112,
+ "modele": "gemini-3.5-flash-lite"
+}

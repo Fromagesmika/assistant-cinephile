@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EokBCoYBAWkUfRPE4BX/j5OTqjQtCm501UpCPQf8dGzNrRC5/Vjx1lJr3qYQRqlQzKlIjnTpG1dtuyms6zhigqhd8X5oH/4YiQs6N0VDHUcPJ9jchuFV/9Z5gPmVjadw2tKSYwZ9dLOkF16r36SRvv6sIicDXHrtgwHBVRXDW1fwdR5hOQPq+SPbJgM="
+     }
+    },
+    "function": {
+     "arguments": "{\"requete\":\"Un p'tit truc en plus Artus entrées premier jour sortie\"}",
+     "name": "rechercher_documents"
+    },
+    "id": "call_2311051997954942464",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1186,
+ "tokens_sortie": 32,
+ "tokens_total": 1218,
+ "latence": 1.4160491999937221,
+ "modele": "gemini-3.5-flash-lite"
+}

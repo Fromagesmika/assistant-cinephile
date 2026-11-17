@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EokBCoYBAWkUfRPHzwjnBkUuO39kXggE32DdbufjcoEBRNIb7cSv116JIjsrxyQuZXboCMEZ9SluqpA5YBXcUz7aC50+8fN4AwTgkPxHf6RAjt33J+Gwgw3uUxxMujO9W1QSAM0n0ecJh57bOBjFocjlXw9gijs9ZQ9unCy1HTsxt1sOccE/pqb31Cs="
+     }
+    },
+    "function": {
+     "arguments": "{\"requete\":\"La Tortue rouge réalisateur scénariste\"}",
+     "name": "rechercher_documents"
+    },
+    "id": "call_12915269755284347606",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1172,
+ "tokens_sortie": 27,
+ "tokens_total": 1199,
+ "latence": 10.112448600004427,
+ "modele": "gemini-3.5-flash-lite"
+}

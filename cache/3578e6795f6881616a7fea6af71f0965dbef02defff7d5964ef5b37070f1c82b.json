@@ -1,0 +1,17 @@
+{
+ "texte": "```json\n{\"statut\": \"abstention\", \"texte\": \"Je ne dispose d'aucune information sur le film Le Dernier Phare de Kerlouan pour vous indiquer sa durée.\", \"sources\": []}\n```",
+ "message": {
+  "content": "```json\n{\"statut\": \"abstention\", \"texte\": \"Je ne dispose d'aucune information sur le film Le Dernier Phare de Kerlouan pour vous indiquer sa durée.\", \"sources\": []}\n```",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EokBCoYBAWkUfROzjA9Y9RAosnTPizvXwSbxd30lUrSM4APoCs75b8HMPtbDa3pHw9WNGPXcICoyRo7KUd8yxHHboaONOR99VC93W0/ZKT7NZx3HgnAvRTTMI+T2RONuIjwIt5eECSQP9hJUteIHn5Ic4wSsNZ0B+4pHGM4/YJCyQbtx0sRsR0IOpXQ="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 2072,
+ "tokens_sortie": 47,
+ "tokens_total": 2119,
+ "latence": 9.857053499959875,
+ "modele": "gemini-3.5-flash-lite"
+}

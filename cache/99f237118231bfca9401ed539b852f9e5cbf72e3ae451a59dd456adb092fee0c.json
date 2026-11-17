@@ -1,0 +1,17 @@
+{
+ "texte": "{\"statut\": \"precision\", \"texte\": \"De quelle œuvre parlez-vous ?\", \"sources\": []}",
+ "message": {
+  "content": "{\"statut\": \"precision\", \"texte\": \"De quelle œuvre parlez-vous ?\", \"sources\": []}",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EokBCoYBAWkUfROCNm96mklFY3Ju8lO4dkq/+jgPm6L93xCrdPeAkVMfkLMEXp6jmYqIF9mEYT+PRg4pfsz/n6P0vhEEDeckFDOo491SrxcL2li0YUngn8k3JFHnbaTNxgfaUZRz81l5boKliFdTHgKl001AHdlinYbdEphTCycvQnzd/2XC32i8L5s="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 690,
+ "tokens_sortie": 24,
+ "tokens_total": 714,
+ "latence": 2.6335928000044078,
+ "modele": "gemini-3.5-flash-lite"
+}

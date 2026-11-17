@@ -1,0 +1,17 @@
+{
+ "texte": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"Le footballeur Just Fontaine a inspiré à Francis Veber le choix du prénom de « Juste Leblanc » dans Le Dîner de cons [1].\",\n  \"sources\": [1]\n}\n```",
+ "message": {
+  "content": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"Le footballeur Just Fontaine a inspiré à Francis Veber le choix du prénom de « Juste Leblanc » dans Le Dîner de cons [1].\",\n  \"sources\": [1]\n}\n```",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EokBCoYBAWkUfRP08QsPz64wrhWauDtHMkc5Vc0+n5ue/B9MvHyr39kgwHdUvPfwqC96C9gXWgjlw6+vc1+uqhp1VM1/eoJWYL+JxXM7Bkjo/KoLgRK5I1zZ/t2/1y+XkjNuLVx0cmtgrjGPxOqhh2dq+OuRsUnChNcmG35Q6RWrfZgylIvNsKp/snA="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 2415,
+ "tokens_sortie": 67,
+ "tokens_total": 2482,
+ "latence": 7.555983300029766,
+ "modele": "gemini-3.5-flash-lite"
+}

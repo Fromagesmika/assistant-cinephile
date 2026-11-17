@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EokBCoYBAWkUfROoDGM2CEaVNwoAHXrR/b5+n6qiJmYmxlfIhycGvuyBZI3ZziCuN6XGFIFoyGsBseAOONGwXvwknFlCELWJZaZLZG8KyzcgZ828er98jw8MKtd9NJp/IfrQKoFxGUdMyE1OQCjwICIUPl3kB7cE2Le6PqE98WRJPx9vK1O1+PNkCWI="
+     }
+    },
+    "function": {
+     "arguments": "{\"requete\":\"Le Dernier Phare de Kerlouan\"}",
+     "name": "rechercher_documents"
+    },
+    "id": "call_4874180256535705874",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1237,
+ "tokens_sortie": 27,
+ "tokens_total": 1264,
+ "latence": 8.491655299963895,
+ "modele": "gemini-3.5-flash-lite"
+}

@@ -31,3 +31,6 @@ video/cinephile/.hyperframes/
 video/check.json
 video/cinephile/.thumbnails/
 video/render.log
+
+# Jeu de données brut IMDb (licence non commerciale, non redistribuable)
+data/sources/

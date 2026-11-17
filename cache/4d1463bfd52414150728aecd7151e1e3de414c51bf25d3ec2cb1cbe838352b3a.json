@@ -1,0 +1,17 @@
+{
+ "texte": "{\"statut\": \"reponse\", \"texte\": \"Le film Mon oncle de Jacques Tati a reçu l'Oscar du meilleur film en langue étrangère en 1959 [5].\", \"sources\": [5]}",
+ "message": {
+  "content": "{\"statut\": \"reponse\", \"texte\": \"Le film Mon oncle de Jacques Tati a reçu l'Oscar du meilleur film en langue étrangère en 1959 [5].\", \"sources\": [5]}",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EokBCoYBAWkUfRMAgvBi5x2oMWJAmwlmJYMZsa3w/M4psIucS7axob+xJqZw1ToGAf+ODZirkm81UEQmHgiy21+AMZPCarE5Kok8PYwogU75txsv1vuGh6v1xq9GdxCL3ClhjAeycaJFpDHRI3ppUuyE1aYr4ufdRxmWLTSPdvD9+B7qBmqBmlj7LYU="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 1195,
+ "tokens_sortie": 49,
+ "tokens_total": 1244,
+ "latence": 5.540709000022616,
+ "modele": "gemini-3.5-flash-lite"
+}

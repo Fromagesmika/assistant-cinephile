@@ -4,6 +4,18 @@ Projet majeur IA générative 2026, parcours Texte. Un assistant qui répond sur
 les séries, puis gère une liste « à voir » partagée. Chaque niveau est comparé aux précédents
 sur le même protocole de test.
 
+Le RAG puise dans **trois sources**, sur trois plateformes différentes :
+
+| Source | Ce qu'elle apporte | Fichier |
+|---|---|---|
+| Wikipédia (fr) | 156 pages encyclopédiques : production, tournage, box-office, réception | `data/corpus.jsonl` |
+| TMDB | une fiche par œuvre (synopsis, slogan, équipe, budget, recettes, mots-clés) et des critiques d'utilisateurs | `data/corpus_tmdb.jsonl` |
+| IMDb | la note moyenne du public et le nombre de votes | `data/corpus_imdb.jsonl` |
+
+`python scripts/build_corpus.py` télécharge Wikipédia ; `python scripts/build_sources.py` construit
+les fiches TMDB et IMDb (il faut une clé TMDB, et il télécharge le jeu de données public des notes
+IMDb dans `data/sources/`, non versionné).
+
 | Niveau | Contenu | État |
 |---|---|---|
 | 0 | LLM seul | Évalué (40 cas) |
@@ -60,7 +72,8 @@ Le tableau est écrit dans `results/tableau.md`. Les réponses déjà obtenues s
 |---|---|
 | `app.py` | Interface Streamlit |
 | `data/films.csv` | Œuvres retenues et strate (populaire, peu connu, récent) |
-| `data/corpus.jsonl` | Pages Wikipédia téléchargées, avec leur révision |
+| `data/corpus.jsonl` | Source 1 : pages Wikipédia téléchargées, avec leur révision |
+| `data/corpus_tmdb.jsonl`, `data/corpus_imdb.jsonl` | Sources 2 et 3 : fiches TMDB et notes IMDb (`scripts/build_sources.py`) |
 | `tests.jsonl` | Jeu de test commun à tous les niveaux (51 cas, dont 3 questions et 1 tâche sur le box-office) |
 | `eval.py` | Exécute les niveaux et produit le tableau |
 | `src/llm.py` | Appel au modèle, cache, tokens et latence |
@@ -80,7 +93,7 @@ Le tableau est écrit dans `results/tableau.md`. Les réponses déjà obtenues s
 | `rapport/rapport.pdf` | Rapport (4 pages), généré par `python rapport/generer_rapport.py` à partir des résultats |
 | `video/` | Sources de la vidéo |
 
-## Licence du corpus et des affiches
+## Licences des sources et des affiches
 
 Les textes de `data/corpus.jsonl` proviennent de Wikipédia en français, sous licence
 [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.fr). L'URL et la révision de
@@ -88,6 +101,10 @@ chaque page sont conservées dans le fichier.
 
 Les affiches et les données de films viennent de [TMDB](https://www.themoviedb.org). Ce produit
 utilise l'API TMDB mais n'est ni approuvé ni certifié par TMDB. Les affiches ne sont pas versionnées.
+
+Les notes de `data/corpus_imdb.jsonl` viennent des jeux de données publics d'IMDb
+(https://datasets.imdbws.com), réservés à un usage personnel et non commercial.
+Information courtesy of IMDb (https://www.imdb.com). Used with permission.
 
 ## Vidéo
 

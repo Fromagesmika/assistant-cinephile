@@ -1,0 +1,42 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EokBCoYBAWkUfRNQMeSQy3Gy0XHyBx5rI0aksWr9YMYUjhKZO9Tsc0z76nIX3PvmoaJnrscXr1bTuDuP0jn9PWFgZEyOTZnX/5ALllcO2GjJNBYvNYWx8M9t0SwrRF2GvNUUt7QYy+aAmH6SFwrHOnEBqla0Ln+0iBislUkTHv1IGCvLOBGh4z2g69Q="
+     }
+    },
+    "function": {
+     "arguments": "{}",
+     "name": "lire_liste"
+    },
+    "id": "call_5501379098533350886",
+    "type": "function"
+   },
+   {
+    "function": {
+     "arguments": "{\"titre\":\"Titanic\"}",
+     "name": "rechercher_oeuvre"
+    },
+    "id": "call_5501379098533349005",
+    "type": "function"
+   },
+   {
+    "function": {
+     "arguments": "{\"titre\":\"Interstellar\"}",
+     "name": "rechercher_oeuvre"
+    },
+    "id": "call_5501379098533351220",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1173,
+ "tokens_sortie": 49,
+ "tokens_total": 1222,
+ "latence": 11.09388369997032,
+ "modele": "gemini-3.5-flash-lite"
+}

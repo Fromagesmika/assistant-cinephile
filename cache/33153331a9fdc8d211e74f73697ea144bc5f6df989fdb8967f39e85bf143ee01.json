@@ -1,0 +1,42 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EokBCoYBAWkUfRNc89GAzAnilehYiKHWlAKgspqpWhHFc1FKLF5Pqcec9+huy4s1KtfsuXrtVOZfyy7GCBVmJQFSgTicCBzO6afHH5BvMvvZ58hde9M0c22VOyi1CHgT2B0qxXmnz+AYfY+/8vB5PcBDvOVfqkVDSPV0LlFHRe8sgBF6a3J0BWQgYKs="
+     }
+    },
+    "function": {
+     "arguments": "{\"requete\":\"Parasite 2019 réalisation réalisateur Mickey 17\"}",
+     "name": "rechercher_documents"
+    },
+    "id": "call_10780181920042306088",
+    "type": "function"
+   },
+   {
+    "function": {
+     "arguments": "{\"titre\":\"Parasite\"}",
+     "name": "rechercher_oeuvre"
+    },
+    "id": "call_10780181920042306307",
+    "type": "function"
+   },
+   {
+    "function": {
+     "arguments": "{\"titre\":\"Mickey 17\"}",
+     "name": "rechercher_oeuvre"
+    },
+    "id": "call_10780181920042306526",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1184,
+ "tokens_sortie": 75,
+ "tokens_total": 1259,
+ "latence": 1.9491825999575667,
+ "modele": "gemini-3.5-flash-lite"
+}

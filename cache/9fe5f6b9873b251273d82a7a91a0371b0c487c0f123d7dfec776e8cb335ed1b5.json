@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EokBCoYBAWkUfRODCxrLOXjP3kRwmpTwy9CWj6TDV4wJSnkHJgnGb03H6V+C+74FADGmbisNFBCtXUSQ4nEznV4fcw8lUndJK0x9BcuulnSBs/N8BaOyGS6Sw6ls1I2kLHJtP/Szw82y5FKJ5FgZb59FaFdiYoJB1WzJW2RZeHJxQwgVtRIaLZhsr0w="
+     }
+    },
+    "function": {
+     "arguments": "{\"requete\":\"\\\"Le Fabuleux Destin d'Amélie Poulain\\\" entrées France box-office\"}",
+     "name": "rechercher_documents"
+    },
+    "id": "call_5787166879898544339",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 2209,
+ "tokens_sortie": 37,
+ "tokens_total": 2246,
+ "latence": 6.843080000020564,
+ "modele": "gemini-3.5-flash-lite"
+}

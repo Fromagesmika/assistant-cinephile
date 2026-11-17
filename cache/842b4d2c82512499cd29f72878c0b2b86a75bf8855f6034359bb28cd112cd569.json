@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EokBCoYBAWkUfRND2ENzia5KblD0qPdzfaXD0xTSTE9b9Utck2L/3V9o9z8uQPcrGOll+TSIfRDPvILq/xv/Gke7FamISD/sTuhZshnHXukEnO41N//3ITnJh4DbM0wBQBgO2/gJYV5MiBU8GcwXYKv6umF8d5l2/hfxDfKDeG43l7s4Kf1mcf/I+04="
+     }
+    },
+    "function": {
+     "arguments": "{\"requete\":\"slogan du film Conclave Edward Berger\"}",
+     "name": "rechercher_documents"
+    },
+    "id": "call_14621653943941481087",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1170,
+ "tokens_sortie": 26,
+ "tokens_total": 1196,
+ "latence": 3.2020992999896407,
+ "modele": "gemini-3.5-flash-lite"
+}

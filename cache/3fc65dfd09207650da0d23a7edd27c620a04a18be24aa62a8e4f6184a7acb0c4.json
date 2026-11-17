@@ -1,0 +1,17 @@
+{
+ "texte": "{\"statut\": \"reponse\", \"texte\": \"La série Kaamelott est composée de 458 épisodes [1].\", \"sources\": [1]}",
+ "message": {
+  "content": "{\"statut\": \"reponse\", \"texte\": \"La série Kaamelott est composée de 458 épisodes [1].\", \"sources\": [1]}",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EokBCoYBAWkUfRMeua5RD96YdQbDBHrJHG72b01HaAJ4RjNG8Ii7fZwcq9qBgvZ/GyeltbTAp6uIQpO01cF37V7wACIUbyZwUk8ls/E9Zka3tf+8rLrlfCyaQWVSr7VFt8/xt9I2p/abPPoFeeGMHmojViWVyN6r/bgHjHkeXRva8TR6I8yPr9MKjTs="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 1030,
+ "tokens_sortie": 36,
+ "tokens_total": 1066,
+ "latence": 1.551032999996096,
+ "modele": "gemini-3.5-flash-lite"
+}

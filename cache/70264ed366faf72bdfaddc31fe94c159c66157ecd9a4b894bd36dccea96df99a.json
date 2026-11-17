@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EokBCoYBAWkUfRNDqUvsL3H4N23M8NX/L/YjYR682PFYWVgWSOj63Fd4pcrObVcXP8+qHCeW/4/DSF/KU0d2NquTJsXhTBaNA9mk10j5QfKn4KqzL/z1yE/bev2KMIS3JHFChALCxdjHHZhUEU8Z46Km4XVOyofl4IXIDMsxThC/4lOQVJ5gAOCRXQE="
+     }
+    },
+    "function": {
+     "arguments": "{\"requete\":\"IMDb notes votes Parasite Bong Joon-ho\"}",
+     "name": "rechercher_documents"
+    },
+    "id": "call_14004899888794782636",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 2278,
+ "tokens_sortie": 28,
+ "tokens_total": 2306,
+ "latence": 1.967178300023079,
+ "modele": "gemini-3.5-flash-lite"
+}

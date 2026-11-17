@@ -1,0 +1,17 @@
+{
+ "texte": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"L'écrivain irlandais Neville Thompson est l'auteur du roman « Jackie Loves Johnser OK? » (publié en français sous le titre *L'Amour ouf*), qui a été adapté par Gilles Lellouche pour son film [1, 2, 3].\",\n  \"sources\": [1, 2, 3]\n}\n```",
+ "message": {
+  "content": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"L'écrivain irlandais Neville Thompson est l'auteur du roman « Jackie Loves Johnser OK? » (publié en français sous le titre *L'Amour ouf*), qui a été adapté par Gilles Lellouche pour son film [1, 2, 3].\",\n  \"sources\": [1, 2, 3]\n}\n```",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EokBCoYBAWkUfRPUx3IiUsHdGRCmj2m/4KY+0g3/O/O6jpnNRB/HFRdRhvL48u50sHQn+BYIr9zE2e4mtK9s8BgT4GGfGEGZ85vgHT0krb5Bv/XIwt7jpddxbMCRKyfTZHVvAXyYoTkc2gHptZtZG2E3oaKgXmVVKGZLCN31b3cnG/I7jcDQtKL7Qw4="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 2295,
+ "tokens_sortie": 100,
+ "tokens_total": 2395,
+ "latence": 10.890431100036949,
+ "modele": "gemini-3.5-flash-lite"
+}

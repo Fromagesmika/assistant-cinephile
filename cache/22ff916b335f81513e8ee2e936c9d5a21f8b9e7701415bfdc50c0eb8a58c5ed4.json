@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EokBCoYBAWkUfRNcqBwrqzK3bSlfUpMpA0JKTbjvjkkOeAaRONP4Yot4stJFCaQ1wSiYK3qfPZSgL1Drw4kUR2zp5yj+l6pQm/83oGKWXRyPMCZEjqge8Q6N+qPjhmA2Y4MKc1+qaMkQbcsAKa4dXb9LmpDY8kJMEhHCko64c2TcErnZSEHh5YRyV4s="
+     }
+    },
+    "function": {
+     "arguments": "{\"requete\":\"Frankenstein casting acteurs\"}",
+     "name": "rechercher_documents"
+    },
+    "id": "call_11772068427499784066",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1162,
+ "tokens_sortie": 22,
+ "tokens_total": 1184,
+ "latence": 2.6243647999945097,
+ "modele": "gemini-3.5-flash-lite"
+}

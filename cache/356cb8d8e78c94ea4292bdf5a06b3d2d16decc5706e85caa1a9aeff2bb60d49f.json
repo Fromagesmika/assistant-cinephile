@@ -1,0 +1,17 @@
+{
+ "texte": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"En France, Le Salaire de la peur d'Henri-Georges Clouzot a réalisé près de sept millions de spectateurs, exactement 6 944 306 entrées [6].\",\n  \"sources\": [\n    6\n  ]\n}\n```",
+ "message": {
+  "content": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"En France, Le Salaire de la peur d'Henri-Georges Clouzot a réalisé près de sept millions de spectateurs, exactement 6 944 306 entrées [6].\",\n  \"sources\": [\n    6\n  ]\n}\n```",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EokBCoYBAWkUfRM+G4IYcJjt5i88Qt3qFVgtHwkPH/bH9UqpNe2OCvb7JrWddNO5SLSqmArkWtZI6f3v7YKI+C11q6nQKayTH0K0bM2AWAnT+PcLpIbhEtxr79KVdCkNqEoU9EOJZdIEPSm9lAXJyS5q5Ah4PFADiwhYa3J2/sfvPdWLhrlesEDg2oI="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 3371,
+ "tokens_sortie": 80,
+ "tokens_total": 3451,
+ "latence": 1.9313973999815062,
+ "modele": "gemini-3.5-flash-lite"
+}

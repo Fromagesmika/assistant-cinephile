@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EokBCoYBAWkUfRPY9oIUHJpHwaJ7dosZnRBDY5XG7K7VM2imBwlX7gu0XHB8LRjC4P3vRzaV2GIXhcXerl4Tzz/QHFxvS//CBfhY0825P+MwQq/ESkHCveKVZsvixQUtZ7jsXfy3HR3XL4uI7JNcbrFnnTP3UvpOPYWPKuEhEDyprCfTXvs0Xui1SkE="
+     }
+    },
+    "function": {
+     "arguments": "{\"requete\":\"\\\"entrées\\\" \\\"Le Salaire de la peur\\\"\"}",
+     "name": "rechercher_documents"
+    },
+    "id": "call_6301185631896275554",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 2274,
+ "tokens_sortie": 30,
+ "tokens_total": 2304,
+ "latence": 7.000480599992443,
+ "modele": "gemini-3.5-flash-lite"
+}

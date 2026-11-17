@@ -1,0 +1,17 @@
+{
+ "texte": "{\"statut\": \"abstention\", \"texte\": \"Les extraits fournis ne permettent pas de savoir combien de tasses de café ont été bues pendant le tournage.\", \"sources\": []}",
+ "message": {
+  "content": "{\"statut\": \"abstention\", \"texte\": \"Les extraits fournis ne permettent pas de savoir combien de tasses de café ont été bues pendant le tournage.\", \"sources\": []}",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EokBCoYBAWkUfRM7HpqHtlxLiz4rBOvdMi7qe59EQvNZSgQngR00zInw9V0NbPfrfcgeGtrWw9mo/e8H0Nn5UVtVdAE4i486ESjvgirgd6tczponzpDDvdTFRTsrVbzHjnZfvkHrBDSUP/Gwb6t4YL3inSQZAe78UD22RaS9zbd57igsH4lV/j71t9o="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 1164,
+ "tokens_sortie": 41,
+ "tokens_total": 1205,
+ "latence": 8.116301999951247,
+ "modele": "gemini-3.5-flash-lite"
+}

@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EokBCoYBAWkUfRMEdBYQ0q2sdQoBSkjQQ6GIa9GAt/r3euv3k79RbYkN5qXaK5yBXiQLqrILggpfc/pi+PKQkY3uAE8d4VWUV9Q+smsnPvzR9imhpPsANdHh72Z9YNsQnQ3LK220acVU7+DDE6JQ1Isr8pAYguBxO4q/X+4UpcFXWflVDZnuCgNi0Cs="
+     }
+    },
+    "function": {
+     "arguments": "{\"requete\":\"directeur de la photographie Inception\"}",
+     "name": "rechercher_documents"
+    },
+    "id": "call_11142181783100826522",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1169,
+ "tokens_sortie": 25,
+ "tokens_total": 1194,
+ "latence": 10.106736700050533,
+ "modele": "gemini-3.5-flash-lite"
+}

@@ -1,0 +1,17 @@
+{
+ "texte": "{\"statut\": \"abstention\", \"texte\": \"Je n'ai trouvé aucune information concernant une série intitulée « Brume sur Tromsø » dans mes sources.\", \"sources\": []}",
+ "message": {
+  "content": "{\"statut\": \"abstention\", \"texte\": \"Je n'ai trouvé aucune information concernant une série intitulée « Brume sur Tromsø » dans mes sources.\", \"sources\": []}",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EokBCoYBAWkUfRMzlTshttJ2rNbeAe9fMkL2mEjXe6zqHfqCwW4QgYeydQg4sPxPTyP1uGJin+CM6HRH84A7y//NzSitgqdg356ZUM9ISNmvLt3EK4uC5XWVylDR5gUx8SMVKKsL2JtIpJUry/6z2CvAECB2zZFZ1M3i+zaw3u3QwG1Wy4YW7Zv3aTA="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 2176,
+ "tokens_sortie": 40,
+ "tokens_total": 2216,
+ "latence": 1.2223553000367247,
+ "modele": "gemini-3.5-flash-lite"
+}

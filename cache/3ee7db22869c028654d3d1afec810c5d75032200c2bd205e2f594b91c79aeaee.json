@@ -1,0 +1,17 @@
+{
+ "texte": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"J'ai bien ajouté Grave (2017) et Titane (2021) de Julia Ducournau à votre liste à voir.\",\n  \"sources\": []\n}\n```",
+ "message": {
+  "content": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"J'ai bien ajouté Grave (2017) et Titane (2021) de Julia Ducournau à votre liste à voir.\",\n  \"sources\": []\n}\n```",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EokBCoYBAWkUfRPIsnH0C24RbjwnlnFT6lYfx+PZXLNyKwO1y4JCNrEI+hO34/juOa9KvucpNzNrdyd4qcvnxlE9R9jnffaHqXrL+qSmImnhvoI/4imlDhijQ99FE+iRFpg4qhkNCPd/7vDVzs5NJ/pCXGbIYl67T4h0st96zd5TsJ0YoRYPk/NWGY0="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 2706,
+ "tokens_sortie": 62,
+ "tokens_total": 2768,
+ "latence": 4.946670999983326,
+ "modele": "gemini-3.5-flash-lite"
+}

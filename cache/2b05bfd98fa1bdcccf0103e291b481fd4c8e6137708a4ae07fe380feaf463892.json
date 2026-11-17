@@ -1,0 +1,17 @@
+{
+ "texte": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"Le groupe crédité pour la musique du film La Haine est Assassin [2].\",\n  \"sources\": [2]\n}\n```",
+ "message": {
+  "content": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"Le groupe crédité pour la musique du film La Haine est Assassin [2].\",\n  \"sources\": [2]\n}\n```",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EokBCoYBAWkUfRPgq4rAwIHXWapmVvuAvSoQU8wABzY8pkzSv4EOfxnnwlWDy6dzkHtlClfPfGKrf5T3ypEGkXvoycxUS5LNtBwnw80vFmRbDCEiGqz6MkqzbUlsAHsrQCWnhLD/QUbhxV8+3gAtuZ7aY1YNRKaHnqHUr1l9xL10wdC6zlel0RCpvNs="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 2324,
+ "tokens_sortie": 50,
+ "tokens_total": 2374,
+ "latence": 9.320857500017155,
+ "modele": "gemini-3.5-flash-lite"
+}

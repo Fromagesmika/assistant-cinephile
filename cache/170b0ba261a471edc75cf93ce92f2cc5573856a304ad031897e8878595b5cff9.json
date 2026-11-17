@@ -1,0 +1,17 @@
+{
+ "texte": "{\"statut\": \"reponse\", \"texte\": \"Le budget du film Un p'tit truc en plus est de 6 400 000 dollars [2] ou de 6 100 000 € [3].\", \"sources\": [2, 3]}",
+ "message": {
+  "content": "{\"statut\": \"reponse\", \"texte\": \"Le budget du film Un p'tit truc en plus est de 6 400 000 dollars [2] ou de 6 100 000 € [3].\", \"sources\": [2, 3]}",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EokBCoYBAWkUfRMHE4mbrSiGbnuAWQ4sXLfFNnzdCZMtzEL//5geHqJVQWoOw2VidS17fJmGyVEitntZxuP9czsNZUlgdU6b0bPtoViHrJETgmYffjXHK7GisSVrw1C3bZAcEeSNZjs0s2BsaUP62v6/s1DkSNrR16kba3YhoT9+Qijc5IP/V1q/Ssc="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 1309,
+ "tokens_sortie": 65,
+ "tokens_total": 1374,
+ "latence": 7.594038800045382,
+ "modele": "gemini-3.5-flash-lite"
+}

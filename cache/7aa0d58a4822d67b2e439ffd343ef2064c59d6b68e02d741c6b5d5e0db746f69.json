@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EokBCoYBAWkUfRPHD9pdgrB9ROsutKnlC2rrP13wqTRIeRRzIqY15RA2QHpQsiHqCC4ZzRgtbvS0cHlkADSR/TCs9OZMoTVX6Yv9gr0Bi6HI28I3xozf4TXSQKA+cDCpiBCdjxZJKQQCdAfPuAWk+xyoXOX2bdqaOxmPrvB+hi/ZTHNYqnW+sfoQna0="
+     }
+    },
+    "function": {
+     "arguments": "{\"requete\":\"Sirat Oliver Laxe musique compositeur\"}",
+     "name": "rechercher_documents"
+    },
+    "id": "call_5078490006479603272",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1173,
+ "tokens_sortie": 26,
+ "tokens_total": 1199,
+ "latence": 9.5379267000244,
+ "modele": "gemini-3.5-flash-lite"
+}

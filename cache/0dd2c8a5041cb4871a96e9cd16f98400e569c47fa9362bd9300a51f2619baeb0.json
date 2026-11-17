@@ -1,0 +1,17 @@
+{
+ "texte": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"J'ai retiré tous les films de votre liste à voir (La Haine et Seven).\",\n  \"sources\": []\n}\n```",
+ "message": {
+  "content": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"J'ai retiré tous les films de votre liste à voir (La Haine et Seven).\",\n  \"sources\": []\n}\n```",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EokBCoYBAWkUfRODY8rbx3fY8+REiFbDdEvs0dTWchWH5bFrRN9ioKs9Kx3lI1l7DfQ7GC9Ulz8FypqiilZHhwGWCKZDb4I4ylbD/j1xSk5WxX9Q7eiUGfo0xgxg4VQ7dljX43AfWLCHxDoGhvN4KPrAQqrYJGnX67ADYRkUqEn4DYX7uGKpBzFvNpg="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 1447,
+ "tokens_sortie": 51,
+ "tokens_total": 1498,
+ "latence": 3.4515428000013344,
+ "modele": "gemini-3.5-flash-lite"
+}

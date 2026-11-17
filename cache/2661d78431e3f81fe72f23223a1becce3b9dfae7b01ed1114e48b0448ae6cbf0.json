@@ -1,0 +1,17 @@
+{
+ "texte": "```json\n{\n  \"statut\": \"precision\",\n  \"texte\": \"Plusieurs films s'intitulent Nosferatu : le film original muet de 1922, *Nosferatu le vampire*, a été réalisé par Friedrich Wilhelm Murnau [1]. Il a eu deux remakes notables : *Nosferatu, fantôme de la nuit* en 1979 réalisé par Werner Herzog, et *Nosferatu* en 2024 réalisé par Robert Eggers [2, 4, 5]. Lequel d'entre eux vous intéresse ?\",\n  \"sources\": [1, 2, 4, 5]\n}\n```",
+ "message": {
+  "content": "```json\n{\n  \"statut\": \"precision\",\n  \"texte\": \"Plusieurs films s'intitulent Nosferatu : le film original muet de 1922, *Nosferatu le vampire*, a été réalisé par Friedrich Wilhelm Murnau [1]. Il a eu deux remakes notables : *Nosferatu, fantôme de la nuit* en 1979 réalisé par Werner Herzog, et *Nosferatu* en 2024 réalisé par Robert Eggers [2, 4, 5]. Lequel d'entre eux vous intéresse ?\",\n  \"sources\": [1, 2, 4, 5]\n}\n```",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EokBCoYBAWkUfRMAVBrkDC9bpYcCNHq+IopfYZUcctiJnIsgFw5ZubFD7hufujohRho0NgK3bdKjTu0r6+lLc9wTKwo5Tt7SnbGjvUtD8ZIXl/UmvN+w9NoE/rcXpldBdNFJVRoZGOlEe5XC/QB8o5OYhoaKJX01hW5MMcEPv2TB8rj50bS1SQ12WJc="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 2098,
+ "tokens_sortie": 148,
+ "tokens_total": 2246,
+ "latence": 9.193607199995313,
+ "modele": "gemini-3.5-flash-lite"
+}

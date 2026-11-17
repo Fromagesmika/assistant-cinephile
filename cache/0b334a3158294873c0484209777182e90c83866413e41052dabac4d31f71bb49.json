@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EokBCoYBAWkUfROSqcY3MzLobHpOBU39lyM7DBptuTMqkP5G3XVYUx+Mi/dQAmA38tTRee2CBlpy7gyVzqIfpIWztiSDzTjbOoUMhFL1bkE/9NImtyorVSOsnNmDfdThxybCTvvuwRFtqMUq6bSKS3QHrhvw3/fZqR9zbSjW4Nf7SuUMg6JVYxi3rec="
+     }
+    },
+    "function": {
+     "arguments": "{\"titre\":\"Inception\"}",
+     "name": "rechercher_oeuvre"
+    },
+    "id": "call_3459710149031939358",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1167,
+ "tokens_sortie": 20,
+ "tokens_total": 1187,
+ "latence": 7.276157099986449,
+ "modele": "gemini-3.5-flash-lite"
+}

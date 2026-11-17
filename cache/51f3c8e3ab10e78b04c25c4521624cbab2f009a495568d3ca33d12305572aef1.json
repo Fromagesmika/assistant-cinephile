@@ -1,0 +1,17 @@
+{
+ "texte": "{\n  \"statut\": \"reponse\",\n  \"texte\": \"Le film Un p'tit truc en plus a réalisé 279 635 entrées le premier jour de sa sortie, le 1er mai [2].\",\n  \"sources\": [\n    2\n  ]\n}",
+ "message": {
+  "content": "{\n  \"statut\": \"reponse\",\n  \"texte\": \"Le film Un p'tit truc en plus a réalisé 279 635 entrées le premier jour de sa sortie, le 1er mai [2].\",\n  \"sources\": [\n    2\n  ]\n}",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EokBCoYBAWkUfRPUjUHwqUeRLrWqvmD5k49nqCxpNbmi/xbi46ac9LtfzwnoJnwtoXSjegFxpG1OvocHVie6/VNJ6qBBwfYG4btyQ4zGts0pMY2gawx9lOg4hKV62huPf0Ex7yDDXCx2xubPJz9Sxzfe0XAcI6BxBcZ6uWNmMdkBiH5qz+PpcFoPKXA="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 1445,
+ "tokens_sortie": 68,
+ "tokens_total": 1513,
+ "latence": 2.0288164999801666,
+ "modele": "gemini-3.5-flash-lite"
+}

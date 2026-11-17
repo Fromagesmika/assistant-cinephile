@@ -26,6 +26,12 @@
 {"id": "doc-26", "type": "document", "strate": "populaire", "question": "Combien d'entrées Le Fabuleux Destin d'Amélie Poulain a-t-il réalisées en France ?", "attendu": [["8 636 041"]], "sources": ["Le Fabuleux Destin d'Amélie Poulain"]}
 {"id": "doc-27", "type": "document", "strate": "peu_connu", "question": "Combien d'entrées Le Salaire de la peur de Clouzot a-t-il réalisées en France ?", "attendu": [["6 944 306"]], "sources": ["Le Salaire de la peur"]}
 {"id": "doc-28", "type": "document", "strate": "recent", "question": "Combien d'entrées Un p'tit truc en plus d'Artus a-t-il réalisées le jour de sa sortie ?", "attendu": [["279 635"]], "sources": ["Un p'tit truc en plus"]}
+{"id": "doc-29", "type": "document", "strate": "populaire", "question": "Quel est le slogan de l'affiche française d'Inception ?", "attendu": [["scène du crime"]], "sources": ["Inception · TMDB"]}
+{"id": "doc-30", "type": "document", "strate": "peu_connu", "question": "Quel est le slogan du film Le Septième Sceau d'Ingmar Bergman ?", "attendu": [["défi à la mort"]], "sources": ["Le Septième Sceau · TMDB"]}
+{"id": "doc-31", "type": "document", "strate": "recent", "question": "Quel est le slogan du film Conclave d'Edward Berger ?", "attendu": [["derrière ces murs"]], "sources": ["Conclave (film) · TMDB"]}
+{"id": "doc-32", "type": "document", "strate": "populaire", "question": "Combien de votes Parasite de Bong Joon-ho a-t-il reçus sur IMDb ?", "attendu": [["1 209 613", "1209613"]], "sources": ["Parasite (film, 2019) · IMDb"]}
+{"id": "doc-33", "type": "document", "strate": "peu_connu", "question": "Quelle est la note moyenne du Samouraï de Jean-Pierre Melville sur IMDb ?", "attendu": [["8,0", "8.0", "8/10"]], "sources": ["Le Samouraï · IMDb"]}
+{"id": "doc-34", "type": "document", "strate": "recent", "question": "Quelle note moyenne les utilisateurs d'IMDb donnent-ils à Anora de Sean Baker ?", "attendu": [["7,4", "7.4"]], "sources": ["Anora (film) · IMDb"]}
 {"id": "abs-01", "type": "absent", "question": "Qui a réalisé le film Les Horloges de Valparaíso, sorti en 2019 ?", "termes_absents": ["Horloges de Valparaíso"]}
 {"id": "abs-02", "type": "absent", "question": "Quelle est la durée du film Le Dernier Phare de Kerlouan ?", "termes_absents": ["Dernier Phare de Kerlouan"]}
 {"id": "abs-03", "type": "absent", "question": "Combien de saisons compte la série Brume sur Tromsø ?", "termes_absents": ["Brume sur Tromsø"]}

@@ -1,0 +1,17 @@
+{
+ "texte": "```json\n{\n  \"statut\": \"precision\",\n  \"texte\": \"Souhaitez-vous parler du film original *Nosferatu le vampire* (1922) réalisé par F. W. Murnau [3], du remake *Nosferatu, fantôme de la nuit* (1979) réalisé par Werner Herzog [2], ou du film *Nosferatu* (2024) réalisé par Robert Eggers [4] ?\",\n  \"sources\": [2, 3, 4]\n}\n```",
+ "message": {
+  "content": "```json\n{\n  \"statut\": \"precision\",\n  \"texte\": \"Souhaitez-vous parler du film original *Nosferatu le vampire* (1922) réalisé par F. W. Murnau [3], du remake *Nosferatu, fantôme de la nuit* (1979) réalisé par Werner Herzog [2], ou du film *Nosferatu* (2024) réalisé par Robert Eggers [4] ?\",\n  \"sources\": [2, 3, 4]\n}\n```",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EokBCoYBAWkUfRM2mDDHp9fG0gFLyS0sqKrYHOYRxruEJkd0KNk+rjkeFbMYX6kGe7hodleH97sE1UyMDJx3LY8Hv9WUlr3LOEnAx/1zeKm+0to5aa0gUbqKPxcpFbCoSzcLVJrOwVw6hbaQlWYW2DMZaQesGK66qVr2eWooFFjXpLCWUCmYzODJB5E="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 2340,
+ "tokens_sortie": 119,
+ "tokens_total": 2459,
+ "latence": 4.100147199991625,
+ "modele": "gemini-3.5-flash-lite"
+}

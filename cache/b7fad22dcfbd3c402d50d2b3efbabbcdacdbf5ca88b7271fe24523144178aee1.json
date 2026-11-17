@@ -1,0 +1,17 @@
+{
+ "texte": "```json\n{\n  \"statut\": \"precision\",\n  \"texte\": \"Le film *Inception* (2010) est déjà présent dans votre liste « à voir » [1].\",\n  \"sources\": []\n}\n```",
+ "message": {
+  "content": "```json\n{\n  \"statut\": \"precision\",\n  \"texte\": \"Le film *Inception* (2010) est déjà présent dans votre liste « à voir » [1].\",\n  \"sources\": []\n}\n```",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EokBCoYBAWkUfRMzpsFwdn1Gr5pljES2KAyBZLnpi3EXhzGB11akMCiF+sLnA1d97FaZibeAAiwQdPqkyuSIsPZOUuKXS/Ik8DY/U7noF2x8ZDpULnTlJ7tkX3BK5GGDfFdfgs4wvvHRu7mOVeOMcaQHJTk5ib46muqqE7VHFbCRGLGC2Bk88cjcD+s="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 1667,
+ "tokens_sortie": 55,
+ "tokens_total": 1722,
+ "latence": 8.500720400013961,
+ "modele": "gemini-3.5-flash-lite"
+}

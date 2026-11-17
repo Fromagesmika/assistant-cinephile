@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EokBCoYBAWkUfRM8HB4nLxqE56x9/7Pnw4+2qc3yYDpzBfHFEahrFBfgPe2VQs6Vx2zJkS5xh5lSJIUkTpqcntcKbxV5og/gSzS1f8NaE8VAwOrfw2uu1HJsglyp5ZGq1HT+J++sxHlNMGQI7PyQgclVFFsCoYgwahijFAVFytHi52HdVrdQ/KNWCHQ="
+     }
+    },
+    "function": {
+     "arguments": "{\"requete\":\"Anora Sean Baker note IMDb\"}",
+     "name": "rechercher_documents"
+    },
+    "id": "call_15851107269940346123",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1176,
+ "tokens_sortie": 25,
+ "tokens_total": 1201,
+ "latence": 9.126293900015298,
+ "modele": "gemini-3.5-flash-lite"
+}

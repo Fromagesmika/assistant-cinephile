@@ -1,0 +1,17 @@
+{
+ "texte": "{\"statut\": \"reponse\", \"texte\": \"Le slogan du film Conclave est : \\\"Ce qui se déroule derrière ces murs changera tout.\\\" [2]\", \"sources\": [2]}",
+ "message": {
+  "content": "{\"statut\": \"reponse\", \"texte\": \"Le slogan du film Conclave est : \\\"Ce qui se déroule derrière ces murs changera tout.\\\" [2]\", \"sources\": [2]}",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EokBCoYBAWkUfROS3wpYwc0jwJuZcUBA0SrhHnThtxSAoXJM3PjwUjiCE33TMAZKs7Ar1Bm9mBJSmunZuwRkp7nWwjs8qzV2tY9DwoLgrB8rc5ApXUisjk5STOk/tKoSSMh2hdZ5xwgnUcI2BarKLQ7l9xXTn2yM37oKaTSMWIYm08V5mf1zY0tDbCM="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 1285,
+ "tokens_sortie": 42,
+ "tokens_total": 1327,
+ "latence": 7.932654800009914,
+ "modele": "gemini-3.5-flash-lite"
+}

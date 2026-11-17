@@ -1,0 +1,17 @@
+{
+ "texte": "```json\n{\n  \"statut\": \"abstention\",\n  \"texte\": \"Je ne dispose d'aucune information sur la couleur de la voiture du monteur du film Whiplash.\",\n  \"sources\": []\n}\n```",
+ "message": {
+  "content": "```json\n{\n  \"statut\": \"abstention\",\n  \"texte\": \"Je ne dispose d'aucune information sur la couleur de la voiture du monteur du film Whiplash.\",\n  \"sources\": []\n}\n```",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EokBCoYBAWkUfRNu3iB2Zx8F3Rn4JclJ+LfA6Wzni8UkF83kppNeQK174aHAMvV+fHG/qRG5HXztPfs9SBlYkHMLJ3IlfkBleZflpwUaO1jqSEKMxd0e5B4EFmiJE4U2spJ6Kv5g6p3NR9lEqpORf0EMFwViz29E90/m9+ytZK8q/F2lYSFyfH1fd9g="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 2846,
+ "tokens_sortie": 51,
+ "tokens_total": 2897,
+ "latence": 8.666810399969108,
+ "modele": "gemini-3.5-flash-lite"
+}

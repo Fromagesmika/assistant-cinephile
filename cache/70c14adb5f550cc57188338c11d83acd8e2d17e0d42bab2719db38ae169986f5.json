@@ -1,0 +1,17 @@
+{
+ "texte": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"Le budget du film d'animation Flow (ou *Flow, le chat qui n'avait plus peur de l'eau*) réalisé par Gints Zilbalodis est de 3 700 000 dollars (soit environ 3,5 millions d'euros) [7, 8, 10].\",\n  \"sources\": [7, 8, 10]\n}\n```",
+ "message": {
+  "content": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"Le budget du film d'animation Flow (ou *Flow, le chat qui n'avait plus peur de l'eau*) réalisé par Gints Zilbalodis est de 3 700 000 dollars (soit environ 3,5 millions d'euros) [7, 8, 10].\",\n  \"sources\": [7, 8, 10]\n}\n```",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EokBCoYBAWkUfRPABYZFfLuexbjUoGHf+iUCf1uNNShR0YJqB0gqcHW+JIEj4XLN9noW0WT+HcKTZ/VlJ+FMbvIvfk/0yuRgNzT3NzZd3CfOvJNKvro1OlgQh9UyS/LXJmda81n3LG67Pixq1YQDt5gTLWDKrRscJ/0wCXYgZ6NWXB94va1bOJhJjD0="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 3014,
+ "tokens_sortie": 109,
+ "tokens_total": 3123,
+ "latence": 18.783679800049867,
+ "modele": "gemini-3.5-flash-lite"
+}

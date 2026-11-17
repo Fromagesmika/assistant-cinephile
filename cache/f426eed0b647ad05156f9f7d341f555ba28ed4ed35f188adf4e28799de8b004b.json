@@ -1,0 +1,17 @@
+{
+ "texte": "{\"statut\": \"abstention\", \"texte\": \"Les extraits fournis ne contiennent pas d'informations sur le nombre de votes reçus par le film sur IMDb.\", \"sources\": []}",
+ "message": {
+  "content": "{\"statut\": \"abstention\", \"texte\": \"Les extraits fournis ne contiennent pas d'informations sur le nombre de votes reçus par le film sur IMDb.\", \"sources\": []}",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EokBCoYBAWkUfRMMMnwWa8EQecVX+CHPw0xkII0Evvg7eDWiR+cf2xNPDa1HiAsEGbulSocCmrZ9vaBBhJbjnr5BKa6bMKb62ud0Ku0tRZk2LU+AIp9S+TFNTmJsp+IudQysp0gkB3AXRp6TZOuhjQz3oiKqRl3jIJG5iKN8sIVvoVrqiU1HzyFkIpo="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 1197,
+ "tokens_sortie": 40,
+ "tokens_total": 1237,
+ "latence": 9.93209229997592,
+ "modele": "gemini-3.5-flash-lite"
+}

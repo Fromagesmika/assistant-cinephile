@@ -1,0 +1,17 @@
+{
+ "texte": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"J'ai ajouté Fight Club à votre liste à voir, mais vous avez refusé de retirer Seven, qui reste donc dans votre liste.\",\n  \"sources\": []\n}\n```",
+ "message": {
+  "content": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"J'ai ajouté Fight Club à votre liste à voir, mais vous avez refusé de retirer Seven, qui reste donc dans votre liste.\",\n  \"sources\": []\n}\n```",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EokBCoYBAWkUfRMc83d6PBz9noQBW4Ul1Lh7DDOXJ8iqgMRQuYUriA3ul0/zmdAJ8V4U5TwODwQ4lOXFoZJySi38sIcQAsYj/3VRMvu5iNBe2mg+CQMih7mOTrYZw5hehhxmZa+nKIwE/qOSOEtAYZCdISfRnGVXoBI0HgfD2sAoc7AJSJ80oHH7JxU="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 2667,
+ "tokens_sortie": 58,
+ "tokens_total": 2725,
+ "latence": 5.127369099995121,
+ "modele": "gemini-3.5-flash-lite"
+}

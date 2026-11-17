@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EokBCoYBAWkUfRN0zBYpcK3pIM7oNeH3QrDpAcovTEASr7ewemnbx1QtQmc9i25prPjrqDXBMYKQZvPnExtnBUjnudegYA2ry9mcEE/+mCx02n+bq68kj7sv9u9YOlImrJH1VNe3Pwlewwta16A/6T04CiHeXSoFCrPRCjwKjo45rNEe/8dn1z5J6Ek="
+     }
+    },
+    "function": {
+     "arguments": "{\"requete\":\"Les Horloges de Valparaíso\"}",
+     "name": "rechercher_documents"
+    },
+    "id": "call_3987412240112119942",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1238,
+ "tokens_sortie": 26,
+ "tokens_total": 1264,
+ "latence": 9.953643299988471,
+ "modele": "gemini-3.5-flash-lite"
+}

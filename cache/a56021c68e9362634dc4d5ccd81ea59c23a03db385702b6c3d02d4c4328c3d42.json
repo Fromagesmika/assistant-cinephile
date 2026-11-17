@@ -1,0 +1,17 @@
+{
+ "texte": "{\"statut\": \"precision\", \"texte\": \"Les notes sur IMDb évoluent constamment en temps réel. De plus, je ne peux pas garantir une exactitude absolue des scores récents sans connexion en direct. Pourriez-vous consulter directement le site d'IMDb pour obtenir la note exacte actuelle ?\"}",
+ "message": {
+  "content": "{\"statut\": \"precision\", \"texte\": \"Les notes sur IMDb évoluent constamment en temps réel. De plus, je ne peux pas garantir une exactitude absolue des scores récents sans connexion en direct. Pourriez-vous consulter directement le site d'IMDb pour obtenir la note exacte actuelle ?\"}",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EokBCoYBAWkUfRMx+Qz81vqIgV75S8X9d7cDN0LyCqh91JO3ZMQyjr3ADATQYAX45y73a9BebxqrdJuT3txwf2f+2T2RhEl84N1q/KJLQ/JWQI7ld+wA59gOwjf9cWYDsR8O5Xuve99XxpIOwqSfntr7jQ7Ok5l7NZqkhIPmfOSEs87ZOyYe7+QQl/A="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 229,
+ "tokens_sortie": 63,
+ "tokens_total": 292,
+ "latence": 7.7867041999707,
+ "modele": "gemini-3.5-flash-lite"
+}

@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EokBCoYBAWkUfRNjga3vm1rT/axqcNxBgQSZeDmuN86i69G/rJHjN/E4/V1Rhi6/LCgHs6XDqOCOp3qQDLsuJAX1XfGkXF6c/q+hw9B9F6nDh+EQD9bpj4j9UpXmGwUN+oLK+LSnA+it4np6EcbdER4gXQ/5aiZhno5aOJx3221cfipktgRwcimfTpc="
+     }
+    },
+    "function": {
+     "arguments": "{\"requete\":\"Christopher Nolan chaussures Inception pointure\"}",
+     "name": "rechercher_documents"
+    },
+    "id": "call_11972544240411915592",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1177,
+ "tokens_sortie": 25,
+ "tokens_total": 1202,
+ "latence": 7.72066900000209,
+ "modele": "gemini-3.5-flash-lite"
+}

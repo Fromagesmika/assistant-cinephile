@@ -1,0 +1,17 @@
+{
+ "texte": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"La note moyenne des utilisateurs IMDb pour Le Samouraï de Jean-Pierre Melville est de 8,0/10 [4].\",\n  \"sources\": [4]\n}\n```",
+ "message": {
+  "content": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"La note moyenne des utilisateurs IMDb pour Le Samouraï de Jean-Pierre Melville est de 8,0/10 [4].\",\n  \"sources\": [4]\n}\n```",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EokBCoYBAWkUfRN/F3hwuv3GD8CU30QesaVNEcIFmFILK2Up7LDV3Qe0a+rliWUNV8L5xTkQdS43ySIarom6fIbUpbjw2qGlXAW5UoH5RH7kFTrBLnIoTnBZIqeEQ6le84/3WhFzY/MxqUDJBFJ/unjd3+8x2Pp+fig/Fao8+ykxpOhy0bSDGWuRlx8="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 2172,
+ "tokens_sortie": 61,
+ "tokens_total": 2233,
+ "latence": 9.957467300002463,
+ "modele": "gemini-3.5-flash-lite"
+}

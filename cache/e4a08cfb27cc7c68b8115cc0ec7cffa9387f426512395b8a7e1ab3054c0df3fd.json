@@ -1,0 +1,17 @@
+{
+ "texte": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"Le budget du film Un p'tit truc en plus d'Artus est de 6 400 000 dollars [3].\",\n  \"sources\": [3]\n}\n```",
+ "message": {
+  "content": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"Le budget du film Un p'tit truc en plus d'Artus est de 6 400 000 dollars [3].\",\n  \"sources\": [3]\n}\n```",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EokBCoYBAWkUfROfpdCqN7NVeEVJpOJ2arlG9vpeEHtODFESMH9xg4DuTZDH+GyVTx1yMbAoniv7TUwWrxGjgK2oK3r+SjnM9qx0mHArDcrBMg/E0TEe/ZdrEHCuB73FlePHa2tMWtU1UrURBJlcelsz1wT99wEICfpFUlwY14p0ghfcjhFioZQFa1Q="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 1729,
+ "tokens_sortie": 64,
+ "tokens_total": 1793,
+ "latence": 9.689847000001464,
+ "modele": "gemini-3.5-flash-lite"
+}

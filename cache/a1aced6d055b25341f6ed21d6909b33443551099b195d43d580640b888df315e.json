@@ -1,0 +1,17 @@
+{
+ "texte": "```json\n{\"statut\": \"reponse\", \"texte\": \"J'ai ajouté Fight Club (1999) à votre liste à voir, mais Seven (1995) n'a pas pu être retiré car vous avez refusé cette action.\", \"sources\": []}\n```",
+ "message": {
+  "content": "```json\n{\"statut\": \"reponse\", \"texte\": \"J'ai ajouté Fight Club (1999) à votre liste à voir, mais Seven (1995) n'a pas pu être retiré car vous avez refusé cette action.\", \"sources\": []}\n```",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EokBCoYBAWkUfRMmU+eSmecn4A9E9KfDesKATTWL9dE55SPa8Cv+aBNZQLJkh2O0LnLqsTgWzbwLGtiDNLRUmdOohqj92gg00w1xrjSE40O5ddAzCRsSGCmbz0zNcKgtx/80qLTkJIKElT91Jb/lK5akN0D7Q+VgHT0jhGgTdQKbhh1Xv7m20s7ZCdA="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 2667,
+ "tokens_sortie": 64,
+ "tokens_total": 2731,
+ "latence": 2.9059792999760248,
+ "modele": "gemini-3.5-flash-lite"
+}

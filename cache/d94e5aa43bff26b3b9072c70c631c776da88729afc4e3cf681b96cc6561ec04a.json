@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EokBCoYBAWkUfRPOFW8ybqegL76aTCHf2+E2fa1bQTKI40jmO5FVF8M1zMTJbwYVEbmdc19e2tn+jPVuOXAz/9G10D2GwES08NfYY6t+jYdyxSScImh21lNVCYT3th6WMsE4TK8qFmCjXp2Bmp0IktrHw6PtM3YC2pDrkPRJAiVpILtWXK93TR0mZI8="
+     }
+    },
+    "function": {
+     "arguments": "{\"requete\":\"durée film\"}",
+     "name": "rechercher_documents"
+    },
+    "id": "call_12937541161497646932",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1166,
+ "tokens_sortie": 22,
+ "tokens_total": 1188,
+ "latence": 2.3912577999872155,
+ "modele": "gemini-3.5-flash-lite"
+}

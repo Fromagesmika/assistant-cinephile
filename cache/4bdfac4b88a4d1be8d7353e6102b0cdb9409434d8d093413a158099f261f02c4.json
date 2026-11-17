@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EokBCoYBAWkUfROTKbIsfNK55rk4QGZY1h610XzDUqq+RVA+vGq3cwjID+oj+uqtrBgACwuuIp4qa0SPJuXx2kseWW/jWPD5OVAMUd0oCCVPlIIPiQb4vc3VHF6mqf1o0SxwcfGZCO6+RrCRsuMDgVX2TtnIRKNB4CxLR9S2WG4trG/Om8Q8m+KwxEw="
+     }
+    },
+    "function": {
+     "arguments": "{\"requete\":\"Tom Cross voiture montage Whiplash\"}",
+     "name": "rechercher_documents"
+    },
+    "id": "call_3980934308828063375",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1916,
+ "tokens_sortie": 24,
+ "tokens_total": 1940,
+ "latence": 5.8215962999965996,
+ "modele": "gemini-3.5-flash-lite"
+}

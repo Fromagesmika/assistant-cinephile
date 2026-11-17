@@ -1,0 +1,17 @@
+{
+ "texte": "{\"statut\": \"reponse\", \"texte\": \"Le film Parasite a une durée de 135 minutes selon la fiche TMDB [2], ou de 132 minutes selon la fiche technique [5].\", \"sources\": [2, 5]}",
+ "message": {
+  "content": "{\"statut\": \"reponse\", \"texte\": \"Le film Parasite a une durée de 135 minutes selon la fiche TMDB [2], ou de 132 minutes selon la fiche technique [5].\", \"sources\": [2, 5]}",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EokBCoYBAWkUfRNXoqcDQnm3RHKhg4xlUTokstN/hO+o1XwRt+8uiieez4dnZh4rUT9XqNsmgbM75B4N9crTwkzmJZB6/rkj+QZH/CoS5HExvT71ikV11qUbCjljHq7XU2yhTesQOb1eROkmjV4Uj7rOo2/XC7kNItXqa4II7rwQR6+im43/LlQ7VaI="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 1300,
+ "tokens_sortie": 57,
+ "tokens_total": 1357,
+ "latence": 2.112735300033819,
+ "modele": "gemini-3.5-flash-lite"
+}

@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EokBCoYBAWkUfRMH12GwonhUjBaX4osZ13482ZXim6P/uQ228+om6xWxFXvj5cIv0bosVWtopVUvh641puZUVp9BK4/ykjyCUT1SQ22YRTreXT/p9wEax1wVAmu5m/hHfod2Wm45wUoRlHlfR9rq1tzPeAIq5GNdPKDeefdP5QDxdQAY1io9Po6VYOI="
+     }
+    },
+    "function": {
+     "arguments": "{\"requete\":\"Le Samouraï Jean-Pierre Melville note IMDb\"}",
+     "name": "rechercher_documents"
+    },
+    "id": "call_17489187330776291645",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1174,
+ "tokens_sortie": 28,
+ "tokens_total": 1202,
+ "latence": 1.6740882999729365,
+ "modele": "gemini-3.5-flash-lite"
+}

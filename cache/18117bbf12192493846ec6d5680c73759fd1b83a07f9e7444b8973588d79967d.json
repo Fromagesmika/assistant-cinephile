@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EokBCoYBAWkUfRMzat7Fho5KM+WUxVYHTWMrqO5uq8i3kulOgJaqTevXD9oN9M13Fn5W/fGbnj1v7i207ogZ//4nfdM/dGA2iFIdVrbq5Tlam1H3L8DwY+fefDiOj6c6+AMR0CQr8PVxhtHQPdmsHAv45shG5jW0seT8C9LaMCJFp3hoaXchtdZnds8="
+     }
+    },
+    "function": {
+     "arguments": "{\"requete\":\"qui a réalisé Nosferatu\"}",
+     "name": "rechercher_documents"
+    },
+    "id": "call_6498063710321089057",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1164,
+ "tokens_sortie": 24,
+ "tokens_total": 1188,
+ "latence": 1.5237157000228763,
+ "modele": "gemini-3.5-flash-lite"
+}

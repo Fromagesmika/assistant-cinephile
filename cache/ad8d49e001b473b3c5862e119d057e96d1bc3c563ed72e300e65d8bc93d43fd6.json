@@ -1,0 +1,17 @@
+{
+ "texte": "{\"statut\": \"reponse\", \"texte\": \"La musique du film Sirāt est composée par Kangding Ray [2].\", \"sources\": [2]}",
+ "message": {
+  "content": "{\"statut\": \"reponse\", \"texte\": \"La musique du film Sirāt est composée par Kangding Ray [2].\", \"sources\": [2]}",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EokBCoYBAWkUfRORQ3r/KXdVYbw252GnEGgWGeI0hjVY/ZtF84lWwi2R3grVqms+QB2gCFrPB/pk66Q5PCZdVM9rbbg+tOHNw+MiMElfYcyvy/m7LWFGD8LEuwos0CBX7J7sARv+/QEtMCbeLVU5BHK9OroWq39LuV5fmgya813AkYWSI5+a34QzR0w="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 1251,
+ "tokens_sortie": 34,
+ "tokens_total": 1285,
+ "latence": 7.000126900034957,
+ "modele": "gemini-3.5-flash-lite"
+}

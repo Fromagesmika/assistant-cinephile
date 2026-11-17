@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EokBCoYBAWkUfRPqXVino6GHY2cD7dww+WggV47XQqArpkRTgqzIBZvGiSrqvzTyTr8+Awqrd1nXLeZ33IpjZQOJMuzefJWN0qSDwCzc6kjjhgffmgpeCuBkRur0SvCuJhC9pKFO94FAixJ9xk+KA4Dkl/KIakfTfMjdksxvjNXjV8uyUsDHT1ipyoo="
+     }
+    },
+    "function": {
+     "arguments": "{\"requete\":\"Le Dîner de cons footballeur Juste Leblanc prénom inspiré\"}",
+     "name": "rechercher_documents"
+    },
+    "id": "call_15722309391119392918",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1180,
+ "tokens_sortie": 34,
+ "tokens_total": 1214,
+ "latence": 6.714465799974278,
+ "modele": "gemini-3.5-flash-lite"
+}

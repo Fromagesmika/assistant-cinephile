@@ -1,0 +1,34 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EokBCoYBAWkUfRMHE66Vk9R3eJfeTgBkkFkFZMY4TfERDN1b8WHJKQsYhApum4z/ld5MmxNdIHdtuavTo3eNM7wqfzRqqJfAw/kaen3PFOYRQXFMcCCvhZeYKM9xufo7+WSp/6LC67OKZmi1Wi65PdGZGUhMAznfr6gwGAvmtP2Bft2AF32x7Yz2zLA="
+     }
+    },
+    "function": {
+     "arguments": "{\"titre\":\"Inception\"}",
+     "name": "rechercher_oeuvre"
+    },
+    "id": "call_15205006508743689775",
+    "type": "function"
+   },
+   {
+    "function": {
+     "arguments": "{\"titre\":\"Interstellar\"}",
+     "name": "rechercher_oeuvre"
+    },
+    "id": "call_15205006508743690512",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1184,
+ "tokens_sortie": 40,
+ "tokens_total": 1224,
+ "latence": 3.1360044999746606,
+ "modele": "gemini-3.5-flash-lite"
+}

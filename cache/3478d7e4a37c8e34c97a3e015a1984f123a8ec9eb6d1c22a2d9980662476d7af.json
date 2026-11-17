@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EokBCoYBAWkUfRM9QNl0CHf6wZ0qRyYG4SSpfAfcCHWnW2VAzDtYovYk/3Xrp9XucM9TdY395X/2xkQp+lqH42zy0xwob+rj8Voz6C7JpnFKl3NJ4YUtfLbxi45ziWlgjTZzLKqYS/kyv8JDG9x9ZY8nIo0GMqzZ3oKKGdE5KnLR399N0AAT+TjEmYA="
+     }
+    },
+    "function": {
+     "arguments": "{\"requete\":\"date action Cleo de 5 a 7 Agnes Varda\"}",
+     "name": "rechercher_documents"
+    },
+    "id": "call_15082112472037922678",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1183,
+ "tokens_sortie": 31,
+ "tokens_total": 1214,
+ "latence": 5.827653199958149,
+ "modele": "gemini-3.5-flash-lite"
+}

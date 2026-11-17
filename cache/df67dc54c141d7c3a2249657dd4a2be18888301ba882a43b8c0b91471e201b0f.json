@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EokBCoYBAWkUfRPbHJDxdxvq2vjcEpq/Fyob0qRqnB34KuhgXXo9gM1rUBO4jH+PFaHw/mecbOkHCJ0tkBNh8ZE0/6cXgM6mFZ7N3vAIhn7ZvTmbs8vuldiPguNS1oZJNwvv9b8Q5jJuFecsnA3PCkrvGFXCM2zsHppWM1eicGamIpXXgz87weYoM/0="
+     }
+    },
+    "function": {
+     "arguments": "{\"requete\":\"suite date sortie\"}",
+     "name": "rechercher_documents"
+    },
+    "id": "call_14448993109460810169",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1165,
+ "tokens_sortie": 21,
+ "tokens_total": 1186,
+ "latence": 8.277080399973784,
+ "modele": "gemini-3.5-flash-lite"
+}

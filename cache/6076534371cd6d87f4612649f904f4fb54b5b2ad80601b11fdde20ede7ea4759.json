@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EokBCoYBAWkUfROllRElwnmVc0etUw2RMk/OIOsESEoQQC3DF57LH53M4U8tk6lvFrp7HEvCFBERz+/+a4AofJBfsZxaHOXJeF1a0Xmohvav2jNgwVJ3ffIP7c9jMjcJ6g65YdD0JfRLJDaq+BJutVB03CM8OvbdwuYiXq+yffjH5hRjeHMbk5wpBz4="
+     }
+    },
+    "function": {
+     "arguments": "{\"requete\":\"Inception affiche française slogan\"}",
+     "name": "rechercher_documents"
+    },
+    "id": "call_7193455319580723053",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 1171,
+ "tokens_sortie": 23,
+ "tokens_total": 1194,
+ "latence": 1.9310129000223242,
+ "modele": "gemini-3.5-flash-lite"
+}

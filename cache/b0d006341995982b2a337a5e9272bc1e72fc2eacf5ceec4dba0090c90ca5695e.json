@@ -1,0 +1,17 @@
+{
+ "texte": "{\"statut\": \"reponse\", \"texte\": \"Le slogan principal du film Conclave réalisé par Edward Berger est : \\\"Le secret le plus gardé au monde.\\\" Il met en avant le suspense et les intrigues autour de l'élection du nouveau pape.\"}",
+ "message": {
+  "content": "{\"statut\": \"reponse\", \"texte\": \"Le slogan principal du film Conclave réalisé par Edward Berger est : \\\"Le secret le plus gardé au monde.\\\" Il met en avant le suspense et les intrigues autour de l'élection du nouveau pape.\"}",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EokBCoYBAWkUfROBQ4fNLCpSW2Clf1KDIvDp35FwmmdS7aR0Ek/YjSq9Q2Ip54rZfdA1atZDzuR6ZQAlZfv0cNxWdSjrHwzdXW29ZOoUmyOlkKdE6PFjlZr06AWIrW8EpoS3E7hOgJYV5pKcZ4VYOojB/vkEa6td8pdRF8Zmq94e4Kn/430XJbJnAug="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 223,
+ "tokens_sortie": 56,
+ "tokens_total": 279,
+ "latence": 8.797595500014722,
+ "modele": "gemini-3.5-flash-lite"
+}

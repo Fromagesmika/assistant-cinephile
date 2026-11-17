@@ -1,0 +1,17 @@
+{
+ "texte": "{\"statut\": \"reponse\", \"texte\": \"La musique du film Le Samoura\\u00ef a \\u00été compos\\u00e9e par Fran\\u00e7ois de Roubaix [2].\", \"sources\": [2]}",
+ "message": {
+  "content": "{\"statut\": \"reponse\", \"texte\": \"La musique du film Le Samoura\\u00ef a \\u00été compos\\u00e9e par Fran\\u00e7ois de Roubaix [2].\", \"sources\": [2]}",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EokBCoYBAWkUfRNNTUXL13RK+MXFxvrBGJ9RPT4epgObvrTJeUJOHCelEMQnhxPdorSpfR4V4YE6ErCN2U3uXMQFObPTx2QlSE0ygSU63usXbZube/N7FVqSCNDPI6jWHi5pc/uVs5pFTJQd/myEqGVs0Xjt7did/4cpZ2RFabkf9AMnoBRnvR8fhgo="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 1192,
+ "tokens_sortie": 60,
+ "tokens_total": 1252,
+ "latence": 3.103731199982576,
+ "modele": "gemini-3.5-flash-lite"
+}

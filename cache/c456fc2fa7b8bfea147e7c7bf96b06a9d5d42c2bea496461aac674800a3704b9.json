@@ -1,0 +1,17 @@
+{
+ "texte": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"Le film Mon oncle de Jacques Tati a reçu l'Oscar du meilleur film en langue étrangère en 1959.\",\n  \"sources\": [5]\n}\n```",
+ "message": {
+  "content": "```json\n{\n  \"statut\": \"reponse\",\n  \"texte\": \"Le film Mon oncle de Jacques Tati a reçu l'Oscar du meilleur film en langue étrangère en 1959.\",\n  \"sources\": [5]\n}\n```",
+  "extra_content": {
+   "google": {
+    "thought_signature": "EokBCoYBAWkUfRNH/slI0n0c6E4yZrfytCsIbtEnR58Eaq7pNIN+0AKzzIt01V4ykfwFbL//XG+vIX96/v/+22HzMnhHYfhktl66WdzKgqojWRJF3xvPz9e8xO3NArpyBZJqZAQkrUHyVW9PXkVXoBkBD5/VvbkcDYLMkoTDDLJApLX0G8bQE8V2wP0="
+   }
+  },
+  "role": "assistant"
+ },
+ "tokens_entree": 2029,
+ "tokens_sortie": 60,
+ "tokens_total": 2089,
+ "latence": 10.579298299970105,
+ "modele": "gemini-3.5-flash-lite"
+}

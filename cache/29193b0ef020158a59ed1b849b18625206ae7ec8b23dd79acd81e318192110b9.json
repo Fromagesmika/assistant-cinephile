@@ -1,0 +1,26 @@
+{
+ "texte": "",
+ "message": {
+  "role": "assistant",
+  "tool_calls": [
+   {
+    "extra_content": {
+     "google": {
+      "thought_signature": "EokBCoYBAWkUfROizNqseQqK9oFKRg4OFX3ocJ6tlB+OSlWpxBIEKQ5e2T78erbxyC+UXlEAxPsEW6VqgdqIcWgUYTG/ty1OlclFq8PiOvB4Oa9lq+C2O/nVSu51BrBBgDaMdfHIx+lrhtuj0j4nFmdCsf+y29zSzV420lhhnb1c5L0J8RM78pk99FM="
+     }
+    },
+    "function": {
+     "arguments": "{\"requete\":\"\\\"Fabuleux Destin d'Amélie Poulain\\\" studio tournage allemagne ville\"}",
+     "name": "rechercher_documents"
+    },
+    "id": "call_17749475301461645494",
+    "type": "function"
+   }
+  ]
+ },
+ "tokens_entree": 2429,
+ "tokens_sortie": 36,
+ "tokens_total": 2465,
+ "latence": 7.45075929997256,
+ "modele": "gemini-3.5-flash-lite"
+}
