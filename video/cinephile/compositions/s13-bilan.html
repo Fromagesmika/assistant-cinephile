@@ -11,7 +11,7 @@
     .s13-ligne.entete div { font-size: 28px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--violet-clair); }
     .s13-niveau { font-size: 36px; font-weight: 700; }
     .s13-niveau small { display: block; font-size: 28px; font-weight: 400; color: var(--encre-douce); margin-top: 4px; }
-    .s13-v { font-size: 64px; font-weight: 900; letter-spacing: -0.03em; opacity: 0; }
+    .s13-v { font-size: 64px; font-weight: 900; letter-spacing: -0.03em; opacity: 0; font-variant-numeric: tabular-nums; }
     .s13-v.fort { color: var(--violet-clair); }
     .s13-v.faible { color: var(--orange); }
   </style>
@@ -19,30 +19,43 @@
     <div id="s13-tete"><div class="etq">Sur les mêmes 57 tests · 3 sources</div><div class="titre">Le bilan</div></div>
     <div id="s13-table">
       <div class="s13-ligne entete"><div>Niveau</div><div>Exactitude</div><div>Recherche · Recall@5</div><div>Tokens / requête</div></div>
-      <div class="s13-ligne"><div class="s13-niveau">0 · LLM seul</div><div id="s13-e0" class="s13-v faible">47 %</div><div id="s13-r0" class="s13-v">—</div><div id="s13-t0" class="s13-v">282</div></div>
-      <div class="s13-ligne"><div class="s13-niveau">1 · RAG</div><div id="s13-e1" class="s13-v fort">82 %</div><div id="s13-r1" class="s13-v">88 %</div><div id="s13-t1" class="s13-v">1 214</div></div>
-      <div class="s13-ligne"><div class="s13-niveau">2 · Agent<small>sait agir sur la liste</small></div><div id="s13-e2" class="s13-v">88 %</div><div id="s13-r2" class="s13-v faible">71 %</div><div id="s13-t2" class="s13-v faible">4 771</div></div>
-      <div class="s13-ligne"><div class="s13-niveau">3 · Agent + RAG avancé</div><div id="s13-e3" class="s13-v fort">94 %</div><div id="s13-r3" class="s13-v fort">88 %</div><div id="s13-t3" class="s13-v">4 393</div></div>
+      <div class="s13-ligne"><div class="s13-niveau">0 · LLM seul</div><div id="s13-e0" class="s13-v faible" data-cible="47 %">47 %</div><div id="s13-r0" class="s13-v" data-cible="—">—</div><div id="s13-t0" class="s13-v" data-cible="282">282</div></div>
+      <div class="s13-ligne"><div class="s13-niveau">1 · RAG</div><div id="s13-e1" class="s13-v fort" data-cible="82 %">82 %</div><div id="s13-r1" class="s13-v" data-cible="88 %">88 %</div><div id="s13-t1" class="s13-v" data-cible="1 214">1 214</div></div>
+      <div class="s13-ligne"><div class="s13-niveau">2 · Agent<small>sait agir sur la liste</small></div><div id="s13-e2" class="s13-v" data-cible="88 %">88 %</div><div id="s13-r2" class="s13-v faible" data-cible="71 %">71 %</div><div id="s13-t2" class="s13-v faible" data-cible="4 771">4 771</div></div>
+      <div class="s13-ligne"><div class="s13-niveau">3 · Agent + RAG avancé</div><div id="s13-e3" class="s13-v fort" data-cible="94 %">94 %</div><div id="s13-r3" class="s13-v fort" data-cible="88 %">88 %</div><div id="s13-t3" class="s13-v" data-cible="4 393">4 393</div></div>
     </div>
   </div>
   <script>
     // Chaque chiffre apparaît quand la voix le prononce (valeurs : results/tableau.md).
-    const T = { tete: 0.1, table: 0.6, e0: 3.5, e1: 4.3, autresE: 5.2, tokens: 7.4, r2: 9.5, r3: 12.1, autresR: 13.0, e3: 14.0, sortie: 18.3 };
+    const T = { tete: 0.1, table: 0.6, e0: 3.5, e1: 4.3, e2: 5.3, tokens: 7.4, r1: 8.9, r2: 10.0, r3: 12.6, e3: 14.0, sortie: 18.3 };
     const tl = gsap.timeline({ paused: true });
     tl.fromTo("#s13-tete", { opacity: 0, filter: "blur(8px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.25 }, T.tete);
     tl.fromTo("#s13-table", { opacity: 0, y: 60 }, { opacity: 1, y: 0, duration: 0.9, ease: "expo.out" }, T.table);
     tl.fromTo("#s13-table .s13-ligne", { opacity: 0, x: -40 }, { opacity: 1, x: 0, duration: 0.5, ease: "expo.out", stagger: 0.1 }, T.table + 0.2);
-    const pose = (sel, t) => tl.fromTo(sel, { opacity: 0, scale: 1.25, filter: "blur(6px)" },
-      { opacity: 1, scale: 1, filter: "blur(0px)", duration: 0.45, ease: "expo.out", transformOrigin: "left center" }, t);
-    pose("#s13-e0", T.e0);
-    pose("#s13-e1", T.e1);
-    pose("#s13-e2", T.autresE);
-    pose("#s13-e3", T.e3);
-    pose(["#s13-t0", "#s13-t1"], T.tokens);
-    pose(["#s13-t2", "#s13-t3"], T.tokens + 0.8);
-    pose(["#s13-r0", "#s13-r1"], T.r2 - 0.6);
-    pose("#s13-r2", T.r2);
-    pose("#s13-r3", T.r3);
+    // Un chiffre défile de 0 à sa valeur (0,8 s) quand la voix le prononce, puis ne bouge plus.
+    const ecrire = (el, v, cible) => {
+      const pourcent = cible.endsWith("%");
+      const n = Math.round(v).toLocaleString("fr-FR").replace(/\u202f|\u00a0/g, " ");
+      el.textContent = pourcent ? n + " %" : n;
+    };
+    const roule = (id, t) => {
+      const el = document.querySelector(id);
+      const cible = el.dataset.cible;
+      tl.fromTo(el, { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.3, ease: "expo.out" }, t);
+      if (cible === "—") return;
+      const fin = parseFloat(cible.replace(/[^0-9]/g, ""));
+      const compteur = { v: 0 };
+      tl.fromTo(compteur, { v: 0 }, { v: fin, duration: 0.8, ease: "expo.out", onUpdate: () => ecrire(el, compteur.v, cible) }, t);
+    };
+    roule("#s13-e0", T.e0);
+    roule("#s13-e1", T.e1);
+    roule("#s13-e2", T.e2);
+    ["#s13-t0", "#s13-t1", "#s13-t2", "#s13-t3"].forEach((id, i) => roule(id, T.tokens + i * 0.12));
+    roule("#s13-r0", T.r1);
+    roule("#s13-r1", T.r1);
+    roule("#s13-r2", T.r2);
+    roule("#s13-r3", T.r3);
+    roule("#s13-e3", T.e3);
     tl.to(["#s13-tete", "#s13-table"], { opacity: 0, filter: "blur(10px)", duration: 0.35, ease: "power3.in" }, T.sortie);
     window.__timelines["s13"] = tl;
   </script>
