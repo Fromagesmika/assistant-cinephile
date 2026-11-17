@@ -20,7 +20,7 @@
   <script>
     // Bouton « Accepter » : centre à (553, 645) dans le cadre ; « Refuser » à (825, 645).
     const ACCEPTER = { x: 548, y: 640 }, REFUSER = { x: 820, y: 640 };
-    const T = { tete: 0.1, carte: 0.5, clic1: 4.6, titane: 5.4, clic2: 7.2, refuse: 9.2, sortie: 11.4 };
+    const T = { tete: 0.1, carte: 0.4, clic1: 4.4, titane: 5.2, refuse: 5.7, clic2: 9.5, sortie: 10.5 };
     const tl = gsap.timeline({ paused: true });
     tl.fromTo("#s11-tete", { opacity: 0, filter: "blur(8px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.25 }, T.tete);
     tl.fromTo("#s11-grave", { opacity: 0, scale: 1.06 }, { opacity: 1, scale: 1, duration: 0.9, ease: "expo.out" }, T.carte);
@@ -32,11 +32,13 @@
     // Seconde confirmation : Titane remplace Grave sur la même scène.
     tl.to("#s11-grave", { opacity: 0, filter: "blur(8px)", duration: 0.18 }, T.titane - 0.2);
     tl.fromTo("#s11-titane", { opacity: 0, filter: "blur(8px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.2 }, T.titane);
+    // L'autre choix possible, pendant que la voix l'explique…
+    tl.to("#s11-curseur", { x: REFUSER.x, y: REFUSER.y, duration: 0.7, ease: "power2.inOut" }, T.refuse - 0.3);
+    tl.fromTo("#s11-note", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.5, ease: "expo.out" }, T.refuse + 0.3);
+    // … puis le curseur revient et accepte aussi Titane.
+    tl.to("#s11-curseur", { x: ACCEPTER.x, y: ACCEPTER.y, duration: 0.8, ease: "power2.inOut" }, T.clic2 - 0.9);
     tl.to("#s11-curseur", { scale: 0.82, duration: 0.08, yoyo: true, repeat: 1 }, T.clic2);
     tl.fromTo("#s11-flash", { opacity: 0 }, { opacity: 0.35, duration: 0.06, yoyo: true, repeat: 1, immediateRender: false }, T.clic2);
-    // Puis il montre l'autre choix possible.
-    tl.to("#s11-curseur", { x: REFUSER.x, y: REFUSER.y, duration: 0.8, ease: "power2.inOut" }, T.refuse - 0.6);
-    tl.fromTo("#s11-note", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.5, ease: "expo.out" }, T.refuse);
     tl.to(["#s11-tete", "#s11-titane", "#s11-note", "#s11-curseur"], { opacity: 0, filter: "blur(10px)", duration: 0.35, ease: "power3.in" }, T.sortie);
     window.__timelines["s11"] = tl;
   </script>

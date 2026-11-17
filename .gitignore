@@ -30,3 +30,4 @@ video/captures/*.png
 video/cinephile/.hyperframes/
 video/check.json
 video/cinephile/.thumbnails/
+video/render.log

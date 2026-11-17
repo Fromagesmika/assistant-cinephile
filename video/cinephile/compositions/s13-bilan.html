@@ -5,7 +5,7 @@
     #s13-tete .titre { margin-top: 10px; }
     #s13-table { position: absolute; left: 170px; top: 300px; width: 1580px; border-radius: 24px; overflow: hidden;
       background: var(--carte); border: 1px solid var(--bord); box-shadow: 0 30px 80px rgba(10, 5, 25, 0.55); opacity: 0; }
-    .s13-ligne { display: grid; grid-template-columns: 520px 340px 380px 340px; align-items: center; height: 136px;
+    .s13-ligne { display: grid; grid-template-columns: 470px 290px 410px 360px; align-items: center; height: 136px;
       border-top: 1px solid rgba(255, 255, 255, 0.08); padding-left: 48px; }
     .s13-ligne.entete { height: 96px; border-top: none; background: rgba(139, 92, 246, 0.16); }
     .s13-ligne.entete div { font-size: 28px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--violet-clair); }
@@ -27,7 +27,7 @@
   </div>
   <script>
     // Chaque chiffre apparaît quand la voix le prononce (valeurs : results/tableau.md).
-    const T = { tete: 0.1, table: 0.6, e0: 2.4, e1: 4.2, autresE: 5.4, tokens: 8.0, r2: 11.2, r3: 14.2, autresR: 15.4, sortie: 20.3 };
+    const T = { tete: 0.1, table: 0.6, e0: 3.6, e1: 4.4, autresE: 5.3, tokens: 7.8, r2: 9.9, r3: 12.5, autresR: 13.4, sortie: 16.4 };
     const tl = gsap.timeline({ paused: true });
     tl.fromTo("#s13-tete", { opacity: 0, filter: "blur(8px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.25 }, T.tete);
     tl.fromTo("#s13-table", { opacity: 0, y: 60 }, { opacity: 1, y: 0, duration: 0.9, ease: "expo.out" }, T.table);

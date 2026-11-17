@@ -31,7 +31,7 @@
   <script>
     // Les affiches partent du haut de la scène précédente et se posent dans leur place.
     const PLACE1 = { x: 1124, y: 370 }, PLACE2 = { x: 1436, y: 370 };
-    const T = { panneau: 0.0, affiches: 0.5, bilan: 4.0, sortie: 10.4 };
+    const T = { panneau: 0.0, affiches: 0.6, bilan: 3.1, sortie: 9.4 };
     const tl = gsap.timeline({ paused: true });
     tl.fromTo("#s12-panneau", { opacity: 0, x: 60 }, { opacity: 1, x: 0, duration: 0.6, ease: "expo.out" }, T.panneau);
     // Taille fixe, mise à l'échelle par transform (150 px de large au départ, comme dans la scène 10).

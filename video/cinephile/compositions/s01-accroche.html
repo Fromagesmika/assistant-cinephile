@@ -24,10 +24,10 @@
   </div>
   <script>
     // Repères de la voix (secondes dans la scène), à recaler sur voix.mp3.
-    const T = { affiche: 0, question: 0.7, versions: 5.6, sortie: 9.2 };
+    const T = { affiche: 0, question: 1.1, versions: 6.2, sortie: 9.4 };
     const tl = gsap.timeline({ paused: true });
     // L'image 0 sert de vignette : l'affiche y est déjà visible, seulement un peu floue.
-    tl.fromTo("#s01-affiche", { opacity: 1, scale: 1.06, filter: "blur(5px)" },
+    tl.fromTo("#s01-affiche", { opacity: 1, scale: 1.04, filter: "blur(2px)" },
       { opacity: 1, scale: 1, filter: "blur(0px)", duration: 1.2, ease: "expo.out" }, T.affiche);
     tl.fromTo("#s01-etq", { opacity: 0, filter: "blur(6px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.25 }, T.question - 0.3);
     tl.fromTo("#s01-curseur", { opacity: 0 }, { opacity: 1, duration: 0.05 }, T.question);

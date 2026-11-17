@@ -24,7 +24,7 @@
     <div id="s14-suite">Prochaine étape : <span>confronter les sources</span></div>
   </div>
   <script>
-    const T = { tete: 0.1, affiche: 0.4, wiki: 1.6, tmdb: 2.6, choix: 4.6, suite: 8.0, sortie: 10.4 };
+    const T = { tete: 0.1, affiche: 0.6, wiki: 2.3, tmdb: 3.2, choix: 5.5, suite: 7.4, sortie: 10.4 };
     const tl = gsap.timeline({ paused: true });
     tl.fromTo("#s14-tete", { opacity: 0, filter: "blur(8px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.25 }, T.tete);
     tl.fromTo("#s14-affiche", { opacity: 0, scale: 1.06 }, { opacity: 1, scale: 1, duration: 0.8, ease: "expo.out" }, T.affiche);

@@ -19,7 +19,7 @@
     <div id="s09-dit">Il ne trouve rien… et il le dit.</div>
   </div>
   <script>
-    const T = { tete: 0.2, question: 3.4, faux: 4.8, reponse: 7.0, dit: 9.6, sortie: 12.3 };
+    const T = { tete: 0.2, question: 3.1, faux: 4.5, reponse: 6.4, dit: 8.0, sortie: 10.4 };
     const tl = gsap.timeline({ paused: true });
     tl.fromTo("#s09-tete .etq", { opacity: 0, filter: "blur(6px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.25 }, T.tete);
     tl.fromTo("#s09-tete .titre", { opacity: 0, filter: "blur(8px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.3 }, T.question - 0.6);
