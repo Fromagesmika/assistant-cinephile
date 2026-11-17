@@ -56,6 +56,11 @@
       tl.fromTo(COPIES[i], { opacity: 0, x: 0, y: 0, scale: 1 }, { opacity: 1, duration: 0.12 }, t);
       tl.to(COPIES[i], { x: CIBLES[i].x, y: CIBLES[i].y, scale: ECHELLE, duration: 0.75, ease: "power3.inOut" }, t + 0.05);
       tl.to(TETES[i], { borderStyle: "solid", borderColor: "rgba(196,181,253,0.9)", color: "rgba(0,0,0,0)", duration: 0.1 }, t + 0.7);
+      // Le pop : la copie gonfle un instant puis s'efface ; l'emplacement s'allume et affiche « question reçue ».
+      tl.to(COPIES[i], { scale: ECHELLE * 1.18, duration: 0.1, ease: "power2.out" }, t + 0.85);
+      tl.to(COPIES[i], { scale: ECHELLE * 0.6, opacity: 0, duration: 0.16, ease: "power3.in" }, t + 0.95);
+      tl.to(TETES[i], { backgroundColor: "rgba(139,92,246,0.35)", color: "#f4f1fb", duration: 0.12 }, t + 0.98);
+      tl.to(TETES[i], { backgroundColor: "rgba(139,92,246,0)", duration: 0.4 }, t + 1.15);
     });
     // La colonne du niveau 0 devient le monde de la scène suivante.
     tl.to(["#s03-c1", "#s03-c2", "#s03-c3", "#s03-q", "#s03-p0", "#s03-p1", "#s03-p2", "#s03-p3"], { opacity: 0, duration: 0.3, ease: "power3.in" }, T.zoom);
