@@ -4,9 +4,9 @@
     #s11-tete { position: absolute; left: 170px; top: 96px; }
     #s11-tete .titre { margin-top: 10px; }
     .s11-carte { position: absolute; left: 170px; top: 360px; width: 1580px; opacity: 0; }
-    #s11-flash { position: absolute; left: 470px; top: 610px; width: 180px; height: 60px; border-radius: 12px; background: #fff; opacity: 0; }
+    #s11-flash { position: absolute; left: 456px; top: 627px; width: 228px; height: 67px; border-radius: 12px; background: #fff; opacity: 0; }
     #s11-curseur { position: absolute; left: 0; top: 0; width: 56px; height: 56px; opacity: 0; transform-origin: 6px 4px; }
-    #s11-note { position: absolute; left: 860px; top: 780px; font-size: 36px; color: var(--encre-douce); opacity: 0; }
+    #s11-note { position: absolute; left: 760px; top: 800px; font-size: 36px; color: var(--encre-douce); opacity: 0; }
     #s11-note b { color: var(--encre); }
   </style>
   <div id="root" class="sc" data-composition-id="s11" data-width="1920" data-height="1080">
@@ -14,12 +14,12 @@
     <img id="s11-grave" class="s11-carte ecran" src="assets/ecrans/c30_confirmation_grave.png" alt="Confirmation : ajouter Grave" />
     <img id="s11-titane" class="s11-carte ecran" src="assets/ecrans/c31_confirmation_titane.png" alt="Confirmation : ajouter Titane" />
     <div id="s11-flash"></div>
-    <div id="s11-note"><b>Refuser</b> : la liste ne bouge pas.</div>
+    <div id="s11-note"><b>Refuser</b>, et la liste ne bouge pas</div>
     <svg id="s11-curseur" viewBox="0 0 24 24"><path d="M3 2 L3 19 L8 14.5 L11.5 22 L14.5 20.6 L11 13.2 L18 13.2 Z" fill="#fff" stroke="#111" stroke-width="1.4" stroke-linejoin="round" /></svg>
   </div>
   <script>
     // Bouton « Accepter » : centre à (553, 645) dans le cadre ; « Refuser » à (825, 645).
-    const ACCEPTER = { x: 548, y: 640 }, REFUSER = { x: 820, y: 640 };
+    const ACCEPTER = { x: 562, y: 654 }, REFUSER = { x: 815, y: 654 };
     const T = { tete: 0.1, carte: 0.4, clic1: 4.4, titane: 5.2, refuse: 5.7, clic2: 9.5, sortie: 10.5 };
     const tl = gsap.timeline({ paused: true });
     tl.fromTo("#s11-tete", { opacity: 0, filter: "blur(8px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.25 }, T.tete);

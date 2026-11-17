@@ -22,6 +22,13 @@ async function nouvellePage() {
   await page.setViewport({ width: 1920, height: 1080, deviceScaleFactor: 1.5 });
   await page.goto(URL, { waitUntil: "networkidle2" });
   await attendreTexte(page, "Une question de cinéma");
+  // Pour la vidéo seulement : plus d'air autour du texte des cartes (l'application ne change pas).
+  await page.addStyleTag({ content: `
+    [data-testid="stChatMessage"] { padding: 2.2rem 2.6rem !important; }
+    [data-testid="stTabs"] { padding: 1.6rem 2rem 1.4rem !important; background: rgba(22, 18, 38, 0.94); border-radius: 18px; }
+    .st-key-confirmation { padding: 2rem 2.4rem !important; }
+    [data-testid="stBottom"] { display: none !important; }
+  ` });
   await pause(1500);
   return page;
 }
@@ -52,7 +59,19 @@ async function photoElement(page, selecteur, nom) {
   await page.waitForFunction(() => !document.querySelector('[data-stale="true"]'), { timeout: 60000 });
   await pause(1500);
   const elements = await page.$$(selecteur);
-  await elements[elements.length - 1].screenshot({ path: path.join(ici, `${nom}.png`) });
+  const element = elements[elements.length - 1];
+  // Une carte plus haute que l'écran serait recouverte par les éléments fixes de la page :
+  // on agrandit la fenêtre le temps de la photo pour qu'elle tienne entière.
+  const boite = await element.boundingBox();
+  const grande = boite && boite.height > 900;
+  if (grande) {
+    await page.setViewport({ width: 1920, height: Math.ceil(boite.height) + 600, deviceScaleFactor: 1.5 });
+    await pause(1500);
+    await element.evaluate((el) => el.scrollIntoView({ block: "center" }));
+    await pause(800);
+  }
+  await element.screenshot({ path: path.join(ici, `${nom}.png`) });
+  if (grande) await page.setViewport({ width: 1920, height: 1080, deviceScaleFactor: 1.5 });
   console.log("capturé", nom);
 }
 

@@ -88,3 +88,9 @@ chaque page sont conservées dans le fichier.
 
 Les affiches et les données de films viennent de [TMDB](https://www.themoviedb.org). Ce produit
 utilise l'API TMDB mais n'est ni approuvé ni certifié par TMDB. Les affiches ne sont pas versionnées.
+
+## Vidéo
+
+Les sources de la vidéo sont dans `video/cinephile/` (projet HyperFrames) ; le rendu se lance avec
+`npx hyperframes render` depuis ce dossier. Musique : « Ambient Piano Loop 9_14 » par Erokia
+(Freesound), sous licence CC BY 4.0 (détails dans `video/cinephile/assets/musique/CREDITS.md`).

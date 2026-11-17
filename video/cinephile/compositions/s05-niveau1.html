@@ -29,7 +29,7 @@
     tl.fromTo("#s05-e1", { opacity: 0, filter: "blur(8px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.3 }, T.pages);
     tl.fromTo("#s05-e2", { opacity: 0, filter: "blur(8px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.3 }, T.extraits);
     // La caméra descend dans les extraits : la bonne page, mais pas le bon passage.
-    tl.to("#s05-carte", { y: -460, duration: 2.4, ease: "power2.inOut" }, T.defile);
+    tl.to("#s05-carte", { y: -560, duration: 2.4, ease: "power2.inOut" }, T.defile);
     tl.fromTo("#s05-e3", { opacity: 0, scale: 1.15 }, { opacity: 1, scale: 1, duration: 0.5, ease: "expo.out", transformOrigin: "left center" }, T.budget);
     tl.to("#s05-carte", { y: 0, duration: 1.2, ease: "power2.inOut" }, T.budget + 1.2);
     tl.to(["#s05-tete", "#s05-fenetre", "#s05-droite"], { opacity: 0, filter: "blur(10px)", duration: 0.35, ease: "power3.in" }, T.sortie);

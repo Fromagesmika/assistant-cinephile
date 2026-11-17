@@ -25,7 +25,7 @@
     <div id="s12-bilan">
       <div class="etq">11 tâches, lancées 3 fois chacune</div>
       <div class="chiffre" style="margin-top: 20px"><span id="s12-n">0</span> / 33</div>
-      <div class="ligne">essais réussis : l'état final de la liste est vérifié par le code.</div>
+      <div class="ligne">essais réussis, vérifiés par le code</div>
     </div>
   </div>
   <script>
@@ -36,9 +36,9 @@
     tl.fromTo("#s12-panneau", { opacity: 0, x: 60 }, { opacity: 1, x: 0, duration: 0.6, ease: "expo.out" }, T.panneau);
     // Taille fixe, mise à l'échelle par transform (150 px de large au départ, comme dans la scène 10).
     tl.fromTo("#s12-grave", { x: 1490, y: 96, scale: 0.577, transformOrigin: "0 0" },
-      { x: PLACE1.x, y: PLACE1.y, scale: 1, duration: 0.9, ease: "power3.inOut" }, T.affiches);
+      { x: PLACE1.x, y: PLACE1.y, scale: 1, duration: 0.9, ease: "back.out(1.2)" }, T.affiches);
     tl.fromTo("#s12-titane", { x: 1662, y: 96, scale: 0.577, transformOrigin: "0 0" },
-      { x: PLACE2.x, y: PLACE2.y, scale: 1, duration: 0.9, ease: "power3.inOut" }, T.affiches + 0.25);
+      { x: PLACE2.x, y: PLACE2.y, scale: 1, duration: 0.9, ease: "back.out(1.2)" }, T.affiches + 0.25);
     tl.fromTo("#s12-l1", { opacity: 0 }, { opacity: 1, duration: 0.25 }, T.affiches + 1.0);
     tl.fromTo("#s12-l2", { opacity: 0 }, { opacity: 1, duration: 0.25 }, T.affiches + 1.25);
     tl.fromTo("#s12-bilan", { opacity: 0, x: -40 }, { opacity: 1, x: 0, duration: 0.6, ease: "expo.out" }, T.bilan);

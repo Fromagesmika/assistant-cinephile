@@ -31,6 +31,7 @@
     const tl = gsap.timeline({ paused: true });
     tl.fromTo("#s13-tete", { opacity: 0, filter: "blur(8px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.25 }, T.tete);
     tl.fromTo("#s13-table", { opacity: 0, y: 60 }, { opacity: 1, y: 0, duration: 0.9, ease: "expo.out" }, T.table);
+    tl.fromTo("#s13-table .s13-ligne", { opacity: 0, x: -40 }, { opacity: 1, x: 0, duration: 0.5, ease: "expo.out", stagger: 0.1 }, T.table + 0.2);
     const pose = (sel, t) => tl.fromTo(sel, { opacity: 0, scale: 1.25, filter: "blur(6px)" },
       { opacity: 1, scale: 1, filter: "blur(0px)", duration: 0.45, ease: "expo.out", transformOrigin: "left center" }, t);
     pose("#s13-e0", T.e0);

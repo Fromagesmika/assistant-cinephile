@@ -3,27 +3,32 @@
     #root { position: absolute; inset: 0; }
     #s09-tete { position: absolute; left: 170px; top: 96px; }
     #s09-tete .titre { margin-top: 10px; }
-    #s09-q { position: absolute; left: 170px; top: 320px; opacity: 0; }
-    #s09-faux { position: absolute; left: 170px; top: 440px; font-size: 30px; color: var(--encre-douce); opacity: 0; }
+    #s09-q { position: absolute; left: 170px; top: 300px; opacity: 0; }
+    .tape { display: inline-block; clip-path: inset(0 100% 0 0); }
+    .caret { display: inline-block; width: 3px; height: 38px; background: var(--violet-clair); margin-left: 4px; vertical-align: -6px; opacity: 0; }
+    #s09-faux { position: absolute; left: 170px; top: 418px; font-size: 30px; color: var(--encre-douce); opacity: 0; }
     #s09-faux b { color: var(--orange); }
-    #s09-fenetre { position: absolute; left: 170px; top: 540px; width: 1500px; height: 360px; overflow: hidden; border-radius: 18px;
+    #s09-fenetre { position: absolute; left: 170px; top: 500px; width: 1500px; height: 440px; overflow: hidden; border-radius: 18px;
       box-shadow: 0 30px 80px rgba(10, 5, 25, 0.55); opacity: 0; }
     #s09-carte { width: 1500px; display: block; }
-    #s09-dit { position: absolute; left: 170px; top: 940px; font-size: 44px; font-weight: 700; opacity: 0; }
+    #s09-dit { position: absolute; left: 170px; top: 966px; font-size: 44px; font-weight: 700; opacity: 0; }
   </style>
   <div id="root" class="sc" data-composition-id="s09" data-width="1920" data-height="1080">
     <div id="s09-tete"><div class="etq">Et si la réponse n'existe pas ?</div><div class="titre">Un film inventé</div></div>
-    <div id="s09-q" class="question"><span class="icone">?</span>Qui a réalisé le film Les Horloges de Valparaíso, sorti en 2019 ?</div>
-    <div id="s09-faux"><b>Ce film n'existe pas</b> : ni sur Wikipédia, ni sur TMDB.</div>
+    <div id="s09-q" class="question"><span class="icone">?</span><span id="s09-texte" class="tape">Qui a réalisé Les Horloges de Valparaíso, sorti en 2019 ?</span><span id="s09-caret" class="caret"></span></div>
+    <div id="s09-faux"><b>Ce film n'existe pas</b>, ni sur Wikipédia, ni sur TMDB</div>
     <div id="s09-fenetre"><img id="s09-carte" src="assets/ecrans/c20_carte_abstention.png" alt="Réponse : abstention" /></div>
-    <div id="s09-dit">Il ne trouve rien… et il le dit.</div>
+    <div id="s09-dit">Il ne trouve rien, et il le dit</div>
   </div>
   <script>
     const T = { tete: 0.2, question: 3.1, faux: 4.5, reponse: 6.4, dit: 8.0, sortie: 10.4 };
     const tl = gsap.timeline({ paused: true });
     tl.fromTo("#s09-tete .etq", { opacity: 0, filter: "blur(6px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.25 }, T.tete);
     tl.fromTo("#s09-tete .titre", { opacity: 0, filter: "blur(8px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.3 }, T.question - 0.6);
-    tl.fromTo("#s09-q", { opacity: 0, x: -40 }, { opacity: 1, x: 0, duration: 0.6, ease: "expo.out" }, T.question);
+    tl.fromTo("#s09-q", { opacity: 0, x: -40 }, { opacity: 1, x: 0, duration: 0.5, ease: "expo.out" }, T.question - 0.4);
+    tl.fromTo("#s09-caret", { opacity: 0 }, { opacity: 1, duration: 0.05 }, T.question - 0.2);
+    tl.fromTo("#s09-texte", { clipPath: "inset(0 100% 0 0)" }, { clipPath: "inset(0 0% 0 0)", duration: 1.4, ease: "steps(56)" }, T.question - 0.2);
+    tl.to("#s09-caret", { opacity: 0, duration: 0.05 }, T.question + 1.4);
     tl.fromTo("#s09-faux", { opacity: 0 }, { opacity: 1, duration: 0.3 }, T.faux);
     tl.fromTo("#s09-fenetre", { opacity: 0, y: 50 }, { opacity: 1, y: 0, duration: 0.8, ease: "expo.out" }, T.reponse);
     tl.fromTo("#s09-dit", { opacity: 0, filter: "blur(8px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.3 }, T.dit);
