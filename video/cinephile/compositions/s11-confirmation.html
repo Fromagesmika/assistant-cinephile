@@ -1,0 +1,43 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; }
+    #s11-tete { position: absolute; left: 170px; top: 96px; }
+    #s11-tete .titre { margin-top: 10px; }
+    .s11-carte { position: absolute; left: 170px; top: 360px; width: 1580px; opacity: 0; }
+    #s11-flash { position: absolute; left: 470px; top: 610px; width: 180px; height: 60px; border-radius: 12px; background: #fff; opacity: 0; }
+    #s11-curseur { position: absolute; left: 0; top: 0; width: 56px; height: 56px; opacity: 0; transform-origin: 6px 4px; }
+    #s11-note { position: absolute; left: 860px; top: 780px; font-size: 36px; color: var(--encre-douce); opacity: 0; }
+    #s11-note b { color: var(--encre); }
+  </style>
+  <div id="root" class="sc" data-composition-id="s11" data-width="1920" data-height="1080">
+    <div id="s11-tete"><div class="etq">Avant d'écrire, il demande</div><div class="titre">Rien sans votre accord</div></div>
+    <img id="s11-grave" class="s11-carte ecran" src="assets/ecrans/c30_confirmation_grave.png" alt="Confirmation : ajouter Grave" />
+    <img id="s11-titane" class="s11-carte ecran" src="assets/ecrans/c31_confirmation_titane.png" alt="Confirmation : ajouter Titane" />
+    <div id="s11-flash"></div>
+    <div id="s11-note"><b>Refuser</b> : la liste ne bouge pas.</div>
+    <svg id="s11-curseur" viewBox="0 0 24 24"><path d="M3 2 L3 19 L8 14.5 L11.5 22 L14.5 20.6 L11 13.2 L18 13.2 Z" fill="#fff" stroke="#111" stroke-width="1.4" stroke-linejoin="round" /></svg>
+  </div>
+  <script>
+    // Bouton « Accepter » : centre à (553, 645) dans le cadre ; « Refuser » à (825, 645).
+    const ACCEPTER = { x: 548, y: 640 }, REFUSER = { x: 820, y: 640 };
+    const T = { tete: 0.1, carte: 0.5, clic1: 4.6, titane: 5.4, clic2: 7.2, refuse: 9.2, sortie: 11.4 };
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#s11-tete", { opacity: 0, filter: "blur(8px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.25 }, T.tete);
+    tl.fromTo("#s11-grave", { opacity: 0, scale: 1.06 }, { opacity: 1, scale: 1, duration: 0.9, ease: "expo.out" }, T.carte);
+    // Le curseur traverse l'écran jusqu'à « Accepter », puis clique.
+    tl.fromTo("#s11-curseur", { opacity: 0, x: 1500, y: 950 }, { opacity: 1, duration: 0.2 }, T.clic1 - 2.2);
+    tl.to("#s11-curseur", { x: ACCEPTER.x, y: ACCEPTER.y, duration: 1.6, ease: "power2.inOut" }, T.clic1 - 2.0);
+    tl.to("#s11-curseur", { scale: 0.82, duration: 0.08, yoyo: true, repeat: 1 }, T.clic1);
+    tl.fromTo("#s11-flash", { opacity: 0 }, { opacity: 0.35, duration: 0.06, yoyo: true, repeat: 1 }, T.clic1);
+    // Seconde confirmation : Titane remplace Grave sur la même scène.
+    tl.to("#s11-grave", { opacity: 0, filter: "blur(8px)", duration: 0.18 }, T.titane - 0.2);
+    tl.fromTo("#s11-titane", { opacity: 0, filter: "blur(8px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.2 }, T.titane);
+    tl.to("#s11-curseur", { scale: 0.82, duration: 0.08, yoyo: true, repeat: 1 }, T.clic2);
+    tl.fromTo("#s11-flash", { opacity: 0 }, { opacity: 0.35, duration: 0.06, yoyo: true, repeat: 1, immediateRender: false }, T.clic2);
+    // Puis il montre l'autre choix possible.
+    tl.to("#s11-curseur", { x: REFUSER.x, y: REFUSER.y, duration: 0.8, ease: "power2.inOut" }, T.refuse - 0.6);
+    tl.fromTo("#s11-note", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.5, ease: "expo.out" }, T.refuse);
+    tl.to(["#s11-tete", "#s11-titane", "#s11-note", "#s11-curseur"], { opacity: 0, filter: "blur(10px)", duration: 0.35, ease: "power3.in" }, T.sortie);
+    window.__timelines["s11"] = tl;
+  </script>
+</template>

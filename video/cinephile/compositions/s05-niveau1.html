@@ -1,0 +1,38 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; }
+    #s05-tete { position: absolute; left: 170px; top: 96px; }
+    #s05-tete .titre { margin-top: 10px; }
+    #s05-fenetre { position: absolute; left: 170px; top: 300px; width: 1080px; height: 690px; overflow: hidden; border-radius: 18px;
+      box-shadow: 0 30px 80px rgba(10, 5, 25, 0.55); opacity: 0; }
+    #s05-carte { width: 1080px; display: block; }
+    #s05-droite { position: absolute; left: 1320px; top: 300px; width: 470px; padding: 40px 40px 0; border-radius: 26px; background: var(--carte); border: 1px solid var(--bord); }
+    .s05-etage { opacity: 0; margin-bottom: 44px; }
+    .s05-etage b { display: block; font-size: 120px; font-weight: 900; letter-spacing: -0.04em; line-height: 0.9; }
+    .s05-etage span { font-size: 34px; color: var(--encre); }
+    #s05-e3 b { color: #ffb37a; }
+  </style>
+  <div id="root" class="sc" data-composition-id="s05" data-width="1920" data-height="1080">
+    <div id="s05-tete"><div class="etq">Niveau 1</div><div class="titre">Le RAG</div></div>
+    <div id="s05-fenetre"><img id="s05-carte" src="assets/ecrans/c11_carte_flow_niveau1.png" alt="Réponse du niveau 1 et ses cinq extraits" /></div>
+    <div id="s05-droite">
+      <div id="s05-e1" class="s05-etage"><b>156</b><span>pages Wikipédia</span></div>
+      <div id="s05-e2" class="s05-etage"><b>5</b><span>extraits de la page Flow</span></div>
+      <div id="s05-e3" class="s05-etage"><b>0</b><span>qui parle du budget</span></div>
+    </div>
+  </div>
+  <script>
+    const T = { tete: 0.1, carte: 0.4, pages: 1.6, extraits: 3.4, defile: 4.2, budget: 7.4, sortie: 12.2 };
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#s05-tete", { opacity: 0, filter: "blur(8px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.25 }, T.tete);
+    tl.fromTo("#s05-fenetre", { opacity: 0, y: 50 }, { opacity: 1, y: 0, duration: 0.8, ease: "expo.out" }, T.carte);
+    tl.fromTo("#s05-e1", { opacity: 0, filter: "blur(8px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.3 }, T.pages);
+    tl.fromTo("#s05-e2", { opacity: 0, filter: "blur(8px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.3 }, T.extraits);
+    // La caméra descend dans les extraits : la bonne page, mais pas le bon passage.
+    tl.to("#s05-carte", { y: -460, duration: 3.0, ease: "power2.inOut" }, T.defile);
+    tl.fromTo("#s05-e3", { opacity: 0, scale: 1.15 }, { opacity: 1, scale: 1, duration: 0.5, ease: "expo.out", transformOrigin: "left center" }, T.budget);
+    tl.to("#s05-carte", { y: 0, duration: 1.2, ease: "power2.inOut" }, T.budget + 1.2);
+    tl.to(["#s05-tete", "#s05-fenetre", "#s05-droite"], { opacity: 0, filter: "blur(10px)", duration: 0.35, ease: "power3.in" }, T.sortie);
+    window.__timelines["s05"] = tl;
+  </script>
+</template>

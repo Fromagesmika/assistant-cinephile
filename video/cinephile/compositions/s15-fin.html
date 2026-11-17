@@ -1,0 +1,42 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; overflow: hidden; }
+    #s15-mur { position: absolute; left: 1160px; top: -260px; width: 1300px; display: grid; grid-template-columns: repeat(5, 230px);
+      gap: 24px; transform: rotate(-8deg); opacity: 0; }
+    #s15-mur img { width: 230px; height: 345px; border-radius: 12px; object-fit: cover; box-shadow: 0 18px 40px rgba(10, 5, 25, 0.55); }
+    #s15-texte { position: absolute; left: 170px; top: 300px; width: 940px; }
+    .s15-l { font-size: 80px; font-weight: 700; letter-spacing: -0.03em; line-height: 1.08; }
+    #s15-l2 .accent { color: var(--violet-clair); }
+    #s15-noms { margin-top: 70px; opacity: 0; }
+    #s15-noms .qui { font-size: 44px; font-weight: 700; }
+    #s15-noms .ligne { margin-top: 10px; font-size: 32px; }
+  </style>
+  <div id="root" class="sc" data-composition-id="s15" data-width="1920" data-height="1080">
+    <div id="s15-mur">
+      <img src="assets/affiches/film_27205.jpg" alt="" /><img src="assets/affiches/film_496243.jpg" alt="" /><img src="assets/affiches/film_1281775.jpg" alt="" /><img src="assets/affiches/film_13.jpg" alt="" /><img src="assets/affiches/film_105.jpg" alt="" />
+      <img src="assets/affiches/film_11423.jpg" alt="" /><img src="assets/affiches/film_393519.jpg" alt="" /><img src="assets/affiches/film_630240.jpg" alt="" /><img src="assets/affiches/film_274.jpg" alt="" /><img src="assets/affiches/film_426.jpg" alt="" />
+      <img src="assets/affiches/film_194.jpg" alt="" /><img src="assets/affiches/film_18.jpg" alt="" /><img src="assets/affiches/film_149.jpg" alt="" /><img src="assets/affiches/film_244786.jpg" alt="" /><img src="assets/affiches/film_490.jpg" alt="" />
+      <img src="assets/affiches/film_500.jpg" alt="" /><img src="assets/affiches/film_548.jpg" alt="" /><img src="assets/affiches/film_586863.jpg" alt="" /><img src="assets/affiches/film_76341.jpg" alt="" /><img src="assets/affiches/film_8265.jpg" alt="" />
+      <img src="assets/affiches/film_945961.jpg" alt="" /><img src="assets/affiches/film_961077.jpg" alt="" /><img src="assets/affiches/film_9662.jpg" alt="" /><img src="assets/affiches/film_974576.jpg" alt="" /><img src="assets/affiches/film_1398.jpg" alt="" />
+    </div>
+    <div id="s15-texte">
+      <div id="s15-l1" class="s15-l"><span class="mot">Plus</span> <span class="mot">d'autonomie,</span> <span class="mot">oui.</span></div>
+      <div id="s15-l2" class="s15-l"><span class="mot">Mais</span> <span class="mot">chaque</span> <span class="mot">pas,</span> <span class="mot accent">mesuré.</span></div>
+      <div id="s15-noms">
+        <div class="qui">Michaël Lopez · Rayan Daoudi</div>
+        <div class="ligne">Assistant cinéphile<br />Projet IA générative 2026 · Parcours Texte</div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const T = { mur: 0.0, l1: 0.3, l2: 2.0, noms: 5.0 };
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#s15-mur", { opacity: 0 }, { opacity: 0.85, duration: 1.2, ease: "power2.out" }, T.mur);
+    // Le mur d'affiches défile lentement, à vitesse constante : le monde continue, le texte reste immobile.
+    tl.fromTo("#s15-mur", { y: 0 }, { y: -260, duration: 13, ease: "none" }, T.mur);
+    tl.fromTo("#s15-l1 .mot", { opacity: 0, filter: "blur(6px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.13, stagger: 0.09 }, T.l1);
+    tl.fromTo("#s15-l2 .mot", { opacity: 0, filter: "blur(6px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.13, stagger: 0.12 }, T.l2);
+    tl.fromTo("#s15-noms", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "power2.out" }, T.noms);
+    window.__timelines["s15"] = tl;
+  </script>
+</template>

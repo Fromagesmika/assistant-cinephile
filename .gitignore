@@ -23,3 +23,10 @@ traces/interface.jsonl
 
 # Affiches TMDB : régénérées par scripts/telecharger_affiches.py (droits des ayants droit)
 data/affiches/
+
+# Vidéo : affiches TMDB copiées pour le montage (droits des ayants droit)
+video/cinephile/assets/affiches/
+video/captures/*.png
+video/cinephile/.hyperframes/
+video/check.json
+video/cinephile/.thumbnails/

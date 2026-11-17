@@ -1,0 +1,84 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; }
+    #s07-tete { position: absolute; left: 170px; top: 96px; }
+    #s07-tete .titre { margin-top: 10px; }
+    #s07-schema { position: absolute; inset: 0; }
+    #s07-req { position: absolute; left: 170px; top: 520px; width: 330px; font-size: 30px; padding: 22px 24px; border-radius: 16px;
+      background: var(--carte); border: 1px solid var(--bord); font-family: "JetBrains Mono", monospace; line-height: 1.25; opacity: 0; }
+    .s07-voie { position: absolute; left: 600px; width: 470px; opacity: 0; }
+    .s07-voie .etq { margin-bottom: 16px; }
+    .s07-barre { height: 30px; border-radius: 8px; background: rgba(244, 241, 251, 0.22); margin-bottom: 12px; transform-origin: left center; }
+    #s07-relecture { position: absolute; left: 1150px; top: 430px; width: 280px; height: 230px; border-radius: 22px; padding: 28px;
+      background: var(--carte); border: 1.5px solid var(--violet-clair); opacity: 0; }
+    #s07-relecture b { display: block; font-size: 38px; font-weight: 700; margin-top: 12px; line-height: 1.15; }
+    #s07-sortie { position: absolute; left: 1500px; top: 380px; width: 300px; opacity: 0; }
+    #s07-sortie .etq { margin-bottom: 16px; }
+    .s07-res { height: 50px; border-radius: 10px; background: rgba(244, 241, 251, 0.22); margin-bottom: 14px; }
+    #s07-gagnant { background: var(--violet); height: auto; padding: 14px 16px; font-size: 28px; font-weight: 700; line-height: 1.2; }
+    .s07-trait { position: absolute; height: 3px; background: rgba(196, 181, 253, 0.7); transform-origin: left center; transform: scaleX(0); }
+    #s07-reponse { position: absolute; inset: 0; }
+    #s07-carte { position: absolute; left: 170px; top: 170px; width: 1160px; opacity: 0; }
+    #s07-droite { position: absolute; left: 1400px; top: 300px; width: 420px; opacity: 0; }
+    #s07-droite .valeur { font-size: 92px; font-weight: 900; letter-spacing: -0.03em; line-height: 1; color: var(--violet-clair); margin: 18px 0 26px; }
+  </style>
+  <div id="root" class="sc" data-composition-id="s07" data-width="1920" data-height="1080">
+    <div id="s07-tete"><div class="etq">Niveau 3</div><div class="titre">Agent + RAG avancé</div></div>
+    <div id="s07-schema">
+      <div id="s07-req">Flow Gints Zilbalodis budget</div>
+      <div id="s07-t1" class="s07-trait" style="left: 500px; top: 545px; width: 100px;"></div>
+      <div id="s07-t2" class="s07-trait" style="left: 500px; top: 600px; width: 100px;"></div>
+      <div id="s07-sens" class="s07-voie" style="top: 330px">
+        <div class="etq">Par le sens · vecteurs</div>
+        <div class="s07-barre" style="width: 92%"></div><div class="s07-barre" style="width: 80%"></div><div class="s07-barre" style="width: 71%"></div><div class="s07-barre" style="width: 60%"></div><div class="s07-barre" style="width: 52%"></div>
+      </div>
+      <div id="s07-mots" class="s07-voie" style="top: 650px">
+        <div class="etq">Par les mots · BM25</div>
+        <div class="s07-barre" style="width: 88%"></div><div class="s07-barre" style="width: 77%"></div><div class="s07-barre" style="width: 69%"></div><div class="s07-barre" style="width: 58%"></div><div class="s07-barre" style="width: 49%"></div>
+      </div>
+      <div id="s07-t3" class="s07-trait" style="left: 1075px; top: 470px; width: 75px;"></div>
+      <div id="s07-t4" class="s07-trait" style="left: 1075px; top: 790px; width: 75px;"></div>
+      <div id="s07-relecture"><div class="etq">Relecture</div><b>un second modèle reclasse</b></div>
+      <div id="s07-t5" class="s07-trait" style="left: 1430px; top: 545px; width: 70px;"></div>
+      <div id="s07-sortie">
+        <div class="etq">5 extraits</div>
+        <div class="s07-res"></div><div class="s07-res"></div>
+        <div id="s07-gagnant" class="s07-res">Flow · Fiche technique · Budget : 3,5 M€</div>
+        <div class="s07-res"></div><div class="s07-res"></div>
+      </div>
+    </div>
+    <div id="s07-reponse">
+      <img id="s07-carte" class="ecran" src="assets/ecrans/c13_carte_flow_niveau3.png" alt="Réponse du niveau 3 : 3,5 millions d'euros" />
+      <div id="s07-droite">
+        <span class="badge vert">Réponse</span>
+        <div class="valeur">3,5 millions d'euros</div>
+        <div class="ligne">Source citée : la page Wikipédia de Flow, fiche technique.</div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const T = { tete: 0.1, req: 0.5, sens: 1.6, mots: 3.4, relecture: 5.6, remonte: 8.2, reponse: 10.6, source: 13.6, sortie: 17.2 };
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#s07-tete", { opacity: 0, filter: "blur(8px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.25 }, T.tete);
+    tl.fromTo("#s07-req", { opacity: 0, x: -40 }, { opacity: 1, x: 0, duration: 0.6, ease: "expo.out" }, T.req);
+    tl.fromTo("#s07-t1", { scaleX: 0 }, { scaleX: 1, duration: 0.4, ease: "power2.out" }, T.sens - 0.3);
+    tl.fromTo("#s07-sens", { opacity: 0 }, { opacity: 1, duration: 0.2 }, T.sens);
+    tl.fromTo("#s07-sens .s07-barre", { scaleX: 0 }, { scaleX: 1, duration: 0.5, ease: "expo.out", stagger: 0.07 }, T.sens + 0.1);
+    tl.fromTo("#s07-t2", { scaleX: 0 }, { scaleX: 1, duration: 0.4, ease: "power2.out" }, T.mots - 0.3);
+    tl.fromTo("#s07-mots", { opacity: 0 }, { opacity: 1, duration: 0.2 }, T.mots);
+    tl.fromTo("#s07-mots .s07-barre", { scaleX: 0 }, { scaleX: 1, duration: 0.5, ease: "expo.out", stagger: 0.07 }, T.mots + 0.1);
+    tl.fromTo(["#s07-t3", "#s07-t4"], { scaleX: 0 }, { scaleX: 1, duration: 0.4, ease: "power2.out" }, T.relecture - 0.3);
+    tl.fromTo("#s07-relecture", { opacity: 0, scale: 0.85 }, { opacity: 1, scale: 1, duration: 0.6, ease: "back.out(1.4)" }, T.relecture);
+    tl.fromTo("#s07-t5", { scaleX: 0 }, { scaleX: 1, duration: 0.4, ease: "power2.out" }, T.remonte - 0.4);
+    tl.fromTo("#s07-sortie", { opacity: 0 }, { opacity: 1, duration: 0.2 }, T.remonte);
+    // Le bon passage « remonte » depuis le bas de la liste jusqu'au rang 3.
+    tl.fromTo("#s07-gagnant", { y: 260, opacity: 0 }, { y: 0, opacity: 1, duration: 0.9, ease: "expo.out" }, T.remonte + 0.1);
+    // Le schéma s'efface, la vraie réponse de l'interface prend sa place.
+    tl.to(["#s07-schema", "#s07-tete"], { opacity: 0, filter: "blur(12px)", duration: 0.35, ease: "power3.in" }, T.reponse - 0.4);
+    tl.fromTo("#s07-carte", { opacity: 0, scale: 1.08 }, { opacity: 1, scale: 1, duration: 0.9, ease: "expo.out" }, T.reponse);
+    tl.fromTo("#s07-droite", { opacity: 0, x: 50 }, { opacity: 1, x: 0, duration: 0.7, ease: "expo.out" }, T.reponse + 0.6);
+    tl.fromTo("#s07-droite .ligne", { opacity: 0 }, { opacity: 1, duration: 0.3 }, T.source);
+    tl.to("#s07-reponse", { opacity: 0, filter: "blur(10px)", duration: 0.35, ease: "power3.in" }, T.sortie);
+    window.__timelines["s07"] = tl;
+  </script>
+</template>

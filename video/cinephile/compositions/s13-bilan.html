@@ -1,0 +1,47 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; }
+    #s13-tete { position: absolute; left: 170px; top: 96px; }
+    #s13-tete .titre { margin-top: 10px; }
+    #s13-table { position: absolute; left: 170px; top: 300px; width: 1580px; border-radius: 24px; overflow: hidden;
+      background: var(--carte); border: 1px solid var(--bord); box-shadow: 0 30px 80px rgba(10, 5, 25, 0.55); opacity: 0; }
+    .s13-ligne { display: grid; grid-template-columns: 520px 340px 380px 340px; align-items: center; height: 136px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08); padding-left: 48px; }
+    .s13-ligne.entete { height: 96px; border-top: none; background: rgba(139, 92, 246, 0.16); }
+    .s13-ligne.entete div { font-size: 28px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--violet-clair); }
+    .s13-niveau { font-size: 40px; font-weight: 700; }
+    .s13-niveau small { display: block; font-size: 28px; font-weight: 400; color: var(--encre-douce); margin-top: 4px; }
+    .s13-v { font-size: 64px; font-weight: 900; letter-spacing: -0.03em; opacity: 0; }
+    .s13-v.fort { color: var(--violet-clair); }
+    .s13-v.faible { color: var(--orange); }
+  </style>
+  <div id="root" class="sc" data-composition-id="s13" data-width="1920" data-height="1080">
+    <div id="s13-tete"><div class="etq">Sur les mêmes 51 tests</div><div class="titre">Le bilan</div></div>
+    <div id="s13-table">
+      <div class="s13-ligne entete"><div>Niveau</div><div>Exactitude</div><div>Recherche · Recall@5</div><div>Tokens / requête</div></div>
+      <div class="s13-ligne"><div class="s13-niveau">0 · LLM seul</div><div id="s13-e0" class="s13-v faible">57 %</div><div id="s13-r0" class="s13-v">—</div><div id="s13-t0" class="s13-v">282</div></div>
+      <div class="s13-ligne"><div class="s13-niveau">1 · RAG</div><div id="s13-e1" class="s13-v fort">93 %</div><div id="s13-r1" class="s13-v">93 %</div><div id="s13-t1" class="s13-v">1 158</div></div>
+      <div class="s13-ligne"><div class="s13-niveau">2 · Agent<small>sait agir sur la liste</small></div><div id="s13-e2" class="s13-v">89 %</div><div id="s13-r2" class="s13-v faible">71 %</div><div id="s13-t2" class="s13-v faible">4 510</div></div>
+      <div class="s13-ligne"><div class="s13-niveau">3 · Agent + RAG avancé</div><div id="s13-e3" class="s13-v fort">93 %</div><div id="s13-r3" class="s13-v fort">89 %</div><div id="s13-t3" class="s13-v">4 205</div></div>
+    </div>
+  </div>
+  <script>
+    // Chaque chiffre apparaît quand la voix le prononce (valeurs : results/tableau.md).
+    const T = { tete: 0.1, table: 0.6, e0: 2.4, e1: 4.2, autresE: 5.4, tokens: 8.0, r2: 11.2, r3: 14.2, autresR: 15.4, sortie: 20.3 };
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#s13-tete", { opacity: 0, filter: "blur(8px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.25 }, T.tete);
+    tl.fromTo("#s13-table", { opacity: 0, y: 60 }, { opacity: 1, y: 0, duration: 0.9, ease: "expo.out" }, T.table);
+    const pose = (sel, t) => tl.fromTo(sel, { opacity: 0, scale: 1.25, filter: "blur(6px)" },
+      { opacity: 1, scale: 1, filter: "blur(0px)", duration: 0.45, ease: "expo.out", transformOrigin: "left center" }, t);
+    pose("#s13-e0", T.e0);
+    pose("#s13-e1", T.e1);
+    pose(["#s13-e2", "#s13-e3"], T.autresE);
+    pose(["#s13-t0", "#s13-t1"], T.tokens);
+    pose(["#s13-t2", "#s13-t3"], T.tokens + 0.8);
+    pose(["#s13-r0", "#s13-r1"], T.r2 - 0.6);
+    pose("#s13-r2", T.r2);
+    pose("#s13-r3", T.r3);
+    tl.to(["#s13-tete", "#s13-table"], { opacity: 0, filter: "blur(10px)", duration: 0.35, ease: "power3.in" }, T.sortie);
+    window.__timelines["s13"] = tl;
+  </script>
+</template>

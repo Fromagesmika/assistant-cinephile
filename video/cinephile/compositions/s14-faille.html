@@ -1,0 +1,41 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; }
+    #s14-tete { position: absolute; left: 170px; top: 96px; }
+    #s14-tete .titre { margin-top: 10px; }
+    #s14-affiche { position: absolute; left: 170px; top: 320px; width: 330px; height: 495px; opacity: 0; }
+    .s14-source { position: absolute; left: 580px; width: 680px; padding: 34px 40px; border-radius: 22px; background: var(--carte);
+      border: 1px solid var(--bord); box-shadow: 0 24px 60px rgba(10, 5, 25, 0.5); opacity: 0; }
+    .s14-source .valeur { font-size: 64px; font-weight: 900; letter-spacing: -0.03em; margin-top: 10px; }
+    #s14-wiki { top: 320px; }
+    #s14-tmdb { top: 590px; }
+    #s14-choix { position: absolute; left: 1330px; top: 560px; width: 440px; opacity: 0; }
+    #s14-choix .ligne { margin-top: 16px; color: var(--encre); }
+    #s14-choix .badge { background: var(--orange); color: #2a1406; }
+    #s14-suite { position: absolute; left: 580px; top: 900px; font-size: 40px; font-weight: 700; opacity: 0; }
+    #s14-suite span { color: var(--violet-clair); }
+  </style>
+  <div id="root" class="sc" data-composition-id="s14" data-width="1920" data-height="1080">
+    <div id="s14-tete"><div class="etq">Ce qui résiste encore</div><div class="titre">Deux sources qui se contredisent</div></div>
+    <img id="s14-affiche" class="affiche" src="assets/affiches/hd_ptit_truc.jpg" alt="Affiche de Un p'tit truc en plus" />
+    <div id="s14-wiki" class="s14-source"><div class="etq">Wikipédia · budget</div><div class="valeur">6,1 millions d'euros</div></div>
+    <div id="s14-tmdb" class="s14-source"><div class="etq">TMDB · budget</div><div class="valeur">6 400 000 dollars</div></div>
+    <div id="s14-choix"><span class="badge orange">L'agent choisit TMDB</span><div class="ligne">et se trompe, même avec une source citée.</div></div>
+    <div id="s14-suite">Prochaine étape : <span>confronter les sources</span></div>
+  </div>
+  <script>
+    const T = { tete: 0.1, affiche: 0.4, wiki: 1.6, tmdb: 2.6, choix: 4.6, suite: 8.0, sortie: 10.4 };
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#s14-tete", { opacity: 0, filter: "blur(8px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.25 }, T.tete);
+    tl.fromTo("#s14-affiche", { opacity: 0, scale: 1.06 }, { opacity: 1, scale: 1, duration: 0.8, ease: "expo.out" }, T.affiche);
+    tl.fromTo("#s14-wiki", { opacity: 0, x: 60 }, { opacity: 1, x: 0, duration: 0.6, ease: "expo.out" }, T.wiki);
+    tl.fromTo("#s14-tmdb", { opacity: 0, x: 60 }, { opacity: 1, x: 0, duration: 0.6, ease: "expo.out" }, T.tmdb);
+    // Le choix de l'agent : la bonne source s'éteint, la mauvaise est retenue.
+    tl.to("#s14-wiki", { opacity: 0.4, duration: 0.3 }, T.choix);
+    tl.to("#s14-tmdb", { borderColor: "rgba(251,146,60,0.9)", duration: 0.3 }, T.choix);
+    tl.fromTo("#s14-choix", { opacity: 0, x: 40 }, { opacity: 1, x: 0, duration: 0.6, ease: "expo.out" }, T.choix + 0.2);
+    tl.fromTo("#s14-suite", { opacity: 0, filter: "blur(8px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.3 }, T.suite);
+    tl.to(["#s14-tete", "#s14-affiche", "#s14-wiki", "#s14-tmdb", "#s14-choix", "#s14-suite"], { opacity: 0, filter: "blur(10px)", duration: 0.35, ease: "power3.in" }, T.sortie);
+    window.__timelines["s14"] = tl;
+  </script>
+</template>

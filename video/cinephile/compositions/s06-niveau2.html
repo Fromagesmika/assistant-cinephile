@@ -1,0 +1,51 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; }
+    #s06-tete { position: absolute; left: 170px; top: 96px; }
+    #s06-tete .titre { margin-top: 10px; }
+    #s06-carte { position: absolute; left: 170px; top: 290px; width: 1300px; opacity: 0; }
+    #s06-compteur { position: absolute; left: 170px; top: 790px; height: 180px; width: 1300px; }
+    .s06-val { position: absolute; left: 0; top: 0; display: flex; align-items: baseline; gap: 28px; opacity: 0; }
+    .s06-val b { font-size: 150px; font-weight: 900; letter-spacing: -0.04em; line-height: 0.9; }
+    .s06-val span { font-size: 48px; font-weight: 500; }
+    #s06-rien b { color: var(--orange); }
+    #s06-requetes { position: absolute; left: 1520px; top: 300px; width: 330px; }
+    #s06-requetes .etq { margin-bottom: 22px; }
+    .s06-req { font-size: 30px; padding: 18px 22px; border-radius: 14px; background: var(--carte); border: 1px solid var(--bord);
+      margin-bottom: 18px; opacity: 0; font-family: "JetBrains Mono", monospace; line-height: 1.25; }
+  </style>
+  <div id="root" class="sc" data-composition-id="s06" data-width="1920" data-height="1080">
+    <div id="s06-tete"><div class="etq">Niveau 2</div><div class="titre">L'agent</div></div>
+    <img id="s06-carte" class="ecran" src="assets/ecrans/c12_carte_flow_niveau2.png" alt="Réponse du niveau 2 : abstention" />
+    <div id="s06-compteur">
+      <div id="s06-etapes" class="s06-val"><b>9</b><span>étapes</span></div>
+      <div id="s06-tokens" class="s06-val"><b id="s06-n">0</b><span>tokens</span></div>
+      <div id="s06-rien" class="s06-val"><b>0</b><span>réponse</span></div>
+    </div>
+    <div id="s06-requetes">
+      <div class="etq">Ses requêtes</div>
+      <div id="s06-r1" class="s06-req">Flow Gints Zilbalodis budget</div>
+      <div id="s06-r2" class="s06-req">"Flow" "budget" Gints Zilbalodis</div>
+    </div>
+  </div>
+  <script>
+    const T = { tete: 0.1, carte: 0.4, recherches: 1.4, etapes: 3.0, tokens: 4.4, rien: 6.4, sortie: 12.2 };
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#s06-tete", { opacity: 0, filter: "blur(8px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.25 }, T.tete);
+    tl.fromTo("#s06-carte", { opacity: 0, y: 50 }, { opacity: 1, y: 0, duration: 0.8, ease: "expo.out" }, T.carte);
+    tl.fromTo("#s06-r1", { opacity: 0, x: 40 }, { opacity: 1, x: 0, duration: 0.5, ease: "expo.out" }, T.recherches);
+    tl.fromTo("#s06-r2", { opacity: 0, x: 40 }, { opacity: 1, x: 0, duration: 0.5, ease: "expo.out" }, T.recherches + 0.6);
+    // Un seul emplacement : 9 étapes, puis les tokens qui défilent, puis le résultat.
+    tl.fromTo("#s06-etapes", { opacity: 0, filter: "blur(8px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.3 }, T.etapes);
+    tl.to("#s06-etapes", { opacity: 0, y: -30, filter: "blur(8px)", duration: 0.22, ease: "power3.in" }, T.tokens - 0.2);
+    tl.fromTo("#s06-tokens", { opacity: 0, filter: "blur(8px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.3 }, T.tokens);
+    const n = { v: 0 };
+    tl.fromTo(n, { v: 0 }, { v: 12141, duration: 1.4, ease: "expo.out", onUpdate: () => {
+      document.querySelector("#s06-n").textContent = Math.round(n.v).toLocaleString("fr-FR").replace(/ | /g, " ");
+    } }, T.tokens);
+    tl.to("#s06-tokens", { opacity: 0, y: -30, filter: "blur(8px)", duration: 0.22, ease: "power3.in" }, T.rien - 0.2);
+    tl.fromTo("#s06-rien", { opacity: 0, filter: "blur(8px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.3 }, T.rien);
+    tl.to(["#s06-tete", "#s06-carte", "#s06-compteur", "#s06-requetes"], { opacity: 0, filter: "blur(10px)", duration: 0.35, ease: "power3.in" }, T.sortie);
+    window.__timelines["s06"] = tl;
+  </script>
+</template>

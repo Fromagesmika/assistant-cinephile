@@ -1,0 +1,52 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; }
+    #s12-panneau { position: absolute; left: 1080px; top: 170px; width: 660px; height: 740px; border-radius: 26px; padding: 44px;
+      background: var(--carte); border: 1px solid var(--bord); box-shadow: 0 30px 80px rgba(10, 5, 25, 0.55); opacity: 0; }
+    #s12-panneau .titre-p { font-size: 44px; font-weight: 700; margin-top: 10px; }
+    .s12-place { position: absolute; top: 200px; width: 260px; height: 390px; border-radius: 14px; border: 2px dashed rgba(196, 181, 253, 0.4); }
+    .s12-leg { position: absolute; top: 610px; font-size: 30px; font-weight: 700; opacity: 0; }
+    .s12-affiche { position: absolute; left: 0; top: 0; width: 260px; height: 390px; }
+    #s12-bilan { position: absolute; left: 170px; top: 300px; width: 820px; opacity: 0; }
+    #s12-bilan .chiffre { color: var(--vert); }
+    #s12-bilan .ligne { margin-top: 30px; }
+  </style>
+  <div id="root" class="sc" data-composition-id="s12" data-width="1920" data-height="1080">
+    <div id="s12-panneau">
+      <div class="etq">Liste à voir</div>
+      <div class="titre-p">partagée, mise à jour</div>
+      <div class="s12-place" style="left: 44px"></div>
+      <div class="s12-place" style="left: 356px"></div>
+      <div id="s12-l1" class="s12-leg" style="left: 44px">Grave (2017)</div>
+      <div id="s12-l2" class="s12-leg" style="left: 356px">Titane (2021)</div>
+    </div>
+    <img id="s12-grave" class="s12-affiche affiche" src="assets/affiches/hd_393519.jpg" alt="Affiche de Grave" />
+    <img id="s12-titane" class="s12-affiche affiche" src="assets/affiches/hd_630240.jpg" alt="Affiche de Titane" />
+    <div id="s12-bilan">
+      <div class="etq">11 tâches, lancées 3 fois chacune</div>
+      <div class="chiffre" style="margin-top: 20px"><span id="s12-n">0</span> / 33</div>
+      <div class="ligne">essais réussis : l'état final de la liste est vérifié par le code.</div>
+    </div>
+  </div>
+  <script>
+    // Les affiches partent du haut de la scène précédente et se posent dans leur place.
+    const PLACE1 = { x: 1124, y: 370 }, PLACE2 = { x: 1436, y: 370 };
+    const T = { panneau: 0.0, affiches: 0.5, bilan: 4.0, sortie: 10.4 };
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#s12-panneau", { opacity: 0, x: 60 }, { opacity: 1, x: 0, duration: 0.6, ease: "expo.out" }, T.panneau);
+    // Taille fixe, mise à l'échelle par transform (150 px de large au départ, comme dans la scène 10).
+    tl.fromTo("#s12-grave", { x: 1490, y: 96, scale: 0.577, transformOrigin: "0 0" },
+      { x: PLACE1.x, y: PLACE1.y, scale: 1, duration: 0.9, ease: "power3.inOut" }, T.affiches);
+    tl.fromTo("#s12-titane", { x: 1662, y: 96, scale: 0.577, transformOrigin: "0 0" },
+      { x: PLACE2.x, y: PLACE2.y, scale: 1, duration: 0.9, ease: "power3.inOut" }, T.affiches + 0.25);
+    tl.fromTo("#s12-l1", { opacity: 0 }, { opacity: 1, duration: 0.25 }, T.affiches + 1.0);
+    tl.fromTo("#s12-l2", { opacity: 0 }, { opacity: 1, duration: 0.25 }, T.affiches + 1.25);
+    tl.fromTo("#s12-bilan", { opacity: 0, x: -40 }, { opacity: 1, x: 0, duration: 0.6, ease: "expo.out" }, T.bilan);
+    const n = { v: 0 };
+    tl.fromTo(n, { v: 0 }, { v: 33, duration: 1.4, ease: "expo.out", onUpdate: () => {
+      document.querySelector("#s12-n").textContent = Math.round(n.v);
+    } }, T.bilan + 0.2);
+    tl.to(["#s12-panneau", "#s12-grave", "#s12-titane", "#s12-bilan"], { opacity: 0, filter: "blur(10px)", duration: 0.35, ease: "power3.in" }, T.sortie);
+    window.__timelines["s12"] = tl;
+  </script>
+</template>

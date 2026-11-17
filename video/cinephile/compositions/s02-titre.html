@@ -1,0 +1,40 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; }
+    #s02-bloc { position: absolute; left: 170px; top: 230px; width: 1580px; }
+    #s02-titre { font-size: 132px; font-weight: 700; letter-spacing: -0.03em; line-height: 1; }
+    #s02-sous { margin-top: 26px; font-size: 48px; color: var(--encre); }
+    #s02-faits { position: relative; margin-top: 110px; height: 150px; }
+    .s02-fait { position: absolute; left: 0; top: 0; display: flex; align-items: baseline; gap: 30px; opacity: 0; }
+    .s02-fait b { font-size: 150px; font-weight: 900; color: var(--encre); letter-spacing: -0.04em; line-height: 0.9; }
+    .s02-fait span { font-size: 56px; font-weight: 500; }
+  </style>
+  <div id="root" class="sc" data-composition-id="s02" data-width="1920" data-height="1080">
+    <div id="s02-bloc">
+      <div id="s02-titre"><span class="mot">Assistant</span> <span class="mot">cinéphile</span></div>
+      <div id="s02-sous"><span class="mot">Un</span> <span class="mot">système</span> <span class="mot">génératif</span> <span class="mot">qui</span> <span class="mot">se</span> <span class="mot">mesure</span></div>
+      <div id="s02-faits">
+        <div id="s02-f1" class="s02-fait"><b>4</b><span>niveaux</span></div>
+        <div id="s02-f2" class="s02-fait"><b>51</b><span>tests, les mêmes pour tous</span></div>
+        <div id="s02-f3" class="s02-fait"><b>1</b><span>règle : prouver par une mesure</span></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const T = { titre: 0.2, niveaux: 1.2, tests: 2.6, regle: 5.0, sortie: 9.3 };
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#s02-titre .mot", { opacity: 0, filter: "blur(6px)" },
+      { opacity: 1, filter: "blur(0px)", duration: 0.13, stagger: 0.07 }, T.titre);
+    tl.fromTo("#s02-sous .mot", { opacity: 0.15 }, { opacity: 1, duration: 0.1, stagger: 0.08 }, T.titre + 0.4);
+    // Un seul emplacement, trois faits qui se remplacent : jamais trois cartes en rang.
+    const faits = [["#s02-f1", T.niveaux], ["#s02-f2", T.tests], ["#s02-f3", T.regle]];
+    faits.forEach(([id, t], i) => {
+      tl.fromTo(id, { opacity: 0, y: 40, filter: "blur(8px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.45, ease: "expo.out" }, t);
+      if (i < faits.length - 1) {
+        tl.to(id, { opacity: 0, y: -30, filter: "blur(8px)", duration: 0.22, ease: "power3.in" }, faits[i + 1][1] - 0.2);
+      }
+    });
+    tl.to("#s02-bloc", { opacity: 0, filter: "blur(10px)", duration: 0.4, ease: "power3.in" }, T.sortie);
+    window.__timelines["s02"] = tl;
+  </script>
+</template>
