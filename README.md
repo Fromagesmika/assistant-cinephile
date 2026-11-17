@@ -77,7 +77,7 @@ Le tableau est écrit dans `results/tableau.md`. Les réponses déjà obtenues s
 | `data/index/` | Vecteurs des passages (configuration retenue) |
 | `scripts/` | Corpus, contrôle des clés et des tests, comparaison de la recherche (dense, puis hybride), calibration du juge, affiches |
 | `results/`, `traces/` | Résultats bruts et traces |
-| `rapport/rapport.pdf` | Rapport (3 pages), généré par `python rapport/generer_rapport.py` à partir des résultats |
+| `rapport/rapport.pdf` | Rapport (4 pages), généré par `python rapport/generer_rapport.py` à partir des résultats |
 | `video/` | Sources de la vidéo |
 
 ## Licence du corpus et des affiches
