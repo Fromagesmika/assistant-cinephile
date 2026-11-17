@@ -10,6 +10,8 @@
     #s12-bilan { position: absolute; left: 170px; top: 300px; width: 820px; opacity: 0; }
     #s12-bilan .chiffre { color: var(--vert); }
     #s12-bilan .ligne { margin-top: 30px; }
+    #s12-badge { display: inline-block; margin-top: 34px; padding: 12px 22px; border-radius: 14px; font-size: 34px; font-weight: 700;
+      background: rgba(74, 222, 128, 0.2); color: var(--vert); opacity: 0; }
   </style>
   <div id="root" class="sc" data-composition-id="s12" data-width="1920" data-height="1080">
     <div id="s12-panneau">
@@ -26,12 +28,13 @@
       <div class="etq">11 tâches, lancées 3 fois chacune</div>
       <div class="chiffre" style="margin-top: 20px"><span id="s12-n">0</span> / 33</div>
       <div class="ligne">essais réussis, vérifiés par le code</div>
+      <div id="s12-badge">pass^3 : 100 %</div>
     </div>
   </div>
   <script>
     // Les affiches partent du haut de la scène précédente et se posent dans leur place.
     const PLACE1 = { x: 1124, y: 370 }, PLACE2 = { x: 1436, y: 370 };
-    const T = { panneau: 0.0, affiches: 0.6, bilan: 3.1, sortie: 9.4 };
+    const T = { panneau: 0.0, affiches: 0.6, bilan: 3.2, chaque: 6.4, sortie: 9.6 };
     const tl = gsap.timeline({ paused: true });
     tl.fromTo("#s12-panneau", { opacity: 0, x: 60 }, { opacity: 1, x: 0, duration: 0.6, ease: "expo.out" }, T.panneau);
     // Taille fixe, mise à l'échelle par transform (150 px de large au départ, comme dans la scène 10).
@@ -46,6 +49,7 @@
     tl.fromTo(n, { v: 0 }, { v: 33, duration: 1.4, ease: "expo.out", onUpdate: () => {
       document.querySelector("#s12-n").textContent = Math.round(n.v);
     } }, T.bilan + 0.2);
+    tl.fromTo("#s12-badge", { opacity: 0, scale: 0.7 }, { opacity: 1, scale: 1, duration: 0.5, ease: "back.out(1.8)", transformOrigin: "left center" }, T.chaque);
     tl.to(["#s12-panneau", "#s12-grave", "#s12-titane", "#s12-bilan"], { opacity: 0, filter: "blur(10px)", duration: 0.35, ease: "power3.in" }, T.sortie);
     window.__timelines["s12"] = tl;
   </script>

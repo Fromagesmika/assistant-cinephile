@@ -8,6 +8,9 @@
     .s02-fait { position: absolute; left: 0; top: 0; display: flex; align-items: baseline; gap: 30px; opacity: 0; }
     .s02-fait b { font-size: 150px; font-weight: 900; color: var(--encre); letter-spacing: -0.04em; line-height: 0.9; }
     .s02-fait span { font-size: 56px; font-weight: 500; }
+    #s02-mesure { position: relative; }
+    #s02-trait { position: absolute; left: 0; right: 0; bottom: -10px; height: 8px; border-radius: 4px; background: var(--violet-clair);
+      transform: scaleX(0); transform-origin: left center; }
   </style>
   <div id="root" class="sc" data-composition-id="s02" data-width="1920" data-height="1080">
     <div id="s02-bloc">
@@ -16,12 +19,12 @@
       <div id="s02-faits">
         <div id="s02-f1" class="s02-fait"><b>4</b><span>niveaux</span></div>
         <div id="s02-f2" class="s02-fait"><b>57</b><span>tests, les mêmes pour tous</span></div>
-        <div id="s02-f3" class="s02-fait"><b>1</b><span>règle : prouver par une mesure</span></div>
+        <div id="s02-f3" class="s02-fait"><b>1</b><span>règle : prouver <span id="s02-mesure">par une mesure<span id="s02-trait"></span></span></span></div>
       </div>
     </div>
   </div>
   <script>
-    const T = { titre: 0.1, niveaux: 0.6, tests: 2.2, regle: 4.2, sortie: 9.3 };
+    const T = { titre: 0.1, niveaux: 0.6, tests: 2.3, regle: 3.8, mesure: 6.1, sortie: 9.4 };
     const tl = gsap.timeline({ paused: true });
     tl.fromTo("#s02-titre .mot", { opacity: 0, filter: "blur(6px)" },
       { opacity: 1, filter: "blur(0px)", duration: 0.13, stagger: 0.07 }, T.titre);
@@ -34,6 +37,7 @@
         tl.to(id, { opacity: 0, y: -30, filter: "blur(8px)", duration: 0.22, ease: "power3.in" }, faits[i + 1][1] - 0.2);
       }
     });
+    tl.fromTo("#s02-trait", { scaleX: 0 }, { scaleX: 1, duration: 0.6, ease: "expo.out" }, T.mesure);
     tl.to("#s02-bloc", { opacity: 0, filter: "blur(10px)", duration: 0.4, ease: "power3.in" }, T.sortie);
     window.__timelines["s02"] = tl;
   </script>

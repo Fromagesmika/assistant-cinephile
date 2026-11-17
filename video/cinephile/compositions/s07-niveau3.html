@@ -27,7 +27,7 @@
   <div id="root" class="sc" data-composition-id="s07" data-width="1920" data-height="1080">
     <div id="s07-tete"><div class="etq">Niveau 3</div><div class="titre">Agent + RAG avancé</div></div>
     <div id="s07-schema">
-      <div id="s07-req">Flow Gints Zilbalodis budget</div>
+      <div id="s07-req"><span id="s07-req-texte" style="display: inline-block; clip-path: inset(0 100% 0 0)">Flow Gints Zilbalodis budget</span></div>
       <div id="s07-t1" class="s07-trait" style="left: 500px; top: 545px; width: 100px;"></div>
       <div id="s07-t2" class="s07-trait" style="left: 500px; top: 600px; width: 100px;"></div>
       <div id="s07-sens" class="s07-voie" style="top: 330px">
@@ -61,14 +61,15 @@
     </div>
   </div>
   <script>
-    const T = { tete: 0.1, req: 0.6, sens: 3.1, mots: 4.0, relecture: 4.7, remonte: 7.2, reponse: 8.8, source: 11.0, sortie: 14.2 };
+    const T = { tete: 0.1, req: 0.6, facons: 2.1, sens: 3.4, mots: 4.2, relecture: 5.0, remonte: 7.4, reponse: 9.4, source: 9.8, sortie: 15.0 };
     const tl = gsap.timeline({ paused: true });
     tl.fromTo("#s07-tete", { opacity: 0, filter: "blur(8px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.25 }, T.tete);
-    tl.fromTo("#s07-req", { opacity: 0, x: -40 }, { opacity: 1, x: 0, duration: 0.6, ease: "expo.out" }, T.req);
-    tl.fromTo("#s07-t1", { scaleX: 0 }, { scaleX: 1, duration: 0.4, ease: "power2.out" }, T.sens - 0.3);
+    tl.fromTo("#s07-req", { opacity: 0, x: -40 }, { opacity: 1, x: 0, duration: 0.5, ease: "expo.out" }, T.req);
+    tl.fromTo("#s07-req-texte", { clipPath: "inset(0 100% 0 0)" }, { clipPath: "inset(0 0% 0 0)", duration: 1.2, ease: "steps(28)" }, T.req + 0.3);
+    tl.fromTo("#s07-t1", { scaleX: 0 }, { scaleX: 1, duration: 0.5, ease: "power2.out" }, T.facons);
     tl.fromTo("#s07-sens", { opacity: 0 }, { opacity: 1, duration: 0.2 }, T.sens);
     tl.fromTo("#s07-sens .s07-barre", { scaleX: 0 }, { scaleX: 1, duration: 0.5, ease: "expo.out", stagger: 0.07 }, T.sens + 0.1);
-    tl.fromTo("#s07-t2", { scaleX: 0 }, { scaleX: 1, duration: 0.4, ease: "power2.out" }, T.mots - 0.3);
+    tl.fromTo("#s07-t2", { scaleX: 0 }, { scaleX: 1, duration: 0.5, ease: "power2.out" }, T.facons + 0.15);
     tl.fromTo("#s07-mots", { opacity: 0 }, { opacity: 1, duration: 0.2 }, T.mots);
     tl.fromTo("#s07-mots .s07-barre", { scaleX: 0 }, { scaleX: 1, duration: 0.5, ease: "expo.out", stagger: 0.07 }, T.mots + 0.1);
     tl.fromTo(["#s07-t3", "#s07-t4"], { scaleX: 0 }, { scaleX: 1, duration: 0.4, ease: "power2.out" }, T.relecture - 0.3);
