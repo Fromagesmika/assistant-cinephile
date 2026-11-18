@@ -34,3 +34,6 @@ video/render.log
 
 # Jeu de données brut IMDb (licence non commerciale, non redistribuable)
 data/sources/
+
+# Archives à envoyer (rendu et version complète)
+rendu/
