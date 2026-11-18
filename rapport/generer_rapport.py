@@ -24,6 +24,8 @@ from eval import recall_et_mrr, taux  # noqa: E402
 from src.metrics import moyenne  # noqa: E402
 
 AUTEURS = "Michaël LOPEZ et Rayan DAOUDI"
+DEPOT = "https://github.com/Fromagesmika/assistant-cinephile"
+VIDEO = "https://drive.google.com/file/d/18P1T7it7NbQVt_wL2N-pJSrxf_yWK4EM/view?usp=sharing"
 SORTIE = RACINE / "rapport" / "rapport.pdf"
 
 # --- Mise en forme -------------------------------------------------------------------------
@@ -157,8 +159,9 @@ nb = {t: sum(c["type"] == t for c in tests) for t in ("document", "absent", "tac
 histoire = []
 histoire += [
     p("Assistant cinéphile : un système génératif qui se mesure", titre),
-    p(f"Projet IA générative 2026 · Parcours Texte · Thème Cinéphile<br/>{AUTEURS} · "
-      "dépôt : github.com/Fromagesmika/assistant-cinephile", sous_titre),
+    p(f"Projet IA générative 2026 · Parcours Texte · Thème Cinéphile · {AUTEURS}<br/>"
+      f"Code : <link href='{DEPOT}' color='#5b3fd6'><u>{DEPOT}</u></link> · "
+      f"Vidéo : <link href='{VIDEO}' color='#5b3fd6'><u>Google Drive (3 min 18)</u></link>", sous_titre),
 
     p("1. Ce que fait l'assistant", h1),
     p("Notre assistant répond à des questions sur les films et les séries, et il gère une liste « à voir » "
