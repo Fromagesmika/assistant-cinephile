@@ -37,3 +37,8 @@ data/sources/
 
 # Archives à envoyer (rendu et version complète)
 rendu/
+
+# Fichiers d'outillage local (non versionnés)
+.claude/
+video/cinephile/CLAUDE.md
+video/cinephile/AGENTS.md
