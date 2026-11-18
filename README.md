@@ -4,6 +4,8 @@ Projet majeur IA générative 2026, parcours Texte. Un assistant qui répond sur
 les séries, puis gère une liste « à voir » partagée. Chaque niveau est comparé aux précédents
 sur le même protocole de test.
 
+**Vidéo de démonstration (3 min 18) : [Google Drive](https://drive.google.com/file/d/18P1T7it7NbQVt_wL2N-pJSrxf_yWK4EM/view?usp=sharing)**
+
 Le RAG puise dans **trois sources**, sur trois plateformes différentes :
 
 | Source | Ce qu'elle apporte | Fichier |
@@ -91,7 +93,7 @@ Le tableau est écrit dans `results/tableau.md`. Les réponses déjà obtenues s
 | `scripts/` | Corpus, contrôle des clés et des tests, comparaison de la recherche (dense, puis hybride), calibration du juge, affiches |
 | `results/`, `traces/` | Résultats bruts et traces |
 | `rapport/rapport.pdf` | Rapport (4 pages), généré par `python rapport/generer_rapport.py` à partir des résultats |
-| `video/` | Sources de la vidéo (le rendu MP4 est déposé à part) |
+| `video/` | Sources de la vidéo (le rendu MP4 est sur [Google Drive](https://drive.google.com/file/d/18P1T7it7NbQVt_wL2N-pJSrxf_yWK4EM/view?usp=sharing)) |
 
 ## Licences des sources et des affiches
 
@@ -107,6 +109,8 @@ Les notes de `data/corpus_imdb.jsonl` viennent des jeux de données publics d'IM
 Information courtesy of IMDb (https://www.imdb.com). Used with permission.
 
 ## Vidéo
+
+La vidéo de démonstration (3 min 18) : [regarder sur Google Drive](https://drive.google.com/file/d/18P1T7it7NbQVt_wL2N-pJSrxf_yWK4EM/view?usp=sharing)
 
 Les sources de la vidéo sont dans `video/cinephile/` (projet HyperFrames) ; le rendu se lance avec
 `npx hyperframes render` depuis ce dossier. Musique : « Ambient Piano Loop 9_14 » par Erokia
