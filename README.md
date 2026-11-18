@@ -18,10 +18,10 @@ IMDb dans `data/sources/`, non versionné).
 
 | Niveau | Contenu | État |
 |---|---|---|
-| 0 | LLM seul | Évalué (40 cas) |
-| 1 | RAG, sources citées, abstention | Évalué (40 cas), juge calibré (95 % d'accord sur 20 cas) |
-| 2 | Agent outillé (7 outils), confirmation des actions | Évalué (40 cas + 11 tâches × 3 essais) |
-| 3 | Agent + RAG avancé (recherche hybride BM25 + dense, reranking) | Évalué contre le niveau 2 (mêmes 51 cas) |
+| 0 | LLM seul | Évalué (46 cas) |
+| 1 | RAG, sources citées, abstention | Évalué (46 cas), juge calibré (95 % d'accord sur 20 cas) |
+| 2 | Agent outillé (7 outils), confirmation des actions | Évalué (46 cas + 11 tâches × 3 essais) |
+| 3 | Agent + RAG avancé (recherche hybride BM25 + dense, reranking) | Évalué contre le niveau 2 (mêmes 57 cas) |
 
 ## Installation
 
@@ -74,7 +74,7 @@ Le tableau est écrit dans `results/tableau.md`. Les réponses déjà obtenues s
 | `data/films.csv` | Œuvres retenues et strate (populaire, peu connu, récent) |
 | `data/corpus.jsonl` | Source 1 : pages Wikipédia téléchargées, avec leur révision |
 | `data/corpus_tmdb.jsonl`, `data/corpus_imdb.jsonl` | Sources 2 et 3 : fiches TMDB et notes IMDb (`scripts/build_sources.py`) |
-| `tests.jsonl` | Jeu de test commun à tous les niveaux (51 cas, dont 3 questions et 1 tâche sur le box-office) |
+| `tests.jsonl` | Jeu de test commun à tous les niveaux (57 cas : 34 questions document, 6 sans réponse, 6 ambiguës, 11 tâches) |
 | `eval.py` | Exécute les niveaux et produit le tableau |
 | `src/llm.py` | Appel au modèle, cache, tokens et latence |
 | `src/metrics.py` | Règles de notation |
@@ -91,7 +91,7 @@ Le tableau est écrit dans `results/tableau.md`. Les réponses déjà obtenues s
 | `scripts/` | Corpus, contrôle des clés et des tests, comparaison de la recherche (dense, puis hybride), calibration du juge, affiches |
 | `results/`, `traces/` | Résultats bruts et traces |
 | `rapport/rapport.pdf` | Rapport (4 pages), généré par `python rapport/generer_rapport.py` à partir des résultats |
-| `video/` | Sources de la vidéo |
+| `video/` | Sources de la vidéo (le rendu MP4 est déposé à part) |
 
 ## Licences des sources et des affiches
 
